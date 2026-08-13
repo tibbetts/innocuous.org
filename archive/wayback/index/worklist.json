@@ -1,0 +1,4271 @@
+[
+ {
+  "url": "http://innocuous.org/",
+  "kind": "page",
+  "path": "pages/index/index.html",
+  "candidates": [
+   "20220709013245",
+   "20220709013239",
+   "20220630035402",
+   "20220630033039",
+   "20220625164231",
+   "20220523104927",
+   "20220319013152",
+   "20220120013042"
+  ],
+  "snaps": 145
+ },
+ {
+  "url": "http://innocuous.org/about/",
+  "kind": "page",
+  "path": "pages/about/index.html",
+  "candidates": [
+   "20101125171703",
+   "20100621070230",
+   "20100619081717"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/articles/2005/04/",
+  "kind": "archive",
+  "path": "pages/articles/2005/04/index.html",
+  "candidates": [
+   "20220705005740",
+   "20220630034236",
+   "20220120022250",
+   "20220120011900",
+   "20220118230500",
+   "20211020031001",
+   "20210921234854",
+   "20210727074428"
+  ],
+  "snaps": 46
+ },
+ {
+  "url": "http://innocuous.org/articles/2005/04/10/blogtk-not-so-great/",
+  "kind": "post",
+  "path": "pages/articles/2005/04/10/blogtk-not-so-great/index.html",
+  "candidates": [
+   "20211201090426",
+   "20170114144414",
+   "20160819182258",
+   "20160416204725",
+   "20111104114025",
+   "20111102205943",
+   "20110910222348",
+   "20081204094449"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/2005/04/10/first-post/",
+  "kind": "post",
+  "path": "pages/articles/2005/04/10/first-post/index.html",
+  "candidates": [
+   "20211201101603",
+   "20170114142306",
+   "20160819180459",
+   "20160416204722",
+   "20111104114008",
+   "20111102205917",
+   "20110911184220",
+   "20081204104258"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/2005/04/15/setting-up-typo-rubyonrails-lighttpd-fastcgi-and-being-a-bad-sysadmin/",
+  "kind": "post",
+  "path": "pages/articles/2005/04/15/setting-up-typo-rubyonrails-lighttpd-fastcgi-and-being-a-bad-sysadmin/index.html",
+  "candidates": [
+   "20220630041607",
+   "20211201085813",
+   "20170114094450",
+   "20160819182134",
+   "20160416204712",
+   "20130620124418",
+   "20111104111610",
+   "20111102203322"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/2005/05/",
+  "kind": "archive",
+  "path": "pages/articles/2005/05/index.html",
+  "candidates": [
+   "20220705010632",
+   "20220523112738",
+   "20220120023221",
+   "20220117103107",
+   "20211020042658",
+   "20210921235900",
+   "20210727084829",
+   "20210509225229"
+  ],
+  "snaps": 44
+ },
+ {
+  "url": "http://innocuous.org/articles/2005/05/29/book-review-defensive-design-for-the-web/",
+  "kind": "post",
+  "path": "pages/articles/2005/05/29/book-review-defensive-design-for-the-web/index.html",
+  "candidates": [
+   "20220630044213",
+   "20220630035321",
+   "20211201091906",
+   "20170114140425",
+   "20160819180136",
+   "20160421010350",
+   "20160416204427",
+   "20111104112156"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/2005/05/29/subversion-greater-than-cvs/",
+  "kind": "post",
+  "path": "pages/articles/2005/05/29/subversion-greater-than-cvs/index.html",
+  "candidates": [
+   "20220630050136",
+   "20211201102211",
+   "20170115011157",
+   "20160819123921",
+   "20160416210431",
+   "20111104111528",
+   "20111102203309",
+   "20081204102546"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/",
+  "kind": "archive",
+  "path": "pages/articles/2006/01/index.html",
+  "candidates": [
+   "20220705005845",
+   "20220630041149",
+   "20220120022356",
+   "20220120014801",
+   "20220105154906",
+   "20211020040616",
+   "20210921235003",
+   "20210727083016"
+  ],
+  "snaps": 44
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/19/deconstructing-the-ann-arbor-news/",
+  "kind": "post",
+  "path": "pages/articles/2006/01/19/deconstructing-the-ann-arbor-news/index.html",
+  "candidates": [
+   "20220630043625",
+   "20211201100846",
+   "20211020044527",
+   "20170114143626",
+   "20160819125003",
+   "20160416204858",
+   "20111104213904",
+   "20110914111625"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/19/switched-my-laptop-to-ubuntu/",
+  "kind": "post",
+  "path": "pages/articles/2006/01/19/switched-my-laptop-to-ubuntu/index.html",
+  "candidates": [
+   "20211201095634",
+   "20211020044015",
+   "20170114140510",
+   "20160819144556",
+   "20160416205009",
+   "20111104220539",
+   "20081204101741"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/19/this-is-a-test-of-the-gnome-blog-client/",
+  "kind": "post",
+  "path": "pages/articles/2006/01/19/this-is-a-test-of-the-gnome-blog-client/index.html",
+  "candidates": [
+   "20211201100116",
+   "20211020052211",
+   "20170114143707",
+   "20160819134810",
+   "20160416204938",
+   "20111104215407",
+   "20081204105201"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/20/making-offlineimap-not-die/",
+  "kind": "post",
+  "path": "pages/articles/2006/01/20/making-offlineimap-not-die/index.html",
+  "candidates": [
+   "20211201093613",
+   "20211020045237",
+   "20170114143715",
+   "20160819141519",
+   "20160416205004",
+   "20111104220124",
+   "20081204102707"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/23/stop-energy/",
+  "kind": "post",
+  "path": "pages/articles/2006/01/23/stop-energy/index.html",
+  "candidates": [
+   "20211201101416",
+   "20211020051346",
+   "20190819170233",
+   "20170114140756",
+   "20160819180526",
+   "20160421024228",
+   "20160416203946",
+   "20111104175236"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/25/propsmart-finally-a-good-mls-google-maps-mashup/",
+  "kind": "post",
+  "path": "pages/articles/2006/01/25/propsmart-finally-a-good-mls-google-maps-mashup/index.html",
+  "candidates": [
+   "20090308122812",
+   "20090204030209",
+   "20081210163333",
+   "20081204095037",
+   "20080313071943",
+   "20080208143425",
+   "20071215193632",
+   "20070403114102"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/25/propsmart-finally-a-good-mlsgoogle-maps-mashup/",
+  "kind": "post",
+  "path": "pages/articles/2006/01/25/propsmart-finally-a-good-mlsgoogle-maps-mashup/index.html",
+  "candidates": [
+   "20211201094533",
+   "20211020051229",
+   "20170114142241",
+   "20160819134032",
+   "20160416204934",
+   "20111104215137",
+   "20110913183709",
+   "20110402085643"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/25/propsmart-finally-a-good-mlsgoogle-maps-mashup/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2006/01/25/propsmart-finally-a-good-mlsgoogle-maps-mashup/comment-page-1/index.html",
+  "candidates": [
+   "20211201103416",
+   "20170222182506"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/26/google-just-isnt-very-good/",
+  "kind": "post",
+  "path": "pages/articles/2006/01/26/google-just-isnt-very-good/index.html",
+  "candidates": [
+   "20220630034312",
+   "20211201092427",
+   "20211020031131",
+   "20170114144407",
+   "20160819182248",
+   "20160416204959",
+   "20111104220040",
+   "20081204093844"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/26/google-just-isnt-very-good/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2006/01/26/google-just-isnt-very-good/comment-page-1/index.html",
+  "candidates": [
+   "20211201083241",
+   "20170222182807"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/01/28/macbook-pro-killing-the-powerbook-brand/",
+  "kind": "post",
+  "path": "pages/articles/2006/01/28/macbook-pro-killing-the-powerbook-brand/index.html",
+  "candidates": [
+   "20220630050058",
+   "20211201091502",
+   "20211020051545",
+   "20170114122921",
+   "20160819182239",
+   "20160416204950",
+   "20111021201355",
+   "20081204103850"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/04/",
+  "kind": "archive",
+  "path": "pages/articles/2006/04/index.html",
+  "candidates": [
+   "20220705012553",
+   "20220630042505",
+   "20220120025216",
+   "20220120020125",
+   "20220117103108",
+   "20211020043023",
+   "20210922001800",
+   "20210727085226"
+  ],
+  "snaps": 42
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/04/08/google-takes-college-recruiting-to-the-next-level/",
+  "kind": "post",
+  "path": "pages/articles/2006/04/08/google-takes-college-recruiting-to-the-next-level/index.html",
+  "candidates": [
+   "20220630043903",
+   "20211201095121",
+   "20200928155927",
+   "20170114121731",
+   "20160819181105",
+   "20160416212608",
+   "20111105015804",
+   "20081204100442"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/07/",
+  "kind": "archive",
+  "path": "pages/articles/2006/07/index.html",
+  "candidates": [
+   "20220704234620",
+   "20220630044111",
+   "20220128231931",
+   "20220120021818",
+   "20220120012419",
+   "20211020045111",
+   "20210921223701",
+   "20210727091157"
+  ],
+  "snaps": 43
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/07/03/streambase-davinci-coder-free-software-and-valuable-prizes-cash/",
+  "kind": "post",
+  "path": "pages/articles/2006/07/03/streambase-davinci-coder-free-software-and-valuable-prizes-cash/index.html",
+  "candidates": [
+   "20220630042023",
+   "20211201094934",
+   "20210921231554",
+   "20190819163030",
+   "20170115005800",
+   "20160819182242",
+   "20160416205026",
+   "20111104115614"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/08/",
+  "kind": "archive",
+  "path": "pages/articles/2006/08/index.html",
+  "candidates": [
+   "20220704235637",
+   "20220630033258",
+   "20220120013309",
+   "20220120010812",
+   "20211020025535",
+   "20210921224918",
+   "20210727073653",
+   "20210509215041"
+  ],
+  "snaps": 45
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/08/25/steve-vinoski-on-extreme-programming-at-iona/",
+  "kind": "post",
+  "path": "pages/articles/2006/08/25/steve-vinoski-on-extreme-programming-at-iona/index.html",
+  "candidates": [
+   "20220523123221",
+   "20220523102719",
+   "20211201103756",
+   "20211020030240",
+   "20190819160618",
+   "20170114142316",
+   "20160819150436",
+   "20160421021253"
+  ],
+  "snaps": 12
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/08/25/steve-vinoski-on-extreme-programming-at-iona/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2006/08/25/steve-vinoski-on-extreme-programming-at-iona/comment-page-1/index.html",
+  "candidates": [
+   "20220630045825",
+   "20220630042540",
+   "20211201101853",
+   "20170222182407"
+  ],
+  "snaps": 4
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/09/",
+  "kind": "archive",
+  "path": "pages/articles/2006/09/index.html",
+  "candidates": [
+   "20220630041415",
+   "20220307232215",
+   "20220120014951",
+   "20220120014155",
+   "20211020041218",
+   "20210921225852",
+   "20210727083654",
+   "20210509224242"
+  ],
+  "snaps": 38
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/09/28/algorithms-for-the-21st-century/",
+  "kind": "post",
+  "path": "pages/articles/2006/09/28/algorithms-for-the-21st-century/index.html",
+  "candidates": [
+   "20220630045212",
+   "20220630044836",
+   "20211201101452",
+   "20211201101024",
+   "20190716225835",
+   "20170114144311",
+   "20160819124112",
+   "20160416210435"
+  ],
+  "snaps": 14
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/11/",
+  "kind": "archive",
+  "path": "pages/articles/2006/11/index.html",
+  "candidates": [
+   "20220704234536",
+   "20220630041641",
+   "20220127232329",
+   "20220120015256",
+   "20220120012342",
+   "20211020041827",
+   "20210921223612",
+   "20210727084224"
+  ],
+  "snaps": 46
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/11/10/me-dium-beta/",
+  "kind": "post",
+  "path": "pages/articles/2006/11/10/me-dium-beta/index.html",
+  "candidates": [
+   "20081204101455"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/11/10/medium-beta/",
+  "kind": "post",
+  "path": "pages/articles/2006/11/10/medium-beta/index.html",
+  "candidates": [
+   "20220630035911",
+   "20220523103333",
+   "20210921223204",
+   "20200928144704",
+   "20170114111511",
+   "20160819132010",
+   "20160416203643",
+   "20111021175800"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/11/10/medium-beta/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2006/11/10/medium-beta/comment-page-1/index.html",
+  "candidates": [
+   "20220630051143",
+   "20170222182750"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/11/18/adventures-in-retail/",
+  "kind": "post",
+  "path": "pages/articles/2006/11/18/adventures-in-retail/index.html",
+  "candidates": [
+   "20220630033712",
+   "20220523114057",
+   "20210921233608",
+   "20170114082925",
+   "20160819180015",
+   "20160416202821",
+   "20111021170442",
+   "20081204095626"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/11/18/pricing-enterprise-software/",
+  "kind": "post",
+  "path": "pages/articles/2006/11/18/pricing-enterprise-software/index.html",
+  "candidates": [
+   "20220630045932",
+   "20220523121439",
+   "20210922000730",
+   "20170114092014",
+   "20160819182127",
+   "20160416202917",
+   "20111021172636",
+   "20110817014945"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/12/",
+  "kind": "archive",
+  "path": "pages/articles/2006/12/index.html",
+  "candidates": [
+   "20220704235521",
+   "20220630050249",
+   "20220205014022",
+   "20220120023959",
+   "20220120013117",
+   "20211020051746",
+   "20210921224749",
+   "20210727093802"
+  ],
+  "snaps": 46
+ },
+ {
+  "url": "http://innocuous.org/articles/2006/12/01/transactional-memory-not-solution-to-all-problems/",
+  "kind": "post",
+  "path": "pages/articles/2006/12/01/transactional-memory-not-solution-to-all-problems/index.html",
+  "candidates": [
+   "20220630050630",
+   "20211207192624",
+   "20211020040523",
+   "20210617033021",
+   "20201109001045",
+   "20170114101847",
+   "20160819182247",
+   "20160416210925"
+  ],
+  "snaps": 14
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/03/",
+  "kind": "archive",
+  "path": "pages/articles/2007/03/index.html",
+  "candidates": [
+   "20220704233658",
+   "20220630042758",
+   "20220120020344",
+   "20220120011450",
+   "20211020043255",
+   "20210921222831",
+   "20210727085523",
+   "20210509225850"
+  ],
+  "snaps": 44
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/03/25/cs-research-everyone-should-know-xerox-parc-bayou/",
+  "kind": "post",
+  "path": "pages/articles/2007/03/25/cs-research-everyone-should-know-xerox-parc-bayou/index.html",
+  "candidates": [
+   "20211201102455",
+   "20191020062542",
+   "20170114143651",
+   "20160819131908",
+   "20160416205212",
+   "20111021175756",
+   "20081204093644"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/03/25/switching-to-osx-productivity-and-development-tools/",
+  "kind": "post",
+  "path": "pages/articles/2007/03/25/switching-to-osx-productivity-and-development-tools/index.html",
+  "candidates": [
+   "20220630034505",
+   "20211201090627",
+   "20211201085057",
+   "20191020054319",
+   "20170114131033",
+   "20160819181121",
+   "20160416205239",
+   "20111021183047"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/03/26/etech-voyeurism-coder-to-cofounder/",
+  "kind": "post",
+  "path": "pages/articles/2007/03/26/etech-voyeurism-coder-to-cofounder/index.html",
+  "candidates": [
+   "20220630044642",
+   "20211201093906",
+   "20191020063916",
+   "20170114142245",
+   "20160819134036",
+   "20160416205229",
+   "20111021181631",
+   "20110913183152"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/06/",
+  "kind": "archive",
+  "path": "pages/articles/2007/06/index.html",
+  "candidates": [
+   "20220705000822",
+   "20220630044316",
+   "20220307232216",
+   "20220120022035",
+   "20220120014342",
+   "20211020045404",
+   "20210921230102",
+   "20210727091446"
+  ],
+  "snaps": 46
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/06/06/the-lemons-meme-in-software/",
+  "kind": "post",
+  "path": "pages/articles/2007/06/06/the-lemons-meme-in-software/index.html",
+  "candidates": [
+   "20220523104718",
+   "20211201091620",
+   "20211201090131",
+   "20210921234105",
+   "20201109014230",
+   "20190819160813",
+   "20170114105253",
+   "20160819181053"
+  ],
+  "snaps": 19
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/06/06/the-lemons-meme-in-software/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2007/06/06/the-lemons-meme-in-software/comment-page-1/index.html",
+  "candidates": [
+   "20220630034543",
+   "20170222182702"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/09/",
+  "kind": "archive",
+  "path": "pages/articles/2007/09/index.html",
+  "candidates": [
+   "20220705003911",
+   "20220630050018",
+   "20220120023752",
+   "20220117103104",
+   "20211020051423",
+   "20210727093510",
+   "20210509233247",
+   "20200811160934"
+  ],
+  "snaps": 41
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazon-com-technology-platform/",
+  "kind": "post",
+  "path": "pages/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazon-com-technology-platform/index.html",
+  "candidates": [
+   "20081204105324"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazoncom-technology-platform/",
+  "kind": "post",
+  "path": "pages/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazoncom-technology-platform/index.html",
+  "candidates": [
+   "20211207191056",
+   "20211201102710",
+   "20210727092629",
+   "20170115043902",
+   "20160819135055",
+   "20160416204944",
+   "20111104210713"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazoncom-technology-platform/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazoncom-technology-platform/comment-page-1/index.html",
+  "candidates": [
+   "20220120024852",
+   "20170222182457"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/10/",
+  "kind": "archive",
+  "path": "pages/articles/2007/10/index.html",
+  "candidates": [
+   "20220705000705",
+   "20220630041827",
+   "20220120015557",
+   "20220120014230",
+   "20220112192336",
+   "20211020042156",
+   "20210921225932",
+   "20210727084527"
+  ],
+  "snaps": 42
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/10/23/oopsla-2007-the-popularity-cycle-of-graphical-tools-uml-and-libraries-of-associations-not-the-workshop-i-expected/",
+  "kind": "post",
+  "path": "pages/articles/2007/10/23/oopsla-2007-the-popularity-cycle-of-graphical-tools-uml-and-libraries-of-associations-not-the-workshop-i-expected/index.html",
+  "candidates": [
+   "20220630044614",
+   "20211201100918",
+   "20211201084303",
+   "20211020032003",
+   "20210617030457",
+   "20170222014045",
+   "20170114143547",
+   "20160819122307"
+  ],
+  "snaps": 15
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/10/23/oopsla-2007-the-popularity-cycle-of-graphical-tools-uml-and-libraries-of-associations-not-the-workshop-i-expected/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2007/10/23/oopsla-2007-the-popularity-cycle-of-graphical-tools-uml-and-libraries-of-associations-not-the-workshop-i-expected/comment-page-1/index.html",
+  "candidates": [
+   "20211201100039",
+   "20170222014057"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/10/28/oopsla-2007-new-ideas-good-quotes-and-cynical-self-satisfaction/",
+  "kind": "post",
+  "path": "pages/articles/2007/10/28/oopsla-2007-new-ideas-good-quotes-and-cynical-self-satisfaction/index.html",
+  "candidates": [
+   "20220630035638",
+   "20220401081839",
+   "20211207175531",
+   "20211020030055",
+   "20210617015250",
+   "20171024094319",
+   "20170114095205",
+   "20160819124228"
+  ],
+  "snaps": 17
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/12/",
+  "kind": "archive",
+  "path": "pages/articles/2007/12/index.html",
+  "candidates": [
+   "20220705002800",
+   "20220630035443",
+   "20220120015519",
+   "20220120013154",
+   "20220118230501",
+   "20211020033511",
+   "20210921232131",
+   "20210727080409"
+  ],
+  "snaps": 47
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/12/01/",
+  "kind": "post",
+  "path": "pages/articles/2007/12/01/index.html",
+  "candidates": [
+   "20081204104850"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/12/01/book-review-the-change-function/",
+  "kind": "post",
+  "path": "pages/articles/2007/12/01/book-review-the-change-function/index.html",
+  "candidates": [
+   "20211201102638",
+   "20210509233905",
+   "20190819161007",
+   "20170114111639",
+   "20160819132044",
+   "20160421004015",
+   "20160416205217",
+   "20130626230818"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/12/page/1/",
+  "kind": "archive",
+  "path": "pages/articles/2007/12/page/1/index.html",
+  "candidates": [
+   "20090105190019"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/12/page/2/",
+  "kind": "archive",
+  "path": "pages/articles/2007/12/page/2/index.html",
+  "candidates": [
+   "20081204094312"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/12/page/3/",
+  "kind": "archive",
+  "path": "pages/articles/2007/12/page/3/index.html",
+  "candidates": [
+   "20081204105049"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2007/12/page/4/",
+  "kind": "archive",
+  "path": "pages/articles/2007/12/page/4/index.html",
+  "candidates": [
+   "20081204102252"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/01/",
+  "kind": "archive",
+  "path": "pages/articles/2008/01/index.html",
+  "candidates": [
+   "20220630034738",
+   "20220523104322",
+   "20220120012534",
+   "20220117103105",
+   "20211020032358",
+   "20211020032233",
+   "20210727075346",
+   "20210509220824"
+  ],
+  "snaps": 42
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/01/12/",
+  "kind": "post",
+  "path": "pages/articles/2008/01/12/index.html",
+  "candidates": [
+   "20081204105537"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/01/12/bungee-connect-what-i-learned-about-platform-evaluations/",
+  "kind": "post",
+  "path": "pages/articles/2008/01/12/bungee-connect-what-i-learned-about-platform-evaluations/index.html",
+  "candidates": [
+   "20220523114705",
+   "20211201100520",
+   "20211201093459",
+   "20190819164531",
+   "20170114103841",
+   "20160819130224",
+   "20160421015004",
+   "20160416203126"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/01/12/bungee-connect-what-i-learned-about-platform-evaluations/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2008/01/12/bungee-connect-what-i-learned-about-platform-evaluations/comment-page-1/index.html",
+  "candidates": [
+   "20220630041225",
+   "20170222182309"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/01/12/information-wants-to-be-half-price/",
+  "kind": "post",
+  "path": "pages/articles/2008/01/12/information-wants-to-be-half-price/index.html",
+  "candidates": [
+   "20220523113011",
+   "20211201095709",
+   "20211201095525",
+   "20190819163339",
+   "20170115071355",
+   "20160819130044",
+   "20160421015005",
+   "20160416203112"
+  ],
+  "snaps": 12
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/01/12/information-wants-to-be-half-price/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2008/01/12/information-wants-to-be-half-price/comment-page-1/index.html",
+  "candidates": [
+   "20220630043050",
+   "20170222182524"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/01/page/1/",
+  "kind": "archive",
+  "path": "pages/articles/2008/01/page/1/index.html",
+  "candidates": [
+   "20090105201246"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/01/page/2/",
+  "kind": "archive",
+  "path": "pages/articles/2008/01/page/2/index.html",
+  "candidates": [
+   "20081204100730"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/01/page/3/",
+  "kind": "archive",
+  "path": "pages/articles/2008/01/page/3/index.html",
+  "candidates": [
+   "20081204103643"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/01/page/4/",
+  "kind": "archive",
+  "path": "pages/articles/2008/01/page/4/index.html",
+  "candidates": [
+   "20081204104339"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/04/",
+  "kind": "archive",
+  "path": "pages/articles/2008/04/index.html",
+  "candidates": [
+   "20220705001934",
+   "20220630040553",
+   "20220307132700",
+   "20220120014916",
+   "20220120014305",
+   "20211020035508",
+   "20210921231302",
+   "20210727081946"
+  ],
+  "snaps": 42
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/04/08/",
+  "kind": "post",
+  "path": "pages/articles/2008/04/08/index.html",
+  "candidates": [
+   "20081204094125"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/04/08/google-commences-another-assault-on-the-traditional-database-community/",
+  "kind": "post",
+  "path": "pages/articles/2008/04/08/google-commences-another-assault-on-the-traditional-database-community/index.html",
+  "candidates": [
+   "20211207185907",
+   "20211201095600",
+   "20210727091323",
+   "20170114081404",
+   "20160819120631",
+   "20160416205017",
+   "20111104195540",
+   "20111103105428"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/04/11/",
+  "kind": "post",
+  "path": "pages/articles/2008/04/11/index.html",
+  "candidates": [
+   "20081204104217"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/04/11/when-neither-a-column-store-nor-a-row-store-is-the-answer/",
+  "kind": "post",
+  "path": "pages/articles/2008/04/11/when-neither-a-column-store-nor-a-row-store-is-the-answer/index.html",
+  "candidates": [
+   "20211201103345",
+   "20211201090535",
+   "20170114082901",
+   "20160819121349",
+   "20160421125218",
+   "20160416205022",
+   "20111104195756",
+   "20111103110715"
+  ],
+  "snaps": 12
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/04/12/",
+  "kind": "post",
+  "path": "pages/articles/2008/04/12/index.html",
+  "candidates": [
+   "20081204100648"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/04/12/kdb-now-available-for-free-download/",
+  "kind": "post",
+  "path": "pages/articles/2008/04/12/kdb-now-available-for-free-download/index.html",
+  "candidates": [
+   "20220630033545",
+   "20211207171836",
+   "20210617011432",
+   "20170114140445",
+   "20160819182336",
+   "20160421125215",
+   "20160416205224",
+   "20111104201838"
+  ],
+  "snaps": 14
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/04/page/1/",
+  "kind": "archive",
+  "path": "pages/articles/2008/04/page/1/index.html",
+  "candidates": [
+   "20090105204649"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/04/page/2/",
+  "kind": "archive",
+  "path": "pages/articles/2008/04/page/2/index.html",
+  "candidates": [
+   "20081204101616"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/04/page/3/",
+  "kind": "archive",
+  "path": "pages/articles/2008/04/page/3/index.html",
+  "candidates": [
+   "20081204102834"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/04/page/4/",
+  "kind": "archive",
+  "path": "pages/articles/2008/04/page/4/index.html",
+  "candidates": [
+   "20081204105126"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/06/",
+  "kind": "archive",
+  "path": "pages/articles/2008/06/index.html",
+  "candidates": [
+   "20220705003949",
+   "20220630033752",
+   "20220205014024",
+   "20220120020718",
+   "20220120011245",
+   "20211020030422",
+   "20210921233302",
+   "20210727074009"
+  ],
+  "snaps": 48
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/06/03/",
+  "kind": "post",
+  "path": "pages/articles/2008/06/03/index.html",
+  "candidates": [
+   "20081204100157"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/06/03/buy-it-like-you-mean-it-and-vendor-relationship-management/",
+  "kind": "post",
+  "path": "pages/articles/2008/06/03/buy-it-like-you-mean-it-and-vendor-relationship-management/index.html",
+  "candidates": [
+   "20220523112235",
+   "20211201100444",
+   "20170114142302",
+   "20160819140848",
+   "20160421014045",
+   "20160416203736",
+   "20111021065448",
+   "20090530160238"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/06/03/buy-it-like-you-mean-it-and-vendor-relationship-management/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2008/06/03/buy-it-like-you-mean-it-and-vendor-relationship-management/comment-page-1/index.html",
+  "candidates": [
+   "20220630042937",
+   "20170222182719"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/06/16/",
+  "kind": "post",
+  "path": "pages/articles/2008/06/16/index.html",
+  "candidates": [
+   "20081204094653"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/06/16/exchanging-my-kindle-for-another-sony-reader/",
+  "kind": "post",
+  "path": "pages/articles/2008/06/16/exchanging-my-kindle-for-another-sony-reader/index.html",
+  "candidates": [
+   "20211201085717",
+   "20170114142214",
+   "20160819123037",
+   "20160421003427",
+   "20160416204332",
+   "20111104111116",
+   "20111102203047",
+   "20090531194102"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/06/16/exchanging-my-kindle-for-another-sony-reader/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2008/06/16/exchanging-my-kindle-for-another-sony-reader/comment-page-1/index.html",
+  "candidates": [
+   "20170222182734"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/06/page/1/",
+  "kind": "archive",
+  "path": "pages/articles/2008/06/page/1/index.html",
+  "candidates": [
+   "20090105205046"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/06/page/2/",
+  "kind": "archive",
+  "path": "pages/articles/2008/06/page/2/index.html",
+  "candidates": [
+   "20081204101100"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/06/page/3/",
+  "kind": "archive",
+  "path": "pages/articles/2008/06/page/3/index.html",
+  "candidates": [
+   "20081204102208"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/06/page/4/",
+  "kind": "archive",
+  "path": "pages/articles/2008/06/page/4/index.html",
+  "candidates": [
+   "20081204105650"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/12/",
+  "kind": "archive",
+  "path": "pages/articles/2008/12/index.html",
+  "candidates": [
+   "20220630044807",
+   "20220630043830",
+   "20220120022509",
+   "20220120021549",
+   "20211020044817",
+   "20210921235117",
+   "20210727090901",
+   "20210509231058"
+  ],
+  "snaps": 44
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/12/29/thinking-about-tufte-resolution-isnt-the-key/",
+  "kind": "post",
+  "path": "pages/articles/2008/12/29/thinking-about-tufte-resolution-isnt-the-key/index.html",
+  "candidates": [
+   "20211201102848",
+   "20170114144328",
+   "20160819180321",
+   "20160421120912",
+   "20160416204826",
+   "20150915095354",
+   "20111104124745",
+   "20111102222238"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/12/30/ban-non-competes-in-massachusetts/",
+  "kind": "post",
+  "path": "pages/articles/2008/12/30/ban-non-competes-in-massachusetts/index.html",
+  "candidates": [
+   "20211201103826",
+   "20210921224450",
+   "20191214214840",
+   "20190819160809",
+   "20170114091018",
+   "20160819122807",
+   "20160421033353",
+   "20160416204822"
+  ],
+  "snaps": 15
+ },
+ {
+  "url": "http://innocuous.org/articles/2008/12/30/ban-non-competes-in-massachusetts/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2008/12/30/ban-non-competes-in-massachusetts/comment-page-1/index.html",
+  "candidates": [
+   "20170222182711",
+   "20151003164114"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/01/",
+  "kind": "archive",
+  "path": "pages/articles/2009/01/index.html",
+  "candidates": [
+   "20220705002055",
+   "20220630043305",
+   "20220205014025",
+   "20220120020952",
+   "20220120015027",
+   "20211020044059",
+   "20210921231423",
+   "20210727090101"
+  ],
+  "snaps": 44
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/01/20/cto-at-streambase/",
+  "kind": "post",
+  "path": "pages/articles/2009/01/20/cto-at-streambase/index.html",
+  "candidates": [
+   "20220319094136",
+   "20211201094606",
+   "20170114143711",
+   "20160920100107",
+   "20160819135050",
+   "20160421064708",
+   "20160421000657",
+   "20160416141939"
+  ],
+  "snaps": 13
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/03/",
+  "kind": "archive",
+  "path": "pages/articles/2009/03/index.html",
+  "candidates": [
+   "20220705004058",
+   "20220630040741",
+   "20220120020916",
+   "20220120014457",
+   "20220105154907",
+   "20211020040047",
+   "20210921233415",
+   "20210727082434"
+  ],
+  "snaps": 46
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/03/21/hello-world/",
+  "kind": "post",
+  "path": "pages/articles/2009/03/21/hello-world/index.html",
+  "candidates": [
+   "20220626040704",
+   "20220319013153",
+   "20211201083754",
+   "20210509214439",
+   "20210202085919",
+   "20181202143252",
+   "20170824124705",
+   "20161219032033"
+  ],
+  "snaps": 32
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/03/21/hello-world/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2009/03/21/hello-world/comment-page-1/index.html",
+  "candidates": [
+   "20160421071756",
+   "20160421000703",
+   "20160416080926",
+   "20151027105515"
+  ],
+  "snaps": 4
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/05/",
+  "kind": "archive",
+  "path": "pages/articles/2009/05/index.html",
+  "candidates": [
+   "20220705010156",
+   "20220630033914",
+   "20220205014021",
+   "20220120022652",
+   "20220120011533",
+   "20211020030737",
+   "20210921235306",
+   "20210727074220"
+  ],
+  "snaps": 46
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/05/06/how-long-will-pcs-and-servers-use-the-same-cpu/",
+  "kind": "post",
+  "path": "pages/articles/2009/05/06/how-long-will-pcs-and-servers-use-the-same-cpu/index.html",
+  "candidates": [
+   "20211201091259",
+   "20201028091216",
+   "20191020065335",
+   "20190716230718",
+   "20170114143630",
+   "20160819125006",
+   "20160421120911",
+   "20160416142101"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/05/06/the-downsides-of-limited-intellectual-property-in-psychiatric-care/",
+  "kind": "post",
+  "path": "pages/articles/2009/05/06/the-downsides-of-limited-intellectual-property-in-psychiatric-care/index.html",
+  "candidates": [
+   "20220319094137",
+   "20211201101640",
+   "20201028085437",
+   "20191020063707",
+   "20170114104123",
+   "20160920095755",
+   "20160819180208",
+   "20160421064709"
+  ],
+  "snaps": 15
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/06/",
+  "kind": "archive",
+  "path": "pages/articles/2009/06/index.html",
+  "candidates": [
+   "20220630045809",
+   "20220630042100",
+   "20220120023611",
+   "20220120015633",
+   "20211020042337",
+   "20210922000202",
+   "20210727084614",
+   "20210509225114"
+  ],
+  "snaps": 41
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/06/17/should-your-honor-student-be-in-shop-class/",
+  "kind": "post",
+  "path": "pages/articles/2009/06/17/should-your-honor-student-be-in-shop-class/index.html",
+  "candidates": [
+   "20211201092352",
+   "20211020052545",
+   "20210509221851",
+   "20160819120553",
+   "20160421120906",
+   "20160416205251",
+   "20111104122321",
+   "20111102215006"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/06/17/should-your-honor-student-be-in-shop-class/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2009/06/17/should-your-honor-student-be-in-shop-class/comment-page-1/index.html",
+  "candidates": [
+   "20211201103135",
+   "20170222182453"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/06/20/android-g1-and-palm-pre-versus-iphone-and-blackberry-benchmarks/",
+  "kind": "post",
+  "path": "pages/articles/2009/06/20/android-g1-and-palm-pre-versus-iphone-and-blackberry-benchmarks/index.html",
+  "candidates": [
+   "20220630041452",
+   "20220630033505",
+   "20211201084943",
+   "20211020041551",
+   "20170114144324",
+   "20160819182315",
+   "20160421104748",
+   "20160416211533"
+  ],
+  "snaps": 15
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/06/20/android-g1-and-palm-pre-versus-iphone-and-blackberry-benchmarks/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2009/06/20/android-g1-and-palm-pre-versus-iphone-and-blackberry-benchmarks/comment-page-1/index.html",
+  "candidates": [
+   "20220120025243",
+   "20211201103521",
+   "20170222182538",
+   "20110504024210"
+  ],
+  "snaps": 4
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/06/20/blackberry-versus-iphone-benchmarking-the-browser/",
+  "kind": "post",
+  "path": "pages/articles/2009/06/20/blackberry-versus-iphone-benchmarking-the-browser/index.html",
+  "candidates": [
+   "20211201085510",
+   "20211020043207",
+   "20170114143604",
+   "20160819122928",
+   "20160421104755",
+   "20160416210156",
+   "20120201164747",
+   "20111104123026"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/06/20/blackberry-versus-iphone-benchmarking-the-browser/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2009/06/20/blackberry-versus-iphone-benchmarking-the-browser/comment-page-1/index.html",
+  "candidates": [
+   "20211201085922",
+   "20170222182943"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/07/",
+  "kind": "archive",
+  "path": "pages/articles/2009/07/index.html",
+  "candidates": [
+   "20220630050402",
+   "20220215192803",
+   "20220120024357",
+   "20211020052057",
+   "20210727094138",
+   "20210509233756",
+   "20201028091838",
+   "20200811164822"
+  ],
+  "snaps": 41
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/07/11/the-real-reasons-for-eliminating-non-competes-in-massachusetts/",
+  "kind": "post",
+  "path": "pages/articles/2009/07/11/the-real-reasons-for-eliminating-non-competes-in-massachusetts/index.html",
+  "candidates": [
+   "20220523113952",
+   "20211201100226",
+   "20210617024805",
+   "20200928142503",
+   "20170824125543",
+   "20170114091635",
+   "20160823153946",
+   "20160819123017"
+  ],
+  "snaps": 17
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/07/11/the-real-reasons-for-eliminating-non-competes-in-massachusetts/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2009/07/11/the-real-reasons-for-eliminating-non-competes-in-massachusetts/comment-page-1/index.html",
+  "candidates": [
+   "20220704233605",
+   "20220120011408",
+   "20170222182305"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/12/",
+  "kind": "archive",
+  "path": "pages/articles/2009/12/index.html",
+  "candidates": [
+   "20220705012744",
+   "20220630033341",
+   "20220128231929",
+   "20220120025425",
+   "20220120010900",
+   "20211020025723",
+   "20210922002016",
+   "20210727073757"
+  ],
+  "snaps": 46
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/12/21/advice-to-those-giving-birth-at-mount-auburn-hospital/",
+  "kind": "post",
+  "path": "pages/articles/2009/12/21/advice-to-those-giving-birth-at-mount-auburn-hospital/index.html",
+  "candidates": [
+   "20220523112932",
+   "20211201095234",
+   "20210509225425",
+   "20190914025206",
+   "20190913011930",
+   "20190812190456",
+   "20190709133350",
+   "20190606033016"
+  ],
+  "snaps": 29
+ },
+ {
+  "url": "http://innocuous.org/articles/2009/12/21/advice-to-those-giving-birth-at-mount-auburn-hospital/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2009/12/21/advice-to-those-giving-birth-at-mount-auburn-hospital/comment-page-1/index.html",
+  "candidates": [
+   "20220630041339",
+   "20170824105745",
+   "20170222182447",
+   "20160818124233",
+   "20160421082007",
+   "20160421000714",
+   "20141119085936"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/01/",
+  "kind": "archive",
+  "path": "pages/articles/2010/01/index.html",
+  "candidates": [
+   "20220705010555",
+   "20220630035010",
+   "20220307232213",
+   "20220120023118",
+   "20220120012841",
+   "20211020032731",
+   "20210921235715",
+   "20210727075753"
+  ],
+  "snaps": 44
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/01/03/valuing-startup-options/",
+  "kind": "post",
+  "path": "pages/articles/2010/01/03/valuing-startup-options/index.html",
+  "candidates": [
+   "20220704232936",
+   "20220523113047",
+   "20220120010730",
+   "20211207183818",
+   "20210921222430",
+   "20210727085311",
+   "20210509225659",
+   "20210420184416"
+  ],
+  "snaps": 35
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/01/03/valuing-startup-options/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/01/03/valuing-startup-options/comment-page-1/index.html",
+  "candidates": [
+   "20101125172319"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/01/10/project-euler-mit-mystery-hunt-edition/",
+  "kind": "post",
+  "path": "pages/articles/2010/01/10/project-euler-mit-mystery-hunt-edition/index.html",
+  "candidates": [
+   "20220630032813",
+   "20220523102300",
+   "20211201085306",
+   "20210921222216",
+   "20210509215504",
+   "20210302003656",
+   "20201128095746",
+   "20201109004214"
+  ],
+  "snaps": 18
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/01/10/project-euler-mit-mystery-hunt-edition/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/01/10/project-euler-mit-mystery-hunt-edition/comment-page-1/index.html",
+  "candidates": [
+   "20220630041714",
+   "20170222014128",
+   "20160421000723"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/01/18/10-days-with-the-google-nexus-one/",
+  "kind": "post",
+  "path": "pages/articles/2010/01/18/10-days-with-the-google-nexus-one/index.html",
+  "candidates": [
+   "20220523121339",
+   "20211201102243",
+   "20210617022019",
+   "20201128104118",
+   "20170114113646",
+   "20160819182326",
+   "20160421090638",
+   "20160421000716"
+  ],
+  "snaps": 13
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/01/18/10-days-with-the-google-nexus-one/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/01/18/10-days-with-the-google-nexus-one/comment-page-1/index.html",
+  "candidates": [
+   "20220630050706",
+   "20170222014136"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/02/",
+  "kind": "archive",
+  "path": "pages/articles/2010/02/index.html",
+  "candidates": [
+   "20220705011433",
+   "20220630043338",
+   "20220215192803",
+   "20220120024030",
+   "20220120021029",
+   "20211020044143",
+   "20210922000653",
+   "20210727090146"
+  ],
+  "snaps": 38
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/02/08/parque-de-las-ciencas-aka-space-rocket-plaza/",
+  "kind": "post",
+  "path": "pages/articles/2010/02/08/parque-de-las-ciencas-aka-space-rocket-plaza/index.html",
+  "candidates": [
+   "20211201100740",
+   "20210509231522",
+   "20170114142217",
+   "20160819182148",
+   "20160421104746",
+   "20160416204831",
+   "20111104184457",
+   "20111103061717"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/02/08/parque-de-las-ciencas-aka-space-rocket-plaza/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/02/08/parque-de-las-ciencas-aka-space-rocket-plaza/comment-page-1/index.html",
+  "candidates": [
+   "20170222182550"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/03/",
+  "kind": "archive",
+  "path": "pages/articles/2010/03/index.html",
+  "candidates": [
+   "20220630051814",
+   "20220630051335",
+   "20220205014020",
+   "20220120025537",
+   "20220120025047",
+   "20211020053519",
+   "20210922001615",
+   "20210727095635"
+  ],
+  "snaps": 46
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/03/11/acela-wifi-finally-here-could-be-better/",
+  "kind": "post",
+  "path": "pages/articles/2010/03/11/acela-wifi-finally-here-could-be-better/index.html",
+  "candidates": [
+   "20211201101527",
+   "20211020042607",
+   "20170114075832",
+   "20160819115343",
+   "20160421104745",
+   "20160416205012",
+   "20111104182840",
+   "20111103054959"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/04/",
+  "kind": "archive",
+  "path": "pages/articles/2010/04/index.html",
+  "candidates": [
+   "20220630040818",
+   "20220203122942",
+   "20220120014612",
+   "20211020040144",
+   "20210727082530",
+   "20210509223336",
+   "20201028074151",
+   "20200811150848"
+  ],
+  "snaps": 41
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/04/04/synthetic-biology-and-big-ball-of-mud/",
+  "kind": "post",
+  "path": "pages/articles/2010/04/04/synthetic-biology-and-big-ball-of-mud/index.html",
+  "candidates": [
+   "20211201095742",
+   "20211201090827",
+   "20170114143722",
+   "20160819143208",
+   "20160421085959",
+   "20160416204654",
+   "20111104101252",
+   "20111102192320"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/04/04/synthetic-biology-and-big-ball-of-mud/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/04/04/synthetic-biology-and-big-ball-of-mud/comment-page-1/index.html",
+  "candidates": [
+   "20170222182559"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/04/11/a-computer-scientist-bids-on-a-house/",
+  "kind": "post",
+  "path": "pages/articles/2010/04/11/a-computer-scientist-bids-on-a-house/index.html",
+  "candidates": [
+   "20220630044244",
+   "20211201092314",
+   "20210509221801",
+   "20191020063505",
+   "20190716225456",
+   "20170114110213",
+   "20160819182205",
+   "20160421124809"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/04/18/quick-house-update/",
+  "kind": "post",
+  "path": "pages/articles/2010/04/18/quick-house-update/index.html",
+  "candidates": [
+   "20220704233754",
+   "20220120011659",
+   "20210921222926",
+   "20210509220132",
+   "20210420194549",
+   "20210118103451",
+   "20201022004937",
+   "20200811160302"
+  ],
+  "snaps": 17
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/05/",
+  "kind": "archive",
+  "path": "pages/articles/2010/05/index.html",
+  "candidates": [
+   "20220704233215",
+   "20220630044905",
+   "20220120022619",
+   "20220120011032",
+   "20220112192338",
+   "20211020050101",
+   "20210921222632",
+   "20210727092121"
+  ],
+  "snaps": 44
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/05/02/end-of-the-world-insurance-the-financial-halting-problem/",
+  "kind": "post",
+  "path": "pages/articles/2010/05/02/end-of-the-world-insurance-the-financial-halting-problem/index.html",
+  "candidates": [
+   "20220705011713",
+   "20220120024301",
+   "20211201103314",
+   "20210922000920",
+   "20210509233649",
+   "20210420203828",
+   "20210118113455",
+   "20201022014052"
+  ],
+  "snaps": 16
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/05/09/device-convergence-or-how-i-learned-to-stop-worrying-and-love-the-kindle/",
+  "kind": "post",
+  "path": "pages/articles/2010/05/09/device-convergence-or-how-i-learned-to-stop-worrying-and-love-the-kindle/index.html",
+  "candidates": [
+   "20220630041749",
+   "20220630040518",
+   "20211201094900",
+   "20211201093346",
+   "20170114140413",
+   "20160819180055",
+   "20160421085956",
+   "20160416204848"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/05/09/device-convergence-or-how-i-learned-to-stop-worrying-and-love-the-kindle/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/05/09/device-convergence-or-how-i-learned-to-stop-worrying-and-love-the-kindle/comment-page-1/index.html",
+  "candidates": [
+   "20170222182338"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/05/16/a-timeless-way-of-building-or-why-do-all-these-houses-suck/",
+  "kind": "post",
+  "path": "pages/articles/2010/05/16/a-timeless-way-of-building-or-why-do-all-these-houses-suck/index.html",
+  "candidates": [
+   "20220704234020",
+   "20220120014001",
+   "20220120012022",
+   "20210921223252",
+   "20210509220332",
+   "20210420191828",
+   "20210118101008",
+   "20201022002347"
+  ],
+  "snaps": 17
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/05/16/a-timeless-way-of-building-or-why-do-all-these-houses-suck/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/05/16/a-timeless-way-of-building-or-why-do-all-these-houses-suck/comment-page-1/index.html",
+  "candidates": [
+   "20190706211220",
+   "20170222182901"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/06/",
+  "kind": "archive",
+  "path": "pages/articles/2010/06/index.html",
+  "candidates": [
+   "20220704234359",
+   "20220630033955",
+   "20220120012302",
+   "20220120011617",
+   "20211020030900",
+   "20210921223435",
+   "20210727074329",
+   "20210509220022"
+  ],
+  "snaps": 44
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/06/14/normal-accidents-and-stock-market-crashes/",
+  "kind": "post",
+  "path": "pages/articles/2010/06/14/normal-accidents-and-stock-market-crashes/index.html",
+  "candidates": [
+   "20220704235713",
+   "20220120013349",
+   "20211201100813",
+   "20210921225003",
+   "20210509221652",
+   "20210420200703",
+   "20210118105912",
+   "20201022011001"
+  ],
+  "snaps": 16
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/06/27/analysis-of-may-6th-the-importance-of-near-misses/",
+  "kind": "post",
+  "path": "pages/articles/2010/06/27/analysis-of-may-6th-the-importance-of-near-misses/index.html",
+  "candidates": [
+   "20211201092232",
+   "20210509231022",
+   "20200811161838",
+   "20170114132529",
+   "20160819182302",
+   "20160421115704",
+   "20160421001852",
+   "20160416202648"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/07/",
+  "kind": "archive",
+  "path": "pages/articles/2010/07/index.html",
+  "candidates": [
+   "20220704235406",
+   "20220630042135",
+   "20220307232215",
+   "20220120015705",
+   "20220120013002",
+   "20211020042426",
+   "20210921224537",
+   "20210727084700"
+  ],
+  "snaps": 45
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/07/11/passive-personal-networking-how-to-let-others-network-for-you/",
+  "kind": "post",
+  "path": "pages/articles/2010/07/11/passive-personal-networking-how-to-let-others-network-for-you/index.html",
+  "candidates": [
+   "20220523111246",
+   "20211201100336",
+   "20211020040851",
+   "20190819162242",
+   "20170114081654",
+   "20160819120727",
+   "20160421012421",
+   "20160416202805"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/07/18/debs-2010-highlights/",
+  "kind": "post",
+  "path": "pages/articles/2010/07/18/debs-2010-highlights/index.html",
+  "candidates": [
+   "20211201085156",
+   "20211020044229",
+   "20190819164119",
+   "20170114143647",
+   "20160819182258",
+   "20160421074908",
+   "20160416211501",
+   "20111104124413"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/07/26/platonic-browser-session-management/",
+  "kind": "post",
+  "path": "pages/articles/2010/07/26/platonic-browser-session-management/index.html",
+  "candidates": [
+   "20211201103101",
+   "20211020035756",
+   "20190819161759",
+   "20170114143700",
+   "20160819180341",
+   "20160421061342",
+   "20160416203653",
+   "20150303151851"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/08/",
+  "kind": "archive",
+  "path": "pages/articles/2010/08/index.html",
+  "candidates": [
+   "20220630050439",
+   "20220630040254",
+   "20220120024425",
+   "20220120013925",
+   "20220112192338",
+   "20211020052134",
+   "20210921225721",
+   "20210727094221"
+  ],
+  "snaps": 43
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/08/29/non-destructive-process-inspection-on-osx-blog-post-recovery/",
+  "kind": "post",
+  "path": "pages/articles/2010/08/29/non-destructive-process-inspection-on-osx-blog-post-recovery/index.html",
+  "candidates": [
+   "20211201095852",
+   "20190819163942",
+   "20170114080145",
+   "20160819115550",
+   "20160421052308",
+   "20160416202653",
+   "20150503023116",
+   "20150401075654"
+  ],
+  "snaps": 13
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/10/",
+  "kind": "archive",
+  "path": "pages/articles/2010/10/index.html",
+  "candidates": [
+   "20220630050938",
+   "20220630034426",
+   "20220215192802",
+   "20220120024823",
+   "20220120012219",
+   "20211020052649",
+   "20210921223343",
+   "20210727094716"
+  ],
+  "snaps": 39
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/10/17/apple-is-a-luxury-brand-android-will-never-be/",
+  "kind": "post",
+  "path": "pages/articles/2010/10/17/apple-is-a-luxury-brand-android-will-never-be/index.html",
+  "candidates": [
+   "20220523115859",
+   "20211201101059",
+   "20211201083945",
+   "20210509214604",
+   "20210302020354",
+   "20200928161440",
+   "20170114084926",
+   "20160819182112"
+  ],
+  "snaps": 22
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/10/17/apple-is-a-luxury-brand-android-will-never-be/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/10/17/apple-is-a-luxury-brand-android-will-never-be/comment-page-1/index.html",
+  "candidates": [
+   "20220630035947",
+   "20210420191350",
+   "20170222182415",
+   "20130429080236"
+  ],
+  "snaps": 4
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/10/24/lean-startups-and-the-theory-of-the-firm/",
+  "kind": "post",
+  "path": "pages/articles/2010/10/24/lean-startups-and-the-theory-of-the-firm/index.html",
+  "candidates": [
+   "20220523114024",
+   "20211201101131",
+   "20210509232210",
+   "20201128110523",
+   "20190819164018",
+   "20170114142248",
+   "20160819182224",
+   "20160421002949"
+  ],
+  "snaps": 14
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/11/",
+  "kind": "archive",
+  "path": "pages/articles/2010/11/index.html",
+  "candidates": [
+   "20220630040026",
+   "20220523104800",
+   "20220120013655",
+   "20211020034635",
+   "20211020033237",
+   "20210727081303",
+   "20210509222449",
+   "20191118210320"
+  ],
+  "snaps": 38
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/11/07/what-the-rally-for-sanity-meant-for-me/",
+  "kind": "post",
+  "path": "pages/articles/2010/11/07/what-the-rally-for-sanity-meant-for-me/index.html",
+  "candidates": [
+   "20220630035205",
+   "20211201091702",
+   "20211201090928",
+   "20170114140434",
+   "20160819182303",
+   "20160421025857",
+   "20160416205039",
+   "20131221153930"
+  ],
+  "snaps": 13
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/11/07/what-the-rally-for-sanity-meant-for-me/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/11/07/what-the-rally-for-sanity-meant-for-me/comment-page-1/index.html",
+  "candidates": [
+   "20170222182628",
+   "20111104164649",
+   "20111103034241"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/11/14/proactive-assumption-violation-avoiding-bugs-by-behaving-badly/",
+  "kind": "post",
+  "path": "pages/articles/2010/11/14/proactive-assumption-violation-avoiding-bugs-by-behaving-badly/index.html",
+  "candidates": [
+   "20220630051825",
+   "20220630043014",
+   "20211020053549",
+   "20211020043634",
+   "20170114140858",
+   "20160819182403",
+   "20160421052307",
+   "20160416203956"
+  ],
+  "snaps": 15
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/11/14/proactive-assumption-violation-avoiding-bugs-by-behaving-badly/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/11/14/proactive-assumption-violation-avoiding-bugs-by-behaving-badly/comment-page-1/index.html",
+  "candidates": [
+   "20211201095010",
+   "20211201084417",
+   "20191020054250",
+   "20190716222012",
+   "20170222182251",
+   "20111104150126",
+   "20111103013644"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/11/21/captchas-the-bear-proof-trash-can-problem/",
+  "kind": "post",
+  "path": "pages/articles/2010/11/21/captchas-the-bear-proof-trash-can-problem/index.html",
+  "candidates": [
+   "20220630034349",
+   "20211201093026",
+   "20211201090224",
+   "20201109001705",
+   "20190914030619",
+   "20190913013551",
+   "20190812203748",
+   "20190709105742"
+  ],
+  "snaps": 40
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/11/21/captchas-the-bear-proof-trash-can-problem/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/11/21/captchas-the-bear-proof-trash-can-problem/comment-page-1/index.html",
+  "candidates": [
+   "20170222182554",
+   "20141120232832",
+   "20111104113018",
+   "20111102204330",
+   "20101129041523"
+  ],
+  "snaps": 5
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/11/29/three-months-without-cable/",
+  "kind": "post",
+  "path": "pages/articles/2010/11/29/three-months-without-cable/index.html",
+  "candidates": [
+   "20220523102421",
+   "20211201093648",
+   "20211201085359",
+   "20190819160609",
+   "20170114142309",
+   "20160604195503",
+   "20160421011001",
+   "20160416203914"
+  ],
+  "snaps": 16
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/11/29/three-months-without-cable/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/11/29/three-months-without-cable/comment-page-1/index.html",
+  "candidates": [
+   "20220630051412",
+   "20170222182726",
+   "20111104194704",
+   "20111103100411"
+  ],
+  "snaps": 4
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/12/",
+  "kind": "archive",
+  "path": "pages/articles/2010/12/index.html",
+  "candidates": [
+   "20220630044142",
+   "20220630040142",
+   "20220120021925",
+   "20220120013736",
+   "20220118230502",
+   "20211020045154",
+   "20210921225558",
+   "20210727091242"
+  ],
+  "snaps": 45
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/12/06/yes-virginia-you-can-work-on-great-technology-at-startups/",
+  "kind": "post",
+  "path": "pages/articles/2010/12/06/yes-virginia-you-can-work-on-great-technology-at-startups/index.html",
+  "candidates": [
+   "20220523123055",
+   "20220319094138",
+   "20211201103727",
+   "20211201094051",
+   "20201128114915",
+   "20200811165805",
+   "20191118223726",
+   "20190915062914"
+  ],
+  "snaps": 30
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/12/06/yes-virginia-you-can-work-on-great-technology-at-startups/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/12/06/yes-virginia-you-can-work-on-great-technology-at-startups/comment-page-1/index.html",
+  "candidates": [
+   "20220630033629",
+   "20191214205007",
+   "20190819160614",
+   "20160817110901",
+   "20160416205247",
+   "20111104080309",
+   "20111102174552"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/12/12/there-can-be-too-many-suckers-at-the-table/",
+  "kind": "post",
+  "path": "pages/articles/2010/12/12/there-can-be-too-many-suckers-at-the-table/index.html",
+  "candidates": [
+   "20220630032949",
+   "20220523111407",
+   "20220319013154",
+   "20220120010502",
+   "20211020040943",
+   "20211020025145",
+   "20210727073419",
+   "20210509214822"
+  ],
+  "snaps": 32
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/12/20/the-year-in-bookmarks-2010/",
+  "kind": "post",
+  "path": "pages/articles/2010/12/20/the-year-in-bookmarks-2010/index.html",
+  "candidates": [
+   "20220705011635",
+   "20220630033214",
+   "20220318195356",
+   "20220120024233",
+   "20220120010644",
+   "20211020025339",
+   "20210922000845",
+   "20210727073530"
+  ],
+  "snaps": 56
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/12/27/book-review-early-exits-exit-strategies-for-entrepreneurs-and-angel-investors/",
+  "kind": "post",
+  "path": "pages/articles/2010/12/27/book-review-early-exits-exit-strategies-for-entrepreneurs-and-angel-investors/index.html",
+  "candidates": [
+   "20220630042617",
+   "20220523120829",
+   "20220319013156",
+   "20220120023506",
+   "20220120020159",
+   "20211020051110",
+   "20210921232751",
+   "20210727093134"
+  ],
+  "snaps": 40
+ },
+ {
+  "url": "http://innocuous.org/articles/2010/12/27/book-review-early-exits-exit-strategies-for-entrepreneurs-and-angel-investors/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2010/12/27/book-review-early-exits-exit-strategies-for-entrepreneurs-and-angel-investors/comment-page-1/index.html",
+  "candidates": [
+   "20220630043410",
+   "20211201100302",
+   "20170114142255",
+   "20161009070414",
+   "20160819182350",
+   "20111105005230"
+  ],
+  "snaps": 6
+ },
+ {
+  "url": "http://innocuous.org/articles/2011/01/",
+  "kind": "archive",
+  "path": "pages/articles/2011/01/index.html",
+  "candidates": [
+   "20220630043518",
+   "20220203122940",
+   "20220120021136",
+   "20211020044356",
+   "20210727090439",
+   "20210509230633",
+   "20210118093605",
+   "20201028074638"
+  ],
+  "snaps": 38
+ },
+ {
+  "url": "http://innocuous.org/articles/2011/01/03/toddler-science-and-big-data/",
+  "kind": "post",
+  "path": "pages/articles/2011/01/03/toddler-science-and-big-data/index.html",
+  "candidates": [
+   "20220630033423",
+   "20220319094140",
+   "20220208074503",
+   "20220120010947",
+   "20211020025908",
+   "20210921230647",
+   "20210727073908",
+   "20210509215253"
+  ],
+  "snaps": 42
+ },
+ {
+  "url": "http://innocuous.org/articles/2011/01/03/toddler-science-and-big-data/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2011/01/03/toddler-science-and-big-data/comment-page-1/index.html",
+  "candidates": [
+   "20120203125717",
+   "20111021111220"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/2011/02/",
+  "kind": "archive",
+  "path": "pages/articles/2011/02/index.html",
+  "candidates": [
+   "20220630032239",
+   "20220128231930",
+   "20220120010008",
+   "20211020024326",
+   "20210727072702",
+   "20210509213626",
+   "20200928141157",
+   "20191115222733"
+  ],
+  "snaps": 35
+ },
+ {
+  "url": "http://innocuous.org/articles/2011/02/12/recommending-franklyn-d-resort-fdr-jamaica/",
+  "kind": "post",
+  "path": "pages/articles/2011/02/12/recommending-franklyn-d-resort-fdr-jamaica/index.html",
+  "candidates": [
+   "20220630035243",
+   "20220120012920",
+   "20220112192336",
+   "20211020033132",
+   "20210921230734",
+   "20210727075953",
+   "20210509221138",
+   "20210420192811"
+  ],
+  "snaps": 39
+ },
+ {
+  "url": "http://innocuous.org/articles/2012/06/",
+  "kind": "archive",
+  "path": "pages/articles/2012/06/index.html",
+  "candidates": [
+   "20220705004742",
+   "20220630051101",
+   "20220120024920",
+   "20220120021404",
+   "20220117103106",
+   "20211020052721",
+   "20210921234028",
+   "20210727094758"
+  ],
+  "snaps": 38
+ },
+ {
+  "url": "http://innocuous.org/articles/2012/06/18/lessons-learned-from-startup-weekend/",
+  "kind": "post",
+  "path": "pages/articles/2012/06/18/lessons-learned-from-startup-weekend/index.html",
+  "candidates": [
+   "20220630051257",
+   "20220120025018",
+   "20211020052752",
+   "20210921222531",
+   "20210727094838",
+   "20210509234359",
+   "20210420184514",
+   "20210118094109"
+  ],
+  "snaps": 34
+ },
+ {
+  "url": "http://innocuous.org/articles/2015/03/",
+  "kind": "archive",
+  "path": "pages/articles/2015/03/index.html",
+  "candidates": [
+   "20220630051834",
+   "20220630034038",
+   "20220127232329",
+   "20220120025651",
+   "20220120011739",
+   "20211020053619",
+   "20210921223021",
+   "20210727095800"
+  ],
+  "snaps": 33
+ },
+ {
+  "url": "http://innocuous.org/articles/2015/03/28/identify-manage-honey-badger-developer/",
+  "kind": "post",
+  "path": "pages/articles/2015/03/28/identify-manage-honey-badger-developer/index.html",
+  "candidates": [
+   "20220630040218",
+   "20220327153320",
+   "20220127232330",
+   "20220120020757",
+   "20220120013814",
+   "20211020035011",
+   "20210921233338",
+   "20210727081456"
+  ],
+  "snaps": 52
+ },
+ {
+  "url": "http://innocuous.org/articles/2015/03/28/identify-manage-honey-badger-developer/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2015/03/28/identify-manage-honey-badger-developer/comment-page-1/index.html",
+  "candidates": [
+   "20211201100951",
+   "20170114093918",
+   "20160819123835",
+   "20160310080648",
+   "20150331224257"
+  ],
+  "snaps": 5
+ },
+ {
+  "url": "http://innocuous.org/articles/2015/04/",
+  "kind": "archive",
+  "path": "pages/articles/2015/04/index.html",
+  "candidates": [
+   "20220630040929",
+   "20220630034854",
+   "20220120014647",
+   "20220120012725",
+   "20220105154908",
+   "20211020040335",
+   "20210921224006",
+   "20210727082627"
+  ],
+  "snaps": 33
+ },
+ {
+  "url": "http://innocuous.org/articles/2015/04/06/tips-for-not-giving-a-sales-pitch-at-a-meetup/",
+  "kind": "post",
+  "path": "pages/articles/2015/04/06/tips-for-not-giving-a-sales-pitch-at-a-meetup/index.html",
+  "candidates": [
+   "20220630034816",
+   "20220208074503",
+   "20220120012648",
+   "20211020032501",
+   "20210727075445",
+   "20210509220934",
+   "20210420183845",
+   "20210118092706"
+  ],
+  "snaps": 31
+ },
+ {
+  "url": "http://innocuous.org/articles/2015/04/28/in-sales-questions-are-more-valuable-than-answers/",
+  "kind": "post",
+  "path": "pages/articles/2015/04/28/in-sales-questions-are-more-valuable-than-answers/index.html",
+  "candidates": [
+   "20220630043726",
+   "20220120021329",
+   "20220118230455",
+   "20211020044611",
+   "20210921230016",
+   "20210727090648",
+   "20210509230826",
+   "20210420192045"
+  ],
+  "snaps": 27
+ },
+ {
+  "url": "http://innocuous.org/articles/2015/05/",
+  "kind": "archive",
+  "path": "pages/articles/2015/05/index.html",
+  "candidates": [
+   "20220704235927",
+   "20220630045000",
+   "20220120022724",
+   "20220120013501",
+   "20220105154907",
+   "20211020050222",
+   "20210921225130",
+   "20210727092252"
+  ],
+  "snaps": 28
+ },
+ {
+  "url": "http://innocuous.org/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/",
+  "kind": "post",
+  "path": "pages/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/index.html",
+  "candidates": [
+   "20220630045027",
+   "20220205014009",
+   "20220120022757",
+   "20211020050303",
+   "20210921233531",
+   "20210727092334",
+   "20210509232320",
+   "20210420195649"
+  ],
+  "snaps": 28
+ },
+ {
+  "url": "http://innocuous.org/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/comment-page-1/",
+  "kind": "post",
+  "path": "pages/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/comment-page-1/index.html",
+  "candidates": [
+   "20211201103920",
+   "20170114123452",
+   "20160819180424"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/articles/category/books/",
+  "kind": "category",
+  "path": "pages/articles/category/books/index.html",
+  "candidates": [
+   "20220705010922",
+   "20220630035834",
+   "20220120023539",
+   "20220120013538",
+   "20220105154905",
+   "20211020034406",
+   "20210922000126",
+   "20210727081009"
+  ],
+  "snaps": 49
+ },
+ {
+  "url": "http://innocuous.org/articles/category/business/",
+  "kind": "category",
+  "path": "pages/articles/category/business/index.html",
+  "candidates": [
+   "20220704235128",
+   "20220630045052",
+   "20220120022831",
+   "20220120012804",
+   "20211020050343",
+   "20210921224235",
+   "20210727092418",
+   "20210509232355"
+  ],
+  "snaps": 48
+ },
+ {
+  "url": "http://innocuous.org/articles/category/business/page/2/",
+  "kind": "category",
+  "path": "pages/articles/category/business/page/2/index.html",
+  "candidates": [
+   "20220523112156",
+   "20211201095416",
+   "20170114103807",
+   "20160819130203",
+   "20160421021244",
+   "20160416203120",
+   "20111021054636"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/category/computer-science/",
+  "kind": "category",
+  "path": "pages/articles/category/computer-science/index.html",
+  "candidates": [
+   "20090101210052",
+   "20080925071626",
+   "20080828013108"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/articles/category/management/",
+  "kind": "category",
+  "path": "pages/articles/category/management/index.html",
+  "candidates": [
+   "20220630042431",
+   "20220630034932",
+   "20220120020047",
+   "20220118230458",
+   "20211020042930",
+   "20210727085141",
+   "20210509225540",
+   "20200803084404"
+  ],
+  "snaps": 40
+ },
+ {
+  "url": "http://innocuous.org/articles/category/media/",
+  "kind": "category",
+  "path": "pages/articles/category/media/index.html",
+  "candidates": [
+   "20090101210058",
+   "20080828013434"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/category/misc/",
+  "kind": "category",
+  "path": "pages/articles/category/misc/index.html",
+  "candidates": [
+   "20220630051221",
+   "20220630045414",
+   "20220120024948",
+   "20220120023150",
+   "20211020050747",
+   "20210922001506",
+   "20210727092753",
+   "20210509232655"
+  ],
+  "snaps": 42
+ },
+ {
+  "url": "http://innocuous.org/articles/category/misc/page/2/",
+  "kind": "category",
+  "path": "pages/articles/category/misc/page/2/index.html",
+  "candidates": [
+   "20220705000430",
+   "20220120013850",
+   "20210921225642",
+   "20210509222650",
+   "20210420184045",
+   "20210118093015",
+   "20201021235342",
+   "20200811150550"
+  ],
+  "snaps": 17
+ },
+ {
+  "url": "http://innocuous.org/articles/category/politics/",
+  "kind": "category",
+  "path": "pages/articles/category/politics/index.html",
+  "candidates": [
+   "20220630050326",
+   "20220630034621",
+   "20220120024328",
+   "20220120012455",
+   "20211020031900",
+   "20210922000955",
+   "20210727075037",
+   "20210509220424"
+  ],
+  "snaps": 44
+ },
+ {
+  "url": "http://innocuous.org/articles/category/software-development/",
+  "kind": "category",
+  "path": "pages/articles/category/software-development/index.html",
+  "candidates": [
+   "20090101210103",
+   "20080828013310"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/category/tech/",
+  "kind": "category",
+  "path": "pages/articles/category/tech/index.html",
+  "candidates": [
+   "20220630051840",
+   "20220630034118",
+   "20220307132659",
+   "20220120025714",
+   "20220120011819",
+   "20211020053719",
+   "20210921223114",
+   "20210727095841"
+  ],
+  "snaps": 50
+ },
+ {
+  "url": "http://innocuous.org/articles/category/tech/page/2/",
+  "kind": "category",
+  "path": "pages/articles/category/tech/page/2/index.html",
+  "candidates": [
+   "20211201095309",
+   "20170114105040",
+   "20160819182159",
+   "20160421064336",
+   "20160416203143",
+   "20111105000227"
+  ],
+  "snaps": 6
+ },
+ {
+  "url": "http://innocuous.org/articles/category/tech/page/3/",
+  "kind": "category",
+  "path": "pages/articles/category/tech/page/3/index.html",
+  "candidates": [
+   "20170222182359"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/category/tools/",
+  "kind": "category",
+  "path": "pages/articles/category/tools/index.html",
+  "candidates": [
+   "20090101210108",
+   "20080828012616"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/category/web/",
+  "kind": "category",
+  "path": "pages/articles/category/web/index.html",
+  "candidates": [
+   "20090101210113",
+   "20080828012732"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/articles/page/1/",
+  "kind": "page",
+  "path": "pages/articles/page/1/index.html",
+  "candidates": [
+   "20081204101258"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/page/2/",
+  "kind": "page",
+  "path": "pages/articles/page/2/index.html",
+  "candidates": [
+   "20080828013722"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/page/3/",
+  "kind": "page",
+  "path": "pages/articles/page/3/index.html",
+  "candidates": [
+   "20080828012556"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/page/4/",
+  "kind": "page",
+  "path": "pages/articles/page/4/index.html",
+  "candidates": [
+   "20080828012859"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/agile/",
+  "kind": "tag",
+  "path": "pages/articles/tag/agile/index.html",
+  "candidates": [
+   "20220523122030",
+   "20220523103646",
+   "20211201102815",
+   "20211020031236",
+   "20190819160627",
+   "20170114122257",
+   "20160819135406",
+   "20160421022559"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/algorithms/",
+  "kind": "tag",
+  "path": "pages/articles/tag/algorithms/index.html",
+  "candidates": [
+   "20220630045841",
+   "20220630043124",
+   "20211201101925",
+   "20211201100000",
+   "20191020065125",
+   "20170114144356",
+   "20160819135728",
+   "20160416212627"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/angel/",
+  "kind": "tag",
+  "path": "pages/articles/tag/angel/index.html",
+  "candidates": [
+   "20220630042904",
+   "20220630032500",
+   "20220120020535",
+   "20220117103103",
+   "20211020043421",
+   "20210921221819",
+   "20210727085605",
+   "20210509225930"
+  ],
+  "snaps": 35
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/apple/",
+  "kind": "tag",
+  "path": "pages/articles/tag/apple/index.html",
+  "candidates": [
+   "20220630035522",
+   "20220523120427",
+   "20211201092029",
+   "20211020050626",
+   "20210509221446",
+   "20210420201955",
+   "20191020064627",
+   "20190819165744"
+  ],
+  "snaps": 22
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/architecture/",
+  "kind": "tag",
+  "path": "pages/articles/tag/architecture/index.html",
+  "candidates": [
+   "20220705005234",
+   "20220630041041",
+   "20220120021852",
+   "20211201093757",
+   "20210921234447",
+   "20210509231407",
+   "20210420192559",
+   "20210118101417"
+  ],
+  "snaps": 22
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/benchmark/",
+  "kind": "tag",
+  "path": "pages/articles/tag/benchmark/index.html",
+  "candidates": [
+   "20220630040106",
+   "20211201095817",
+   "20211020034908",
+   "20170114142207",
+   "20160819182107",
+   "20160421104750",
+   "20160416210113",
+   "20111021190649"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/biology/",
+  "kind": "tag",
+  "path": "pages/articles/tag/biology/index.html",
+  "candidates": [
+   "20211201092508",
+   "20211201083317",
+   "20170114142235",
+   "20160819132939",
+   "20160421093319",
+   "20160416204435",
+   "20111102190816"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/blogging/",
+  "kind": "tag",
+  "path": "pages/articles/tag/blogging/index.html",
+  "candidates": [
+   "20211201094127",
+   "20210509223957",
+   "20170114133130",
+   "20160819143054",
+   "20160421064711",
+   "20160421000659",
+   "20151027144430",
+   "20111104101233"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/boston/",
+  "kind": "tag",
+  "path": "pages/articles/tag/boston/index.html",
+  "candidates": [
+   "20220523105533",
+   "20211201092625",
+   "20210617015658",
+   "20200928154516",
+   "20170114143634",
+   "20160819130025",
+   "20160421025859",
+   "20160416211015"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/career/",
+  "kind": "tag",
+  "path": "pages/articles/tag/career/index.html",
+  "candidates": [
+   "20220523110652",
+   "20211201092750",
+   "20211020040242",
+   "20170114144403",
+   "20160819182243",
+   "20160421012422",
+   "20160416203742",
+   "20111021065451"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/caribbean/",
+  "kind": "tag",
+  "path": "pages/articles/tag/caribbean/index.html",
+  "candidates": [
+   "20220630032717",
+   "20220307232209",
+   "20220120010414",
+   "20211020024940",
+   "20210921231138",
+   "20210727073256",
+   "20210509214701",
+   "20210420193148"
+  ],
+  "snaps": 32
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/cloud/",
+  "kind": "tag",
+  "path": "pages/articles/tag/cloud/index.html",
+  "candidates": [
+   "20211201093227",
+   "20211201091217",
+   "20170114142203",
+   "20160819180027",
+   "20160421100801",
+   "20160416204000",
+   "20111102184818"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/computer-science/",
+  "kind": "tag",
+  "path": "pages/articles/tag/computer-science/index.html",
+  "candidates": [
+   "20220705005813",
+   "20220630040629",
+   "20220120022323",
+   "20211020035700",
+   "20210921234929",
+   "20210509231826",
+   "20210420192130",
+   "20210118101217"
+  ],
+  "snaps": 24
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/cto/",
+  "kind": "tag",
+  "path": "pages/articles/tag/cto/index.html",
+  "candidates": [
+   "20211201093110",
+   "20170114132237",
+   "20160819142335",
+   "20160421021250",
+   "20160416203923",
+   "20111104133610",
+   "20111102233342"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/culture/",
+  "kind": "tag",
+  "path": "pages/articles/tag/culture/index.html",
+  "candidates": [
+   "20220705000135",
+   "20220120013615",
+   "20220120012101",
+   "20210921225344",
+   "20210509222252",
+   "20210420185040",
+   "20210118095010",
+   "20201021235920"
+  ],
+  "snaps": 18
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/database/",
+  "kind": "tag",
+  "path": "pages/articles/tag/database/index.html",
+  "candidates": [
+   "20220630051019",
+   "20211201103208",
+   "20211020035853",
+   "20210617033434",
+   "20170114143718",
+   "20160819182252",
+   "20160421125218",
+   "20160416205243"
+  ],
+  "snaps": 12
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/debugging/",
+  "kind": "tag",
+  "path": "pages/articles/tag/debugging/index.html",
+  "candidates": [
+   "20211201083552",
+   "20170114133304",
+   "20160819182308",
+   "20160421052310",
+   "20160416203927",
+   "20150303150228",
+   "20111021070926",
+   "20110914203108"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/design/",
+  "kind": "tag",
+  "path": "pages/articles/tag/design/index.html",
+  "candidates": [
+   "20220630041115",
+   "20211201093832",
+   "20211201084848",
+   "20170114083813",
+   "20160819121714",
+   "20160421045933",
+   "20160416202827",
+   "20141110014435"
+  ],
+  "snaps": 13
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/economics/",
+  "kind": "tag",
+  "path": "pages/articles/tag/economics/index.html",
+  "candidates": [
+   "20220523112350",
+   "20211201084637",
+   "20210509215346",
+   "20201128105046",
+   "20190819162927",
+   "20170114144343",
+   "20160819182230",
+   "20160421124902"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/education/",
+  "kind": "tag",
+  "path": "pages/articles/tag/education/index.html",
+  "candidates": [
+   "20211201101715",
+   "20211020041919",
+   "20210509232839",
+   "20170114144332",
+   "20160819182214",
+   "20160421120910",
+   "20160416211735",
+   "20111104125036"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/email/",
+  "kind": "tag",
+  "path": "pages/articles/tag/email/index.html",
+  "candidates": [
+   "20211201090736",
+   "20211020033002",
+   "20170114083213",
+   "20160819121442",
+   "20160416204837",
+   "20111104212533"
+  ],
+  "snaps": 6
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/engineering/",
+  "kind": "tag",
+  "path": "pages/articles/tag/engineering/index.html",
+  "candidates": [
+   "20220630045857",
+   "20220630043757",
+   "20211201101958",
+   "20211020044734",
+   "20210509233138",
+   "20200811163936",
+   "20190819170212",
+   "20170114143616"
+  ],
+  "snaps": 18
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/event-processing/",
+  "kind": "tag",
+  "path": "pages/articles/tag/event-processing/index.html",
+  "candidates": [
+   "20211201091824",
+   "20211020043802",
+   "20190716224716",
+   "20170114115529",
+   "20160819182220",
+   "20160421082204",
+   "20160416212052",
+   "20111104125304"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/fdr/",
+  "kind": "tag",
+  "path": "pages/articles/tag/fdr/index.html",
+  "candidates": [
+   "20220630043157",
+   "20220208074509",
+   "20220120020838",
+   "20211020043844",
+   "20210921224703",
+   "20210727085934",
+   "20210509230247",
+   "20210420190635"
+  ],
+  "snaps": 29
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/finance/",
+  "kind": "tag",
+  "path": "pages/articles/tag/finance/index.html",
+  "candidates": [
+   "20220630051558",
+   "20220630035050",
+   "20220120025309",
+   "20220118230500",
+   "20211020053144",
+   "20210727095300",
+   "20210509234606",
+   "20191115223232"
+  ],
+  "snaps": 30
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/financing/",
+  "kind": "tag",
+  "path": "pages/articles/tag/financing/index.html",
+  "candidates": [
+   "20220630035716",
+   "20220523123016",
+   "20220307132700",
+   "20220120013427",
+   "20211020033902",
+   "20210922002120",
+   "20210727080709",
+   "20210509222000"
+  ],
+  "snaps": 33
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/franklyn-d-resort/",
+  "kind": "tag",
+  "path": "pages/articles/tag/franklyn-d-resort/index.html",
+  "candidates": [
+   "20220630050744",
+   "20220120024658",
+   "20211020052512",
+   "20210727094554",
+   "20210509234117",
+   "20201028081554",
+   "20200811154959",
+   "20191115225255"
+  ],
+  "snaps": 27
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/funding/",
+  "kind": "tag",
+  "path": "pages/articles/tag/funding/index.html",
+  "candidates": [
+   "20220630044739",
+   "20220630043551",
+   "20220215192801",
+   "20220120021253",
+   "20211020044441",
+   "20210921235040",
+   "20210727090521",
+   "20210509230748"
+  ],
+  "snaps": 34
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/gadget/",
+  "kind": "tag",
+  "path": "pages/articles/tag/gadget/index.html",
+  "candidates": [
+   "20220630040443",
+   "20220523112118",
+   "20211207180908",
+   "20211201094458",
+   "20210617020715",
+   "20201128102956",
+   "20170114144336",
+   "20160819134030"
+  ],
+  "snaps": 12
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/google/",
+  "kind": "tag",
+  "path": "pages/articles/tag/google/index.html",
+  "candidates": [
+   "20220523122415",
+   "20211201102347",
+   "20201128114317",
+   "20191214220934",
+   "20190819171214",
+   "20170114142258",
+   "20160817110628",
+   "20160421002946"
+  ],
+  "snaps": 15
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/hiring/",
+  "kind": "tag",
+  "path": "pages/articles/tag/hiring/index.html",
+  "candidates": [
+   "20220523121327",
+   "20211201093537",
+   "20211020051626",
+   "20170114140429",
+   "20160819182210",
+   "20160421013150",
+   "20160416203638",
+   "20111021055916"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/imap/",
+  "kind": "tag",
+  "path": "pages/articles/tag/imap/index.html",
+  "candidates": [
+   "20211201094202",
+   "20211020040705",
+   "20170114140420",
+   "20160819124659",
+   "20160416204854",
+   "20111104213830"
+  ],
+  "snaps": 6
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/jamaica/",
+  "kind": "tag",
+  "path": "pages/articles/tag/jamaica/index.html",
+  "candidates": [
+   "20220630051708",
+   "20220208074504",
+   "20220120025400",
+   "20211020053248",
+   "20210727095424",
+   "20210509234711",
+   "20201028093109",
+   "20200811170005"
+  ],
+  "snaps": 30
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/kids/",
+  "kind": "tag",
+  "path": "pages/articles/tag/kids/index.html",
+  "candidates": [
+   "20220630042245",
+   "20220208074507",
+   "20220120015850",
+   "20211020042746",
+   "20210727084922",
+   "20210509225308",
+   "20210118111012",
+   "20201028090114"
+  ],
+  "snaps": 34
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/law/",
+  "kind": "tag",
+  "path": "pages/articles/tag/law/index.html",
+  "candidates": [
+   "20220523123250",
+   "20211207193810",
+   "20210617034325",
+   "20200928160250",
+   "20170114144321",
+   "20160819182308",
+   "20160421025900",
+   "20160416211521"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/lean-startup/",
+  "kind": "tag",
+  "path": "pages/articles/tag/lean-startup/index.html",
+  "candidates": [
+   "20220523123028",
+   "20211201093941",
+   "20210509223727",
+   "20201128114854",
+   "20190819171659",
+   "20170114144317",
+   "20160819125902",
+   "20160421002951"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/lighttpd/",
+  "kind": "tag",
+  "path": "pages/articles/tag/lighttpd/index.html",
+  "candidates": [
+   "20220630045350",
+   "20211201092909",
+   "20170114140416",
+   "20160819180111",
+   "20160416204708",
+   "20111104115336",
+   "20111102211500",
+   "20110816120950"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/management/",
+  "kind": "tag",
+  "path": "pages/articles/tag/management/index.html",
+  "candidates": [
+   "20220523113843",
+   "20220523111128",
+   "20211201094016",
+   "20211020043928",
+   "20190819163910",
+   "20170114121935",
+   "20160819182343",
+   "20160421024223"
+  ],
+  "snaps": 12
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/marketing/",
+  "kind": "tag",
+  "path": "pages/articles/tag/marketing/index.html",
+  "candidates": [
+   "20220523123137",
+   "20220120015410",
+   "20211020053450",
+   "20210921232010",
+   "20210509224834",
+   "20210420204457",
+   "20190819171714",
+   "20170114082359"
+  ],
+  "snaps": 13
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/math/",
+  "kind": "tag",
+  "path": "pages/articles/tag/math/index.html",
+  "candidates": [
+   "20220630051757",
+   "20220630035600",
+   "20211201103658",
+   "20211201092152",
+   "20190716231822",
+   "20170114084119",
+   "20160819180041",
+   "20160416205735"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/media/",
+  "kind": "tag",
+  "path": "pages/articles/tag/media/index.html",
+  "candidates": [
+   "20220630041302",
+   "20211201095926",
+   "20211020040800",
+   "20170114140439",
+   "20160819132457",
+   "20160416204930",
+   "20111104214704"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/meetup/",
+  "kind": "tag",
+  "path": "pages/articles/tag/meetup/index.html",
+  "candidates": [
+   "20220630040331",
+   "20220307232212",
+   "20220120014119",
+   "20211020035416",
+   "20210921235750",
+   "20210727081850",
+   "20210509222753",
+   "20210420202039"
+  ],
+  "snaps": 29
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/metaphor/",
+  "kind": "tag",
+  "path": "pages/articles/tag/metaphor/index.html",
+  "candidates": [
+   "20220630040407",
+   "20211201094314",
+   "20211201093306",
+   "20170114105830",
+   "20160819131146",
+   "20160421052303",
+   "20160416203624",
+   "20141110160039"
+  ],
+  "snaps": 13
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/mit/",
+  "kind": "tag",
+  "path": "pages/articles/tag/mit/index.html",
+  "candidates": [
+   "20220523122157",
+   "20211201102952",
+   "20211201094714",
+   "20210509234151",
+   "20201128104945",
+   "20170114144347",
+   "20160819135723",
+   "20160421094443"
+  ],
+  "snaps": 12
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/mutt/",
+  "kind": "tag",
+  "path": "pages/articles/tag/mutt/index.html",
+  "candidates": [
+   "20211201091419",
+   "20211020044313",
+   "20160819180303",
+   "20160416204911",
+   "20111104214612"
+  ],
+  "snaps": 5
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/noncompetes/",
+  "kind": "tag",
+  "path": "pages/articles/tag/noncompetes/index.html",
+  "candidates": [
+   "20220523120754",
+   "20211207191520",
+   "20210617031742",
+   "20200928154212",
+   "20170114083117",
+   "20160819121423",
+   "20160421031549",
+   "20160416205510"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/optimization/",
+  "kind": "tag",
+  "path": "pages/articles/tag/optimization/index.html",
+  "candidates": [
+   "20220630035128",
+   "20211201103555",
+   "20211201091544",
+   "20170114143621",
+   "20160819182141",
+   "20160421052305",
+   "20160416203053",
+   "20150215054324"
+  ],
+  "snaps": 14
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/osx/",
+  "kind": "tag",
+  "path": "pages/articles/tag/osx/index.html",
+  "candidates": [
+   "20220630034157",
+   "20211201090017",
+   "20211201085604",
+   "20191020054308",
+   "20170114144410",
+   "20160819141445",
+   "20160421054837",
+   "20160416205234"
+  ],
+  "snaps": 10
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/parenting/",
+  "kind": "tag",
+  "path": "pages/articles/tag/parenting/index.html",
+  "candidates": [
+   "20220523104237",
+   "20211201091139",
+   "20210509220735",
+   "20170824125508",
+   "20170114103624",
+   "20160823155147",
+   "20160819180151",
+   "20160421082000"
+  ],
+  "snaps": 14
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/poker/",
+  "kind": "tag",
+  "path": "pages/articles/tag/poker/index.html",
+  "candidates": [
+   "20220630032340",
+   "20220523112817",
+   "20220307232214",
+   "20220120010103",
+   "20211020024451",
+   "20210921232444",
+   "20210727072932",
+   "20210509214112"
+  ],
+  "snaps": 33
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/presenting/",
+  "kind": "tag",
+  "path": "pages/articles/tag/presenting/index.html",
+  "candidates": [
+   "20220630051737",
+   "20220208074502",
+   "20220120025449",
+   "20211020053349",
+   "20210921224323",
+   "20210727095506",
+   "20210509234743",
+   "20210420190309"
+  ],
+  "snaps": 28
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/pricing/",
+  "kind": "tag",
+  "path": "pages/articles/tag/pricing/index.html",
+  "candidates": [
+   "20220704235559",
+   "20220630043443",
+   "20220120013230",
+   "20210921224829",
+   "20210509221603",
+   "20210420195848",
+   "20210118104958",
+   "20201022010207"
+  ],
+  "snaps": 17
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/programming-languages/",
+  "kind": "tag",
+  "path": "pages/articles/tag/programming-languages/index.html",
+  "candidates": [
+   "20220523115147",
+   "20211207185947",
+   "20210727091404",
+   "20210509231602",
+   "20201128113140",
+   "20170114133544",
+   "20160819181127",
+   "20160421094449"
+  ],
+  "snaps": 13
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/programming/",
+  "kind": "tag",
+  "path": "pages/articles/tag/programming/index.html",
+  "candidates": [
+   "20220523122623",
+   "20220523110320",
+   "20211020053005",
+   "20211020035604",
+   "20191020070554",
+   "20190716231548",
+   "20170114142319",
+   "20160819153056"
+  ],
+  "snaps": 16
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/real-estate/",
+  "kind": "tag",
+  "path": "pages/articles/tag/real-estate/index.html",
+  "candidates": [
+   "20220704233424",
+   "20220630042725",
+   "20220120011200",
+   "20210921222730",
+   "20210509215557",
+   "20210420194918",
+   "20210118103933",
+   "20201022005309"
+  ],
+  "snaps": 17
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/review/",
+  "kind": "tag",
+  "path": "pages/articles/tag/review/index.html",
+  "candidates": [
+   "20220523121038",
+   "20211201102034",
+   "20210617030741",
+   "20201128112108",
+   "20170114142223",
+   "20160819182154",
+   "20160421104747",
+   "20160416142108"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/ruby-on-rails/",
+  "kind": "tag",
+  "path": "pages/articles/tag/ruby-on-rails/index.html",
+  "candidates": [
+   "20220630044711",
+   "20211201100410",
+   "20170114144339",
+   "20160819181058",
+   "20160416204718",
+   "20111104113553",
+   "20111102205114"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/sales/",
+  "kind": "tag",
+  "path": "pages/articles/tag/sales/index.html",
+  "candidates": [
+   "20220630032608",
+   "20220120010219",
+   "20220112192336",
+   "20211020024723",
+   "20210921224402",
+   "20210727073118",
+   "20210509214258",
+   "20210420190400"
+  ],
+  "snaps": 26
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/security/",
+  "kind": "tag",
+  "path": "pages/articles/tag/security/index.html",
+  "candidates": [
+   "20220523122049",
+   "20211201102921",
+   "20211201084733",
+   "20170114123954",
+   "20160819181114",
+   "20160421015048",
+   "20160416203723",
+   "20111021065003"
+  ],
+  "snaps": 9
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/startup/",
+  "kind": "tag",
+  "path": "pages/articles/tag/startup/index.html",
+  "candidates": [
+   "20220630040705",
+   "20220523120455",
+   "20220307232210",
+   "20220120014420",
+   "20211020035950",
+   "20210921235825",
+   "20210727082341",
+   "20210509223145"
+  ],
+  "snaps": 36
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/streambase/",
+  "kind": "tag",
+  "path": "pages/articles/tag/streambase/index.html",
+  "candidates": [
+   "20220630040854",
+   "20211201093723",
+   "20210921231509",
+   "20190819161923",
+   "20170114143656",
+   "20160819133416",
+   "20160421021252",
+   "20160416203649"
+  ],
+  "snaps": 11
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/television/",
+  "kind": "tag",
+  "path": "pages/articles/tag/television/index.html",
+  "candidates": [
+   "20220523112040",
+   "20211201094423",
+   "20211201094348",
+   "20170114093703",
+   "20160819123806",
+   "20160421011005",
+   "20160416203025",
+   "20150215051227"
+  ],
+  "snaps": 14
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/theory/",
+  "kind": "tag",
+  "path": "pages/articles/tag/theory/index.html",
+  "candidates": [
+   "20220705010053",
+   "20220120022545",
+   "20211201101341",
+   "20210921235154",
+   "20210509232052",
+   "20210420201720",
+   "20210118111107",
+   "20201022012021"
+  ],
+  "snaps": 17
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/travel/",
+  "kind": "tag",
+  "path": "pages/articles/tag/travel/index.html",
+  "candidates": [
+   "20220630050858",
+   "20220205014018",
+   "20220120024755",
+   "20211020052617",
+   "20210921221848",
+   "20210727094636",
+   "20210509234223",
+   "20210420184310"
+  ],
+  "snaps": 33
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/typo/",
+  "kind": "tag",
+  "path": "pages/articles/tag/typo/index.html",
+  "candidates": [
+   "20220630033129",
+   "20211201092109",
+   "20170114144430",
+   "20160819180540",
+   "20160416204741",
+   "20111104114600",
+   "20111102210551"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/vacation/",
+  "kind": "tag",
+  "path": "pages/articles/tag/vacation/index.html",
+  "candidates": [
+   "20220630033833",
+   "20220120011326",
+   "20211020030559",
+   "20210921223916",
+   "20210727074122",
+   "20210509215811",
+   "20210420185858",
+   "20210118095741"
+  ],
+  "snaps": 32
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/vc/",
+  "kind": "tag",
+  "path": "pages/articles/tag/vc/index.html",
+  "candidates": [
+   "20220630050212",
+   "20220630045542",
+   "20220120023928",
+   "20220105154908",
+   "20211020051706",
+   "20210921235933",
+   "20210727093719",
+   "20210509233431"
+  ],
+  "snaps": 34
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/visualization/",
+  "kind": "tag",
+  "path": "pages/articles/tag/visualization/index.html",
+  "candidates": [
+   "20211201094826",
+   "20170114081657",
+   "20160819120733",
+   "20160421120915",
+   "20160416204817",
+   "20111104122350",
+   "20111102215050"
+  ],
+  "snaps": 7
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/web-20/",
+  "kind": "tag",
+  "path": "pages/articles/tag/web-20/index.html",
+  "candidates": [
+   "20220704232823",
+   "20220523104153",
+   "20220120010320",
+   "20210921222044",
+   "20210509220626",
+   "20170114110608",
+   "20160817095536",
+   "20160421002947"
+  ],
+  "snaps": 17
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/web/",
+  "kind": "tag",
+  "path": "pages/articles/tag/web/index.html",
+  "candidates": [
+   "20211201092828",
+   "20211020034741",
+   "20170114143638",
+   "20160819130410",
+   "20160421061344",
+   "20160416203137",
+   "20111104123834",
+   "20111102221256"
+  ],
+  "snaps": 8
+ },
+ {
+  "url": "http://innocuous.org/articles/tag/xp/",
+  "kind": "tag",
+  "path": "pages/articles/tag/xp/index.html",
+  "candidates": [
+   "20220523120059",
+   "20220523112658",
+   "20211201101234",
+   "20211020042517",
+   "20190819163124",
+   "20170114140520",
+   "20160819151934",
+   "20160421024226"
+  ],
+  "snaps": 12
+ },
+ {
+  "url": "http://innocuous.org/biography/",
+  "kind": "page",
+  "path": "pages/biography/index.html",
+  "candidates": [
+   "20101125171118",
+   "20100621070150",
+   "20100619081533"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/florey/",
+  "kind": "page",
+  "path": "pages/florey/index.html",
+  "candidates": [
+   "20040730023951",
+   "20040323075303",
+   "20030814005257",
+   "20030403014533"
+  ],
+  "snaps": 4
+ },
+ {
+  "url": "http://innocuous.org/page/2/",
+  "kind": "page",
+  "path": "pages/page/2/index.html",
+  "candidates": [
+   "20220630051633",
+   "20220120025335",
+   "20220105154907",
+   "20211020053216",
+   "20210922001541",
+   "20210727095341",
+   "20210509234640",
+   "20210420203908"
+  ],
+  "snaps": 31
+ },
+ {
+  "url": "http://innocuous.org/page/3/",
+  "kind": "page",
+  "path": "pages/page/3/index.html",
+  "candidates": [
+   "20211201102741",
+   "20170114144417",
+   "20161009070447",
+   "20160819142352",
+   "20111104162223",
+   "20111103030817"
+  ],
+  "snaps": 6
+ },
+ {
+  "url": "http://innocuous.org/photos/",
+  "kind": "page",
+  "path": "pages/photos/index.html",
+  "candidates": [
+   "20040222070543",
+   "20040130223948",
+   "20030814005746",
+   "20030407151549",
+   "20030208015525"
+  ],
+  "snaps": 5
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi",
+  "kind": "page",
+  "path": "pages/photos/index.html",
+  "candidates": [
+   "20040222235206",
+   "20030407214455"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./EC+Rush+2001",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_._EC_Rush_2001/index.html",
+  "candidates": [
+   "20030729181814",
+   "20030407200239",
+   "20030210043724"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Fireworks",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_._Fireworks/index.html",
+  "candidates": [
+   "20030815005600",
+   "20030407195938",
+   "20030210045359"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Florey",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_._Florey/index.html",
+  "candidates": [
+   "20030815010943",
+   "20030729182039",
+   "20030407200629",
+   "20030210044842"
+  ],
+  "snaps": 4
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Hacks",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_._Hacks/index.html",
+  "candidates": [
+   "20030729172821",
+   "20030407195306",
+   "20030210045823"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./MIT",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_._MIT/index.html",
+  "candidates": [
+   "20030815011833",
+   "20030729172910",
+   "20030407201718",
+   "20030208080809"
+  ],
+  "snaps": 4
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./OneRing",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_._OneRing/index.html",
+  "candidates": [
+   "20030729172327",
+   "20030407201808",
+   "20030208080905"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Outside",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_._Outside/index.html",
+  "candidates": [
+   "20030815011741",
+   "20030407195541",
+   "20030208080235"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Scituate",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_._Scituate/index.html",
+  "candidates": [
+   "20030815012011",
+   "20030407201025",
+   "20030208082016"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Senior+House",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_._Senior_House/index.html",
+  "candidates": [
+   "20030815012733",
+   "20030407182332",
+   "20030208080955"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./TERC",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_._TERC/index.html",
+  "candidates": [
+   "20030815012929",
+   "20030407182211",
+   "20030208082048"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./misc",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_._misc/index.html",
+  "candidates": [
+   "20030407182111"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=/MIT/4.301",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_MIT_4.301/index.html",
+  "candidates": [
+   "20030523135215",
+   "20030208124016"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=/MIT/6.829+is+Full",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_MIT_6.829_is_Full/index.html",
+  "candidates": [
+   "20030208125629"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=/MIT/Ellison+Lecture",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_MIT_Ellison_Lecture/index.html",
+  "candidates": [
+   "20030525123356",
+   "20030208123615"
+  ],
+  "snaps": 2
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=/TERC/Charting+the+Machines+Database",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_album_TERC_Charting_the_Machines_Database/index.html",
+  "candidates": [
+   "20030407214451"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&startitem=13&album=/MIT",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_startitem_13_album_MIT/index.html",
+  "candidates": [
+   "20030526122214"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&startitem=13&album=/OneRing",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_startitem_13_album_OneRing/index.html",
+  "candidates": [
+   "20030527100549"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&startitem=13&album=/misc",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_album_startitem_13_album_misc/index.html",
+  "candidates": [
+   "20030530065059"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/photos/index.cgi?mode=image&album=/TERC&image=IMG_1027.JPG",
+  "kind": "page",
+  "path": "pages/photos/index.cgi__mode_image_album_TERC_image_IMG_1027.JPG/index.html",
+  "candidates": [
+   "20030522114406"
+  ],
+  "snaps": 1
+ },
+ {
+  "url": "http://innocuous.org/photos/postcomment/commentviewer.cgi",
+  "kind": "page",
+  "path": "pages/photos/postcomment/commentviewer.html",
+  "candidates": [
+   "20030929230322",
+   "20030407181821",
+   "20030209235635"
+  ],
+  "snaps": 3
+ },
+ {
+  "url": "http://innocuous.org/ssh.html",
+  "kind": "page",
+  "path": "pages/ssh.html",
+  "candidates": [
+   "20040609045914",
+   "20040209221138",
+   "20031219025257",
+   "20030713211349",
+   "20021210062302"
+  ],
+  "snaps": 5
+ },
+ {
+  "url": "http://innocuous.org/tibbetts/",
+  "kind": "page",
+  "path": "pages/tibbetts/index.html",
+  "candidates": [
+   "20220630042831",
+   "20220630041005",
+   "20220127232327",
+   "20220120020425",
+   "20220120014723",
+   "20211020040428",
+   "20210921232945",
+   "20210727082730"
+  ],
+  "snaps": 55
+ }
+]

@@ -1,0 +1,104 @@
+{
+ "pages/index/index.html": {
+  "url": "http://innocuous.org/",
+  "ts": "20220709013245",
+  "kind": "page",
+  "bytes": 96937
+ },
+ "pages/about/index.html": {
+  "url": "http://innocuous.org/about/",
+  "ts": "20100621070230",
+  "kind": "page",
+  "bytes": 10943
+ },
+ "pages/articles/2005/04/index.html": {
+  "url": "http://innocuous.org/articles/2005/04/",
+  "ts": "20220120011900",
+  "kind": "archive",
+  "bytes": 13105
+ },
+ "pages/articles/2005/04/10/blogtk-not-so-great/index.html": {
+  "url": "http://innocuous.org/articles/2005/04/10/blogtk-not-so-great/",
+  "ts": "20160819182258",
+  "kind": "post",
+  "bytes": 10795
+ },
+ "pages/articles/2005/04/10/first-post/index.html": {
+  "url": "http://innocuous.org/articles/2005/04/10/first-post/",
+  "ts": "20170114142306",
+  "kind": "post",
+  "bytes": 10508
+ },
+ "pages/articles/2005/04/15/setting-up-typo-rubyonrails-lighttpd-fastcgi-and-being-a-bad-sysadmin/index.html": {
+  "url": "http://innocuous.org/articles/2005/04/15/setting-up-typo-rubyonrails-lighttpd-fastcgi-and-being-a-bad-sysadmin/",
+  "ts": "20170114094450",
+  "kind": "post",
+  "bytes": 15007
+ },
+ "pages/articles/2005/05/index.html": {
+  "url": "http://innocuous.org/articles/2005/05/",
+  "ts": "20220120023221",
+  "kind": "archive",
+  "bytes": 12127
+ },
+ "pages/articles/2005/05/29/book-review-defensive-design-for-the-web/index.html": {
+  "url": "http://innocuous.org/articles/2005/05/29/book-review-defensive-design-for-the-web/",
+  "ts": "20220630044213",
+  "kind": "post",
+  "bytes": 15297
+ },
+ "pages/articles/2005/05/29/subversion-greater-than-cvs/index.html": {
+  "url": "http://innocuous.org/articles/2005/05/29/subversion-greater-than-cvs/",
+  "ts": "20211201102211",
+  "kind": "post",
+  "bytes": 11676
+ },
+ "pages/articles/2006/01/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/",
+  "ts": "20220630041149",
+  "kind": "archive",
+  "bytes": 19388
+ },
+ "pages/articles/2006/01/19/deconstructing-the-ann-arbor-news/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/19/deconstructing-the-ann-arbor-news/",
+  "ts": "20110914111625",
+  "kind": "post",
+  "bytes": 12817
+ },
+ "pages/articles/2006/01/19/switched-my-laptop-to-ubuntu/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/19/switched-my-laptop-to-ubuntu/",
+  "ts": "20211201095634",
+  "kind": "post",
+  "bytes": 11785
+ },
+ "pages/articles/2006/01/19/this-is-a-test-of-the-gnome-blog-client/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/19/this-is-a-test-of-the-gnome-blog-client/",
+  "ts": "20160819134810",
+  "kind": "post",
+  "bytes": 10585
+ },
+ "pages/articles/2006/01/20/making-offlineimap-not-die/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/20/making-offlineimap-not-die/",
+  "ts": "20211201093613",
+  "kind": "post",
+  "bytes": 12229
+ },
+ "pages/articles/2006/01/23/stop-energy/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/23/stop-energy/",
+  "ts": "20211020051346",
+  "kind": "post",
+  "bytes": 12359
+ },
+ "pages/articles/2006/01/25/propsmart-finally-a-good-mls-google-maps-mashup/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/25/propsmart-finally-a-good-mls-google-maps-mashup/",
+  "ts": "20090308122812",
+  "kind": "post",
+  "bytes": 14110
+ },
+ "pages/articles/2006/01/25/propsmart-finally-a-good-mlsgoogle-maps-mashup/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/25/propsmart-finally-a-good-mlsgoogle-maps-mashup/",
+  "ts": "20211201094533",
+  "kind": "post",
+  "bytes": 13703
+ }
+}
