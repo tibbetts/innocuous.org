@@ -5,7 +5,7 @@ slug: "lessons-learned-from-startup-weekend"
 wp_id: 177
 categories:
   - "Miscellaneous"
-source_capture: "pages/index/index.html"
+source_capture: "pages/articles/2012/06/18/lessons-learned-from-startup-weekend/index.html"
 ---
 A year ago this month I attended startup weekend in Boston. The company that I helped to launch there, [http://sellercrowd.com](http://sellercrowd.com), is now a successful ongoing concern, with funding and a handful of employees. So I think that counts as a success story for startup weekend, and my conclusion is that it’s a great program and can work well if you make the right choices going into it. To that end, I’d like to share some of my lessons learned from my first startup weekend, and solicit anyone else to add them in the comments.
 

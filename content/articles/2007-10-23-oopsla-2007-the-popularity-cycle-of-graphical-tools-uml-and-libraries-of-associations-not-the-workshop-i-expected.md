@@ -1,0 +1,29 @@
+---
+title: "OOPSLA 2007: “The Popularity Cycle of Graphical Tools, UML, and Libraries of Associations” – not the workshop I expected"
+date: 2007-10-23T09:59:00
+slug: "oopsla-2007-the-popularity-cycle-of-graphical-tools-uml-and-libraries-of-associations-not-the-workshop-i-expected"
+wp_id: 22
+tags:
+  - "Database"
+  - "Programming Languages"
+source_capture: "pages/articles/2007/10/23/oopsla-2007-the-popularity-cycle-of-graphical-tools-uml-and-libraries-of-associations-not-the-workshop-i-expected/comment-page-1/index.html"
+---
+Today was my first day at [OOPSLA 2007](http://www.oopsla.org/oopsla2007/index.php?page=home/) in Montreal. After a brief exposure to the amazing “Underground City” (really a shopping mall that is infecting downtown like a cancer), I crashed a workshop for which I had not signed up, and had a completely different experience than I had planned at [The Popularity Cycle of Graphical Tools, UML, and Libraries of Associations](http://www.codefarms.com/OOPSLA07/workshop/index.htm).
+
+The title implied it was the workshop about graphical programming languages and tools. As an author of a graphical programming language, [StreamBase StreamSQL EventFlow](http://www.streambase.com/developers/docs/latest/concepts/canvas.html), it seemed like the place to be. My plan had been to pick up some contacts in the graphical languages space, and learn about what has come before. However, the participants (with one vocal exception) had already accepted as a given that UML would eventually decline in popularity, to be replaced by a and they were focused on what would come next.
+
+In fact, the general agreement about what comes next is first class associations. An association is a relationship between two classes that relates instances of the first with instances of the second. These are the lines in UML diagrams. The focus of the workshop was on creating language constructs to allow realization of these lines (associations) in code and the creation of libraries of types of associations.
+
+In UML, most boxes are realized concretely as a Class. This makes translation to and from UML diagrams and other models straightforward for classes. But most lines are realized in an implementation dependent and error prone fashion. For example, there might be a pointer from objects of one class to the other. Or there might be pointers in both directions. Or a set of pointers, or an externally stored map.
+
+Any of these implementations requires maintenance logic, generally embedded in one or both class definitions. This logic is error prone and can get out of sync. If the association is subject to additional constraints, such as a graph being acyclic or conforming to some security model, the maintenance logic can get very complex. At some point a separate class might be created just to track instances of the relationship, but this is a discontinuous change to the program, and impacts all clients of the relation. Much better if there were a concrete realization of associations somewhere in the program, where changes to the association could be made.
+
+Three concrete implementations were presented, for C++, Java, and C#. The C++ implementation, by [Jiri Soukup](http://www.codefarms.com/about.htm) and called [incode](http://incode.sourceforge.net/), was implemented via code generation. The Java and C# systems, presented by [James Nobel](http://www.mcs.vuw.ac.nz/people/James-Noble) and [Kasper Østerbye](https://www.itu.dk/people/kasper/) respectively, utilized Aspect Oriented Programming (AOP) tools to inject required logic into classes at runtime. Kasper’s work is described in a paper, [Associations as a Language Construct](https://www.itu.dk/people/kasper/papers/osterbye_R11.pdf), James’s in [Relationship Aspect Patterns](http://www.mcs.vuw.ac.nz/~djp/files/PN-EPLOP06.pdf). [Stephen Nelson](http://www.elvis.ac.nz/brain?People#StephenNelson) also described but did not present his work, and [Mike Heffernan](http://www.opusedge.com/mikeh.aspx) presented an in-house system he has developed at [OpusEdge](http://www.opusedge.com/).
+
+The OpusEdge system, in particular, focused on using associations and the objects they related to control database schema generation and database access. In this case the associations and objects form a Model in the context of [Model, View, Controller](https://en.wikipedia.org/wiki/Model_view_controller). His system, implemented in .NET, provided transparent network access to the model from clients, as well as server side access.
+
+While this was not the workshop I had intended to attend, it was all very interesting to me. The interplay between databases and programming languages, and between the relational model and object oriented models, is a subject which holds long-term interest to me. The question of whether associations should be binary or N-ary is similar to the question of [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) versus fully-relational in databases.
+
+If we expand language functionality to enable associations, or just let the AOP beast out of its cage all together, it would greatly improve the rapid-development experience. Today, many MVC frameworks create degenerate views given a model, and some even take a programming by exception approach to generating more interesting views. WIth associations as first class manipulable constructs, the model can be enriched with more information (by using a library of association subtypes). This can in turn drive better automatic behavior in areas such as view generation, model validation, and persistence.
+
+We are going to continue conversations about associations, electronically, in a forum moderated by Stephen Nelson. I will be interested to see what progress is made. I have two burning questions: How can we leverage associations to improve database interactions? And, once we have associations, what traditional programming language constructs can we drop?

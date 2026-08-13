@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Nothing To See Here</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://innocuous.org/xml/rsd/feed.xml" />
+  <link href="http://innocuous.org/xml/rss/feed.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+  <link href="/stylesheets/theme/azure.css" media="screen" rel="Stylesheet" type="text/css" />
+  <link href="/stylesheets/theme/local.css" media="screen" rel="Stylesheet" type="text/css" />
+  <script src="/javascripts/cookies.js" type="text/javascript"></script>
+  <script src="/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="/javascripts/effects.js" type="text/javascript"></script>
+  <script src="/javascripts/typo.js" type="text/javascript"></script>
+  <script type="text/javascript"></script>
+</head>
+<body>
+  <div id="container" class="clearfix">
+      <div id="header">
+        <div id="logo">
+          <h1 id="sitename"><a href="/">Nothing To See Here</a></h1>
+          <h2 id="subtitle">Weblog of Richard Tibbetts</h2>
+        </div>
+      </div>
+      
+      <div id="search"> <form action="/articles/search" id="sform" method="get">
+ <label for="q">Live Search:</label><input type="text" id="q" name="q" value="" size="15" />
+<img alt="Spinner-blue" id="search_spinner" src="/images/spinner-blue.gif" style="display:none;" />
+</form>
+</div>
+      
+      <div id="content" class="clearfix">
+        <div id="main">
+           <div class="post">
+  <h2><a href="/articles/2006/08/25/steve-vinoski-on-extreme-programming-at-iona">Steve Vinoski on Extreme Programming at Iona</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sat, 26 Aug 2006 01:06:08 GMT">Sat, 26 Aug 2006 01:06:08 GMT</span></p>
+Thursday at <a href="http://streambase.com">StreamBase</a> we had a lunch talk by <a href="http://blogs.iona.com/vinoski/">Steve Vinoski</a>, Chief Engineer at <a href="http://iona.com">Iona Software</a>. Our CEO (Barry Morris) is former CEO of Iona, and he asked Steve to talk to use about <a href="http://www.extremeprogramming.org/">Extreme Programming (XP)</a>. Iona switched to the extreme programming model nearly 10 years ago, and was the first large product company to change over. Their experiences were documented in <a href="http://www.iona.com/devcenter/appserv/XP_Orbix.pdf">a paper by Jim Watson.</a><br />At StreamBase we use several agile development techniques, but are not faithful to any one methodology. I expected the talk to be about how being faithful to XP was a great thing for Iona. From my reading, I understood that XP demanded total fidelity in order to succeed. Every one of their twelve points is supposed to be critically interdependent and synergistic.<br />What I learned from Vinoski was that drinking the koolaid is not required. Iona worked directly with Kent Beck, originator of XP. Apparently in person he is a lot more laid back than in his writing. For example, Iona didn't find pair programming particularly worthwhile, and ended up giving their engineers back their private spaces. They never implemented a 40 hour work week. They do test first programming, but not religiously. They try to fit development into 2 week iterations, but again are not strictly attatched to it. For example, documentation work generally lags behind development, and frequently their iterations don't actually result in customer-visible functionality.<br />The other thing I found interesting was that Iona was another example of a pattern I see in extreme programming success stories. At Iona, engineering was a mess before they switched to XP. They didn't have nightly builds, good testing, or a consistent view of the source tree. Releases were made in an ad-hoc manner, and there was little or no visibilty or feedback in the engineering process. With the introduction of XP they were able to get many of these issues under control. Like many XP stories, things started out really bad. With the introduction of XP they got much better. I can see two plausible explanations for the frequency of this story. It may be that only companies in a lot of pain are able to marshall the resources to change to XP, and so only troubled companies try it. But it may also be that XP is only worth attempting if your organization is on the rocks. Otherwise, moving to a more moderated agile process may be the way to go.<br />At StreamBase we use many agile techniques. We benefit greatly from automated testing, and have good test coverage. We use a branch driven development model, and keep trunk in a shippable state. We break projects into small milestones (a few weeks, and we keep making them smaller) so that development can be visible. We keep developers as close to customers as possible. And we remain introspective, looking for other opportunities to improve on our process. Many innovations in software engineering come under the banner of agile development today. I think any engineering organization can benefit from learning more about extreme programming and other agile methologies. But I think taking a moderate approach is prudent, unless your organization is in a great deal of pain.<br /><br />
+
+    
+  <p class="meta"><a href="/articles/2006/08/25/steve-vinoski-on-extreme-programming-at-iona#comments">1 comment</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/08/25/steve-vinoski-on-extreme-programming-at-iona#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/07/03/streambase-davinci-coder-free-software-and-valuable-prizes-cash">StreamBase DaVinci Coder - Free Software and Valuable Prizes (Cash)</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Mon, 03 Jul 2006 15:23:38 GMT">Mon, 03 Jul 2006 15:23:38 GMT</span></p>
+In case people have forgotten, I work at a company I helped start called <a href="http://streambase.com">StreamBase</a> that came out of my graduate research. The product is a stream processing engine, meaning it consumes and processes tens to hundreds of thousands of events per second, from sources like sensor networks, stock markets, or the global interweb, and computes results with very low latency, which are then delivered as more events. I happen to think that event driven architectures, stream processing, and declarative (SQL-like) languages for stream processing are the next big thing, which I am happy to talk your ear off about.<br /><br />At any rate, we just came out with version 3.1 of the software, and for the first time anyone can download and use it (previously you had to work at a bank with a jillion dollars or something like that). To encourage people to do so, our marketing company has put together a campaign which includes a satirical spoof of Dan Brown's film, which you can check out at <a href="http://www.thedavincicoder.com">TheDavinciCoder.com</a>. If you watch the video, which you will find quite entertaining if you have ever been a wage slave at one of the aformentioned banks, then you can enter the contest and download the software.  At the moment the software is only freely available on Windows, though the Linux version should be freely available in a few weeks. The contest is kind of a puzzle hunt, except it requires playing with our software, documentation, and website. In return, there are $17,000 in cash prizes.<br /><br />If you get a chance to play with the software, let me know what you think. If you get a chance to do the puzzle hunt, let Aletta know what you think (she was involved in creating the puzzles). And if you think any of this is worthwhile, pass it on.
+
+    
+  <p class="meta"><a href="/articles/2006/07/03/streambase-davinci-coder-free-software-and-valuable-prizes-cash#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/07/03/streambase-davinci-coder-free-software-and-valuable-prizes-cash#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/04/08/google-takes-college-recruiting-to-the-next-level">Google Takes College Recruiting to the Next Level</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sat, 08 Apr 2006 21:35:53 GMT">Sat, 08 Apr 2006 21:35:53 GMT</span></p>
+I dropped by MIT this weekend to check out the <a href="http://www.howeandser.com/">CalTech cannon hack</a>. This is <a href="http://web.mit.edu/admissions/mitcpw/">campus preview weekend</a>, when admitted students are invited to visit the MIT campus to be wooed by admissions officials and current students alike. As a rule current students drop what they are doing to provide entertainment for themselves and occationally even for the visiting high school students (who are generally called prefrosh). It's usually a good time to see what exciting things current students are up to.<br /><br />What I didn't expect to see were dozens of prefrosh wearing bright blue Google "I'm Feeling Lucky" T-shirts. Turns out Google has taken on-campus recruiting to the next level, and has started recruiting MIT students before they are even students. Smart move on their part. Given that it already feels like <a href="http://www-tech.mit.edu/V121/N31/31reshist.31n.html">MIT has moved Rush to CPW</a>, I wonder if this presages a move of recruiting to CPW as well. The Undergraduate Housing Office could start selling employers ad space in the <a href="http://web.mit.edu/i3/">i3 videos</a>. Then MIT can dispense with diplomas and the undergraduate experience, and simply hand out certificates of admittance which are sufficient to land one a good job in New York or Silicon Valley.<br /><br />Congratulations to Google for being ahead of the curve, and getting started on their recruiting efforts as early as possible.<br />
+
+    
+  <p class="meta"><a href="/articles/2006/04/08/google-takes-college-recruiting-to-the-next-level#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/04/08/google-takes-college-recruiting-to-the-next-level#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/01/28/macbook-pro-killing-the-powerbook-brand">MacBook Pro - Killing the PowerBook Brand</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sun, 29 Jan 2006 00:58:32 GMT">Sun, 29 Jan 2006 00:58:32 GMT</span></p>
+When <a href="http://apple.com">Apple</a> announced the <a href="http://www.apple.com/macbookpro/">MacBook Pro</a>, my first reaction was not to any of the hardware changes but to the name. This machine represents the end of the PowerBook brand name, a brand that dates back well before the PowerPC processor, to <a href="http://www.lowendmac.com/archive/2k0512.html">the first Apple notebook computers in 1991</a>. I believed that PowerBook was one of the strongest brands in the high tech industry, and thought it was remarkably stupid to change it.<br />Yesterday at the <a href="http://www.futurtech.org/">University of Michigan Futuretech conference</a> I got a chance to ask someone from Apple about it. They gave an interesting justification: Apple wants the names of all of their computers to have "Mac" in them. It is important that unsophisticated consumers have a single identifier for all Apple computers. He repeated this justification like it came off a sheet of talking-points. And it does make sense.<br />Which leaves the big question: What are they going to rename iBook to? My guess is we will have MacBooks and MacBook Pros. Maybe we would have seen them already, if not for <a href="http://wiredblogs.tripod.com/cultofmac/index.blog?entry_id=1385976">rumored last-minute changes to the keynote.</a><br />
+
+    
+  <p class="meta">Posted in <a href="/articles/category/business" rel="category tag">Business</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/28/macbook-pro-killing-the-powerbook-brand#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/28/macbook-pro-killing-the-powerbook-brand#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/01/26/google-just-isnt-very-good">Google Just Isn't Very Good</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Thu, 26 Jan 2006 22:17:16 GMT">Thu, 26 Jan 2006 22:17:16 GMT</span></p>
+<p>I was reminded again today of <a href="http://news.com.com/2100-1025_3-5924424.html">the number of smart people that have been swallowed up by Google</a>. Google seems to have hired everyone in San Jose, according to <a href="http://www.indeed.com/jobtrends.jsp">Indeed.com's new job numbers</a>. They have offices in New York, and I hear they are opening new offices in Philadelphia and Boston. They seem to be willing to acquire <a href="http://dodgeball.com">entire companies</a> just to get their employees.</p><p>
+The big question is, what are they all doing? The stock market seems to think that they are secretly working on The Next Big Thing. Based on Google stock price, investors expect that any day now we will see a beta of <a href="http://cancer.google.com">cancer.google.com</a>. "Just click here and our AJAX-enabled Web 2.0 service will cure your cancer." That isn't too far from the truth though. Google seems to be adopting a similar model to big pharma. They are doing drug discovery. But what they are trying to discover is the next big idea.</p><p>
+However, much like big pharma, they are failing. A large number of researchers packed into a company, with too many PhDs, is unable to justify it's cost. Sure, Google will produce neat new things. They've produced several. But when you consider that they employ thousands of people, several good ideas just isn't cutting it. But much like big pharma, Google has enough money to decide that next year they need 30% more innovation, and hire 30% more PhDs. Of course, that isn't going to work. Each new good idea is going to cost Google more and more money.</p><p>
+Most good drugs in the pharmaceutical industry come from startups. A biotech startup gets together a few good people who believe in an idea, does the preliminary implementation, and gets it through a few rounds of trials to show that it works. If it does work, a big company comes in, buys the idea, and applies their knowledge of scalability and marketing to finish the idea.</p><p>
+That is exactly what Yahoo is doing with Web 2.0 companies. They are letting startups be the proving ground for new ideas, letting them put the ideas through human trials, and then buying up the good ones. And since there is no FDA driving up costs, the companies (and their ideas) come cheap. Order of $10 million a pop. For $10 million, how many PhD-years can Google buy? Not enough.</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/web" rel="category tag">Web</a>, <a href="/articles/category/business" rel="category tag">Business</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/26/google-just-isnt-very-good#comments">2 comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/26/google-just-isnt-very-good#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/01/25/propsmart-finally-a-good-mls-google-maps-mashup">propsmart - Finally a good MLS/google maps mashup</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Wed, 25 Jan 2006 15:28:10 GMT">Wed, 25 Jan 2006 15:28:10 GMT</span></p>
+<p>I just happened to catch a Google ad for <a href="http://propsmart.com">propsmart</a>, and I'm glad that I did. I enjoy regularly browsing real estate listings in both Michigan and Massachusetts. The web-based browsing systems have been gradually improving, but none of them have yet got it right. <a href="http://propsmart.com">propsmart</a> is a big step in the right direction. For those of you who have seen <a href="http://housingmaps.com">Housing Maps</a>, this is basically housing maps applied to MLS and several other data sources, rather than just <a href="http://craigslist.org">Craigslist</a>.</p><p>
+In particular, all the previous services I have used have been attached to one brokerage or another, and have considered it their solemn duty to exclude FSBO properties and maintain the real estate agent oligopoly. A service like propsmart, or a similar one, has the possibility to greatly improve the FSBO market, and improve information flow in the real estate market in general.</p><p>
+<a href="http://propsmart.com">propsmart</a> is far from perfect. But it is much better than anything I've seen. Check it out.</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/web" rel="category tag">Web</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/25/propsmart-finally-a-good-mls-google-maps-mashup#comments">3 comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/25/propsmart-finally-a-good-mls-google-maps-mashup#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/01/23/stop-energy">Stop Energy</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Mon, 23 Jan 2006 16:13:47 GMT">Mon, 23 Jan 2006 16:13:47 GMT</span></p>
+<p>A friend just used the phrase <a href="http://www.userland.com/whatIsStopEnergy">Stop Energy</a> to describe part of the open software development process. I hadn't heard the term before, and so I had to look it up. Stop Energy is the ambient energy in an open development process available to stop any forward motion. Stop Energy manifests as technical (and sometimes non-technical) stone throwing directed at anyone proposing any change. An excess of stop energy in a process is crippling. Unfortunately, stop energy seems to increase with the number of participants.</p><p>
+Stop energy isn't uniformly bad, in my opinion. Sometimes it is necessary to prevent bad changes from happening. But far more often is a free software project (or any other open process) killed by stagnation and a loss of volunteers than by an excess of development and participation.</p><p>
+I've personally witness stop energy in several groups. Sometimes stop energy is the result of curmudgeons who don't want anything to change, or of people who want to retain control of previous design decisions. But quite often Stop Energy and <a href="http://projects.csail.mit.edu/gsb/archives/old/gsb-archive/gsb2000-02-11.html">Yak Shaving</a> go together. Yak shaving is a catch-all term for the work you need to do before you can do the work you should do. Often stop energy manifests itself as requirement creep. "You can't add a new method to the dispatcher until we totally redesign the dispatcher like I've been meaning to do for 2 years." This kind of stop energy can be particularly difficult for new participants in the process to overcome.</p><p>
+Having a term like Stop Energy I hope will help me to identify it in myself and others, and try to overcome it. It is potentially a very destructive force.</p><p>
+</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/software-development" rel="category tag">Software Development</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/23/stop-energy#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/23/stop-energy#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/01/20/making-offlineimap-not-die">Making offlineimap not die</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Fri, 20 Jan 2006 17:29:48 GMT">Fri, 20 Jan 2006 17:29:48 GMT</span></p>
+<p>I love <a href="http://gopher.quux.org:70/devel/offlineimap/">offlineimap</a>. I even love the quirky way it is hosted on a gopher site. The functionality is awesome. For those of you who don't know, offlineimap syncronizes a remote IMAP mailbox heirarchy with a local Maildir folder heirarchy. This means you get disconnected IMAP operation with all your favorite Maildir clients (like <a href="http://mutt.org">mutt</a>), while still retaining the ability to access your mail using other IMAP clients.</p><p>
+However, offlineimap crashes too often. Every couple of days I will fail to get any new mail for an hour or two, and realize that offlineimap has crashed. And due to Murphy's law this generally correlates with a time when I was recieving some important mail.</p><p>
+The solution is very simple. I am using <a href="http://directory.fsf.org/zenity.html">zenity</a>, a command line tool for displaying dialog boxes, and running offline imap in a loop. Every time it dies, I get a pop-up dialog, and can say OK to restart it, or Cancel to end the loop. The little shell script to do this is as follows:</p><p>
+#!/bin/sh</p><p>
+/usr/bin/offlineimap -u TTY.TTYUI;</p><p>
+while zenity --question --text "Offlineimap died. Restart?"; do</p><p>
+    /usr/bin/offlineimap -u TTY.TTYUI;</p><p>
+done</p><p>
+</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/tools" rel="category tag">Tools</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/20/making-offlineimap-not-die#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/20/making-offlineimap-not-die#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/01/19/deconstructing-the-ann-arbor-news">Deconstructing the Ann Arbor News</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Fri, 20 Jan 2006 01:28:42 GMT">Fri, 20 Jan 2006 01:28:42 GMT</span></p>
+<p>A new article from <a href="http://www.buzzmachine.com/">Jeff Jarvis</a> on <a href="http://www.buzzmachine.com/index.php/2006/01/18/new-news-deconstructing-the-newspaper/">Deconstructing the Newspaper</a> really hits the nail on the head for me. I've been constantly annoyed by the <a href="http://www.annarbornews.com/">Ann Arbor News</a> for trying to be a national newspaper, trying to be all things to all people. I want a local newspaper that covers local news. I get the New York Times, and between that and the web I get plenty of national news. I depend on the AAN to give me local election coverage, tell me about upcoming local issues, etc.</p><p>
+Unfortunately that requires wading through a bunch of crap every day. We discontinued daily delivery because it was so much paper to throw away I felt bad about it. So now I just get the Sunday paper. But that means I miss out on about half of their reporting.</p><p>
+I would really like to the Ann Arbor News switch to being a weekly paper, or maybe a twice-weekly paper. Give me a paper filled with all the content I need, and none that I don't. Or just put it up on a website. I'd even pay a subscription fee for the web site if I had to.</p><p>
+Of course, it is pretty unlikely that a local newspaper in a small midwestern city is going to do anything particularly innovative. They seem to have ceded their web presence to <a href="http://mlive.com">MLive</a>, which does a pretty terrible job themselves.</p><p>
+</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/media" rel="category tag">Media</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/19/deconstructing-the-ann-arbor-news#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/19/deconstructing-the-ann-arbor-news#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/01/19/switched-my-laptop-to-ubuntu">Switched my laptop to Ubuntu</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Fri, 20 Jan 2006 01:21:00 GMT">Fri, 20 Jan 2006 01:21:00 GMT</span></p>
+<p>I switched to running <a href="http://ubuntulinux.org"><a href="http://www.ubuntulinux.org/">Ubuntu</a></a> on my Thinkpad. I'm very pleased with the experience. The install was painless, and everything thus far has just worked. It really feels like linux is maturing on the desktop.</p><p>
+I've also installed a shiny new tool, <a href="http://www.gnome.org/~seth/gnome-blog/">Gnome Blog</a>. It's a panel applet that makes it easy to enter blog posts. It sits on the panel and remembers the blog post you were in the middle of, so you can always stop and come back to it later.</p><p>
+It is generally good, but there are a couple of downsides that are coming to mind at the moment:</p><p>
+* No good way to do bulleted lists or other more complete formatting.</p><p>
+* No support for tags/categories/etc.</p><p>
+* Link input method isn't the easiest.</p><p>
+Really I think I would rather input the post in Restructured Text or something. I should look into other posting tools. Something command line or emacs based might be ideal.</p><p>
+</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/tools" rel="category tag">Tools</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/19/switched-my-laptop-to-ubuntu#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/19/switched-my-laptop-to-ubuntu#trackbacks">no trackbacks</a></p> 
+  </div>
+
+
+  <p id="pagination">Older posts: <a href="/articles/page/1">1</a> <a href="/articles/page/2">2</a> 3 <a href="/articles/page/4">4</a> </p>
+
+          <script type="text/javascript">show_dates_as_local_time()</script>
+        </div>
+        <div id="sidebar">
+          
+            <div id="search-results"></div>
+              <script type="text/javascript">new Form.Element.Observer('q', 1, function(element, value) {new Ajax.Updater('search-results', '/live/search', {asynchronous:true, evalScripts:true, onComplete:function(request){Element.hide('search_spinner')}, onLoading:function(request){Element.show('search_spinner')}, parameters:value})})</script>
+              <h3>About</h3>
+<a href="/tibbetts/">About Richard Tibbetts</a>
+
+  
+<h3>Archives</h3>
+<ul id="archives">
+  
+    <li>
+      <a href="/articles/2008/06/page/3">June 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/04/page/3">April 2008</a>
+      <em>(3)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/01/page/3">January 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2007/12/page/3">December 2007</a>
+      <em>(1)</em>
+    </li>
+  
+</ul>
+
+
+  <h3>Categories</h3>
+<ul id="categories">
+  
+  <li><a href="/articles/category/books">Books</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/business">Business</a> <em>(9)</em></li>
+  
+  
+  <li><a href="/articles/category/computer-science">Computer Science</a> <em>(5)</em></li>
+  
+  
+  <li><a href="/articles/category/media">Media</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/software-development">Software Development</a> <em>(3)</em></li>
+  
+  
+  <li><a href="/articles/category/tools">Tools</a> <em>(8)</em></li>
+  
+  
+  <li><a href="/articles/category/web">Web</a> <em>(5)</em></li>
+  
+</ul>
+
+
+    <div id="delicious">
+    <h3>Delicious/tibbetts/sidebar</h3>
+    <ul>
+              <li><a href="http://debs08.dis.uniroma1.it/" title="The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008">The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008 </a></li>
+              <li><a href="http://www.bugblogger.com/2007/09/pizza-tail.html" title="Bug Blogger: Pizza Tail">Bug Blogger: Pizza Tail </a></li>
+              <li><a href="http://tytso.livejournal.com/30681.html" title="Ted Tso - On the benevolent dictator model">Ted Tso - On the benevolent dictator model </a></li>
+              <li><a href="http://www.slate.com/id/2172342/fr/rss/" title="How do you inject money into the economy? - By Michelle Tsai - Slate Magazine">How do you inject money into the economy? - By Michelle Tsai - Slate Magazine </a></li>
+              <li><a href="http://www.physorg.com/news95954919.html" title="Humans hot, sweaty, natural-born runners">Humans hot, sweaty, natural-born runners </a></li>
+              <li><a href="http://datamining.typepad.com/gallery/blog-map-gallery.html" title="Data Mining: Mapping The Blogosphere">Data Mining: Mapping The Blogosphere </a></li>
+              <li><a href="http://www.thenation.com/doc/20070423/press" title="The New Suburban Poverty">The New Suburban Poverty </a></li>
+              <li><a href="http://paul.kedrosky.com/archives/2007/04/17/top_ten_vc_lies.html" title="Paul Kedrosky: Updated: Top Ten VC Lies">Paul Kedrosky: Updated: Top Ten VC Lies </a></li>
+              <li><a href="http://www.math.tamu.edu/~cyan/Rota/mitless.html" title="Ten lessons from Rota">Ten lessons from Rota </a></li>
+              <li><a href="http://weblog.fortnow.com/2006/08/zero-knowledge-sudoku.html" title="Computational Complexity: Zero-Knowledge Sudoku">Computational Complexity: Zero-Knowledge Sudoku </a></li>
+          </ul>
+  </div>
+
+  <h3>Pseudo-Blogroll</h3>
+<ul>
+  <li><a href="http://blog.nimlabs.org">Nick Martin</a></li>
+  <li><a href="http://jenselby.org">Jen Selby</a></li>
+  <li>your link here</li>
+</ul>
+
+
+  <h3>Syndicate</h3>
+<ul>
+    <li><a href="/xml/rss/feed.xml" title="RSS 2.0 feed">Articles</a></li>
+  
+    <li><a href="/xml/commentrss/feed.xml" title="Comments RSS 2.0 feed">Comments</a></li>
+  
+  
+</ul>
+
+
+
+            <a class="powered" href="http://typo.leetsoft.com/"><img alt="Powered" src="/images/powered.gif" /></a>
+            </div>
+
+            <br clear="all" />
+      </div>
+      <div id="footer">
+        <ul>
+          <li><a href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0</a></li>
+          <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://innocuous.org/">Valid CSS</a></li>
+        </ul>
+      </div>
+  </div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2439300-1";
+urchinTracker();
+</script>
+</body>
+</html>

@@ -5,7 +5,7 @@ slug: "identify-manage-honey-badger-developer"
 wp_id: 171
 categories:
   - "Management"
-source_capture: "pages/index/index.html"
+source_capture: "pages/articles/2015/03/28/identify-manage-honey-badger-developer/index.html"
 ---
 A few years back I read [Rands’ blog post about the Free Electron developer archetype](http://www.randsinrepose.com/archives/2005/03/20/free_electron.html): “the single most productive developer you’re ever going to meet.” This is a good archetype to understand, identify, recruit, and retain. I would like to discuss another related archetype which can be quite powerful if properly harnessed: The Honey Badger.  
 

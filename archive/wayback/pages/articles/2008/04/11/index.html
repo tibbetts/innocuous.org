@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Nothing To See Here</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://innocuous.org/xml/rsd/feed.xml" />
+  <link href="http://innocuous.org/xml/rss/feed.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+  <link href="/stylesheets/theme/azure.css" media="screen" rel="Stylesheet" type="text/css" />
+  <link href="/stylesheets/theme/local.css" media="screen" rel="Stylesheet" type="text/css" />
+  <script src="/javascripts/cookies.js" type="text/javascript"></script>
+  <script src="/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="/javascripts/effects.js" type="text/javascript"></script>
+  <script src="/javascripts/typo.js" type="text/javascript"></script>
+  <script type="text/javascript"></script>
+</head>
+<body>
+  <div id="container" class="clearfix">
+      <div id="header">
+        <div id="logo">
+          <h1 id="sitename"><a href="/">Nothing To See Here</a></h1>
+          <h2 id="subtitle">Weblog of Richard Tibbetts</h2>
+        </div>
+      </div>
+      
+      <div id="search"> <form action="/articles/search" id="sform" method="get">
+ <label for="q">Live Search:</label><input type="text" id="q" name="q" value="" size="15" />
+<img alt="Spinner-blue" id="search_spinner" src="/images/spinner-blue.gif" style="display:none;" />
+</form>
+</div>
+      
+      <div id="content" class="clearfix">
+        <div id="main">
+           <div class="post">
+  <h2><a href="/articles/2008/04/12/kdb-now-available-for-free-download">kdb+ now available for free download</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sat, 12 Apr 2008 14:05:24 GMT">Sat, 12 Apr 2008 14:05:24 GMT</span></p>
+<p>
+If you've talked to me about programming languages and Wall Street in the last 4 years, I've probably mentioned <a href="http://kx.com/">kx</a>. This is a company which makes a combination programming environment and database based on a language called q which is derived from <a href="http://en.wikipedia.org/wiki/APL_(programming_language)">APL</a>. (Yes, APL, the language invented in 1957 before there was a computer to run it on.) And this environment is in turn used by many of the top quants on Wall Street (and other parts of the financial world) for both research and production systems. Becoming a kx programmer is a good way to double your salary and quadruple your job security.
+</p><p>
+Well, it's been going around my corner of the blogosphere that kdb+ is now free for personal use. I first heard about it from <a href="http://magmasystems.blogspot.com/2008/04/kdb-is-free-for-personal-use.html">Marc Adler</a>. You can go download it from the <a href="http://kx.com/developers/software.php">kx download page</a>. This represents a big step towards openness, which I think will be good for everyone.
+</p><p>
+The q environment is impressive, you have to give them that. There is an emphasis on brevity; the OSX binary of kdb+ is only 227K. That's smaller than the ncurses library it ships with. And brevity doesn't stop there. Utterances in the language are well known for their complexity and <a href="http://kx.com/q/e/book.q">impenetrable internal logic</a>. A lot of q code makes obfuscated perl look clear and verbose. It doesn't help that the culture of kx programmers discourages commenting. Error handling is tricky at best, and modularity and maintainability are in short supply. For confusion, q adds a bunch of SQL keywords on top of the previous language, k, in an almost but not quite fully compatible way.
+</p><p>
+But for all the faults you can kind find some really interesting features in q. And if nothing else, it is an example of a novel programming language, tightly integrated with a data management system, finding commercial success, which is always nice to see. And if  you learn it, you might find a sweet job on wall street as a result.
+</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/computer-science" rel="category tag">Computer Science</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2008/04/12/kdb-now-available-for-free-download#comments">no comments</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2008/04/11/when-neither-a-column-store-nor-a-row-store-is-the-answer">When neither a column store nor a row store is the answer</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sat, 12 Apr 2008 02:34:00 GMT">Sat, 12 Apr 2008 02:34:00 GMT</span></p>
+<p>
+A few days ago I found myself giving database advice to a friend with a new startup. His problem is a pretty common one: he has a very large corpus of data, over which he will run compute-intensive proprietary algorithms. Both the data and the computation will require a cluster of machines. He has a prototype based on Postgres. His question to me: should I continue to use a row store (Postgres) or should I use new technology, specifically a column store?
+</p><p>
+If you read the title of the post, you can already guess that my answer was neither.
+</p>
+
+  <a href="/articles/2008/04/11/when-neither-a-column-store-nor-a-row-store-is-the-answer">Read more...</a>  
+  <p class="meta">Posted in <a href="/articles/category/computer-science" rel="category tag">Computer Science</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2008/04/11/when-neither-a-column-store-nor-a-row-store-is-the-answer#comments">no comments</a></p> 
+  </div>
+
+
+          <script type="text/javascript">show_dates_as_local_time()</script>
+        </div>
+        <div id="sidebar">
+          
+            <div id="search-results"></div>
+              <script type="text/javascript">new Form.Element.Observer('q', 1, function(element, value) {new Ajax.Updater('search-results', '/live/search', {asynchronous:true, evalScripts:true, onComplete:function(request){Element.hide('search_spinner')}, onLoading:function(request){Element.show('search_spinner')}, parameters:value})})</script>
+              <h3>About</h3>
+<a href="/tibbetts/">About Richard Tibbetts</a>
+
+  
+<h3>Archives</h3>
+<ul id="archives">
+  
+    <li>
+      <a href="/articles/2008/06">June 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/04/11">April 2008</a>
+      <em>(3)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/01">January 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2007/12">December 2007</a>
+      <em>(1)</em>
+    </li>
+  
+</ul>
+
+
+  <h3>Categories</h3>
+<ul id="categories">
+  
+  <li><a href="/articles/category/books">Books</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/business">Business</a> <em>(9)</em></li>
+  
+  
+  <li><a href="/articles/category/computer-science">Computer Science</a> <em>(5)</em></li>
+  
+  
+  <li><a href="/articles/category/media">Media</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/software-development">Software Development</a> <em>(3)</em></li>
+  
+  
+  <li><a href="/articles/category/tools">Tools</a> <em>(8)</em></li>
+  
+  
+  <li><a href="/articles/category/web">Web</a> <em>(5)</em></li>
+  
+</ul>
+
+
+    <div id="delicious">
+    <h3>Delicious/tibbetts/sidebar</h3>
+    <ul>
+              <li><a href="http://debs08.dis.uniroma1.it/" title="The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008">The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008 </a></li>
+              <li><a href="http://www.bugblogger.com/2007/09/pizza-tail.html" title="Bug Blogger: Pizza Tail">Bug Blogger: Pizza Tail </a></li>
+              <li><a href="http://tytso.livejournal.com/30681.html" title="Ted Tso - On the benevolent dictator model">Ted Tso - On the benevolent dictator model </a></li>
+              <li><a href="http://www.slate.com/id/2172342/fr/rss/" title="How do you inject money into the economy? - By Michelle Tsai - Slate Magazine">How do you inject money into the economy? - By Michelle Tsai - Slate Magazine </a></li>
+              <li><a href="http://www.physorg.com/news95954919.html" title="Humans hot, sweaty, natural-born runners">Humans hot, sweaty, natural-born runners </a></li>
+              <li><a href="http://datamining.typepad.com/gallery/blog-map-gallery.html" title="Data Mining: Mapping The Blogosphere">Data Mining: Mapping The Blogosphere </a></li>
+              <li><a href="http://www.thenation.com/doc/20070423/press" title="The New Suburban Poverty">The New Suburban Poverty </a></li>
+              <li><a href="http://paul.kedrosky.com/archives/2007/04/17/top_ten_vc_lies.html" title="Paul Kedrosky: Updated: Top Ten VC Lies">Paul Kedrosky: Updated: Top Ten VC Lies </a></li>
+              <li><a href="http://www.math.tamu.edu/~cyan/Rota/mitless.html" title="Ten lessons from Rota">Ten lessons from Rota </a></li>
+              <li><a href="http://weblog.fortnow.com/2006/08/zero-knowledge-sudoku.html" title="Computational Complexity: Zero-Knowledge Sudoku">Computational Complexity: Zero-Knowledge Sudoku </a></li>
+          </ul>
+  </div>
+
+  <h3>Pseudo-Blogroll</h3>
+<ul>
+  <li><a href="http://blog.nimlabs.org">Nick Martin</a></li>
+  <li><a href="http://jenselby.org">Jen Selby</a></li>
+  <li>your link here</li>
+</ul>
+
+
+  <h3>Syndicate</h3>
+<ul>
+    <li><a href="/xml/rss/feed.xml" title="RSS 2.0 feed">Articles</a></li>
+  
+    <li><a href="/xml/commentrss/feed.xml" title="Comments RSS 2.0 feed">Comments</a></li>
+  
+  
+</ul>
+
+
+
+            <a class="powered" href="http://typo.leetsoft.com/"><img alt="Powered" src="/images/powered.gif" /></a>
+            </div>
+
+            <br clear="all" />
+      </div>
+      <div id="footer">
+        <ul>
+          <li><a href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0</a></li>
+          <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://innocuous.org/">Valid CSS</a></li>
+        </ul>
+      </div>
+  </div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2439300-1";
+urchinTracker();
+</script>
+</body>
+</html>

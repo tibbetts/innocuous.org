@@ -5,7 +5,7 @@ slug: "startups-intellectual-property-boston-inn-of-courts"
 wp_id: 223
 categories:
   - "Miscellaneous"
-source_capture: "pages/index/index.html"
+source_capture: "pages/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/comment-page-1/index.html"
 ---
 On Wednesday I had the privilege of being part of a panel before the Inn of Courts in Boston. This is an organization of patent litigators that meets for continuing education and discussing the practice of their craft. For this meeting, they invited a panel of practitioners from startups and academia to listen to lay people talk about how intellectual property is working (or not) for us.
 

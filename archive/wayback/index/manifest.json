@@ -1048,5 +1048,755 @@
   "ts": "20210509225540",
   "kind": "category",
   "bytes": 15243
+ },
+ "pages/articles/category/media/index.html": {
+  "url": "http://innocuous.org/articles/category/media/",
+  "ts": "20090101210058",
+  "kind": "category",
+  "bytes": 9616
+ },
+ "pages/articles/category/misc/index.html": {
+  "url": "http://innocuous.org/articles/category/misc/",
+  "ts": "20220120024948",
+  "kind": "category",
+  "bytes": 25699
+ },
+ "pages/articles/category/misc/page/2/index.html": {
+  "url": "http://innocuous.org/articles/category/misc/page/2/",
+  "ts": "20210921225642",
+  "kind": "category",
+  "bytes": 18897
+ },
+ "pages/articles/category/politics/index.html": {
+  "url": "http://innocuous.org/articles/category/politics/",
+  "ts": "20220120024328",
+  "kind": "category",
+  "bytes": 15366
+ },
+ "pages/articles/category/software-development/index.html": {
+  "url": "http://innocuous.org/articles/category/software-development/",
+  "ts": "20090101210103",
+  "kind": "category",
+  "bytes": 14399
+ },
+ "pages/articles/category/tech/index.html": {
+  "url": "http://innocuous.org/articles/category/tech/",
+  "ts": "20211020053719",
+  "kind": "category",
+  "bytes": 25680
+ },
+ "pages/articles/category/tech/page/2/index.html": {
+  "url": "http://innocuous.org/articles/category/tech/page/2/",
+  "ts": "20211201095309",
+  "kind": "category",
+  "bytes": 24735
+ },
+ "pages/articles/category/tech/page/3/index.html": {
+  "url": "http://innocuous.org/articles/category/tech/page/3/",
+  "ts": "20170222182359",
+  "kind": "category",
+  "bytes": 24704
+ },
+ "pages/articles/category/tools/index.html": {
+  "url": "http://innocuous.org/articles/category/tools/",
+  "ts": "20090101210108",
+  "kind": "category",
+  "bytes": 24045
+ },
+ "pages/articles/category/web/index.html": {
+  "url": "http://innocuous.org/articles/category/web/",
+  "ts": "20090101210113",
+  "kind": "category",
+  "bytes": 18921
+ },
+ "pages/articles/page/2/index.html": {
+  "url": "http://innocuous.org/articles/page/2/",
+  "ts": "20080828013722",
+  "kind": "page",
+  "bytes": 44742
+ },
+ "pages/articles/page/3/index.html": {
+  "url": "http://innocuous.org/articles/page/3/",
+  "ts": "20080828012556",
+  "kind": "page",
+  "bytes": 29947
+ },
+ "pages/articles/page/4/index.html": {
+  "url": "http://innocuous.org/articles/page/4/",
+  "ts": "20080828012859",
+  "kind": "page",
+  "bytes": 19670
+ },
+ "pages/articles/tag/agile/index.html": {
+  "url": "http://innocuous.org/articles/tag/agile/",
+  "ts": "20220523103646",
+  "kind": "tag",
+  "bytes": 11233
+ },
+ "pages/articles/tag/algorithms/index.html": {
+  "url": "http://innocuous.org/articles/tag/algorithms/",
+  "ts": "20160819135728",
+  "kind": "tag",
+  "bytes": 10901
+ },
+ "pages/articles/tag/angel/index.html": {
+  "url": "http://innocuous.org/articles/tag/angel/",
+  "ts": "20220630042904",
+  "kind": "tag",
+  "bytes": 11499
+ },
+ "pages/articles/tag/apple/index.html": {
+  "url": "http://innocuous.org/articles/tag/apple/",
+  "ts": "20220523120427",
+  "kind": "tag",
+  "bytes": 19171
+ },
+ "pages/articles/tag/architecture/index.html": {
+  "url": "http://innocuous.org/articles/tag/architecture/",
+  "ts": "20220705005234",
+  "kind": "tag",
+  "bytes": 13185
+ },
+ "pages/articles/tag/benchmark/index.html": {
+  "url": "http://innocuous.org/articles/tag/benchmark/",
+  "ts": "20160416210113",
+  "kind": "tag",
+  "bytes": 12765
+ },
+ "pages/articles/tag/biology/index.html": {
+  "url": "http://innocuous.org/articles/tag/biology/",
+  "ts": "20170114142235",
+  "kind": "tag",
+  "bytes": 11176
+ },
+ "pages/articles/tag/blogging/index.html": {
+  "url": "http://innocuous.org/articles/tag/blogging/",
+  "ts": "20211201094127",
+  "kind": "tag",
+  "bytes": 12667
+ },
+ "pages/articles/tag/boston/index.html": {
+  "url": "http://innocuous.org/articles/tag/boston/",
+  "ts": "20220523105533",
+  "kind": "tag",
+  "bytes": 11253
+ },
+ "pages/articles/tag/career/index.html": {
+  "url": "http://innocuous.org/articles/tag/career/",
+  "ts": "20211020040242",
+  "kind": "tag",
+  "bytes": 10910
+ },
+ "pages/articles/tag/caribbean/index.html": {
+  "url": "http://innocuous.org/articles/tag/caribbean/",
+  "ts": "20210727073256",
+  "kind": "tag",
+  "bytes": 11926
+ },
+ "pages/articles/tag/cloud/index.html": {
+  "url": "http://innocuous.org/articles/tag/cloud/",
+  "ts": "20160819180027",
+  "kind": "tag",
+  "bytes": 11168
+ },
+ "pages/articles/tag/computer-science/index.html": {
+  "url": "http://innocuous.org/articles/tag/computer-science/",
+  "ts": "20210420192130",
+  "kind": "tag",
+  "bytes": 22257
+ },
+ "pages/articles/tag/cto/index.html": {
+  "url": "http://innocuous.org/articles/tag/cto/",
+  "ts": "20160819142335",
+  "kind": "tag",
+  "bytes": 10603
+ },
+ "pages/articles/tag/culture/index.html": {
+  "url": "http://innocuous.org/articles/tag/culture/",
+  "ts": "20220120012101",
+  "kind": "tag",
+  "bytes": 11083
+ },
+ "pages/articles/tag/database/index.html": {
+  "url": "http://innocuous.org/articles/tag/database/",
+  "ts": "20211201103208",
+  "kind": "tag",
+  "bytes": 17359
+ },
+ "pages/articles/tag/debugging/index.html": {
+  "url": "http://innocuous.org/articles/tag/debugging/",
+  "ts": "20211201083552",
+  "kind": "tag",
+  "bytes": 10907
+ },
+ "pages/articles/tag/design/index.html": {
+  "url": "http://innocuous.org/articles/tag/design/",
+  "ts": "20220630041115",
+  "kind": "tag",
+  "bytes": 11064
+ },
+ "pages/articles/tag/economics/index.html": {
+  "url": "http://innocuous.org/articles/tag/economics/",
+  "ts": "20170114144343",
+  "kind": "tag",
+  "bytes": 12419
+ },
+ "pages/articles/tag/education/index.html": {
+  "url": "http://innocuous.org/articles/tag/education/",
+  "ts": "20160819182214",
+  "kind": "tag",
+  "bytes": 10955
+ },
+ "pages/articles/tag/email/index.html": {
+  "url": "http://innocuous.org/articles/tag/email/",
+  "ts": "20111104212533",
+  "kind": "tag",
+  "bytes": 11187
+ },
+ "pages/articles/tag/engineering/index.html": {
+  "url": "http://innocuous.org/articles/tag/engineering/",
+  "ts": "20200811163936",
+  "kind": "tag",
+  "bytes": 12829
+ },
+ "pages/articles/tag/event-processing/index.html": {
+  "url": "http://innocuous.org/articles/tag/event-processing/",
+  "ts": "20111104125304",
+  "kind": "tag",
+  "bytes": 11173
+ },
+ "pages/articles/tag/fdr/index.html": {
+  "url": "http://innocuous.org/articles/tag/fdr/",
+  "ts": "20220630043157",
+  "kind": "tag",
+  "bytes": 11902
+ },
+ "pages/articles/tag/finance/index.html": {
+  "url": "http://innocuous.org/articles/tag/finance/",
+  "ts": "20210727095300",
+  "kind": "tag",
+  "bytes": 18902
+ },
+ "pages/articles/tag/financing/index.html": {
+  "url": "http://innocuous.org/articles/tag/financing/",
+  "ts": "20220120013427",
+  "kind": "tag",
+  "bytes": 10924
+ },
+ "pages/articles/tag/franklyn-d-resort/index.html": {
+  "url": "http://innocuous.org/articles/tag/franklyn-d-resort/",
+  "ts": "20210727094554",
+  "kind": "tag",
+  "bytes": 11958
+ },
+ "pages/articles/tag/funding/index.html": {
+  "url": "http://innocuous.org/articles/tag/funding/",
+  "ts": "20211020044441",
+  "kind": "tag",
+  "bytes": 11507
+ },
+ "pages/articles/tag/gadget/index.html": {
+  "url": "http://innocuous.org/articles/tag/gadget/",
+  "ts": "20220630040443",
+  "kind": "tag",
+  "bytes": 12697
+ },
+ "pages/articles/tag/google/index.html": {
+  "url": "http://innocuous.org/articles/tag/google/",
+  "ts": "20220523122415",
+  "kind": "tag",
+  "bytes": 11324
+ },
+ "pages/articles/tag/hiring/index.html": {
+  "url": "http://innocuous.org/articles/tag/hiring/",
+  "ts": "20211201093537",
+  "kind": "tag",
+  "bytes": 12649
+ },
+ "pages/articles/tag/imap/index.html": {
+  "url": "http://innocuous.org/articles/tag/imap/",
+  "ts": "20170114140420",
+  "kind": "tag",
+  "bytes": 10746
+ },
+ "pages/articles/tag/jamaica/index.html": {
+  "url": "http://innocuous.org/articles/tag/jamaica/",
+  "ts": "20210509234711",
+  "kind": "tag",
+  "bytes": 11918
+ },
+ "pages/articles/tag/kids/index.html": {
+  "url": "http://innocuous.org/articles/tag/kids/",
+  "ts": "20211020042746",
+  "kind": "tag",
+  "bytes": 11906
+ },
+ "pages/articles/tag/law/index.html": {
+  "url": "http://innocuous.org/articles/tag/law/",
+  "ts": "20210617034325",
+  "kind": "tag",
+  "bytes": 11241
+ },
+ "pages/articles/tag/lean-startup/index.html": {
+  "url": "http://innocuous.org/articles/tag/lean-startup/",
+  "ts": "20160421002951",
+  "kind": "tag",
+  "bytes": 10874
+ },
+ "pages/articles/tag/lighttpd/index.html": {
+  "url": "http://innocuous.org/articles/tag/lighttpd/",
+  "ts": "20170114140416",
+  "kind": "tag",
+  "bytes": 11040
+ },
+ "pages/articles/tag/management/index.html": {
+  "url": "http://innocuous.org/articles/tag/management/",
+  "ts": "20190819163910",
+  "kind": "tag",
+  "bytes": 11251
+ },
+ "pages/articles/tag/marketing/index.html": {
+  "url": "http://innocuous.org/articles/tag/marketing/",
+  "ts": "20220523123137",
+  "kind": "tag",
+  "bytes": 14107
+ },
+ "pages/articles/tag/math/index.html": {
+  "url": "http://innocuous.org/articles/tag/math/",
+  "ts": "20220630035600",
+  "kind": "tag",
+  "bytes": 10951
+ },
+ "pages/articles/tag/media/index.html": {
+  "url": "http://innocuous.org/articles/tag/media/",
+  "ts": "20211020040800",
+  "kind": "tag",
+  "bytes": 10604
+ },
+ "pages/articles/tag/meetup/index.html": {
+  "url": "http://innocuous.org/articles/tag/meetup/",
+  "ts": "20210509222753",
+  "kind": "tag",
+  "bytes": 10905
+ },
+ "pages/articles/tag/metaphor/index.html": {
+  "url": "http://innocuous.org/articles/tag/metaphor/",
+  "ts": "20211201094314",
+  "kind": "tag",
+  "bytes": 11143
+ },
+ "pages/articles/tag/mit/index.html": {
+  "url": "http://innocuous.org/articles/tag/mit/",
+  "ts": "20220523122157",
+  "kind": "tag",
+  "bytes": 11120
+ },
+ "pages/articles/tag/mutt/index.html": {
+  "url": "http://innocuous.org/articles/tag/mutt/",
+  "ts": "20211201091419",
+  "kind": "tag",
+  "bytes": 10820
+ },
+ "pages/articles/tag/noncompetes/index.html": {
+  "url": "http://innocuous.org/articles/tag/noncompetes/",
+  "ts": "20211207191520",
+  "kind": "tag",
+  "bytes": 11273
+ },
+ "pages/articles/tag/optimization/index.html": {
+  "url": "http://innocuous.org/articles/tag/optimization/",
+  "ts": "20211201091544",
+  "kind": "tag",
+  "bytes": 12920
+ },
+ "pages/articles/tag/parenting/index.html": {
+  "url": "http://innocuous.org/articles/tag/parenting/",
+  "ts": "20220523104237",
+  "kind": "tag",
+  "bytes": 11044
+ },
+ "pages/articles/tag/presenting/index.html": {
+  "url": "http://innocuous.org/articles/tag/presenting/",
+  "ts": "20210727095506",
+  "kind": "tag",
+  "bytes": 10921
+ },
+ "pages/articles/tag/pricing/index.html": {
+  "url": "http://innocuous.org/articles/tag/pricing/",
+  "ts": "20210921224829",
+  "kind": "tag",
+  "bytes": 12249
+ },
+ "pages/articles/tag/programming-languages/index.html": {
+  "url": "http://innocuous.org/articles/tag/programming-languages/",
+  "ts": "20160421094449",
+  "kind": "tag",
+  "bytes": 17166
+ },
+ "pages/articles/tag/programming/index.html": {
+  "url": "http://innocuous.org/articles/tag/programming/",
+  "ts": "20220523122623",
+  "kind": "tag",
+  "bytes": 14806
+ },
+ "pages/articles/tag/real-estate/index.html": {
+  "url": "http://innocuous.org/articles/tag/real-estate/",
+  "ts": "20220704233424",
+  "kind": "tag",
+  "bytes": 12265
+ },
+ "pages/articles/tag/review/index.html": {
+  "url": "http://innocuous.org/articles/tag/review/",
+  "ts": "20211201102034",
+  "kind": "tag",
+  "bytes": 10966
+ },
+ "pages/articles/tag/ruby-on-rails/index.html": {
+  "url": "http://innocuous.org/articles/tag/ruby-on-rails/",
+  "ts": "20211201100410",
+  "kind": "tag",
+  "bytes": 12263
+ },
+ "pages/articles/tag/sales/index.html": {
+  "url": "http://innocuous.org/articles/tag/sales/",
+  "ts": "20220112192336",
+  "kind": "tag",
+  "bytes": 10831
+ },
+ "pages/articles/tag/security/index.html": {
+  "url": "http://innocuous.org/articles/tag/security/",
+  "ts": "20160819181114",
+  "kind": "tag",
+  "bytes": 11010
+ },
+ "pages/articles/tag/startup/index.html": {
+  "url": "http://innocuous.org/articles/tag/startup/",
+  "ts": "20210921235825",
+  "kind": "tag",
+  "bytes": 17749
+ },
+ "pages/articles/tag/streambase/index.html": {
+  "url": "http://innocuous.org/articles/tag/streambase/",
+  "ts": "20220630040854",
+  "kind": "tag",
+  "bytes": 12198
+ },
+ "pages/articles/tag/television/index.html": {
+  "url": "http://innocuous.org/articles/tag/television/",
+  "ts": "20170114093703",
+  "kind": "tag",
+  "bytes": 10988
+ },
+ "pages/articles/tag/theory/index.html": {
+  "url": "http://innocuous.org/articles/tag/theory/",
+  "ts": "20210921235154",
+  "kind": "tag",
+  "bytes": 11005
+ },
+ "pages/articles/tag/travel/index.html": {
+  "url": "http://innocuous.org/articles/tag/travel/",
+  "ts": "20220205014018",
+  "kind": "tag",
+  "bytes": 14637
+ },
+ "pages/articles/tag/typo/index.html": {
+  "url": "http://innocuous.org/articles/tag/typo/",
+  "ts": "20160819180540",
+  "kind": "tag",
+  "bytes": 12152
+ },
+ "pages/articles/tag/vacation/index.html": {
+  "url": "http://innocuous.org/articles/tag/vacation/",
+  "ts": "20211020030559",
+  "kind": "tag",
+  "bytes": 11923
+ },
+ "pages/articles/tag/vc/index.html": {
+  "url": "http://innocuous.org/articles/tag/vc/",
+  "ts": "20220630045542",
+  "kind": "tag",
+  "bytes": 11414
+ },
+ "pages/articles/tag/web-20/index.html": {
+  "url": "http://innocuous.org/articles/tag/web-20/",
+  "ts": "20220523104153",
+  "kind": "tag",
+  "bytes": 17519
+ },
+ "pages/articles/tag/web/index.html": {
+  "url": "http://innocuous.org/articles/tag/web/",
+  "ts": "20160416203137",
+  "kind": "tag",
+  "bytes": 10713
+ },
+ "pages/articles/tag/xp/index.html": {
+  "url": "http://innocuous.org/articles/tag/xp/",
+  "ts": "20220523112658",
+  "kind": "tag",
+  "bytes": 11221
+ },
+ "pages/biography/index.html": {
+  "url": "http://innocuous.org/biography/",
+  "ts": "20100619081533",
+  "kind": "page",
+  "bytes": 13829
+ },
+ "pages/florey/index.html": {
+  "url": "http://innocuous.org/florey/",
+  "ts": "20040323075303",
+  "kind": "page",
+  "bytes": 2689
+ },
+ "pages/page/2/index.html": {
+  "url": "http://innocuous.org/page/2/",
+  "ts": "20210727095341",
+  "kind": "page",
+  "bytes": 64852
+ },
+ "pages/page/3/index.html": {
+  "url": "http://innocuous.org/page/3/",
+  "ts": "20161009070447",
+  "kind": "page",
+  "bytes": 60464
+ },
+ "pages/photos/index.html": {
+  "url": "http://innocuous.org/photos/",
+  "ts": "20040130223948",
+  "kind": "page",
+  "bytes": 7473
+ },
+ "pages/photos/index.cgi__mode_album_album_._Fireworks/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Fireworks",
+  "ts": "20030815005600",
+  "kind": "page",
+  "bytes": 7588
+ },
+ "pages/photos/index.cgi__mode_album_album_._Florey/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Florey",
+  "ts": "20030729182039",
+  "kind": "page",
+  "bytes": 7932
+ },
+ "pages/photos/index.cgi__mode_album_album_._Hacks/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Hacks",
+  "ts": "20030407195306",
+  "kind": "page",
+  "bytes": 7843
+ },
+ "pages/photos/index.cgi__mode_album_album_._MIT/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./MIT",
+  "ts": "20030729172910",
+  "kind": "page",
+  "bytes": 7769
+ },
+ "pages/photos/index.cgi__mode_album_album_._OneRing/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./OneRing",
+  "ts": "20030407201808",
+  "kind": "page",
+  "bytes": 7617
+ },
+ "pages/photos/index.cgi__mode_album_album_._Outside/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Outside",
+  "ts": "20030815011741",
+  "kind": "page",
+  "bytes": 7803
+ },
+ "pages/photos/index.cgi__mode_album_album_._Scituate/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Scituate",
+  "ts": "20030407201025",
+  "kind": "page",
+  "bytes": 6566
+ },
+ "pages/photos/index.cgi__mode_album_album_._Senior_House/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./Senior+House",
+  "ts": "20030407182332",
+  "kind": "page",
+  "bytes": 7985
+ },
+ "pages/photos/index.cgi__mode_album_album_._TERC/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./TERC",
+  "ts": "20030208082048",
+  "kind": "page",
+  "bytes": 5364
+ },
+ "pages/photos/index.cgi__mode_album_album_._misc/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./misc",
+  "ts": "20030407182111",
+  "kind": "page",
+  "bytes": 7515
+ },
+ "pages/photos/index.cgi__mode_album_album_MIT_4.301/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=/MIT/4.301",
+  "ts": "20030208124016",
+  "kind": "page",
+  "bytes": 5457
+ },
+ "pages/photos/index.cgi__mode_album_album_MIT_6.829_is_Full/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=/MIT/6.829+is+Full",
+  "ts": "20030208125629",
+  "kind": "page",
+  "bytes": 5295
+ },
+ "pages/photos/index.cgi__mode_album_album_MIT_Ellison_Lecture/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=/MIT/Ellison+Lecture",
+  "ts": "20030525123356",
+  "kind": "page",
+  "bytes": 5651
+ },
+ "pages/photos/index.cgi__mode_album_album_TERC_Charting_the_Machines_Database/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=/TERC/Charting+the+Machines+Database",
+  "ts": "20030407214451",
+  "kind": "page",
+  "bytes": 8385
+ },
+ "pages/photos/index.cgi__mode_album_startitem_13_album_MIT/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&startitem=13&album=/MIT",
+  "ts": "20030526122214",
+  "kind": "page",
+  "bytes": 7724
+ },
+ "pages/photos/index.cgi__mode_album_startitem_13_album_OneRing/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&startitem=13&album=/OneRing",
+  "ts": "20030527100549",
+  "kind": "page",
+  "bytes": 5421
+ },
+ "pages/photos/index.cgi__mode_image_album_TERC_image_IMG_1027.JPG/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=image&album=/TERC&image=IMG_1027.JPG",
+  "ts": "20030522114406",
+  "kind": "page",
+  "bytes": 9017
+ },
+ "pages/photos/postcomment/commentviewer.html": {
+  "url": "http://innocuous.org/photos/postcomment/commentviewer.cgi",
+  "ts": "20030407181821",
+  "kind": "page",
+  "bytes": 3409
+ },
+ "pages/ssh.html": {
+  "url": "http://innocuous.org/ssh.html",
+  "ts": "20030713211349",
+  "kind": "page",
+  "bytes": 565
+ },
+ "pages/tibbetts/index.html": {
+  "url": "http://innocuous.org/tibbetts/",
+  "ts": "20220630041005",
+  "kind": "page",
+  "bytes": 13995
+ },
+ "pages/articles/2006/01/26/google-just-isnt-very-good/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/26/google-just-isnt-very-good/",
+  "ts": "20220630034312",
+  "kind": "post",
+  "bytes": 17569
+ },
+ "pages/articles/2006/04/08/google-takes-college-recruiting-to-the-next-level/index.html": {
+  "url": "http://innocuous.org/articles/2006/04/08/google-takes-college-recruiting-to-the-next-level/",
+  "ts": "20170114121731",
+  "kind": "post",
+  "bytes": 12428
+ },
+ "pages/articles/2008/01/12/bungee-connect-what-i-learned-about-platform-evaluations/index.html": {
+  "url": "http://innocuous.org/articles/2008/01/12/bungee-connect-what-i-learned-about-platform-evaluations/",
+  "ts": "20190819164531",
+  "kind": "post",
+  "bytes": 15807
+ },
+ "pages/articles/2008/04/index.html": {
+  "url": "http://innocuous.org/articles/2008/04/",
+  "ts": "20220120014916",
+  "kind": "archive",
+  "bytes": 13036
+ },
+ "pages/articles/2008/04/08/index.html": {
+  "url": "http://innocuous.org/articles/2008/04/08/",
+  "ts": "20081204094125",
+  "kind": "post",
+  "bytes": 7750
+ },
+ "pages/articles/2008/04/11/index.html": {
+  "url": "http://innocuous.org/articles/2008/04/11/",
+  "ts": "20081204104217",
+  "kind": "post",
+  "bytes": 10263
+ },
+ "pages/articles/2008/04/11/when-neither-a-column-store-nor-a-row-store-is-the-answer/index.html": {
+  "url": "http://innocuous.org/articles/2008/04/11/when-neither-a-column-store-nor-a-row-store-is-the-answer/",
+  "ts": "20211201103345",
+  "kind": "post",
+  "bytes": 13960
+ },
+ "pages/articles/2008/04/page/1/index.html": {
+  "url": "http://innocuous.org/articles/2008/04/page/1/",
+  "ts": "20090105204649",
+  "kind": "archive",
+  "bytes": 11709
+ },
+ "pages/articles/2008/04/page/3/index.html": {
+  "url": "http://innocuous.org/articles/2008/04/page/3/",
+  "ts": "20081204102834",
+  "kind": "archive",
+  "bytes": 11738
+ },
+ "pages/articles/2008/06/03/index.html": {
+  "url": "http://innocuous.org/articles/2008/06/03/",
+  "ts": "20081204100157",
+  "kind": "post",
+  "bytes": 8153
+ },
+ "pages/articles/2009/06/20/blackberry-versus-iphone-benchmarking-the-browser/index.html": {
+  "url": "http://innocuous.org/articles/2009/06/20/blackberry-versus-iphone-benchmarking-the-browser/",
+  "ts": "20170114143604",
+  "kind": "post",
+  "bytes": 17864
+ },
+ "pages/articles/2009/12/21/advice-to-those-giving-birth-at-mount-auburn-hospital/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2009/12/21/advice-to-those-giving-birth-at-mount-auburn-hospital/comment-page-1/",
+  "ts": "20170222182447",
+  "kind": "post",
+  "bytes": 18548
+ },
+ "pages/articles/2010/12/06/yes-virginia-you-can-work-on-great-technology-at-startups/index.html": {
+  "url": "http://innocuous.org/articles/2010/12/06/yes-virginia-you-can-work-on-great-technology-at-startups/",
+  "ts": "20191118223726",
+  "kind": "post",
+  "bytes": 16480
+ },
+ "pages/articles/page/1/index.html": {
+  "url": "http://innocuous.org/articles/page/1/",
+  "ts": "20081204101258",
+  "kind": "page",
+  "bytes": 22244
+ },
+ "pages/articles/tag/osx/index.html": {
+  "url": "http://innocuous.org/articles/tag/osx/",
+  "ts": "20160416205234",
+  "kind": "tag",
+  "bytes": 12244
+ },
+ "pages/articles/tag/poker/index.html": {
+  "url": "http://innocuous.org/articles/tag/poker/",
+  "ts": "20211020024451",
+  "kind": "tag",
+  "bytes": 10908
+ },
+ "pages/articles/tag/visualization/index.html": {
+  "url": "http://innocuous.org/articles/tag/visualization/",
+  "ts": "20160819120733",
+  "kind": "tag",
+  "bytes": 10735
+ },
+ "pages/photos/index.cgi__mode_album_album_._EC_Rush_2001/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&album=./EC+Rush+2001",
+  "ts": "20030407200239",
+  "kind": "page",
+  "bytes": 263
+ },
+ "pages/photos/index.cgi__mode_album_startitem_13_album_misc/index.html": {
+  "url": "http://innocuous.org/photos/index.cgi?mode=album&startitem=13&album=/misc",
+  "ts": "20030530065059",
+  "kind": "page",
+  "bytes": 7515
  }
 }

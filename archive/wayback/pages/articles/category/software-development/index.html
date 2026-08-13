@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Nothing To See Here</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://innocuous.org/xml/rsd/feed.xml" />
+  <link href="http://innocuous.org/xml/rss/feed.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+  <link href="/stylesheets/theme/azure.css" media="screen" rel="Stylesheet" type="text/css" />
+  <link href="/stylesheets/theme/local.css" media="screen" rel="Stylesheet" type="text/css" />
+  <script src="/javascripts/cookies.js" type="text/javascript"></script>
+  <script src="/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="/javascripts/effects.js" type="text/javascript"></script>
+  <script src="/javascripts/typo.js" type="text/javascript"></script>
+  <script type="text/javascript"></script>
+</head>
+<body>
+  <div id="container" class="clearfix">
+      <div id="header">
+        <div id="logo">
+          <h1 id="sitename"><a href="/">Nothing To See Here</a></h1>
+          <h2 id="subtitle">Weblog of Richard Tibbetts</h2>
+        </div>
+      </div>
+      
+      <div id="search"> <form action="/articles/search" id="sform" method="get">
+ <label for="q">Live Search:</label><input type="text" id="q" name="q" value="" size="15" />
+<img alt="Spinner-blue" id="search_spinner" src="/images/spinner-blue.gif" style="display:none;" />
+</form>
+</div>
+      
+      <div id="content" class="clearfix">
+        <div id="main">
+           <div class="post">
+  <h2><a href="/articles/2007/06/06/the-lemons-meme-in-software">The Lemons Meme in Software</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Wed, 06 Jun 2007 11:52:00 GMT">Wed, 06 Jun 2007 11:52:00 GMT</span></p>
+A few weeks ago <a href="http://www.schneier.com/crypto-gram-0705.html#1">Bruce Schneier discovered a classic economics paper, "The Market for Lemons"</a>. The paper describes the behavior of markets where sellers have detailed information about the products, particularly the quality of the products, that buyers do not have. It uses the example of used cars.
+<p>
+In these markets, the price buyers are willing to pay is defined by average quality of good. Buyers lack information, so can only assume they are going to get a product of average value. Unfortunately, this lower price drives the best products out of the market, because sellers (who know they have the best goods) won't accept that price. When the best goods are removed from the market, the average quality drops, the price drops, and the next best goods are removed from the market. The conclusion is that in these markets quality falls until it matches the amount of information that buyers have.
+<p>
+Bruce applies this principle of economics to explain why there are so many bad security products. But others in the blogosphere have picked it up as a way to describe other parts of software. I first saw it at David Anderson's blog, where he talks about <a href="http://www.agilemanagement.net/Articles/Weblog/WherestheLemon.html">the lack of information when hiring software engineers.</a> The most stark application to the job market comes in <a href="http://programming.reddit.com/info/1reqw/comments/c1rl6e">a Reddit comment</a> through:
+<blockquote>
+I just realized that it applies to the IT job market. Here the seller (the applicant) has all the info about himself, while the employer knows nothing. So what happens is that companies expect the average, and pay accordingly. That's why people who are smarter than average shouldn't go on job interviews, because they'll likely to get below what they are worth.
+</blockquote>
+In the IT market it also helps to explain the pervasive use of certifications. Even if they don't indicate that a candidate is good, they do cut out the bottom of the distribution of candidates (the truly terrible sysadmins). Since top people will have already taken themselves out of the market for these jobs, it's ok to alienate them. Removing the bottom people pulls up the average, so prices (salaries) presumably rise.
+<p>
+As much as I like thinking about the talent market, my favorite application of this meme is <a href="http://weblog.raganwald.com/2007/05/not-so-big-software-application.html">Reg Braithwaite's The Not So Big Software Design</a> where he applies it to tract housing (a pet issue of mine) and by metaphor to custom software development. The customers for both new houses and custom software are definitely ignorant, and they tend to buy based on what we in the software industry call buzzwords. For new home buyers, these are things like granite countertops, en-suite master bathrooms, the number of bedrooms, etc. Builders optimize for these easy-to-observe items, at the expense of things that can be critical to livability or maintainability of homes.
+<p>
+It's a good discussion of the realities of custom software. The metaphor does tragically fall down though. At least buyers of used cars and tract housing can resell them to the next ignorant buyer. Companies are generally stuck with their custom software.
+
+
+    
+  <p class="meta">Posted in <a href="/articles/category/software-development" rel="category tag">Software Development</a>, <a href="/articles/category/business" rel="category tag">Business</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2007/06/06/the-lemons-meme-in-software#comments">1 comment</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2007/06/06/the-lemons-meme-in-software#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/01/23/stop-energy">Stop Energy</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Mon, 23 Jan 2006 16:13:47 GMT">Mon, 23 Jan 2006 16:13:47 GMT</span></p>
+<p>A friend just used the phrase <a href="http://www.userland.com/whatIsStopEnergy">Stop Energy</a> to describe part of the open software development process. I hadn't heard the term before, and so I had to look it up. Stop Energy is the ambient energy in an open development process available to stop any forward motion. Stop Energy manifests as technical (and sometimes non-technical) stone throwing directed at anyone proposing any change. An excess of stop energy in a process is crippling. Unfortunately, stop energy seems to increase with the number of participants.</p><p>
+Stop energy isn't uniformly bad, in my opinion. Sometimes it is necessary to prevent bad changes from happening. But far more often is a free software project (or any other open process) killed by stagnation and a loss of volunteers than by an excess of development and participation.</p><p>
+I've personally witness stop energy in several groups. Sometimes stop energy is the result of curmudgeons who don't want anything to change, or of people who want to retain control of previous design decisions. But quite often Stop Energy and <a href="http://projects.csail.mit.edu/gsb/archives/old/gsb-archive/gsb2000-02-11.html">Yak Shaving</a> go together. Yak shaving is a catch-all term for the work you need to do before you can do the work you should do. Often stop energy manifests itself as requirement creep. "You can't add a new method to the dispatcher until we totally redesign the dispatcher like I've been meaning to do for 2 years." This kind of stop energy can be particularly difficult for new participants in the process to overcome.</p><p>
+Having a term like Stop Energy I hope will help me to identify it in myself and others, and try to overcome it. It is potentially a very destructive force.</p><p>
+</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/software-development" rel="category tag">Software Development</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/23/stop-energy#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/23/stop-energy#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2005/05/29/subversion-greater-than-cvs">Subversion greater than CVS</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sun, 29 May 2005 15:20:00 GMT">Sun, 29 May 2005 15:20:00 GMT</span></p>
+I recently finished upgrading <a
+href="http://typo.leetsoft.com/">Typo</a> (the software that runs <a
+href="http://innocuous.org/ntsh/">Nothing To See Here</a>) from 1.6.8
+to 2.0.x, and at the same time moved my local changes into <a
+href="http://subversion.tigris.org/">Subversion</a>. Subversion is a
+definite improvement over <a
+href="http://www.gnu.org/software/cvs/">CVS</a>. Being able to
+rearrange my repository (I did this twice before I was happy with it)
+was really nice. Once I was used to it, I gained the ability to just
+add things anywhere I want and figure I could sort them out later. The
+write-once nature of the directory structure in CVS had always created
+a lot of anxiety whenever I was starting a project. I think I will
+shortly be transitioning all of my personal projects to Subversion.
+All the cool kids are doing it. Of course, if I was a really cool kid
+I'd be using <a href="http://svk.elixus.org/">SVK</a>, but I think I'm
+not cool enough for that yet.
+
+
+    
+  <p class="meta">Posted in <a href="/articles/category/tools" rel="category tag">Tools</a>, <a href="/articles/category/software-development" rel="category tag">Software Development</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2005/05/29/subversion-greater-than-cvs#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2005/05/29/subversion-greater-than-cvs#trackbacks">no trackbacks</a></p> 
+  </div>
+
+
+          <script type="text/javascript">show_dates_as_local_time()</script>
+        </div>
+        <div id="sidebar">
+          
+            <div id="search-results"></div>
+              <script type="text/javascript">new Form.Element.Observer('q', 1, function(element, value) {new Ajax.Updater('search-results', '/live/search', {asynchronous:true, evalScripts:true, onComplete:function(request){Element.hide('search_spinner')}, onLoading:function(request){Element.show('search_spinner')}, parameters:value})})</script>
+              <h3>About</h3>
+<a href="/tibbetts/">About Richard Tibbetts</a>
+
+  
+<h3>Archives</h3>
+<ul id="archives">
+  
+    <li>
+      <a href="/articles/2008/12">December 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/06">June 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/04">April 2008</a>
+      <em>(3)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/01">January 2008</a>
+      <em>(1)</em>
+    </li>
+  
+</ul>
+
+
+  <h3>Categories</h3>
+<ul id="categories">
+  
+  <li><a href="/articles/category/books">Books</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/business">Business</a> <em>(9)</em></li>
+  
+  
+  <li><a href="/articles/category/computer-science">Computer Science</a> <em>(5)</em></li>
+  
+  
+  <li><a href="/articles/category/media">Media</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/software-development">Software Development</a> <em>(3)</em></li>
+  
+  
+  <li><a href="/articles/category/tools">Tools</a> <em>(8)</em></li>
+  
+  
+  <li><a href="/articles/category/web">Web</a> <em>(5)</em></li>
+  
+</ul>
+
+
+    <div id="delicious">
+    <h3>Delicious/tibbetts/sidebar</h3>
+    <ul>
+              <li><a href="http://debs08.dis.uniroma1.it/" title="The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008">The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008 </a></li>
+              <li><a href="http://www.bugblogger.com/2007/09/pizza-tail.html" title="Bug Blogger: Pizza Tail">Bug Blogger: Pizza Tail </a></li>
+              <li><a href="http://tytso.livejournal.com/30681.html" title="Ted Tso - On the benevolent dictator model">Ted Tso - On the benevolent dictator model </a></li>
+              <li><a href="http://www.slate.com/id/2172342/fr/rss/" title="How do you inject money into the economy? - By Michelle Tsai - Slate Magazine">How do you inject money into the economy? - By Michelle Tsai - Slate Magazine </a></li>
+              <li><a href="http://www.physorg.com/news95954919.html" title="Humans hot, sweaty, natural-born runners">Humans hot, sweaty, natural-born runners </a></li>
+              <li><a href="http://datamining.typepad.com/gallery/blog-map-gallery.html" title="Data Mining: Mapping The Blogosphere">Data Mining: Mapping The Blogosphere </a></li>
+              <li><a href="http://www.thenation.com/doc/20070423/press" title="The New Suburban Poverty">The New Suburban Poverty </a></li>
+              <li><a href="http://paul.kedrosky.com/archives/2007/04/17/top_ten_vc_lies.html" title="Paul Kedrosky: Updated: Top Ten VC Lies">Paul Kedrosky: Updated: Top Ten VC Lies </a></li>
+              <li><a href="http://www.math.tamu.edu/~cyan/Rota/mitless.html" title="Ten lessons from Rota">Ten lessons from Rota </a></li>
+              <li><a href="http://weblog.fortnow.com/2006/08/zero-knowledge-sudoku.html" title="Computational Complexity: Zero-Knowledge Sudoku">Computational Complexity: Zero-Knowledge Sudoku </a></li>
+          </ul>
+  </div>
+
+  <h3>Pseudo-Blogroll</h3>
+<ul>
+  <li><a href="http://blog.nimlabs.org">Nick Martin</a></li>
+  <li><a href="http://jenselby.org">Jen Selby</a></li>
+  <li>your link here</li>
+</ul>
+
+
+  <h3>Syndicate</h3>
+<ul>
+    <li><a href="/xml/rss/feed.xml" title="RSS 2.0 feed">Articles</a></li>
+  
+    <li><a href="/xml/commentrss/feed.xml" title="Comments RSS 2.0 feed">Comments</a></li>
+  
+  
+</ul>
+
+
+
+            <a class="powered" href="http://typo.leetsoft.com/"><img alt="Powered" src="/images/powered.gif" /></a>
+            </div>
+
+            <br clear="all" />
+      </div>
+      <div id="footer">
+        <ul>
+          <li><a href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0</a></li>
+          <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://innocuous.org/">Valid CSS</a></li>
+        </ul>
+      </div>
+  </div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2439300-1";
+urchinTracker();
+</script>
+</body>
+</html>

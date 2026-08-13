@@ -9,7 +9,7 @@ tags:
   - "financing"
   - "poker"
   - "startup"
-source_capture: "pages/index/index.html"
+source_capture: "pages/articles/2010/12/12/there-can-be-too-many-suckers-at-the-table/index.html"
 ---
 Everyone knows the old saw about poker: If you can’t spot the sucker, it’s probably you. It’s nice to think you could sit down at a table with incompetent players and take their money. It probably works in poker. [Mark Suster](http://www.bothsidesofthetable.com/) applies the aphorism to angel investing in his post [Dealflow – Are You Sitting at The Right Poker Table?](http://www.cloudave.com/4795/angel-investing-1-dealflow-%e2%80%93-are-you-sitting-at-the-right-poker-table/) It’s a good post, dealflow is really important. But the poker metaphor falls short. Too many suckers actually ruin a startup market.
 

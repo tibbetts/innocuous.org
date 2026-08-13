@@ -1,0 +1,32 @@
+---
+title: "Apple is a Luxury Brand, Android Will Never Be"
+date: 2010-10-17T22:48:00
+slug: "apple-is-a-luxury-brand-android-will-never-be"
+wp_id: 80
+categories:
+  - "Business"
+  - "Technology"
+tags:
+  - "apple"
+  - "marketing"
+source_capture: "pages/articles/2010/10/17/apple-is-a-luxury-brand-android-will-never-be/comment-page-1/index.html"
+---
+Recently I’ve had several good conversations about exactly what business Apple is in. They have clearly transcended their traditional role as a computer maker. Some people think that Apple has become a media company, or a telecommunications company. What they have really done is to become a luxury brand. As a luxury brand they are shielded from feature- and performance-based competition, enjoying higher margins and more stable revenues than other consumer electronics firms. The future of the iPhone and iPad and their strategy for competing with Android will be based on Apple’s luxury brand.
+
+In laptops and desktops, Apple is unassailed as the luxury brand. Whenever I talk to non-engineers about buying laptops or desktops, this is clear. If I suggest they get a Mac, the response is never “I don’t know if it will run my software” or “I prefer Windows”, but rather “I can’t afford one” or “it feels unnecessary.” Rather like if someone asked me what car to buy and I suggested a BMW. As far as I can tell, non-geeks would all buy Macs if money were no object. And there is a strong correlation between people who display what computer they use socially (geeks, coffee-shop denizens) and Mac users (gamers have their own tastes and displays). Thanks to the fact that [the OS no longer matters](http://www.mondaynote.com/2010/10/03/the-os-doesn%E2%80%99t-matter/), consumers are free to select either a utilitarian lowest-bidder machine, or a Mac.
+
+Apple doesn’t really have any competition in this market. Sony has tried several times, and makes some really nice (and really expensive) machines. But because the Sony brand still doesn’t mean luxury to the man on the street, it doesn’t give people the opportunity to show off that they require from their luxury goods. And so Apple has a near-monopoly on expensive computers. [In June 2009, Apple had 90% market share for non-business computers costing more than $1000.](https://www.betanews.com/joewilcox/article/Apple-has-91-of-market-for-1000-PCs-says-NPD/1248313624) Their consumers are not price sensitive, and so Apple gets correspondingly high margins, creating a lucrative and stable business.
+
+The iPod is also a luxury good, albeit a luxury that nearly everyone can afford. I think it is a fluke that Apple dominates the portable music player market. I think the iPod is the Coach purse of the Apple lineup: It’s a luxury good, but one that nearly anyone can afford and is easy to justify. And with those ubiquitous white earbuds, you can show off your good taste even when the player is in your pocket.
+
+Speaking of the iPod, some people think that Apple is becoming a media company, leveraging their control of the player into domination of the music business. Far from it, I would say. Apple is happily participating in the demise of the music industry, carrying the record labels in a hand basket towards the free or nearly-free distribution of recorded music that is [the obvious conclusion of technological improvements](https://www.apple.com/hotnews/thoughtsonmusic/). If you told Steve Jobs that all music is going to be free tomorrow, the logical response would be “great, people are going to need new iPods with more storage.”
+
+The iPad is clearly a luxury good. Early adopters proudly show off their iPad. It’s very expensive and has little competition. There is a big question as to how the market for tablets will develop. It may go the way of MP3 players, an expensive but pleasant toy where everyone buys the nice one from Apple. Or it may look more like the modern PC world, where anyone can get a decent table from Acer/Dell/HP/etc for $200. A lot depends on how broad the demand is for tablets.
+
+The iPhone initially headed in the direction of the iPod, looking like mainstream consumers were choosing between an iPhone and no smartphone at all. But Android has created a credible option, in fact a wealth of credible option, that more practical consumers see as the better option when it comes to price, service availability, etc. But Apple still sells plenty of phones to people who want the new iPhone, even if the antenna is broken, the service is terrible, and their preferred carrier doesn’t have it.
+
+Expect Apple to maintain a high price point and air of exclusivity around the iPad and iPhone. In the face of dozens of perfectly adequate Android competitors, Apple may well cede the low end of the market. Their branding, integration, and user experience will allow them to capture a premium price at the high end. Their product line will stay simple; customer’s aren’t interested in the optimal price/performance or choosing features. [Customers just want the new Apple device, and will not be especially conscious about the price or comparisons to third party products.](http://techcrunch.com/2010/06/28/iphone-4-vs-evo-4g/)
+
+Much has been written about developers fleeing iOS for Android. It’s true that Apple has been difficult to do business with. I expect mobile app developers to realize that Apple has the customers they want. Years ago, Apple was able to keep developers on the Mac platform when their market share was in the low single digits, because the average Apple user bought a lot more third party software than the average Windows user. Similarly, by hanging on to the high-end, $4-latte-drinking customer, Apple will be the place to go for developers selling $4 apps. Expect comparisons of per-user app spend to be forthcoming, and the numbers to be in Apple’s favor.
+
+Apple has figured out how to be the only mass market luxury vendor in desktops, laptops, and MP3 players. By applying the same techniques to tablet computers and mobile phones, they might not maintain raw market share, but they can hang on to the most profitable customers, which is more important. They will do it not by offering the best products on some absolute scale understood only by geeks, but by offering a user experience that starts in the store, a brand which is increasingly well recognized, and a set of stories that tell people they are buying something more than just luxury.

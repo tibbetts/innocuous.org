@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>Florey T-Shirt Ordering</title>
+</head>
+
+<body bgcolor=white>
+    <h1>Florey T-Shirt Ordering</h1>
+
+    <hr>
+
+<blockquote>
+
+<center>
+<h1><font color=red>Orders are closed.</font></h1>
+</center>
+
+<b><font size=+1 color=red>Security:</font></b> Nope, this page doesn't have
+any. No authentication either. And you know what, I don't care. It
+will send a mail message confirming the order to the email address
+provided. If you don't recieve the mail, or recieve two mails, or
+anything else odd, then send me mail telling me about it and I will
+deal. My address (if you don't know) is <a
+href="mailto:tibbetts@mit.edu">tibbetts@mit.edu</a>.
+<p>
+
+<b><font size=+1 color=blue>Availability:</font></b> This time around
+I am doing preordering. This means that if you don't preorder a shirt
+you don't get one. So order a shirt.
+<p>
+
+<b><font size=+1 color=orange>Special Orders:</font></b> If you want
+to order something weird, like long sleeve or other shirt colors, send
+me mail. I will talk to the shirt company about what is available.
+<p>
+
+<b><font size=+1 color=green>Price:</font></b> $8 for hall members,
+$10 for non hall members.
+
+<form method=PUT action="/cgi-bin/florey">
+
+<h2>Id Info</h2>
+
+<table>
+
+<tr>
+<th align=right>Email Address:</th>
+<td><input name=email type=text size=30></td>
+
+<tr>
+<th align=right>Hall Member?</th>
+<td><input type=radio name=hall_member_p value=t>Yes &nbsp;
+<input type=radio name=hall_member_p value=f>No</td>
+
+<tr>
+<th align=right>Size:</th>
+<td>
+<select name=size>
+<option value="m">Medium
+<option value="l">Large
+<option SELECTED value="x">XLarge
+</select>
+
+(if you want to order shirts in multiple sizes, then submit multiple
+orders)
+
+</td>
+
+
+</table>
+<h2>Florey Shirts</h2>
+
+<table>
+
+<tr>
+<th align=right>Purple on Black:</th>
+<td><input type=text name=florey_purple_on_black size=4 value="0"></td>
+
+<tr>
+<th align=right>Green on Black:</th>
+<td><input type=text name=florey_green_on_black size=4 value="0"></td>
+
+<tr>
+<th align=right>White on Black:</th>
+<td><input type=text name=florey_white_on_black size=4 value="0"></td>
+
+</table>
+
+
+<h2>Krotus Shirts</h2>
+
+Hall members only. Don't order one if you aren't a hall member.
+
+<table>
+
+<tr>
+<th align=right>Black on Black:</th>
+<td><input type=text name=krotus_black_on_black size=4 value="0"></td>
+
+<tr>
+<th align=right>Red on Black:</th>
+<td><input type=text name=krotus_red_on_black size=4 value="0"></td>
+
+<tr>
+<th align=right>White on White:</th>
+<td><input type=text name=krotus_white_on_white size=4 value="0"></td>
+
+</table>
+
+<center>
+<input type=submit value="Submit Order">
+</center>
+
+</form>
+
+</blockquote>
+
+<hr>
+<address>tibbetts@mit.edu</address>
+
+</body>
+</html>

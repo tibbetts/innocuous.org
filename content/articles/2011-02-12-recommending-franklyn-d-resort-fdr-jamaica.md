@@ -13,7 +13,7 @@ tags:
   - "kids"
   - "travel"
   - "vacation"
-source_capture: "pages/index/index.html"
+source_capture: "pages/articles/2011/02/12/recommending-franklyn-d-resort-fdr-jamaica/index.html"
 ---
 I just got back from a week in Jamaica, and I’ve been talking off everyone’s ear about the experience. That’s because the [Franklyn D. Resort](http://www.fdrholidays.com/fdr/) has one major thing going for it: every family gets a full time nanny for the duration of your vacation.  Larger families, particularly with multiple age groups of kids, often had two nannies. The resort seemed especially friendly to large families, with big multi-bedroom suites and reasonable rates for additional children. For our trip they were also running a “grandparents stay free” promotion, which I think they do every January. If you are planning a family-oriented vacation, particularly with young kids, you have to consider the Franklyn D. Resort.
 

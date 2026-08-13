@@ -1,0 +1,26 @@
+---
+title: "Lean Startups and the Theory of the Firm"
+date: 2010-10-24T23:28:00
+slug: "lean-startups-and-the-theory-of-the-firm"
+wp_id: 82
+categories:
+  - "Business"
+tags:
+  - "economics"
+  - "lean startup"
+  - "startup"
+source_capture: "pages/page/2/index.html"
+---
+If you spend much time in the entrepreneurial corners of the blogosphere, you’re certain to have heard about [lean startups](http://steveblank.com/). If you haven’t, check out [Eric Reis](http://www.startuplessonslearned.com/) and [Steve Blank](http://steveblank.com/). The core of the lean startup is two related ideas: continuous validation and building the smallest company that can validate an idea. The result is dramatically reduced costs, reduced time-to-failure, and reduced risk. A lot has been written and can be written about validation. But what I’m concerned about now is how small the smallest possible company is, and specifically why it is usually more than one person.
+
+In business school you are likely to encounter the [Theory of the Firm](https://en.wikipedia.org/wiki/Theory_of_the_firm). If you haven’t been to business school, but you grew up in the modern west, it may seem strange to think that you need a theory to explain the existence of big companies. But actually, big companies are a recent innovation, something that came about in the later part of the Industrial Revolution, the early 20th century. Adam Smith, when conceiving the famous Invisible Hand of capitalism, had no concept of the international megacorporation. His pin makers worked in small groups, with the free market guiding their interactions.
+
+If the markets are efficient, there ought not be any need for corporations. People can freely associate to pursue their various goals, exchanging money for goods and services, each pursuing their own ends. In fact, a large corporation represents an imposition on the free market, where a group of people (employees) decide to transact with each other and the owners of the corporation under special rules. The question at hand is why they do that, and why are some specializations best kept inside the firm while others are commonly contracted out.
+
+The large corporation may be a phenomenon of the 20th century, brought about by efficiencies of scale, inefficiencies of communication, concentrations of management and financial expertise. Or there may be fundamental value to the corporation. The theory of the firm enables us to reason about why companies exist, and whether they will persist.
+
+The most widely understood theory of the firm is that of Ronald Coase, based on trasnsaction costs. In Coase’s model, having a service provider within the firm is economically advantageous when the cost of transacting for a service or asset with an outside party exceeds the inefficiency of bringing the service or asset inside the firm. To answer whether a given function belongs inside the firm, from office cleaning services to recruiting to software development, examine the costs associated with contracting for the function, compared to the efficiency gained from getting the service on the free market. This theory is very attractive for the modern lean startup. In the 21st century more and more functions, from graphic design to office space, are being standardized, commoditized, and delivered on liquid markets like 99designs. As communications technology improves, transaction costs go down, and firms should get smaller. These are exciting times.
+
+But there are other approaches to understanding the firm. The paper which precipitated this blog post, [Eric Van den Steen](http://drfd.hbs.edu/fit/public/facultyInfo.do?facInfo=ovr&facId=301858)’s *[Interpersonal Authority in a Theory of the Firm](http://web.mit.edu/evds/www/research/pdf/P10_AER_EVdS_Interpersonal%20Authority.pdf)* (via [Marginal Revolution](http://www.marginalrevolution.com/marginalrevolution/2010/10/underappreciated-economists-eric-van-den-steen.html)), finds substantial value in the firm to create goal-alignment. In his model, consider two parties with two business opportunities (for example, building a product and selling it) deciding how to pursue them. If their two opportunities have are substantially interdependent, but their decisions are made independently, then each is in danger of being spoiled by the other. If instead one party takes a controlling role, offering the other party appropriate incentives, then the likelihood of being spoiled drops out and it is more likely that both business opportunities will be successful. And further, the optimal incentives in this case looks more like salary than like partnership, because the goal is to get the employee to do what they are told, rather than what they think will be most successful.
+
+The take-away for the lean startup is that you must include in your firm the people, skills, and assets from whom you require alignment to a common goal. You can outsource anything where the practitioner can pursue their own profit maximization and not impact your focus. The meta take-away is that the theory of the firm is still open to innovative interpretations. For anyone interested in studying entrepreneurship, it’s important to understand the economics underlying the organizations that are being created.

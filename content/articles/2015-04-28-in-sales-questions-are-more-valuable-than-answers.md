@@ -5,7 +5,7 @@ slug: "in-sales-questions-are-more-valuable-than-answers"
 wp_id: 207
 categories:
   - "Miscellaneous"
-source_capture: "pages/index/index.html"
+source_capture: "pages/articles/2015/04/28/in-sales-questions-are-more-valuable-than-answers/index.html"
 ---
 *Inspired by [“A day at the park” by Kostas Kiriakakis](http://kiriakakis.net/comics/mused/a-day-at-the-park).*
 

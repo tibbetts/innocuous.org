@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Nothing To See Here</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://innocuous.org/xml/rsd/feed.xml" />
+  <link href="http://innocuous.org/xml/rss/feed.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+  <link href="/stylesheets/theme/azure.css" media="screen" rel="Stylesheet" type="text/css" />
+  <link href="/stylesheets/theme/local.css" media="screen" rel="Stylesheet" type="text/css" />
+  <script src="/javascripts/cookies.js" type="text/javascript"></script>
+  <script src="/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="/javascripts/effects.js" type="text/javascript"></script>
+  <script src="/javascripts/typo.js" type="text/javascript"></script>
+  <script type="text/javascript"></script>
+</head>
+<body>
+  <div id="container" class="clearfix">
+      <div id="header">
+        <div id="logo">
+          <h1 id="sitename"><a href="/">Nothing To See Here</a></h1>
+          <h2 id="subtitle">Weblog of Richard Tibbetts</h2>
+        </div>
+      </div>
+      
+      <div id="search"> <form action="/articles/search" id="sform" method="get">
+ <label for="q">Live Search:</label><input type="text" id="q" name="q" value="" size="15" />
+<img alt="Spinner-blue" id="search_spinner" src="/images/spinner-blue.gif" style="display:none;" />
+</form>
+</div>
+      
+      <div id="content" class="clearfix">
+        <div id="main">
+           <div class="post">
+  <h2><a href="/articles/2007/03/25/switching-to-osx-productivity-and-development-tools">Switching to OSX, productivity and development tools</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Mon, 26 Mar 2007 00:11:02 GMT">Mon, 26 Mar 2007 00:11:02 GMT</span></p>
+<p>
+Two weeks ago I got a new laptop from work. After extensive hemming and hawing, I went with an <a href="http://www.apple.com/macbook/">Apple MacBook</a> (the black one, cause it looks hotter^Wmore professional). Previous to this I had been running Ubuntu on a Thinkpad T40 bought around the founding of StreamBase. My goal for the change was to have a laptop that would "just work", and to stop having to administer my personal machine. I was last on a Mac when I was in grad school.
+<br />As far as that goal goes, I think the switch has been a rousing success. In non-development activities (eg, web, email, calendar, documents) it has been a significant improvement. The tools I'm finding myself using include:
+</p><ul>
+<li><a href="http://www.mozilla.com/en-US/firefox/">Firefox</a> - Safari just isn't good enough, and on the Intel processor Firefox is plenty fast</li>
+<li>Terminal.app - In preference to X11.app and xterm, because it is better integrated with everything else</li>
+<li>Mail.app (aka Apple Mail) - Because as part of the switch I'm going to stop hacking my mail client and see how the other 90% of the population lives. Thus far, using a less featureful mail client has been a success for spending less time with email thanks to unsubscribing from things.</li>
+<li><a href="http://www.adiumx.com/">Adium</a> - This is the best graphical IM client I've ever seen.</li>
+<li>iCal - The Apple calendaring tool is adequate, though I think I may end up switching to something with Exchange support, as work moves in that direction.</li>
+<li>iTunes - Of course, this is a huge improvement over anything on Linux, particularly for synching with my iPod.</li>
+<li><a href="http://www.microsoft.com/mac/products/office2004/office2004.aspx?pid=office2004">Microsoft Office</a> - I'd considered other alternatives, but the MacBook came with office preinstalled, and once I had it easily available (instead of in VMware) I couldn't say no.</li>
+<li><a href="http://www.newsgator.com/NGOLProduct.aspx?ProdID=NetNewsWire">NetNewsWire Lite </a>- A feed reader that is much better than bloglines. I haven't done much with the NewsGator integration, which might be interesting. And I haven't seen a reason to buy the non-lite version.</li>
+<li><a href="http://www.omnigroup.com/applications/omnigraffle/">OmniGraffle</a> - This is the best diagramming program I've ever used. Vastly better than anything on Linux, and much better than Visio.</li>
+<li><a href="http://www.parallels.com/">Parallels Desktop</a> - Much nicer than VMware workstation on Linux. Well polished, and the <a href="http://www.parallels.com/products/coherence/">Coherence</a> feature is pretty hot.</li>
+<li><a href="http://desktopmanager.berlios.de/">Desktop Manager </a>- Free tool to implement virtual desktops. Does everything I want in this space.</li>
+<li><a href="http://quicksilver.blacktree.com/">Quicksilver</a> - This is basically a graphical commandl ine for the mac, accessible from anywhere. It's very nice. Like <a href="http://www.gnu.org/software/screen/">screen</a>, you have to try it to learn how much it will change your life.</li>
+<li><a href="http://docs.blacktree.com/visor/visor">Visor</a> - This is a cute hack that makes a Terminal only a keystroke away at any time. It's a good complement to Quicksilver.</li>
+<li><a href="http://www.indev.ca/MailActOn.html">MailActOn</a> - This is a little tool that lets you define keybindings in Mail.app, mostly to refile mail into folders with a few keystrokes.</li>
+<li><a href="http://macromates.com/">TextMate</a> - This is trying to replace emacs in my life. It's a more mac-oriented text editor, with a pretty good feature set and good support for my emacs finger macros. But I may end up going back to emacs.</li>
+<li><a href="http://ecto.kung-foo.tv/">Ecto</a> - This is my latest addition. It's a blogging client that I'm using to write this post. I'm not sure I'm in love with it enough to pay for it, though it is a bit nicer than <a href="http://performancing.com/">Performancing</a>, the Firefox plugin I had been using.</li>
+</ul><p>
+That's about it for productivity tools. On development tools, I haven't had to install very much:
+</p><ul>
+<li>Apple developer tools - This comes on the standard install media, and gets you gcc, autoconf, and all the other things you would expect.</li>
+<li><a href="http://www.phil.uu.nl/~xges/ssh/">SSH Agent</a> - This is a version of the standard ssh-agent which integrates with the account management on OSX, so that you can use the agent from any application/shell in your login.</li>
+<li><a href="http://homepage.mac.com/hiirem/svkbuilds.html">SVK and Subversion</a> - These are special builds for OSX, they seem to work well.</li>
+<li><a href="http://www.eclipse.org/">Eclipse</a> - Standard Eclipse is available for OSX</li>
+<li><a href="http://www.macports.org/">MacPorts</a> - This is a package system for getting various free tools. I currently only use it to get Cocoa Emacs.</li>
+</ul><p>
+So, that's the enumeration of tools that I am using. Hopefully this is helpful to people. I may follow up on this with other posts about my experiences on OSX.
+<br />I will also shortly make a non-tools post.
+</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/tools" rel="category tag">Tools</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2007/03/25/switching-to-osx-productivity-and-development-tools#comments">2 comments</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/01/20/making-offlineimap-not-die">Making offlineimap not die</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Fri, 20 Jan 2006 17:29:48 GMT">Fri, 20 Jan 2006 17:29:48 GMT</span></p>
+<p>I love <a href="http://gopher.quux.org:70/devel/offlineimap/">offlineimap</a>. I even love the quirky way it is hosted on a gopher site. The functionality is awesome. For those of you who don't know, offlineimap syncronizes a remote IMAP mailbox heirarchy with a local Maildir folder heirarchy. This means you get disconnected IMAP operation with all your favorite Maildir clients (like <a href="http://mutt.org">mutt</a>), while still retaining the ability to access your mail using other IMAP clients.</p><p>
+However, offlineimap crashes too often. Every couple of days I will fail to get any new mail for an hour or two, and realize that offlineimap has crashed. And due to Murphy's law this generally correlates with a time when I was recieving some important mail.</p><p>
+The solution is very simple. I am using <a href="http://directory.fsf.org/zenity.html">zenity</a>, a command line tool for displaying dialog boxes, and running offline imap in a loop. Every time it dies, I get a pop-up dialog, and can say OK to restart it, or Cancel to end the loop. The little shell script to do this is as follows:</p><p>
+#!/bin/sh</p><p>
+/usr/bin/offlineimap -u TTY.TTYUI;</p><p>
+while zenity --question --text "Offlineimap died. Restart?"; do</p><p>
+    /usr/bin/offlineimap -u TTY.TTYUI;</p><p>
+done</p><p>
+</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/tools" rel="category tag">Tools</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/20/making-offlineimap-not-die#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/20/making-offlineimap-not-die#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/01/19/switched-my-laptop-to-ubuntu">Switched my laptop to Ubuntu</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Fri, 20 Jan 2006 01:21:00 GMT">Fri, 20 Jan 2006 01:21:00 GMT</span></p>
+<p>I switched to running <a href="http://ubuntulinux.org"><a href="http://www.ubuntulinux.org/">Ubuntu</a></a> on my Thinkpad. I'm very pleased with the experience. The install was painless, and everything thus far has just worked. It really feels like linux is maturing on the desktop.</p><p>
+I've also installed a shiny new tool, <a href="http://www.gnome.org/~seth/gnome-blog/">Gnome Blog</a>. It's a panel applet that makes it easy to enter blog posts. It sits on the panel and remembers the blog post you were in the middle of, so you can always stop and come back to it later.</p><p>
+It is generally good, but there are a couple of downsides that are coming to mind at the moment:</p><p>
+* No good way to do bulleted lists or other more complete formatting.</p><p>
+* No support for tags/categories/etc.</p><p>
+* Link input method isn't the easiest.</p><p>
+Really I think I would rather input the post in Restructured Text or something. I should look into other posting tools. Something command line or emacs based might be ideal.</p><p>
+</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/tools" rel="category tag">Tools</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/19/switched-my-laptop-to-ubuntu#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/19/switched-my-laptop-to-ubuntu#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/01/19/this-is-a-test-of-the-gnome-blog-client">This is a test of the gnome-blog client</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Fri, 20 Jan 2006 01:01:46 GMT">Fri, 20 Jan 2006 01:01:46 GMT</span></p>
+<p>I'm just testing the <a href="http://www.gnome.org/~seth/gnome-blog/">gnome-blog</a> client.</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/tools" rel="category tag">Tools</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/19/this-is-a-test-of-the-gnome-blog-client#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/01/19/this-is-a-test-of-the-gnome-blog-client#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2005/05/29/subversion-greater-than-cvs">Subversion greater than CVS</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sun, 29 May 2005 15:20:00 GMT">Sun, 29 May 2005 15:20:00 GMT</span></p>
+I recently finished upgrading <a
+href="http://typo.leetsoft.com/">Typo</a> (the software that runs <a
+href="http://innocuous.org/ntsh/">Nothing To See Here</a>) from 1.6.8
+to 2.0.x, and at the same time moved my local changes into <a
+href="http://subversion.tigris.org/">Subversion</a>. Subversion is a
+definite improvement over <a
+href="http://www.gnu.org/software/cvs/">CVS</a>. Being able to
+rearrange my repository (I did this twice before I was happy with it)
+was really nice. Once I was used to it, I gained the ability to just
+add things anywhere I want and figure I could sort them out later. The
+write-once nature of the directory structure in CVS had always created
+a lot of anxiety whenever I was starting a project. I think I will
+shortly be transitioning all of my personal projects to Subversion.
+All the cool kids are doing it. Of course, if I was a really cool kid
+I'd be using <a href="http://svk.elixus.org/">SVK</a>, but I think I'm
+not cool enough for that yet.
+
+
+    
+  <p class="meta">Posted in <a href="/articles/category/tools" rel="category tag">Tools</a>, <a href="/articles/category/software-development" rel="category tag">Software Development</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2005/05/29/subversion-greater-than-cvs#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2005/05/29/subversion-greater-than-cvs#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2005/04/15/setting-up-typo-rubyonrails-lighttpd-fastcgi-and-being-a-bad-sysadmin">Setting up Typo: RubyOnRails, lighttpd, FastCGI and being a bad sysadmin</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Fri, 15 Apr 2005 13:10:00 GMT">Fri, 15 Apr 2005 13:10:00 GMT</span></p>
+I took most of my evening last night to set up FastCGI and <a href="http://www.lighttpd.net/">lighttpd</a>. My goal was to serve a <a href="http://typo.leetsoft.com/">Typo</a>, a blog engine based on <a href="http://rubyonrails.org">RubyOnRails</a>. I was thwarted by not knowing RubyOnRails very well, and by knowing FastCGI and lighttpd not at all.
+
+The first issue was that Typo doesn't like to run in a subdirectory on a webserver. That is, it wanted to be at <code>ntsh.innocuous.org/</code>, not <code>innocuous.org/ntsh</code>. This offended my sensibilities somewhat, so I decided to beat it into submisssion. This involved tracking down a bunch of places where paths were hard coded, which included a few places in the templates and the CSS.
+
+The second issue was that FastCGI on lighttpd seems to have been designed for php. You can easily tell it to delegate <code>*.php</code> to FastCGI. You can tell it to delegate <code>/ntsh/*</code> to FastCGI, but that has the problem that <code>/ntsh/stylesheets/base.css</code> doesn't work, because the RubyOnRails dispatcher doesn't know how to serve static pages.
+
+You also have the problem, and this is the showstopper, that for some reason the <code>AbstractRequest.request_url_base</code> function helpfully strips off the directory of your request path when you use it this way. That is, it turns <code>xml/rss/feed.xml</code> into<code>feed.xml</code>. As you might imagine, losing the <code>xml/rss</code> part confuses the cool new <a href="http://manuals.rubyonrails.com/read/chapter/65">routing feature of Ruby on Rails</a>. So this was unacceptable.
+
+I had to give up my delusions of configuring lighttpd in some clean way, and instead use the trick that a bunch of web pages recommended: <code>server.error-handler-404</code>. This configuration file setting tells the server to delegate 404 errors somewhere, and that somewhere can be the Typo dispatcher. Combined with the conditional configuration functionality of lighttpd, this is actually quite sufficient to get Typo up and running. But it still feels like a hack for some reason.
+
+The conclusion I'm coming to, as I've come to many times before, is that I'm a bad sysadmin. I expect to be able to bend software to my will, and make it work the way I want, which should be elegant and conform to my expectations. When doing sysadmin work, it is important to use the software you are given, the way someone else designed it to be used. But it always has to get to be 1am before I remember this principle.
+
+For anyone who is interested, here is the relevant chunk of lighttpd.conf:
+<pre><code>
+$HTTP["host"] =~ "\.innocuous\.org$" {
+    server.document-root = "/var/www/vhost/innocuous.org/pages"
+
+    $HTTP["url"] =~ "^/ntsh/" {
+        server.error-handler-404   = "/ntsh/dispatch.fcgi"
+    }
+
+    fastcgi.debug = 0
+    fastcgi.server = ( 
+                "/ntsh/dispatch.fcgi" =>
+                    ( "ntsh" =>
+                        (
+                            "socket" => "/tmp/ntsh.socket",
+                            "bin-path" =>
+                              "/var/www/vhost/innocuous.org/ntsh/public/dispatch.fcgi",
+                            "min-procs" => 1,
+                            "max-procs" => 5,
+                            "max-load-per-proc" => 4,
+                            "idle-timeout" => 20,
+                            "bin-environment" =>
+                              ( "RAILS_ENV" => "production",
+                                "RAILS_ROOT" => "/var/www/vhost/innocuous.org/ntsh"),
+                            "check-local" => "disable"
+                        )
+                    )
+        )
+}
+</code></pre>
+
+
+    
+  <p class="meta">Posted in <a href="/articles/category/tools" rel="category tag">Tools</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2005/04/15/setting-up-typo-rubyonrails-lighttpd-fastcgi-and-being-a-bad-sysadmin#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2005/04/15/setting-up-typo-rubyonrails-lighttpd-fastcgi-and-being-a-bad-sysadmin#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2005/04/10/blogtk-not-so-great">BloGTK not so great</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sun, 10 Apr 2005 15:50:13 GMT">Sun, 10 Apr 2005 15:50:13 GMT</span></p>
+I'm currently using <a href="http://www.robbyonrails.com/articles/read/3" target="_parent">BloGTK with Typo</a> and am not all that happy with it. I'm not a big fan of GUIs. I should find something command line based.
+
+
+    
+  <p class="meta">Posted in <a href="/articles/category/tools" rel="category tag">Tools</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2005/04/10/blogtk-not-so-great#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2005/04/10/blogtk-not-so-great#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2005/04/10/first-post">First Post</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sun, 10 Apr 2005 15:48:28 GMT">Sun, 10 Apr 2005 15:48:28 GMT</span></p>
+I'm trying out Typo, web log software, and liking it. It uses Ruby On Rails, and seems to work quite well.
+
+
+    
+  <p class="meta">Posted in <a href="/articles/category/tools" rel="category tag">Tools</a>, <a href="/articles/category/web" rel="category tag">Web</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2005/04/10/first-post#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2005/04/10/first-post#trackbacks">no trackbacks</a></p> 
+  </div>
+
+
+          <script type="text/javascript">show_dates_as_local_time()</script>
+        </div>
+        <div id="sidebar">
+          
+            <div id="search-results"></div>
+              <script type="text/javascript">new Form.Element.Observer('q', 1, function(element, value) {new Ajax.Updater('search-results', '/live/search', {asynchronous:true, evalScripts:true, onComplete:function(request){Element.hide('search_spinner')}, onLoading:function(request){Element.show('search_spinner')}, parameters:value})})</script>
+              <h3>About</h3>
+<a href="/tibbetts/">About Richard Tibbetts</a>
+
+  
+<h3>Archives</h3>
+<ul id="archives">
+  
+    <li>
+      <a href="/articles/2008/12">December 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/06">June 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/04">April 2008</a>
+      <em>(3)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/01">January 2008</a>
+      <em>(1)</em>
+    </li>
+  
+</ul>
+
+
+  <h3>Categories</h3>
+<ul id="categories">
+  
+  <li><a href="/articles/category/books">Books</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/business">Business</a> <em>(9)</em></li>
+  
+  
+  <li><a href="/articles/category/computer-science">Computer Science</a> <em>(5)</em></li>
+  
+  
+  <li><a href="/articles/category/media">Media</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/software-development">Software Development</a> <em>(3)</em></li>
+  
+  
+  <li><a href="/articles/category/tools">Tools</a> <em>(8)</em></li>
+  
+  
+  <li><a href="/articles/category/web">Web</a> <em>(5)</em></li>
+  
+</ul>
+
+
+    <div id="delicious">
+    <h3>Delicious/tibbetts/sidebar</h3>
+    <ul>
+              <li><a href="http://debs08.dis.uniroma1.it/" title="The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008">The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008 </a></li>
+              <li><a href="http://www.bugblogger.com/2007/09/pizza-tail.html" title="Bug Blogger: Pizza Tail">Bug Blogger: Pizza Tail </a></li>
+              <li><a href="http://tytso.livejournal.com/30681.html" title="Ted Tso - On the benevolent dictator model">Ted Tso - On the benevolent dictator model </a></li>
+              <li><a href="http://www.slate.com/id/2172342/fr/rss/" title="How do you inject money into the economy? - By Michelle Tsai - Slate Magazine">How do you inject money into the economy? - By Michelle Tsai - Slate Magazine </a></li>
+              <li><a href="http://www.physorg.com/news95954919.html" title="Humans hot, sweaty, natural-born runners">Humans hot, sweaty, natural-born runners </a></li>
+              <li><a href="http://datamining.typepad.com/gallery/blog-map-gallery.html" title="Data Mining: Mapping The Blogosphere">Data Mining: Mapping The Blogosphere </a></li>
+              <li><a href="http://www.thenation.com/doc/20070423/press" title="The New Suburban Poverty">The New Suburban Poverty </a></li>
+              <li><a href="http://paul.kedrosky.com/archives/2007/04/17/top_ten_vc_lies.html" title="Paul Kedrosky: Updated: Top Ten VC Lies">Paul Kedrosky: Updated: Top Ten VC Lies </a></li>
+              <li><a href="http://www.math.tamu.edu/~cyan/Rota/mitless.html" title="Ten lessons from Rota">Ten lessons from Rota </a></li>
+              <li><a href="http://weblog.fortnow.com/2006/08/zero-knowledge-sudoku.html" title="Computational Complexity: Zero-Knowledge Sudoku">Computational Complexity: Zero-Knowledge Sudoku </a></li>
+          </ul>
+  </div>
+
+  <h3>Pseudo-Blogroll</h3>
+<ul>
+  <li><a href="http://blog.nimlabs.org">Nick Martin</a></li>
+  <li><a href="http://jenselby.org">Jen Selby</a></li>
+  <li>your link here</li>
+</ul>
+
+
+  <h3>Syndicate</h3>
+<ul>
+    <li><a href="/xml/rss/feed.xml" title="RSS 2.0 feed">Articles</a></li>
+  
+    <li><a href="/xml/commentrss/feed.xml" title="Comments RSS 2.0 feed">Comments</a></li>
+  
+  
+</ul>
+
+
+
+            <a class="powered" href="http://typo.leetsoft.com/"><img alt="Powered" src="/images/powered.gif" /></a>
+            </div>
+
+            <br clear="all" />
+      </div>
+      <div id="footer">
+        <ul>
+          <li><a href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0</a></li>
+          <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://innocuous.org/">Valid CSS</a></li>
+        </ul>
+      </div>
+  </div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2439300-1";
+urchinTracker();
+</script>
+</body>
+</html>
