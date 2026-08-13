@@ -1,0 +1,66 @@
+{{- /* The product screenshot from the design is UI chrome, so it is built in
+       HTML/CSS rather than generated as an image. */ -}}
+<div class="mock" aria-hidden="true">
+
+  <div class="mock-bar">
+    <span class="mock-title">
+      {{ partial "icon.html" (dict "name" "anchor" "size" 14) }} Harbor
+    </span>
+    <span class="mock-win"><i></i><i></i><i></i></span>
+  </div>
+
+  <div class="mock-body">
+    <aside class="mock-side">
+      <ul class="mock-nav">
+        <li>{{ partial "icon.html" (dict "name" "inbox" "size" 14) }} Inbox <b>3</b></li>
+        <li class="on">{{ partial "icon.html" (dict "name" "calendar" "size" 14) }} Today <b>7</b></li>
+        <li>{{ partial "icon.html" (dict "name" "folder" "size" 14) }} Projects</li>
+        <li>{{ partial "icon.html" (dict "name" "tasks" "size" 14) }} Tasks</li>
+        <li>{{ partial "icon.html" (dict "name" "note" "size" 14) }} Notes</li>
+        <li>{{ partial "icon.html" (dict "name" "search" "size" 14) }} Search</li>
+      </ul>
+      <p class="mock-label">Projects</p>
+      <ul class="mock-projects">
+        <li><span class="dot dot-green"></span> Bulrush Labs</li>
+        <li><span class="dot dot-red"></span> Harbor</li>
+        <li><span class="dot dot-blue"></span> Website</li>
+        <li><span class="dot dot-grey"></span> Research</li>
+      </ul>
+      <p class="mock-settings">
+        {{ partial "icon.html" (dict "name" "settings" "size" 14) }} Settings
+      </p>
+    </aside>
+
+    <section class="mock-main">
+      <h4 class="mock-h">Today</h4>
+
+      <div class="mock-row">
+        <span class="mock-sub">Due Today</span>
+        <span class="mock-btn">{{ partial "icon.html" (dict "name" "plus" "size" 11) }} New Task</span>
+      </div>
+
+      <ul class="mock-tasks">
+        <li class="done"><span class="box on"></span> Add offline indicator</li>
+        <li><span class="box"></span> Implement tag filtering</li>
+        <li><span class="box"></span> Write docs for sync model</li>
+        <li class="done"><span class="box on"></span> Update release notes</li>
+      </ul>
+
+      <p class="mock-sub mock-notes-h">Notes</p>
+      <div class="mock-notes">
+        <article>
+          <h5>Sync Model</h5>
+          <p>Harbor uses a last-write-wins approach with vector clocks to reconcile concurrent changes…</p>
+          <span>Apr 28</span>
+        </article>
+        <article>
+          <h5>Offline Strategy</h5>
+          <p>Queue operations locally and reconcile on reconnect. Show conflicts, never lose data.</p>
+          <span>Apr 27</span>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <div class="mock-foot"><span class="dot dot-green"></span> All changes synced</div>
+</div>

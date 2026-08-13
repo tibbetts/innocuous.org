@@ -100,5 +100,953 @@
   "ts": "20211201094533",
   "kind": "post",
   "bytes": 13703
+ },
+ "pages/articles/2006/01/25/propsmart-finally-a-good-mlsgoogle-maps-mashup/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/25/propsmart-finally-a-good-mlsgoogle-maps-mashup/comment-page-1/",
+  "ts": "20170222182506",
+  "kind": "post",
+  "bytes": 13621
+ },
+ "pages/articles/2006/01/26/google-just-isnt-very-good/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/26/google-just-isnt-very-good/comment-page-1/",
+  "ts": "20211201083241",
+  "kind": "post",
+  "bytes": 17570
+ },
+ "pages/articles/2006/01/28/macbook-pro-killing-the-powerbook-brand/index.html": {
+  "url": "http://innocuous.org/articles/2006/01/28/macbook-pro-killing-the-powerbook-brand/",
+  "ts": "20211020051545",
+  "kind": "post",
+  "bytes": 12415
+ },
+ "pages/articles/2006/04/index.html": {
+  "url": "http://innocuous.org/articles/2006/04/",
+  "ts": "20220120020125",
+  "kind": "archive",
+  "bytes": 10504
+ },
+ "pages/articles/2006/07/index.html": {
+  "url": "http://innocuous.org/articles/2006/07/",
+  "ts": "20211020045111",
+  "kind": "archive",
+  "bytes": 10788
+ },
+ "pages/articles/2006/07/03/streambase-davinci-coder-free-software-and-valuable-prizes-cash/index.html": {
+  "url": "http://innocuous.org/articles/2006/07/03/streambase-davinci-coder-free-software-and-valuable-prizes-cash/",
+  "ts": "20210921231554",
+  "kind": "post",
+  "bytes": 12858
+ },
+ "pages/articles/2006/08/index.html": {
+  "url": "http://innocuous.org/articles/2006/08/",
+  "ts": "20220120013309",
+  "kind": "archive",
+  "bytes": 11054
+ },
+ "pages/articles/2006/08/25/steve-vinoski-on-extreme-programming-at-iona/index.html": {
+  "url": "http://innocuous.org/articles/2006/08/25/steve-vinoski-on-extreme-programming-at-iona/",
+  "ts": "20220523102719",
+  "kind": "post",
+  "bytes": 17005
+ },
+ "pages/articles/2006/08/25/steve-vinoski-on-extreme-programming-at-iona/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2006/08/25/steve-vinoski-on-extreme-programming-at-iona/comment-page-1/",
+  "ts": "20220630042540",
+  "kind": "post",
+  "bytes": 17083
+ },
+ "pages/articles/2006/09/index.html": {
+  "url": "http://innocuous.org/articles/2006/09/",
+  "ts": "20220120014155",
+  "kind": "archive",
+  "bytes": 10711
+ },
+ "pages/articles/2006/09/28/algorithms-for-the-21st-century/index.html": {
+  "url": "http://innocuous.org/articles/2006/09/28/algorithms-for-the-21st-century/",
+  "ts": "20220630045212",
+  "kind": "post",
+  "bytes": 13719
+ },
+ "pages/articles/2006/11/index.html": {
+  "url": "http://innocuous.org/articles/2006/11/",
+  "ts": "20220704234536",
+  "kind": "archive",
+  "bytes": 12818
+ },
+ "pages/articles/2006/11/10/me-dium-beta/index.html": {
+  "url": "http://innocuous.org/articles/2006/11/10/me-dium-beta/",
+  "ts": "20081204101455",
+  "kind": "post",
+  "bytes": 12471
+ },
+ "pages/articles/2006/11/10/medium-beta/index.html": {
+  "url": "http://innocuous.org/articles/2006/11/10/medium-beta/",
+  "ts": "20220523103333",
+  "kind": "post",
+  "bytes": 13607
+ },
+ "pages/articles/2006/11/10/medium-beta/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2006/11/10/medium-beta/comment-page-1/",
+  "ts": "20220630051143",
+  "kind": "post",
+  "bytes": 13607
+ },
+ "pages/articles/2006/11/18/adventures-in-retail/index.html": {
+  "url": "http://innocuous.org/articles/2006/11/18/adventures-in-retail/",
+  "ts": "20160416202821",
+  "kind": "post",
+  "bytes": 13277
+ },
+ "pages/articles/2006/11/18/pricing-enterprise-software/index.html": {
+  "url": "http://innocuous.org/articles/2006/11/18/pricing-enterprise-software/",
+  "ts": "20220630045932",
+  "kind": "post",
+  "bytes": 15364
+ },
+ "pages/articles/2006/12/index.html": {
+  "url": "http://innocuous.org/articles/2006/12/",
+  "ts": "20220630050249",
+  "kind": "archive",
+  "bytes": 10607
+ },
+ "pages/articles/2006/12/01/transactional-memory-not-solution-to-all-problems/index.html": {
+  "url": "http://innocuous.org/articles/2006/12/01/transactional-memory-not-solution-to-all-problems/",
+  "ts": "20201109001045",
+  "kind": "post",
+  "bytes": 16235
+ },
+ "pages/articles/2007/03/index.html": {
+  "url": "http://innocuous.org/articles/2007/03/",
+  "ts": "20220120011450",
+  "kind": "archive",
+  "bytes": 13065
+ },
+ "pages/articles/2007/03/25/cs-research-everyone-should-know-xerox-parc-bayou/index.html": {
+  "url": "http://innocuous.org/articles/2007/03/25/cs-research-everyone-should-know-xerox-parc-bayou/",
+  "ts": "20111021175756",
+  "kind": "post",
+  "bytes": 13661
+ },
+ "pages/articles/2007/03/25/switching-to-osx-productivity-and-development-tools/index.html": {
+  "url": "http://innocuous.org/articles/2007/03/25/switching-to-osx-productivity-and-development-tools/",
+  "ts": "20220630034505",
+  "kind": "post",
+  "bytes": 17905
+ },
+ "pages/articles/2007/03/26/etech-voyeurism-coder-to-cofounder/index.html": {
+  "url": "http://innocuous.org/articles/2007/03/26/etech-voyeurism-coder-to-cofounder/",
+  "ts": "20220630044642",
+  "kind": "post",
+  "bytes": 12166
+ },
+ "pages/articles/2007/06/index.html": {
+  "url": "http://innocuous.org/articles/2007/06/",
+  "ts": "20220307232216",
+  "kind": "archive",
+  "bytes": 10819
+ },
+ "pages/articles/2007/06/06/the-lemons-meme-in-software/index.html": {
+  "url": "http://innocuous.org/articles/2007/06/06/the-lemons-meme-in-software/",
+  "ts": "20190819160813",
+  "kind": "post",
+  "bytes": 16772
+ },
+ "pages/articles/2007/06/06/the-lemons-meme-in-software/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2007/06/06/the-lemons-meme-in-software/comment-page-1/",
+  "ts": "20220630034543",
+  "kind": "post",
+  "bytes": 16777
+ },
+ "pages/articles/2007/09/index.html": {
+  "url": "http://innocuous.org/articles/2007/09/",
+  "ts": "20220120023752",
+  "kind": "archive",
+  "bytes": 11013
+ },
+ "pages/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazon-com-technology-platform/index.html": {
+  "url": "http://innocuous.org/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazon-com-technology-platform/",
+  "ts": "20081204105324",
+  "kind": "post",
+  "bytes": 16017
+ },
+ "pages/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazoncom-technology-platform/index.html": {
+  "url": "http://innocuous.org/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazoncom-technology-platform/",
+  "ts": "20210727092629",
+  "kind": "post",
+  "bytes": 18655
+ },
+ "pages/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazoncom-technology-platform/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2007/09/25/vldb-keynote-data-access-patterns-in-the-amazoncom-technology-platform/comment-page-1/",
+  "ts": "20220120024852",
+  "kind": "post",
+  "bytes": 18579
+ },
+ "pages/articles/2007/10/index.html": {
+  "url": "http://innocuous.org/articles/2007/10/",
+  "ts": "20220120014230",
+  "kind": "archive",
+  "bytes": 12585
+ },
+ "pages/articles/2007/10/23/oopsla-2007-the-popularity-cycle-of-graphical-tools-uml-and-libraries-of-associations-not-the-workshop-i-expected/index.html": {
+  "url": "http://innocuous.org/articles/2007/10/23/oopsla-2007-the-popularity-cycle-of-graphical-tools-uml-and-libraries-of-associations-not-the-workshop-i-expected/",
+  "ts": "20211201084303",
+  "kind": "post",
+  "bytes": 19921
+ },
+ "pages/articles/2007/10/23/oopsla-2007-the-popularity-cycle-of-graphical-tools-uml-and-libraries-of-associations-not-the-workshop-i-expected/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2007/10/23/oopsla-2007-the-popularity-cycle-of-graphical-tools-uml-and-libraries-of-associations-not-the-workshop-i-expected/comment-page-1/",
+  "ts": "20211201100039",
+  "kind": "post",
+  "bytes": 19921
+ },
+ "pages/articles/2007/10/28/oopsla-2007-new-ideas-good-quotes-and-cynical-self-satisfaction/index.html": {
+  "url": "http://innocuous.org/articles/2007/10/28/oopsla-2007-new-ideas-good-quotes-and-cynical-self-satisfaction/",
+  "ts": "20220401081839",
+  "kind": "post",
+  "bytes": 31035
+ },
+ "pages/articles/2007/12/index.html": {
+  "url": "http://innocuous.org/articles/2007/12/",
+  "ts": "20220705002800",
+  "kind": "archive",
+  "bytes": 10347
+ },
+ "pages/articles/2007/12/01/index.html": {
+  "url": "http://innocuous.org/articles/2007/12/01/",
+  "ts": "20081204104850",
+  "kind": "post",
+  "bytes": 8113
+ },
+ "pages/articles/2007/12/01/book-review-the-change-function/index.html": {
+  "url": "http://innocuous.org/articles/2007/12/01/book-review-the-change-function/",
+  "ts": "20211201102638",
+  "kind": "post",
+  "bytes": 14995
+ },
+ "pages/articles/2007/12/page/1/index.html": {
+  "url": "http://innocuous.org/articles/2007/12/page/1/",
+  "ts": "20090105190019",
+  "kind": "archive",
+  "bytes": 8081
+ },
+ "pages/articles/2007/12/page/2/index.html": {
+  "url": "http://innocuous.org/articles/2007/12/page/2/",
+  "ts": "20081204094312",
+  "kind": "archive",
+  "bytes": 8117
+ },
+ "pages/articles/2007/12/page/3/index.html": {
+  "url": "http://innocuous.org/articles/2007/12/page/3/",
+  "ts": "20081204105049",
+  "kind": "archive",
+  "bytes": 8117
+ },
+ "pages/articles/2007/12/page/4/index.html": {
+  "url": "http://innocuous.org/articles/2007/12/page/4/",
+  "ts": "20081204102252",
+  "kind": "archive",
+  "bytes": 8117
+ },
+ "pages/articles/2008/01/index.html": {
+  "url": "http://innocuous.org/articles/2008/01/",
+  "ts": "20220117103105",
+  "kind": "archive",
+  "bytes": 12211
+ },
+ "pages/articles/2008/01/12/index.html": {
+  "url": "http://innocuous.org/articles/2008/01/12/",
+  "ts": "20081204105537",
+  "kind": "post",
+  "bytes": 9306
+ },
+ "pages/articles/2008/01/12/bungee-connect-what-i-learned-about-platform-evaluations/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2008/01/12/bungee-connect-what-i-learned-about-platform-evaluations/comment-page-1/",
+  "ts": "20170222182309",
+  "kind": "post",
+  "bytes": 15802
+ },
+ "pages/articles/2008/01/12/information-wants-to-be-half-price/index.html": {
+  "url": "http://innocuous.org/articles/2008/01/12/information-wants-to-be-half-price/",
+  "ts": "20190819163339",
+  "kind": "post",
+  "bytes": 20677
+ },
+ "pages/articles/2008/01/12/information-wants-to-be-half-price/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2008/01/12/information-wants-to-be-half-price/comment-page-1/",
+  "ts": "20220630043050",
+  "kind": "post",
+  "bytes": 20688
+ },
+ "pages/articles/2008/01/page/1/index.html": {
+  "url": "http://innocuous.org/articles/2008/01/page/1/",
+  "ts": "20090105201246",
+  "kind": "archive",
+  "bytes": 9281
+ },
+ "pages/articles/2008/01/page/2/index.html": {
+  "url": "http://innocuous.org/articles/2008/01/page/2/",
+  "ts": "20081204100730",
+  "kind": "archive",
+  "bytes": 9310
+ },
+ "pages/articles/2008/01/page/3/index.html": {
+  "url": "http://innocuous.org/articles/2008/01/page/3/",
+  "ts": "20081204103643",
+  "kind": "archive",
+  "bytes": 9310
+ },
+ "pages/articles/2008/01/page/4/index.html": {
+  "url": "http://innocuous.org/articles/2008/01/page/4/",
+  "ts": "20081204104339",
+  "kind": "archive",
+  "bytes": 9310
+ },
+ "pages/articles/2008/04/08/google-commences-another-assault-on-the-traditional-database-community/index.html": {
+  "url": "http://innocuous.org/articles/2008/04/08/google-commences-another-assault-on-the-traditional-database-community/",
+  "ts": "20211207185907",
+  "kind": "post",
+  "bytes": 14342
+ },
+ "pages/articles/2008/04/12/index.html": {
+  "url": "http://innocuous.org/articles/2008/04/12/",
+  "ts": "20081204100648",
+  "kind": "post",
+  "bytes": 8996
+ },
+ "pages/articles/2008/04/12/kdb-now-available-for-free-download/index.html": {
+  "url": "http://innocuous.org/articles/2008/04/12/kdb-now-available-for-free-download/",
+  "ts": "20220630033545",
+  "kind": "post",
+  "bytes": 13222
+ },
+ "pages/articles/2008/04/page/2/index.html": {
+  "url": "http://innocuous.org/articles/2008/04/page/2/",
+  "ts": "20081204101616",
+  "kind": "archive",
+  "bytes": 11738
+ },
+ "pages/articles/2008/04/page/4/index.html": {
+  "url": "http://innocuous.org/articles/2008/04/page/4/",
+  "ts": "20081204105126",
+  "kind": "archive",
+  "bytes": 11738
+ },
+ "pages/articles/2008/06/index.html": {
+  "url": "http://innocuous.org/articles/2008/06/",
+  "ts": "20220630033752",
+  "kind": "archive",
+  "bytes": 12371
+ },
+ "pages/articles/2008/06/03/buy-it-like-you-mean-it-and-vendor-relationship-management/index.html": {
+  "url": "http://innocuous.org/articles/2008/06/03/buy-it-like-you-mean-it-and-vendor-relationship-management/",
+  "ts": "20160416203736",
+  "kind": "post",
+  "bytes": 16910
+ },
+ "pages/articles/2008/06/03/buy-it-like-you-mean-it-and-vendor-relationship-management/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2008/06/03/buy-it-like-you-mean-it-and-vendor-relationship-management/comment-page-1/",
+  "ts": "20170222182719",
+  "kind": "post",
+  "bytes": 16910
+ },
+ "pages/articles/2008/06/16/index.html": {
+  "url": "http://innocuous.org/articles/2008/06/16/",
+  "ts": "20081204094653",
+  "kind": "post",
+  "bytes": 7092
+ },
+ "pages/articles/2008/06/16/exchanging-my-kindle-for-another-sony-reader/index.html": {
+  "url": "http://innocuous.org/articles/2008/06/16/exchanging-my-kindle-for-another-sony-reader/",
+  "ts": "20211201085717",
+  "kind": "post",
+  "bytes": 20588
+ },
+ "pages/articles/2008/06/16/exchanging-my-kindle-for-another-sony-reader/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2008/06/16/exchanging-my-kindle-for-another-sony-reader/comment-page-1/",
+  "ts": "20170222182734",
+  "kind": "post",
+  "bytes": 20502
+ },
+ "pages/articles/2008/06/page/1/index.html": {
+  "url": "http://innocuous.org/articles/2008/06/page/1/",
+  "ts": "20090105205046",
+  "kind": "archive",
+  "bytes": 8941
+ },
+ "pages/articles/2008/06/page/2/index.html": {
+  "url": "http://innocuous.org/articles/2008/06/page/2/",
+  "ts": "20081204101100",
+  "kind": "archive",
+  "bytes": 8970
+ },
+ "pages/articles/2008/06/page/3/index.html": {
+  "url": "http://innocuous.org/articles/2008/06/page/3/",
+  "ts": "20081204102208",
+  "kind": "archive",
+  "bytes": 8970
+ },
+ "pages/articles/2008/06/page/4/index.html": {
+  "url": "http://innocuous.org/articles/2008/06/page/4/",
+  "ts": "20081204105650",
+  "kind": "archive",
+  "bytes": 8970
+ },
+ "pages/articles/2008/12/index.html": {
+  "url": "http://innocuous.org/articles/2008/12/",
+  "ts": "20220630043830",
+  "kind": "archive",
+  "bytes": 11990
+ },
+ "pages/articles/2008/12/29/thinking-about-tufte-resolution-isnt-the-key/index.html": {
+  "url": "http://innocuous.org/articles/2008/12/29/thinking-about-tufte-resolution-isnt-the-key/",
+  "ts": "20160421120912",
+  "kind": "post",
+  "bytes": 18182
+ },
+ "pages/articles/2008/12/30/ban-non-competes-in-massachusetts/index.html": {
+  "url": "http://innocuous.org/articles/2008/12/30/ban-non-competes-in-massachusetts/",
+  "ts": "20190819160809",
+  "kind": "post",
+  "bytes": 17925
+ },
+ "pages/articles/2008/12/30/ban-non-competes-in-massachusetts/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2008/12/30/ban-non-competes-in-massachusetts/comment-page-1/",
+  "ts": "20170222182711",
+  "kind": "post",
+  "bytes": 17919
+ },
+ "pages/articles/2009/01/index.html": {
+  "url": "http://innocuous.org/articles/2009/01/",
+  "ts": "20220205014025",
+  "kind": "archive",
+  "bytes": 10437
+ },
+ "pages/articles/2009/01/20/cto-at-streambase/index.html": {
+  "url": "http://innocuous.org/articles/2009/01/20/cto-at-streambase/",
+  "ts": "20211201094606",
+  "kind": "post",
+  "bytes": 12548
+ },
+ "pages/articles/2009/03/index.html": {
+  "url": "http://innocuous.org/articles/2009/03/",
+  "ts": "20211020040047",
+  "kind": "archive",
+  "bytes": 10289
+ },
+ "pages/articles/2009/03/21/hello-world/index.html": {
+  "url": "http://innocuous.org/articles/2009/03/21/hello-world/",
+  "ts": "20220319013153",
+  "kind": "post",
+  "bytes": 11913
+ },
+ "pages/articles/2009/05/index.html": {
+  "url": "http://innocuous.org/articles/2009/05/",
+  "ts": "20220705010156",
+  "kind": "archive",
+  "bytes": 11825
+ },
+ "pages/articles/2009/05/06/how-long-will-pcs-and-servers-use-the-same-cpu/index.html": {
+  "url": "http://innocuous.org/articles/2009/05/06/how-long-will-pcs-and-servers-use-the-same-cpu/",
+  "ts": "20211201091259",
+  "kind": "post",
+  "bytes": 15335
+ },
+ "pages/articles/2009/05/06/the-downsides-of-limited-intellectual-property-in-psychiatric-care/index.html": {
+  "url": "http://innocuous.org/articles/2009/05/06/the-downsides-of-limited-intellectual-property-in-psychiatric-care/",
+  "ts": "20160920095755",
+  "kind": "post",
+  "bytes": 14577
+ },
+ "pages/articles/2009/06/index.html": {
+  "url": "http://innocuous.org/articles/2009/06/",
+  "ts": "20220630045809",
+  "kind": "archive",
+  "bytes": 14169
+ },
+ "pages/articles/2009/06/17/should-your-honor-student-be-in-shop-class/index.html": {
+  "url": "http://innocuous.org/articles/2009/06/17/should-your-honor-student-be-in-shop-class/",
+  "ts": "20210509221851",
+  "kind": "post",
+  "bytes": 17445
+ },
+ "pages/articles/2009/06/17/should-your-honor-student-be-in-shop-class/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2009/06/17/should-your-honor-student-be-in-shop-class/comment-page-1/",
+  "ts": "20170222182453",
+  "kind": "post",
+  "bytes": 17359
+ },
+ "pages/articles/2009/06/20/android-g1-and-palm-pre-versus-iphone-and-blackberry-benchmarks/index.html": {
+  "url": "http://innocuous.org/articles/2009/06/20/android-g1-and-palm-pre-versus-iphone-and-blackberry-benchmarks/",
+  "ts": "20220630033505",
+  "kind": "post",
+  "bytes": 21110
+ },
+ "pages/articles/2009/06/20/android-g1-and-palm-pre-versus-iphone-and-blackberry-benchmarks/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2009/06/20/android-g1-and-palm-pre-versus-iphone-and-blackberry-benchmarks/comment-page-1/",
+  "ts": "20110504024210",
+  "kind": "post",
+  "bytes": 23404
+ },
+ "pages/articles/2009/06/20/blackberry-versus-iphone-benchmarking-the-browser/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2009/06/20/blackberry-versus-iphone-benchmarking-the-browser/comment-page-1/",
+  "ts": "20211201085922",
+  "kind": "post",
+  "bytes": 17877
+ },
+ "pages/articles/2009/07/index.html": {
+  "url": "http://innocuous.org/articles/2009/07/",
+  "ts": "20220630050402",
+  "kind": "archive",
+  "bytes": 11065
+ },
+ "pages/articles/2009/07/11/the-real-reasons-for-eliminating-non-competes-in-massachusetts/index.html": {
+  "url": "http://innocuous.org/articles/2009/07/11/the-real-reasons-for-eliminating-non-competes-in-massachusetts/",
+  "ts": "20211201100226",
+  "kind": "post",
+  "bytes": 23072
+ },
+ "pages/articles/2009/07/11/the-real-reasons-for-eliminating-non-competes-in-massachusetts/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2009/07/11/the-real-reasons-for-eliminating-non-competes-in-massachusetts/comment-page-1/",
+  "ts": "20220120011408",
+  "kind": "post",
+  "bytes": 23072
+ },
+ "pages/articles/2009/12/index.html": {
+  "url": "http://innocuous.org/articles/2009/12/",
+  "ts": "20220128231929",
+  "kind": "archive",
+  "bytes": 10784
+ },
+ "pages/articles/2009/12/21/advice-to-those-giving-birth-at-mount-auburn-hospital/index.html": {
+  "url": "http://innocuous.org/articles/2009/12/21/advice-to-those-giving-birth-at-mount-auburn-hospital/",
+  "ts": "20190812190456",
+  "kind": "post",
+  "bytes": 18555
+ },
+ "pages/articles/2010/01/index.html": {
+  "url": "http://innocuous.org/articles/2010/01/",
+  "ts": "20220630035010",
+  "kind": "archive",
+  "bytes": 13838
+ },
+ "pages/articles/2010/01/03/valuing-startup-options/index.html": {
+  "url": "http://innocuous.org/articles/2010/01/03/valuing-startup-options/",
+  "ts": "20220120010730",
+  "kind": "post",
+  "bytes": 21576
+ },
+ "pages/articles/2010/01/03/valuing-startup-options/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/01/03/valuing-startup-options/comment-page-1/",
+  "ts": "20101125172319",
+  "kind": "post",
+  "bytes": 25861
+ },
+ "pages/articles/2010/01/10/project-euler-mit-mystery-hunt-edition/index.html": {
+  "url": "http://innocuous.org/articles/2010/01/10/project-euler-mit-mystery-hunt-edition/",
+  "ts": "20220630032813",
+  "kind": "post",
+  "bytes": 26971
+ },
+ "pages/articles/2010/01/10/project-euler-mit-mystery-hunt-edition/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/01/10/project-euler-mit-mystery-hunt-edition/comment-page-1/",
+  "ts": "20220630041714",
+  "kind": "post",
+  "bytes": 27048
+ },
+ "pages/articles/2010/01/18/10-days-with-the-google-nexus-one/index.html": {
+  "url": "http://innocuous.org/articles/2010/01/18/10-days-with-the-google-nexus-one/",
+  "ts": "20220523121339",
+  "kind": "post",
+  "bytes": 20706
+ },
+ "pages/articles/2010/01/18/10-days-with-the-google-nexus-one/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/01/18/10-days-with-the-google-nexus-one/comment-page-1/",
+  "ts": "20170222014136",
+  "kind": "post",
+  "bytes": 20620
+ },
+ "pages/articles/2010/02/index.html": {
+  "url": "http://innocuous.org/articles/2010/02/",
+  "ts": "20220215192803",
+  "kind": "archive",
+  "bytes": 10664
+ },
+ "pages/articles/2010/02/08/parque-de-las-ciencas-aka-space-rocket-plaza/index.html": {
+  "url": "http://innocuous.org/articles/2010/02/08/parque-de-las-ciencas-aka-space-rocket-plaza/",
+  "ts": "20211201100740",
+  "kind": "post",
+  "bytes": 24312
+ },
+ "pages/articles/2010/02/08/parque-de-las-ciencas-aka-space-rocket-plaza/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/02/08/parque-de-las-ciencas-aka-space-rocket-plaza/comment-page-1/",
+  "ts": "20170222182550",
+  "kind": "post",
+  "bytes": 24188
+ },
+ "pages/articles/2010/03/index.html": {
+  "url": "http://innocuous.org/articles/2010/03/",
+  "ts": "20220630051335",
+  "kind": "archive",
+  "bytes": 10456
+ },
+ "pages/articles/2010/03/11/acela-wifi-finally-here-could-be-better/index.html": {
+  "url": "http://innocuous.org/articles/2010/03/11/acela-wifi-finally-here-could-be-better/",
+  "ts": "20211201101527",
+  "kind": "post",
+  "bytes": 13350
+ },
+ "pages/articles/2010/04/index.html": {
+  "url": "http://innocuous.org/articles/2010/04/",
+  "ts": "20201028074151",
+  "kind": "archive",
+  "bytes": 13816
+ },
+ "pages/articles/2010/04/04/synthetic-biology-and-big-ball-of-mud/index.html": {
+  "url": "http://innocuous.org/articles/2010/04/04/synthetic-biology-and-big-ball-of-mud/",
+  "ts": "20160819143208",
+  "kind": "post",
+  "bytes": 25266
+ },
+ "pages/articles/2010/04/04/synthetic-biology-and-big-ball-of-mud/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/04/04/synthetic-biology-and-big-ball-of-mud/comment-page-1/",
+  "ts": "20170222182559",
+  "kind": "post",
+  "bytes": 25266
+ },
+ "pages/articles/2010/04/11/a-computer-scientist-bids-on-a-house/index.html": {
+  "url": "http://innocuous.org/articles/2010/04/11/a-computer-scientist-bids-on-a-house/",
+  "ts": "20210509221801",
+  "kind": "post",
+  "bytes": 14543
+ },
+ "pages/articles/2010/04/18/quick-house-update/index.html": {
+  "url": "http://innocuous.org/articles/2010/04/18/quick-house-update/",
+  "ts": "20220704233754",
+  "kind": "post",
+  "bytes": 10981
+ },
+ "pages/articles/2010/05/index.html": {
+  "url": "http://innocuous.org/articles/2010/05/",
+  "ts": "20220120022619",
+  "kind": "archive",
+  "bytes": 14364
+ },
+ "pages/articles/2010/05/02/end-of-the-world-insurance-the-financial-halting-problem/index.html": {
+  "url": "http://innocuous.org/articles/2010/05/02/end-of-the-world-insurance-the-financial-halting-problem/",
+  "ts": "20211201103314",
+  "kind": "post",
+  "bytes": 13215
+ },
+ "pages/articles/2010/05/09/device-convergence-or-how-i-learned-to-stop-worrying-and-love-the-kindle/index.html": {
+  "url": "http://innocuous.org/articles/2010/05/09/device-convergence-or-how-i-learned-to-stop-worrying-and-love-the-kindle/",
+  "ts": "20220630040518",
+  "kind": "post",
+  "bytes": 14985
+ },
+ "pages/articles/2010/05/09/device-convergence-or-how-i-learned-to-stop-worrying-and-love-the-kindle/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/05/09/device-convergence-or-how-i-learned-to-stop-worrying-and-love-the-kindle/comment-page-1/",
+  "ts": "20170222182338",
+  "kind": "post",
+  "bytes": 14976
+ },
+ "pages/articles/2010/05/16/a-timeless-way-of-building-or-why-do-all-these-houses-suck/index.html": {
+  "url": "http://innocuous.org/articles/2010/05/16/a-timeless-way-of-building-or-why-do-all-these-houses-suck/",
+  "ts": "20220704234020",
+  "kind": "post",
+  "bytes": 29693
+ },
+ "pages/articles/2010/05/16/a-timeless-way-of-building-or-why-do-all-these-houses-suck/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/05/16/a-timeless-way-of-building-or-why-do-all-these-houses-suck/comment-page-1/",
+  "ts": "20190706211220",
+  "kind": "post",
+  "bytes": 29600
+ },
+ "pages/articles/2010/06/index.html": {
+  "url": "http://innocuous.org/articles/2010/06/",
+  "ts": "20220704234359",
+  "kind": "archive",
+  "bytes": 12056
+ },
+ "pages/articles/2010/06/14/normal-accidents-and-stock-market-crashes/index.html": {
+  "url": "http://innocuous.org/articles/2010/06/14/normal-accidents-and-stock-market-crashes/",
+  "ts": "20220120013349",
+  "kind": "post",
+  "bytes": 16064
+ },
+ "pages/articles/2010/06/27/analysis-of-may-6th-the-importance-of-near-misses/index.html": {
+  "url": "http://innocuous.org/articles/2010/06/27/analysis-of-may-6th-the-importance-of-near-misses/",
+  "ts": "20200811161838",
+  "kind": "post",
+  "bytes": 14123
+ },
+ "pages/articles/2010/07/index.html": {
+  "url": "http://innocuous.org/articles/2010/07/",
+  "ts": "20220120015705",
+  "kind": "archive",
+  "bytes": 13542
+ },
+ "pages/articles/2010/07/11/passive-personal-networking-how-to-let-others-network-for-you/index.html": {
+  "url": "http://innocuous.org/articles/2010/07/11/passive-personal-networking-how-to-let-others-network-for-you/",
+  "ts": "20211201100336",
+  "kind": "post",
+  "bytes": 13608
+ },
+ "pages/articles/2010/07/18/debs-2010-highlights/index.html": {
+  "url": "http://innocuous.org/articles/2010/07/18/debs-2010-highlights/",
+  "ts": "20160819182258",
+  "kind": "post",
+  "bytes": 15158
+ },
+ "pages/articles/2010/07/26/platonic-browser-session-management/index.html": {
+  "url": "http://innocuous.org/articles/2010/07/26/platonic-browser-session-management/",
+  "ts": "20190819161759",
+  "kind": "post",
+  "bytes": 15222
+ },
+ "pages/articles/2010/08/index.html": {
+  "url": "http://innocuous.org/articles/2010/08/",
+  "ts": "20220630050439",
+  "kind": "archive",
+  "bytes": 10711
+ },
+ "pages/articles/2010/08/29/non-destructive-process-inspection-on-osx-blog-post-recovery/index.html": {
+  "url": "http://innocuous.org/articles/2010/08/29/non-destructive-process-inspection-on-osx-blog-post-recovery/",
+  "ts": "20160819115550",
+  "kind": "post",
+  "bytes": 15011
+ },
+ "pages/articles/2010/10/index.html": {
+  "url": "http://innocuous.org/articles/2010/10/",
+  "ts": "20220630050938",
+  "kind": "archive",
+  "bytes": 12523
+ },
+ "pages/articles/2010/10/17/apple-is-a-luxury-brand-android-will-never-be/index.html": {
+  "url": "http://innocuous.org/articles/2010/10/17/apple-is-a-luxury-brand-android-will-never-be/",
+  "ts": "20220523115859",
+  "kind": "post",
+  "bytes": 22715
+ },
+ "pages/articles/2010/10/17/apple-is-a-luxury-brand-android-will-never-be/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/10/17/apple-is-a-luxury-brand-android-will-never-be/comment-page-1/",
+  "ts": "20220630035947",
+  "kind": "post",
+  "bytes": 22715
+ },
+ "pages/articles/2010/10/24/lean-startups-and-the-theory-of-the-firm/index.html": {
+  "url": "http://innocuous.org/articles/2010/10/24/lean-startups-and-the-theory-of-the-firm/",
+  "ts": "20160819182224",
+  "kind": "post",
+  "bytes": 16510
+ },
+ "pages/articles/2010/11/index.html": {
+  "url": "http://innocuous.org/articles/2010/11/",
+  "ts": "20210509222449",
+  "kind": "archive",
+  "bytes": 15970
+ },
+ "pages/articles/2010/11/07/what-the-rally-for-sanity-meant-for-me/index.html": {
+  "url": "http://innocuous.org/articles/2010/11/07/what-the-rally-for-sanity-meant-for-me/",
+  "ts": "20220630035205",
+  "kind": "post",
+  "bytes": 16804
+ },
+ "pages/articles/2010/11/07/what-the-rally-for-sanity-meant-for-me/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/11/07/what-the-rally-for-sanity-meant-for-me/comment-page-1/",
+  "ts": "20170222182628",
+  "kind": "post",
+  "bytes": 16792
+ },
+ "pages/articles/2010/11/14/proactive-assumption-violation-avoiding-bugs-by-behaving-badly/index.html": {
+  "url": "http://innocuous.org/articles/2010/11/14/proactive-assumption-violation-avoiding-bugs-by-behaving-badly/",
+  "ts": "20220630051825",
+  "kind": "post",
+  "bytes": 20930
+ },
+ "pages/articles/2010/11/14/proactive-assumption-violation-avoiding-bugs-by-behaving-badly/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/11/14/proactive-assumption-violation-avoiding-bugs-by-behaving-badly/comment-page-1/",
+  "ts": "20170222182251",
+  "kind": "post",
+  "bytes": 20838
+ },
+ "pages/articles/2010/11/21/captchas-the-bear-proof-trash-can-problem/index.html": {
+  "url": "http://innocuous.org/articles/2010/11/21/captchas-the-bear-proof-trash-can-problem/",
+  "ts": "20211201093026",
+  "kind": "post",
+  "bytes": 17466
+ },
+ "pages/articles/2010/11/21/captchas-the-bear-proof-trash-can-problem/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/11/21/captchas-the-bear-proof-trash-can-problem/comment-page-1/",
+  "ts": "20170222182554",
+  "kind": "post",
+  "bytes": 17366
+ },
+ "pages/articles/2010/11/29/three-months-without-cable/index.html": {
+  "url": "http://innocuous.org/articles/2010/11/29/three-months-without-cable/",
+  "ts": "20211201093648",
+  "kind": "post",
+  "bytes": 19852
+ },
+ "pages/articles/2010/11/29/three-months-without-cable/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/11/29/three-months-without-cable/comment-page-1/",
+  "ts": "20111103100411",
+  "kind": "post",
+  "bytes": 20324
+ },
+ "pages/articles/2010/12/index.html": {
+  "url": "http://innocuous.org/articles/2010/12/",
+  "ts": "20220630040142",
+  "kind": "archive",
+  "bytes": 16006
+ },
+ "pages/articles/2010/12/06/yes-virginia-you-can-work-on-great-technology-at-startups/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/12/06/yes-virginia-you-can-work-on-great-technology-at-startups/comment-page-1/",
+  "ts": "20111104080309",
+  "kind": "post",
+  "bytes": 17001
+ },
+ "pages/articles/2010/12/12/there-can-be-too-many-suckers-at-the-table/index.html": {
+  "url": "http://innocuous.org/articles/2010/12/12/there-can-be-too-many-suckers-at-the-table/",
+  "ts": "20210727073419",
+  "kind": "post",
+  "bytes": 15889
+ },
+ "pages/articles/2010/12/20/the-year-in-bookmarks-2010/index.html": {
+  "url": "http://innocuous.org/articles/2010/12/20/the-year-in-bookmarks-2010/",
+  "ts": "20220318195356",
+  "kind": "post",
+  "bytes": 37051
+ },
+ "pages/articles/2010/12/27/book-review-early-exits-exit-strategies-for-entrepreneurs-and-angel-investors/index.html": {
+  "url": "http://innocuous.org/articles/2010/12/27/book-review-early-exits-exit-strategies-for-entrepreneurs-and-angel-investors/",
+  "ts": "20220319013156",
+  "kind": "post",
+  "bytes": 19512
+ },
+ "pages/articles/2010/12/27/book-review-early-exits-exit-strategies-for-entrepreneurs-and-angel-investors/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2010/12/27/book-review-early-exits-exit-strategies-for-entrepreneurs-and-angel-investors/comment-page-1/",
+  "ts": "20111105005230",
+  "kind": "post",
+  "bytes": 20062
+ },
+ "pages/articles/2011/01/index.html": {
+  "url": "http://innocuous.org/articles/2011/01/",
+  "ts": "20220630043518",
+  "kind": "archive",
+  "bytes": 10553
+ },
+ "pages/articles/2011/01/03/toddler-science-and-big-data/index.html": {
+  "url": "http://innocuous.org/articles/2011/01/03/toddler-science-and-big-data/",
+  "ts": "20220208074503",
+  "kind": "post",
+  "bytes": 14093
+ },
+ "pages/articles/2011/01/03/toddler-science-and-big-data/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2011/01/03/toddler-science-and-big-data/comment-page-1/",
+  "ts": "20111021111220",
+  "kind": "post",
+  "bytes": 15973
+ },
+ "pages/articles/2011/02/index.html": {
+  "url": "http://innocuous.org/articles/2011/02/",
+  "ts": "20220120010008",
+  "kind": "archive",
+  "bytes": 11734
+ },
+ "pages/articles/2011/02/12/recommending-franklyn-d-resort-fdr-jamaica/index.html": {
+  "url": "http://innocuous.org/articles/2011/02/12/recommending-franklyn-d-resort-fdr-jamaica/",
+  "ts": "20220112192336",
+  "kind": "post",
+  "bytes": 16963
+ },
+ "pages/articles/2012/06/index.html": {
+  "url": "http://innocuous.org/articles/2012/06/",
+  "ts": "20220120021404",
+  "kind": "archive",
+  "bytes": 10367
+ },
+ "pages/articles/2012/06/18/lessons-learned-from-startup-weekend/index.html": {
+  "url": "http://innocuous.org/articles/2012/06/18/lessons-learned-from-startup-weekend/",
+  "ts": "20210921222531",
+  "kind": "post",
+  "bytes": 17428
+ },
+ "pages/articles/2015/03/index.html": {
+  "url": "http://innocuous.org/articles/2015/03/",
+  "ts": "20220630051834",
+  "kind": "archive",
+  "bytes": 10728
+ },
+ "pages/articles/2015/03/28/identify-manage-honey-badger-developer/index.html": {
+  "url": "http://innocuous.org/articles/2015/03/28/identify-manage-honey-badger-developer/",
+  "ts": "20220120013814",
+  "kind": "post",
+  "bytes": 24212
+ },
+ "pages/articles/2015/03/28/identify-manage-honey-badger-developer/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2015/03/28/identify-manage-honey-badger-developer/comment-page-1/",
+  "ts": "20170114093918",
+  "kind": "post",
+  "bytes": 24114
+ },
+ "pages/articles/2015/04/index.html": {
+  "url": "http://innocuous.org/articles/2015/04/",
+  "ts": "20220630034854",
+  "kind": "archive",
+  "bytes": 12925
+ },
+ "pages/articles/2015/04/06/tips-for-not-giving-a-sales-pitch-at-a-meetup/index.html": {
+  "url": "http://innocuous.org/articles/2015/04/06/tips-for-not-giving-a-sales-pitch-at-a-meetup/",
+  "ts": "20210420183845",
+  "kind": "post",
+  "bytes": 18820
+ },
+ "pages/articles/2015/04/28/in-sales-questions-are-more-valuable-than-answers/index.html": {
+  "url": "http://innocuous.org/articles/2015/04/28/in-sales-questions-are-more-valuable-than-answers/",
+  "ts": "20220120021329",
+  "kind": "post",
+  "bytes": 17501
+ },
+ "pages/articles/2015/05/index.html": {
+  "url": "http://innocuous.org/articles/2015/05/",
+  "ts": "20220120013501",
+  "kind": "archive",
+  "bytes": 10741
+ },
+ "pages/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/index.html": {
+  "url": "http://innocuous.org/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/",
+  "ts": "20220120022757",
+  "kind": "post",
+  "bytes": 19593
+ },
+ "pages/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/comment-page-1/index.html": {
+  "url": "http://innocuous.org/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/comment-page-1/",
+  "ts": "20211201103920",
+  "kind": "post",
+  "bytes": 19593
+ },
+ "pages/articles/category/books/index.html": {
+  "url": "http://innocuous.org/articles/category/books/",
+  "ts": "20220120023539",
+  "kind": "category",
+  "bytes": 15710
+ },
+ "pages/articles/category/business/index.html": {
+  "url": "http://innocuous.org/articles/category/business/",
+  "ts": "20220120012804",
+  "kind": "category",
+  "bytes": 25776
+ },
+ "pages/articles/category/computer-science/index.html": {
+  "url": "http://innocuous.org/articles/category/computer-science/",
+  "ts": "20090101210052",
+  "kind": "category",
+  "bytes": 20769
+ },
+ "pages/articles/category/management/index.html": {
+  "url": "http://innocuous.org/articles/category/management/",
+  "ts": "20210509225540",
+  "kind": "category",
+  "bytes": 15243
  }
 }

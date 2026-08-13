@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>VLDB Keynote: Data Access Patterns in The Amazon.com Technology Platform</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://innocuous.org/xml/rsd/feed.xml" />
+  <link href="http://innocuous.org/xml/rss/feed.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+  <link href="/stylesheets/theme/azure.css" media="screen" rel="Stylesheet" type="text/css" />
+  <link href="/stylesheets/theme/local.css" media="screen" rel="Stylesheet" type="text/css" />
+  <script src="/javascripts/cookies.js" type="text/javascript"></script>
+  <script src="/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="/javascripts/effects.js" type="text/javascript"></script>
+  <script src="/javascripts/typo.js" type="text/javascript"></script>
+  <script type="text/javascript"></script>
+</head>
+<body>
+  <div id="container" class="clearfix">
+      <div id="header">
+        <div id="logo">
+          <h1 id="sitename"><a href="/">Nothing To See Here</a></h1>
+          <h2 id="subtitle">Weblog of Richard Tibbetts</h2>
+        </div>
+      </div>
+      
+      <div id="search"> <form action="/articles/search" id="sform" method="get">
+ <label for="q">Live Search:</label><input type="text" id="q" name="q" value="" size="15" />
+<img alt="Spinner-blue" id="search_spinner" src="/images/spinner-blue.gif" style="display:none;" />
+</form>
+</div>
+      
+      <div id="content" class="clearfix">
+        <div id="main">
+          <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+       xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+       xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about=""
+    trackback:ping="http://innocuous.org/articles/trackback/28"
+    dc:title="VLDB Keynote: Data Access Patterns in The Amazon.com Technology Platform"
+    dc:identifier="http://innocuous.org/articles/read/28"
+    dc:description="The opening keynote for this year's VLDB was a great presentation by Amazon CTO Werner Vogels, describing their data management challenges. I part"
+    dc:creator="tibbetts"
+    dc:date="2007-10-19T20:42:11-04:00" />
+</rdf:RDF>
+-->
+
+<div class="post" onmouseover="if (getCookie('is_admin') == 'yes') { Element.show('admin_article'); }"  onmouseout="Element.hide('admin_article');" >
+  <a class="admintools" href="/admin/content/edit/28" id="admin_article" style="display: none">edit</a>
+  <h2>VLDB Keynote: Data Access Patterns in The Amazon.com Technology Platform</h2>
+  <p class="auth">Posted by tibbetts
+  <span class="typo_date" title="Tue, 25 Sep 2007 10:53:46 GMT">Tue, 25 Sep 2007 10:53:46 GMT</span></p>
+  <p>
+The opening keynote for <a href="http://www.vldb2007.org/">this year's VLDB</a> was a great presentation by <a href="http://www.vldb2007.org/program/keynotes.html#vogels">Amazon CTO Werner Vogels</a>, describing their data management challenges. I particularly appreciated it because it echoed something I've been saying for a few years now: Web-scale companies have problems which cannot be managed with standard RDBMS, or with any common research systems, and so they have started to route-around the database research community.
+<br />Vogels presented lots of information. A big part was about the operational realities of a site as large as Amazon. This has been said before, but saying it to a room full of database researchers was a good thing:<span style="font-size:0pt;">
+<br /></span>
+</p><ul>
+<li>Incremental scalability, up or down, one node at a time, is a key requirement</li>
+<li>Adding resources for redundancy must not hurt performance (best if it helps).</li>
+<li>Failures are not uncorrelated, they are generally quite correlated.</li>
+<li>Systems that fail do not fail stop, they generally fail in some more complex way (eg, periodically coming back up and failing again, or outputting garbage).</li>
+</ul><p>
+Amazon's query workload shares a lot of characteristics with other web sites with which I am familiar, such as <a href="http://www.addsimplicity.com/downloads/eBaySDForum2006-11-29.pdf">eBay</a>, <a href="http://www.manageability.org/blog/stuff/economics-google-hardware-infrastructure/view">Google</a>, <a href="http://www.skrenta.com/2007/05/scaling_facebook_hi5_with_memc.html">Facebook</a>, and <a href="http://www.highscalability.com/livejournal-architecture">LiveJournal</a>. Amazon uses lots of read mostly workloads and lots of pkey-lookup-only workload (65% of all queries are primary key). Only 5% of their queries need full RDBMS query functionality. Most of their writes are also by primary key, and many storage systems support only that kind of write. 
+<br />When it comes to those writes.
+</p><ul>
+<li>Only 10% of queries need strong consistency.</li>
+<li>"We consider strong consistency to be evil," because it is impossible to implement without the potential for downtime or failure.</li>
+<li>Most systems at Amazon are designed for eventual consistency.</li>
+<li>One interesting case is the need for always-writable data storage. One use case is ordering. "If the customer decides to give you his money, you must always take it, that's a business principle." Always writable storage obviously implies a conflict resolution scheme.</li>
+</ul><p>
+All this points to a traditional RDBMS being the wrong system. Interestingly, if you assume you need a single general purpose system, then RDBMS is the best available. But the real answer is to use a set of customized data management tools. This all echos Stonebraker's claim that <a href="http://www.databasecolumn.com/2007/09/one-size-fits-all.html">one size no longer fits all uses</a>.
+<br />Where do we go from here? The real problem for the research community is not to help Amazon and Google build a 5% better system. The real problem is to package up (aka abstract) these tools in such a way that, like databases, average programmers can work with them. Because problems that PhDs at Amazon and Google solve today will soon be problems everyone needs to solve.
+</p>
+
+
+</div>
+
+  <a name="comments"></a><h4 class="blueblk">Comments</h4> 
+  <p class="postmetadata alt">
+    <small><a href="#respond">Leave a response</a></small>
+  </p>
+  <ol class="comment-list" id="commentList"><li class="graybox" id="comment-288"  onmouseover="if (getCookie('is_admin') == 'yes') { Element.show('admin_comment_288'); }"  onmouseout="Element.hide('admin_comment_288');" >
+  <div id="admin_comment_288" style="display: none"><a class="admintools" href="#" onclick="if (confirm('Are you sure you want to delete this comment?')) { new Ajax.Request('/articles/nuke_comment/288', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Puff('comment-288',{duration:0.6});}}); }; return false;">nuke</a><a class="admintools" href="/admin/comments/article/28/edit/288">edit</a></div>
+  <a name="comment-288"></a>
+  <cite><strong><a href="http://lesniewski.org/">Chris Lesniewski-Laas</a></strong> </cite> said about 15 hours later:<br />
+  Is the keynote online anywhere?  I agree about the core message, but I'm curious about some of the details.
+
+I'd guess that most failures at Amazon are basically fail-stop, but that the hard cases are the fail-stutter case or outputting garbage.  Do you think we need Byzantine tolerance to deal with garbage-spewing nodes, or can the garbage be constrained to some non-malicious model?
+
+What kinds of non-strongly-consistent, non-eventually-consistent models do they use?
+
+What are some examples of queries/updates at Amazon that don't need strong consistency?  I can think of some candidates, but my own experience using Amazon seems to present a consistent interface.  For example, after I add an item to my Wish List, my Wish List is always immediately updated --- I never see a temporary blip due to "eventual consistency".  When I make a purchase, it's a pretty good bet that they need to make a real-time (i.e. strongly consistent) validation with the credit-card processor, even if some of their internal systems are not strongly consistent due to failures.  So that might be better characterized as some strongly consistent "hard state" combined with some squishily consistent "soft state".
+</li><li class="graybox" id="comment-289"  onmouseover="if (getCookie('is_admin') == 'yes') { Element.show('admin_comment_289'); }"  onmouseout="Element.hide('admin_comment_289');" >
+  <div id="admin_comment_289" style="display: none"><a class="admintools" href="#" onclick="if (confirm('Are you sure you want to delete this comment?')) { new Ajax.Request('/articles/nuke_comment/289', {asynchronous:true, evalScripts:true, onComplete:function(request){new Effect.Puff('comment-289',{duration:0.6});}}); }; return false;">nuke</a><a class="admintools" href="/admin/comments/article/28/edit/289">edit</a></div>
+  <a name="comment-289"></a>
+  <cite><strong><a href="http://innocuous.org">Richard Tibbetts</a></strong> </cite> said 1 day later:<br />
+  The presentation is not yet available online. I'm not sure if/when it will become so. I will try to update with a link if I find it.
+</li></ol>
+
+
+<p class="postmetadata alt">
+  <small>
+  <a href="http://innocuous.org/xml/articlerss/28/feed.xml" title="RSS Feed">RSS feed for this post</a>
+  <a href="http://innocuous.org/articles/trackback/28">trackback uri</a>  
+  </small>
+</p>
+
+  <form action="/articles/comment/28" class="commentform" id="commentform" method="post" onsubmit="new Ajax.Updater({success:'commentList'}, '/articles/comment/28', {asynchronous:true, evalScripts:true, insertion:Insertion.Bottom, onComplete:function(request){complete(request)}, onFailure:function(request){failure(request)}, onLoading:function(request){loading()}, parameters:Form.serialize(this)}); return false;">
+
+
+<div class="comment-box">
+  <div id="errors"></div>
+
+  <a name="respond"></a>
+  <table cellpadding="4" cellspacing="0" class="frm-tbl">
+    <tr>
+      <td><p><label for="comment_author">Your name</label></p></td>
+      <td> <input id="comment_author" name="comment[author]" size="20" type="text" /> <small><a href="#" onclick="Element.toggle('guest_url'); Element.toggle('guest_email'); return false;">(leave url/email &#187;)</a></small></td>
+    </tr>
+    <tr id="guest_url" style="display:none;">
+      <td><p><label for="comment_url">Your blog</label></p></td>
+      <td> <input id="comment_url" name="comment[url]" size="30" type="text" /></td>
+    </tr>
+    <tr id="guest_email" style="display:none;">
+      <td><p><label for="comment_email">Your email</label></p></td>
+      <td> <input id="comment_email" name="comment[email]" size="30" type="text" /></td>
+    </tr>
+    <tr>
+      <td><p><label for="comment_body">Your message</label></p></td>
+      <td valign="top" colspan="2">
+        <textarea cols="40" id="comment_body" name="comment[body]" rows="20"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" id="frm-btns">
+      <span id="comment_loading" style="display:none;"><img alt="Spinner" src="/images/spinner.gif" /></span>&nbsp;&nbsp;
+        <input type="submit" name="submit" id="form-submit-button" value="submit" class="button" />
+      </td>
+    </tr>
+  </table>
+</div>
+</form>
+
+          <script type="text/javascript">show_dates_as_local_time()</script>
+        </div>
+        <div id="sidebar">
+          
+            <div id="search-results"></div>
+              <script type="text/javascript">new Form.Element.Observer('q', 1, function(element, value) {new Ajax.Updater('search-results', '/live/search', {asynchronous:true, evalScripts:true, onComplete:function(request){Element.hide('search_spinner')}, onLoading:function(request){Element.show('search_spinner')}, parameters:value})})</script>
+              <h3>About</h3>
+<a href="/tibbetts/">About Richard Tibbetts</a>
+
+  
+<h3>Archives</h3>
+<ul id="archives">
+  
+    <li>
+      <a href="/articles/2008/06">June 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/04">April 2008</a>
+      <em>(3)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/01">January 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2007/12">December 2007</a>
+      <em>(1)</em>
+    </li>
+  
+</ul>
+
+
+  <h3>Categories</h3>
+<ul id="categories">
+  
+  <li><a href="/articles/category/books">Books</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/business">Business</a> <em>(9)</em></li>
+  
+  
+  <li><a href="/articles/category/computer-science">Computer Science</a> <em>(5)</em></li>
+  
+  
+  <li><a href="/articles/category/media">Media</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/software-development">Software Development</a> <em>(3)</em></li>
+  
+  
+  <li><a href="/articles/category/tools">Tools</a> <em>(8)</em></li>
+  
+  
+  <li><a href="/articles/category/web">Web</a> <em>(5)</em></li>
+  
+</ul>
+
+
+    <div id="delicious">
+    <h3>Delicious/tibbetts/sidebar</h3>
+    <ul>
+              <li><a href="http://debs08.dis.uniroma1.it/" title="The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008">The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008 </a></li>
+              <li><a href="http://www.bugblogger.com/2007/09/pizza-tail.html" title="Bug Blogger: Pizza Tail">Bug Blogger: Pizza Tail </a></li>
+              <li><a href="http://tytso.livejournal.com/30681.html" title="Ted Tso - On the benevolent dictator model">Ted Tso - On the benevolent dictator model </a></li>
+              <li><a href="http://www.slate.com/id/2172342/fr/rss/" title="How do you inject money into the economy? - By Michelle Tsai - Slate Magazine">How do you inject money into the economy? - By Michelle Tsai - Slate Magazine </a></li>
+              <li><a href="http://www.physorg.com/news95954919.html" title="Humans hot, sweaty, natural-born runners">Humans hot, sweaty, natural-born runners </a></li>
+              <li><a href="http://datamining.typepad.com/gallery/blog-map-gallery.html" title="Data Mining: Mapping The Blogosphere">Data Mining: Mapping The Blogosphere </a></li>
+              <li><a href="http://www.thenation.com/doc/20070423/press" title="The New Suburban Poverty">The New Suburban Poverty </a></li>
+              <li><a href="http://paul.kedrosky.com/archives/2007/04/17/top_ten_vc_lies.html" title="Paul Kedrosky: Updated: Top Ten VC Lies">Paul Kedrosky: Updated: Top Ten VC Lies </a></li>
+              <li><a href="http://www.math.tamu.edu/~cyan/Rota/mitless.html" title="Ten lessons from Rota">Ten lessons from Rota </a></li>
+              <li><a href="http://weblog.fortnow.com/2006/08/zero-knowledge-sudoku.html" title="Computational Complexity: Zero-Knowledge Sudoku">Computational Complexity: Zero-Knowledge Sudoku </a></li>
+          </ul>
+  </div>
+
+  <h3>Pseudo-Blogroll</h3>
+<ul>
+  <li><a href="http://blog.nimlabs.org">Nick Martin</a></li>
+  <li><a href="http://jenselby.org">Jen Selby</a></li>
+  <li>your link here</li>
+</ul>
+
+
+  <h3>Syndicate</h3>
+<ul>
+    <li><a href="/xml/rss/feed.xml" title="RSS 2.0 feed">Articles</a></li>
+  
+    <li><a href="/xml/commentrss/feed.xml" title="Comments RSS 2.0 feed">Comments</a></li>
+  
+  
+</ul>
+
+
+
+            <a class="powered" href="http://typo.leetsoft.com/"><img alt="Powered" src="/images/powered.gif" /></a>
+            </div>
+
+            <br clear="all" />
+      </div>
+      <div id="footer">
+        <ul>
+          <li><a href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0</a></li>
+          <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://innocuous.org/">Valid CSS</a></li>
+        </ul>
+      </div>
+  </div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2439300-1";
+urchinTracker();
+</script>
+</body>
+</html>

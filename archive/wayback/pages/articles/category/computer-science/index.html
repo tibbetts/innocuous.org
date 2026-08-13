@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Nothing To See Here</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://innocuous.org/xml/rsd/feed.xml" />
+  <link href="http://innocuous.org/xml/rss/feed.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+  <link href="/stylesheets/theme/azure.css" media="screen" rel="Stylesheet" type="text/css" />
+  <link href="/stylesheets/theme/local.css" media="screen" rel="Stylesheet" type="text/css" />
+  <script src="/javascripts/cookies.js" type="text/javascript"></script>
+  <script src="/javascripts/prototype.js" type="text/javascript"></script>
+  <script src="/javascripts/effects.js" type="text/javascript"></script>
+  <script src="/javascripts/typo.js" type="text/javascript"></script>
+  <script type="text/javascript"></script>
+</head>
+<body>
+  <div id="container" class="clearfix">
+      <div id="header">
+        <div id="logo">
+          <h1 id="sitename"><a href="/">Nothing To See Here</a></h1>
+          <h2 id="subtitle">Weblog of Richard Tibbetts</h2>
+        </div>
+      </div>
+      
+      <div id="search"> <form action="/articles/search" id="sform" method="get">
+ <label for="q">Live Search:</label><input type="text" id="q" name="q" value="" size="15" />
+<img alt="Spinner-blue" id="search_spinner" src="/images/spinner-blue.gif" style="display:none;" />
+</form>
+</div>
+      
+      <div id="content" class="clearfix">
+        <div id="main">
+           <div class="post">
+  <h2><a href="/articles/2008/04/12/kdb-now-available-for-free-download">kdb+ now available for free download</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sat, 12 Apr 2008 14:05:24 GMT">Sat, 12 Apr 2008 14:05:24 GMT</span></p>
+<p>
+If you've talked to me about programming languages and Wall Street in the last 4 years, I've probably mentioned <a href="http://kx.com/">kx</a>. This is a company which makes a combination programming environment and database based on a language called q which is derived from <a href="http://en.wikipedia.org/wiki/APL_(programming_language)">APL</a>. (Yes, APL, the language invented in 1957 before there was a computer to run it on.) And this environment is in turn used by many of the top quants on Wall Street (and other parts of the financial world) for both research and production systems. Becoming a kx programmer is a good way to double your salary and quadruple your job security.
+</p><p>
+Well, it's been going around my corner of the blogosphere that kdb+ is now free for personal use. I first heard about it from <a href="http://magmasystems.blogspot.com/2008/04/kdb-is-free-for-personal-use.html">Marc Adler</a>. You can go download it from the <a href="http://kx.com/developers/software.php">kx download page</a>. This represents a big step towards openness, which I think will be good for everyone.
+</p><p>
+The q environment is impressive, you have to give them that. There is an emphasis on brevity; the OSX binary of kdb+ is only 227K. That's smaller than the ncurses library it ships with. And brevity doesn't stop there. Utterances in the language are well known for their complexity and <a href="http://kx.com/q/e/book.q">impenetrable internal logic</a>. A lot of q code makes obfuscated perl look clear and verbose. It doesn't help that the culture of kx programmers discourages commenting. Error handling is tricky at best, and modularity and maintainability are in short supply. For confusion, q adds a bunch of SQL keywords on top of the previous language, k, in an almost but not quite fully compatible way.
+</p><p>
+But for all the faults you can kind find some really interesting features in q. And if nothing else, it is an example of a novel programming language, tightly integrated with a data management system, finding commercial success, which is always nice to see. And if  you learn it, you might find a sweet job on wall street as a result.
+</p>
+
+    
+  <p class="meta">Posted in <a href="/articles/category/computer-science" rel="category tag">Computer Science</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2008/04/12/kdb-now-available-for-free-download#comments">no comments</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2008/04/11/when-neither-a-column-store-nor-a-row-store-is-the-answer">When neither a column store nor a row store is the answer</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sat, 12 Apr 2008 02:34:00 GMT">Sat, 12 Apr 2008 02:34:00 GMT</span></p>
+<p>
+A few days ago I found myself giving database advice to a friend with a new startup. His problem is a pretty common one: he has a very large corpus of data, over which he will run compute-intensive proprietary algorithms. Both the data and the computation will require a cluster of machines. He has a prototype based on Postgres. His question to me: should I continue to use a row store (Postgres) or should I use new technology, specifically a column store?
+</p><p>
+If you read the title of the post, you can already guess that my answer was neither.
+</p>
+
+  <a href="/articles/2008/04/11/when-neither-a-column-store-nor-a-row-store-is-the-answer">Read more...</a>  
+  <p class="meta">Posted in <a href="/articles/category/computer-science" rel="category tag">Computer Science</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2008/04/11/when-neither-a-column-store-nor-a-row-store-is-the-answer#comments">no comments</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2008/04/08/google-commences-another-assault-on-the-traditional-database-community">Google commences another assault on the traditional database community</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Tue, 08 Apr 2008 13:32:19 GMT">Tue, 08 Apr 2008 13:32:19 GMT</span></p>
+<p>
+Many in the blogosphere noticed when <a href="http://www.databasecolumn.com/">Stonebraker and Dewitt at The Database Column</a> took offense at the idea that <a href="http://www.databasecolumn.com/2008/01/mapreduce-a-major-step-back.html">map-reduce is the solution to many of life's problems</a>. The idea that a simple idea, promoted by a services company, can blow away 20+ years of distributed database research, bothers them for some reason. Sure, it may not be the best solution to every problem, but it is a sufficient solution to many problems.
+</p><p>
+Google is quietly at it again, this time with the <a href="http://code.google.com/appengine/docs/whatisgoogleappengine.html">Google AppEngine</a>.
+</p>
+
+  <a href="/articles/2008/04/08/google-commences-another-assault-on-the-traditional-database-community">Read more...</a>  
+  <p class="meta">Posted in <a href="/articles/category/computer-science" rel="category tag">Computer Science</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2008/04/08/google-commences-another-assault-on-the-traditional-database-community#comments">no comments</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/12/01/transactional-memory-not-solution-to-all-problems">Transactional Memory Not Solution To All Problems</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Sat, 02 Dec 2006 01:10:19 GMT">Sat, 02 Dec 2006 01:10:19 GMT</span></p>
+I was at MIT today and so I ended up going to an invited talk on computer architecture, <span class="textbold"><a href="http://www.csail.mit.edu/events/eventcalendar/calendar.php?show=event&amp;id=1298">Subtle Semantics and Unrestricted Implementation of Transactional Memory</a>. <a href="http://en.wikipedia.org/wiki/Transactional_memory">Transactional Memory</a> is a very hot topic in systems and architecture. It is perceived to be a better model for programmers, so language designers like it. And there are a variety of options for pure-software and hardware-assisted implementations. And because it enables optimistic concurrency control, transactional memory can help make programs faster and more scalable on new multi-core architectures. There is every reason to believe that processor vendors will begin including some form of hardware support for transactional memory.<br /><br />The focus of the talk was on the subtle issues that come from this. It dismissed a few of the more positive myths about transactional memory:<br /></span><ul><li>Programs using locks cannot be trivially converted to use transactions. In fact, a correctly behaving program using locks to manage things like inter-thread communication can easily deadlock or livelock when using transactions.</li><li>Transactions are not perfectly composable or nestable, as is often claimed. This means heirarchical or nested transactions, where there is a program-level transaction wrapping several library-level transactions, can lead to deadlock or livelock.</li><li>Whether a transactional system is weak (non-transactional code executes concurrently with transactional code, with side effects visible between) or strong transactional (a transaction is atomic not just from the perspective of other transactions, but also to other non-transactional code) can have a significant effect on program behavior. Not only can a program designed for strong transactions have problems under weak transactions, but a program that behaves correctly in a weak transactional system may deadlock in a strong transactional system.</li></ul>This leads me to two primary conclusions, with which I think the speaker would agree: First, transactional memory can have significant confusing side effects, just like locks, and so it is not a solution to the difficulties of multithreaded programming. Second, if processor vendors implement, and many programmers use, weak transactions then we may never get strong transactions.<br /><br />I'd like to take this one step further. I think language designers and computer architects who are excited about transactional memory are missing the point. They are trying to create a single concurrency control mechanism that can solve everyone's problems. In fact, I think there are two separate classes of problem that are best addressed separately: Concurrency control for systems programming, and concurrency control for application programming.<br /><br />Systems programmers are close to the hardware, inside or right on top of the operating system. They are the people who are most comfortable with the concurrency control mechanisms of today (<a href="http://en.wikipedia.org/wiki/Pthreads">pthreads</a> and <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/package-summary.html">java.util.concurrent</a>). Transactional Memory should be targetting these users. The goal is not to give them an easy way to do concurrency, but to make optimistic concurrency control possible and efficient. Continuing to discuss the merits of strong and weak transactions is reasonable, but it should be in the context of what most efficiently represents the capabilities of the hardware.<br /><br />Application programmers generally work on top of a platform, and don't have to think about concurrency in the same way. if they don't work on a platform then they should. For example, application programmers are often writing business applications as web services on top of J2EE. By using platforms, they can work with much higher level management and concurrency control. The most common idiom for concurrency control is the database transaction (or distributed transaction). It is able to handle most concurrency problems in traditional RPC-and-datastore systems.<br /><br />To help application programmers, we need to develop additional idioms. Not all programs can utilize the J2EE style of platform. I expect to see a significant advance in scientific computing tools like MATLAB to take advantage of multiprocessor systems (in my ideal world it would be by vectorizing based on static and dynamic analysis, but I digress). Furthermore, there are a large set of event processing (stream processing, complex event processing) which are also not well served by J2EE-type platforms and database-transactions. Which is why I work on <a href="http://www.streambase.com/">StreamBase</a> (and on <a href="http://streamsql.org">StreamSQL</a>), which is creating next generation programming models for those kinds of applications, to enable parallelization, managability, and scalability.&lt;/shameless-plug&gt;<br /><br />
+
+    
+  <p class="meta">Posted in <a href="/articles/category/computer-science" rel="category tag">Computer Science</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/12/01/transactional-memory-not-solution-to-all-problems#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/12/01/transactional-memory-not-solution-to-all-problems#trackbacks">no trackbacks</a></p> 
+  </div>
+ <div class="post">
+  <h2><a href="/articles/2006/09/28/algorithms-for-the-21st-century">Algorithms for the 21st Century</a></h2>
+<p class="auth">Posted by tibbetts
+<span class="typo_date" title="Fri, 29 Sep 2006 02:51:17 GMT">Fri, 29 Sep 2006 02:51:17 GMT</span></p>
+Went to a talk at MIT tonight, by <a href="http://yaccman.com/">Stephen C Johnson</a>, a researcher at <a href="http://www.mathworks.com/">The Mathworks</a>. The talk was sponsored by the <a href="http://www.gbcacm.org/website/semInfo.php?id=1115">Greater Boston ACM</a>. The paper, <a href="http://yaccman.com/papers/a21/Alg21.html">Algorithms for the 21st Century</a>, was presented at Usenix 2006. The general thrust was how computer architecture has drifted from the idealized model used in most algorithms classes, in significant ways. The major focus was on the memory subsystem, and how caching can effect algorithmic performance. By looking at the behavior of very simple algorithms, we can see fairly complex variations in performance, by factors as high as 60 times worse. This in turn implies that the performance of complex algorithms will be even more diffi<br />cult to characterize.<br />One big take-away is that the built-in cache management schemes of modern memory systems are pessimal for certain algorithms. This actually sounds quite a bit like the complaints against operating system disk buffer/virtual memory management by database authors. Database algorithms, because they often have large storage access requirements that can be characterized in advance, benefit from managing their own buffers. Similarly, it seems like scientific computing (eg, Matlab), which wants to manipulate gigabytes of memory in very structured ways, would benefit from direct management of caching. Of course, cache management needs to run at processor-speed, unlike disk buffer management, so writing heavyweight algorithms is inappropriate. Unfortunately, the talk did not discuss any recommendations for extentions to enable management. I wonder if something as simple as being able to mark a page as no-cache in the TLB would be sufficient.<br />My other take-away is that computer science researchers don't understand computers nearly enough. The presenter, while familiar with processor design and memory architecture, wasn't really able to explain the behavior of these simple algorithms in their entirety. I'm always bothered when I encounter this lack of understanding. On some level it seems that it should be possible to fully understand computer systems. After all, they are developed by humans, and to a first approximation their behavior is deterministic and well defined. Unfortunately, they change rapidly, and so any abstract models we develop are shortly invalidated. Fundamentally, this is what makes computer science difficult.<br />
+
+    
+  <p class="meta">Posted in <a href="/articles/category/computer-science" rel="category tag">Computer Science</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/09/28/algorithms-for-the-21st-century#comments">no comments</a>&nbsp;<strong>|</strong>&nbsp;<a href="/articles/2006/09/28/algorithms-for-the-21st-century#trackbacks">no trackbacks</a></p> 
+  </div>
+
+
+          <script type="text/javascript">show_dates_as_local_time()</script>
+        </div>
+        <div id="sidebar">
+          
+            <div id="search-results"></div>
+              <script type="text/javascript">new Form.Element.Observer('q', 1, function(element, value) {new Ajax.Updater('search-results', '/live/search', {asynchronous:true, evalScripts:true, onComplete:function(request){Element.hide('search_spinner')}, onLoading:function(request){Element.show('search_spinner')}, parameters:value})})</script>
+              <h3>About</h3>
+<a href="/tibbetts/">About Richard Tibbetts</a>
+
+  
+<h3>Archives</h3>
+<ul id="archives">
+  
+    <li>
+      <a href="/articles/2008/12">December 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/06">June 2008</a>
+      <em>(2)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/04">April 2008</a>
+      <em>(3)</em>
+    </li>
+  
+    <li>
+      <a href="/articles/2008/01">January 2008</a>
+      <em>(1)</em>
+    </li>
+  
+</ul>
+
+
+  <h3>Categories</h3>
+<ul id="categories">
+  
+  <li><a href="/articles/category/books">Books</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/business">Business</a> <em>(9)</em></li>
+  
+  
+  <li><a href="/articles/category/computer-science">Computer Science</a> <em>(5)</em></li>
+  
+  
+  <li><a href="/articles/category/media">Media</a> <em>(2)</em></li>
+  
+  
+  <li><a href="/articles/category/software-development">Software Development</a> <em>(3)</em></li>
+  
+  
+  <li><a href="/articles/category/tools">Tools</a> <em>(8)</em></li>
+  
+  
+  <li><a href="/articles/category/web">Web</a> <em>(5)</em></li>
+  
+</ul>
+
+
+    <div id="delicious">
+    <h3>Delicious/tibbetts/sidebar</h3>
+    <ul>
+              <li><a href="http://debs08.dis.uniroma1.it/" title="The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008">The 2nd International Conference on Distributed Event-Based Systems (DEBS) - 2008 </a></li>
+              <li><a href="http://www.bugblogger.com/2007/09/pizza-tail.html" title="Bug Blogger: Pizza Tail">Bug Blogger: Pizza Tail </a></li>
+              <li><a href="http://tytso.livejournal.com/30681.html" title="Ted Tso - On the benevolent dictator model">Ted Tso - On the benevolent dictator model </a></li>
+              <li><a href="http://www.slate.com/id/2172342/fr/rss/" title="How do you inject money into the economy? - By Michelle Tsai - Slate Magazine">How do you inject money into the economy? - By Michelle Tsai - Slate Magazine </a></li>
+              <li><a href="http://www.physorg.com/news95954919.html" title="Humans hot, sweaty, natural-born runners">Humans hot, sweaty, natural-born runners </a></li>
+              <li><a href="http://datamining.typepad.com/gallery/blog-map-gallery.html" title="Data Mining: Mapping The Blogosphere">Data Mining: Mapping The Blogosphere </a></li>
+              <li><a href="http://www.thenation.com/doc/20070423/press" title="The New Suburban Poverty">The New Suburban Poverty </a></li>
+              <li><a href="http://paul.kedrosky.com/archives/2007/04/17/top_ten_vc_lies.html" title="Paul Kedrosky: Updated: Top Ten VC Lies">Paul Kedrosky: Updated: Top Ten VC Lies </a></li>
+              <li><a href="http://www.math.tamu.edu/~cyan/Rota/mitless.html" title="Ten lessons from Rota">Ten lessons from Rota </a></li>
+              <li><a href="http://weblog.fortnow.com/2006/08/zero-knowledge-sudoku.html" title="Computational Complexity: Zero-Knowledge Sudoku">Computational Complexity: Zero-Knowledge Sudoku </a></li>
+          </ul>
+  </div>
+
+  <h3>Pseudo-Blogroll</h3>
+<ul>
+  <li><a href="http://blog.nimlabs.org">Nick Martin</a></li>
+  <li><a href="http://jenselby.org">Jen Selby</a></li>
+  <li>your link here</li>
+</ul>
+
+
+  <h3>Syndicate</h3>
+<ul>
+    <li><a href="/xml/rss/feed.xml" title="RSS 2.0 feed">Articles</a></li>
+  
+    <li><a href="/xml/commentrss/feed.xml" title="Comments RSS 2.0 feed">Comments</a></li>
+  
+  
+</ul>
+
+
+
+            <a class="powered" href="http://typo.leetsoft.com/"><img alt="Powered" src="/images/powered.gif" /></a>
+            </div>
+
+            <br clear="all" />
+      </div>
+      <div id="footer">
+        <ul>
+          <li><a href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0</a></li>
+          <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://innocuous.org/">Valid CSS</a></li>
+        </ul>
+      </div>
+  </div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2439300-1";
+urchinTracker();
+</script>
+</body>
+</html>

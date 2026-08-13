@@ -1,13 +1,41 @@
 <header class="masthead">
-  <div class="masthead-inner">
-    <a class="wordmark" href="{{ .Site.Home.RelPermalink }}">
-      <span class="wordmark-main">Hyperextended</span><span class="wordmark-sub">Metaphor</span>
+  <div class="shell masthead-inner">
+
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}">
+      <span class="brand-mark">
+        {{- with resources.Get "img/logo-bulrush.svg" -}}
+          <img src="{{ .RelPermalink }}" alt="" width="34" height="34">
+        {{- else -}}
+          {{/* Fallback mark: bulrush reeds, in case generation is unavailable. */}}
+          <svg viewBox="0 0 64 64" width="34" height="34" fill="none" stroke="currentColor"
+               stroke-width="3" stroke-linecap="round" aria-hidden="true">
+            <path d="M32 58V22"/><path d="M32 30c0-9 5-15 11-18-1 10-5 16-11 18Z"/>
+            <path d="M32 34c0-9-5-15-11-18 1 10 5 16 11 18Z"/>
+            <rect x="28.5" y="6" width="7" height="15" rx="3.5"/>
+          </svg>
+        {{- end -}}
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">Bulrush Labs</span>
+        <span class="brand-by">{{ .Site.Params.brandLine }}</span>
+      </span>
     </a>
-    <p class="tagline">{{ .Site.Params.subtitle }}</p>
-    <nav class="nav">
+
+    <nav class="nav" aria-label="Primary">
+      {{- $cur := .RelPermalink -}}
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>
+        {{- $active := or (eq $cur (.URL | relURL)) (and (ne .URL "/") (hasPrefix $cur (.URL | relURL))) -}}
+        <a href="{{ .URL | relURL }}"{{ if $active }} class="is-active" aria-current="page"{{ end }}>{{ .Name }}</a>
       {{ end }}
     </nav>
+
+    <div class="masthead-actions">
+      <a class="btn btn-ghost" href="mailto:{{ .Site.Params.email }}">
+        {{ partial "icon.html" (dict "name" "mail" "size" 18) }}
+        <span>Get in touch</span>
+      </a>
+      <span class="avatar" aria-hidden="true">RT</span>
+    </div>
+
   </div>
 </header>

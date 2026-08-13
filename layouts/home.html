@@ -1,31 +1,109 @@
 {{ define "main" }}
-<div class="wrap">
+{{ $p := .Site.Params }}
 
-  <section class="intro">
-    {{ .Content }}
-  </section>
+<section class="hero">
+  <div class="shell hero-grid">
 
-  {{ $posts := where .Site.RegularPages "Section" "articles" }}
-  <section class="listing">
-    <h2 class="section-label">Recent</h2>
-    <ol class="post-list">
-      {{ range first 15 $posts.ByDate.Reverse }}
-        <li class="post-row">
-          <time datetime="{{ .Date.Format "2006-01-02" }}">
-            <span class="d">{{ .Date.Format "02 Jan" }}</span>
-            <span class="y">{{ .Date.Format "2006" }}</span>
-          </time>
-          <div class="post-row-body">
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            {{ with .Params.categories }}
-              <p class="cats">{{ delimit . " · " }}</p>
+    <div class="hero-copy">
+      <p class="eyebrow">{{ $p.eyebrow }}</p>
+      <h1>{{ $p.owner }}</h1>
+      <p class="lede">{{ $p.tagline1 }}<br>{{ $p.tagline2 }}</p>
+      <p class="blurb">{{ $p.description }}</p>
+
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="{{ "/projects/" | relURL }}">
+          {{ partial "icon.html" (dict "name" "terminal" "size" 18) }}
+          <span>View Projects</span>
+        </a>
+        <a class="btn btn-text" href="{{ "/articles/" | relURL }}">
+          <span>Read Articles</span>
+          {{ partial "icon.html" (dict "name" "arrow-right" "size" 18) }}
+        </a>
+      </div>
+
+      <ul class="creds">
+        {{ range $p.credentials }}
+          <li>
+            {{ partial "icon.html" (dict "name" .icon "size" 19 "class" "icon cred-icon") }}
+            <span><b>{{ .label }}</b>{{ .value }}</span>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    {{ with (where .Site.RegularPages "Section" "projects").ByDate.Reverse }}
+      {{ $feat := index (where . "Params.featured" true) 0 | default (index . 0) }}
+      <div class="feature">
+        <div class="feature-info">
+          <p class="badge">Featured Project</p>
+          <h2>{{ $feat.Title }}</h2>
+          <p class="feature-sum">{{ $feat.Params.summary }}</p>
+
+          <ul class="ticks">
+            {{ range $feat.Params.highlights }}
+              <li>{{ partial "icon.html" (dict "name" "check" "size" 17 "class" "icon tick") }} {{ . }}</li>
             {{ end }}
-          </div>
-        </li>
-      {{ end }}
-    </ol>
-    <p class="more"><a href="{{ "/articles/" | relURL }}">All {{ len $posts }} articles →</a></p>
-  </section>
+          </ul>
 
-</div>
+          <ul class="chips">
+            {{ range $feat.Params.stack }}<li>{{ . }}</li>{{ end }}
+          </ul>
+
+          <div class="feature-cta">
+            {{ with $feat.Params.repo }}
+              <a class="btn btn-ghost" href="{{ . }}" rel="noopener">
+                {{ partial "icon.html" (dict "name" "github" "size" 17) }}
+                <span>Star on GitHub</span>
+              </a>
+            {{ end }}
+            <a class="btn btn-text" href="{{ $feat.RelPermalink }}">
+              <span>View Project</span>
+              {{ partial "icon.html" (dict "name" "arrow-right" "size" 17) }}
+            </a>
+          </div>
+        </div>
+
+        <div class="feature-shot">{{ partial "harbor-mockup.html" . }}</div>
+      </div>
+    {{ end }}
+
+  </div>
+</section>
+
+<section class="latest">
+  <div class="shell">
+    <div class="latest-head">
+      <h2>Latest from the Lab</h2>
+      <a class="linkish" href="{{ "/articles/" | relURL }}">
+        <span>View all articles</span>
+        {{ partial "icon.html" (dict "name" "arrow-right" "size" 17) }}
+      </a>
+    </div>
+
+    {{ $thumbs := slice "img/thumb-local-first.webp" "img/thumb-cli.webp" "img/thumb-sustainable.webp" }}
+    <div class="cards">
+      {{ range $i, $post := first 3 (where .Site.RegularPages "Section" "articles").ByDate.Reverse }}
+        <article class="card">
+          <div class="card-top">
+            <div class="thumb thumb-{{ $i }}">
+              {{- $t := index $thumbs (mod $i 3) -}}
+              {{- with resources.Get $t -}}
+                <img src="{{ (.Resize "220x webp").RelPermalink }}" alt="" width="110" height="110" loading="lazy">
+              {{- end -}}
+            </div>
+            <div class="card-head">
+              <p class="card-date">{{ $post.Date.Format "Jan 2, 2006" }}</p>
+              <h3><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h3>
+            </div>
+          </div>
+          <p class="card-sum">{{ $post.Summary | plainify | truncate 118 }}</p>
+          <div class="card-foot">
+            <span>{{ $post.ReadingTime }} min read</span>
+            {{ partial "icon.html" (dict "name" "arrow-right" "size" 17) }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{ end }}

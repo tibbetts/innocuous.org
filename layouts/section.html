@@ -1,29 +1,40 @@
 {{ define "main" }}
-<div class="wrap">
+<div class="shell page-wrap">
   <header class="page-head">
-    <h1>{{ if eq .Section "articles" }}Archive{{ else }}{{ .Title }}{{ end }}</h1>
-    <p class="page-sub">{{ len .RegularPagesRecursive }} articles</p>
+    <h1>{{ if eq .Section "articles" }}Articles{{ else }}{{ .Title }}{{ end }}</h1>
+    {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+    <p class="page-sub">{{ len .RegularPagesRecursive }} {{ if eq .Section "articles" }}articles{{ else }}entries{{ end }}</p>
   </header>
 
-  {{ range .RegularPagesRecursive.ByDate.Reverse.GroupByDate "2006" }}
-    <section class="year-group">
+  {{ if eq .Section "projects" }}
+    <div class="project-grid">
+      {{ range .RegularPagesRecursive.ByDate.Reverse }}
+        <article class="card">
+          <div class="card-head">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          </div>
+          <p class="card-sum">{{ .Params.summary | default (.Summary | plainify | truncate 120) }}</p>
+          {{ with .Params.stack }}
+            <ul class="chips">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    {{ range .RegularPagesRecursive.ByDate.Reverse.GroupByDate "2006" }}
       <h2 class="year-marker">{{ .Key }}</h2>
       <ol class="post-list">
         {{ range .Pages }}
           <li class="post-row">
-            <time datetime="{{ .Date.Format "2006-01-02" }}">
-              <span class="d">{{ .Date.Format "02 Jan" }}</span>
-            </time>
-            <div class="post-row-body">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+            <div>
               <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-              {{ with .Params.categories }}
-                <p class="cats">{{ delimit . " · " }}</p>
-              {{ end }}
+              {{ with .Params.categories }}<p class="cats">{{ delimit . " · " }}</p>{{ end }}
             </div>
           </li>
         {{ end }}
       </ol>
-    </section>
+    {{ end }}
   {{ end }}
 </div>
 {{ end }}

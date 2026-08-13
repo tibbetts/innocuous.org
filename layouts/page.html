@@ -1,33 +1,34 @@
 {{ define "main" }}
-<article class="wrap article">
+<div class="shell page-wrap">
+  <article>
+    <header class="page-head measure">
+      {{ if not .Date.IsZero }}
+        <p class="kicker"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+      {{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.summary }}<p class="page-sub">{{ . }}</p>{{ end }}
+      {{ with .Params.categories }}
+        <p class="page-sub">{{ delimit . " · " }}</p>
+      {{ end }}
+    </header>
 
-  <header class="article-head">
-    {{ if .Date.IsZero | not }}
-      <p class="kicker"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+    {{ with .Params.stack }}
+      <ul class="chips measure">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
     {{ end }}
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.categories }}
-      <p class="article-cats">
-        {{ range . }}<a href="{{ printf "/articles/category/%s/" (. | urlize) | relURL }}">{{ . }}</a>{{ end }}
-      </p>
-    {{ end }}
-  </header>
 
-  <div class="prose">
-    {{ .Content }}
-  </div>
+    <div class="prose">{{ .Content }}</div>
 
-  <footer class="article-foot">
-    <div class="rule"></div>
-    {{ with .Params.tags }}
-      <p class="tags">
-        {{ range . }}<a href="{{ printf "/articles/tag/%s/" (. | urlize) | relURL }}">{{ . }}</a>{{ end }}
-      </p>
-    {{ end }}
-    {{ if eq .Section "articles" }}
-      {{ partial "hn-discuss.html" . }}
-    {{ end }}
-  </footer>
-
-</article>
+    <footer class="article-foot">
+      {{ with .Params.tags }}
+        <p class="tags">
+          {{ range . }}<a href="{{ printf "/articles/tag/%s/" (. | urlize) | relURL }}">{{ . }}</a>{{ end }}
+        </p>
+      {{ end }}
+      {{ if eq .Section "articles" }}{{ partial "hn-discuss.html" . }}{{ end }}
+      {{ with .Params.repo }}
+        <p class="hn"><a href="{{ . }}" rel="noopener">View source on GitHub →</a></p>
+      {{ end }}
+    </footer>
+  </article>
+</div>
 {{ end }}

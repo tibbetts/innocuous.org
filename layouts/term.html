@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="wrap">
+<div class="shell page-wrap">
   <header class="page-head">
     <p class="kicker">{{ if eq .Data.Singular "category" }}Category{{ else }}Tag{{ end }}</p>
     <h1>{{ .Title }}</h1>
@@ -9,13 +9,8 @@
   <ol class="post-list">
     {{ range .Pages.ByDate.Reverse }}
       <li class="post-row">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">
-          <span class="d">{{ .Date.Format "02 Jan" }}</span>
-          <span class="y">{{ .Date.Format "2006" }}</span>
-        </time>
-        <div class="post-row-body">
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        </div>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        <div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3></div>
       </li>
     {{ end }}
   </ol>

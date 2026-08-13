@@ -1,15 +1,11 @@
 {{ define "main" }}
-<div class="wrap">
+<div class="shell page-wrap">
   <header class="page-head">
     <h1>{{ .Title }}</h1>
   </header>
-
   <ul class="term-cloud">
     {{ range .Data.Terms.Alphabetical }}
-      <li>
-        <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-        <span class="count">{{ .Count }}</span>
-      </li>
+      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a><span class="count">{{ .Count }}</span></li>
     {{ end }}
   </ul>
 </div>

@@ -1,23 +1,42 @@
 baseURL = "https://innocuous.org/"
 locale = "en-us"
-title = "Hyperextended Metaphor"
+title = "Bulrush Labs"
 enableRobotsTXT = true
 enableEmoji = true
 
-# The archive is the point of the site; keep every post in the main feeds.
 [params]
-  subtitle = "Richard Tibbetts on Various Topics"
-  description = "Occasional articles on technology, business, management, books and politics — an archive spanning 2005 to 2015."
-  author = "Richard Tibbetts"
-  # Default: search Hacker News by URL, so the link works whether or not a
-  # thread exists yet, with no JavaScript.
+  brandLine = "by Richard Tibbetts"
+  owner = "Richard Tibbetts"
+  eyebrow = "Software · Writing · Ideas"
+  tagline1 = "Builder of useful software."
+  tagline2 = "Writer of technical things."
+  description = "Bulrush Labs is my home for shipping practical tools, exploring systems and developer experience, and sharing what I'm learning along the way."
+  email = "richard@bulrushlabs.com"
+  # Static HN search link per the redesign design doc — works with no JavaScript.
   hnSearchBase = "https://hn.algolia.com/?query="
+
+  [[params.credentials]]
+    icon = "code"
+    label = "Software"
+    value = "Full-stack"
+  [[params.credentials]]
+    icon = "pencil"
+    label = "Writing"
+    value = "Technical"
+  [[params.credentials]]
+    icon = "leaf"
+    label = "Focus"
+    value = "Practical"
+  [[params.credentials]]
+    icon = "pin"
+    label = "Based in"
+    value = "New England"
 
 [taxonomies]
   category = "categories"
   tag = "tags"
 
-# Preserve the original WordPress URLs exactly: /articles/YYYY/MM/DD/slug/
+# The old WordPress URLs must keep working: /articles/YYYY/MM/DD/slug/
 [permalinks]
   [permalinks.page]
     articles = "/articles/:year/:month/:day/:slug/"
@@ -31,19 +50,26 @@ enableEmoji = true
   [markup.highlight]
     noClasses = false
     style = "algol_nu"
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 3
 
 [services.rss]
   limit = 50
 
 [[menu.main]]
-  name = "Archive"
-  url = "/articles/"
+  name = "Projects"
+  url = "/projects/"
   weight = 10
+
+[[menu.main]]
+  name = "Articles"
+  url = "/articles/"
+  weight = 20
 
 [[menu.main]]
   name = "About"
   url = "/about/"
-  weight = 20
+  weight = 30
+
+[[menu.main]]
+  name = "Notes"
+  url = "/notes/"
+  weight = 40

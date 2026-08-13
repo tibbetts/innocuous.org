@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+	Platonic Browser Session Management   @ Hyperextended Metaphor</title>
+<link rel="stylesheet" href="http://innocuous.org/wp-content/themes/dfblog/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://innocuous.org/wp-content/themes/dfblog/css/styles/hd-blue.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://innocuous.org/wp-content/themes/dfblog/css/styles/bg-blue.css" type="text/css" media="screen" />
+<!--[if IE 6]>
+	<link rel="stylesheet" href="http://innocuous.org/wp-content/themes/dfblog/css/ie6.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Hyperextended Metaphor RSS Feed" href="http://innocuous.org/feed/" />
+<link rel="pingback" href="http://innocuous.org/xmlrpc.php" />
+<script type='text/javascript' src='http://innocuous.org/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://innocuous.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://innocuous.org/wp-includes/wlwmanifest.xml" />
+<link rel='index' title='Hyperextended Metaphor' href='http://innocuous.org' />
+<link rel='start' title='Hello Wordpress!' href='http://innocuous.org/articles/2009/03/21/hello-world/' />
+<link rel='prev' title='DEBS 2010 Highlights' href='http://innocuous.org/articles/2010/07/18/debs-2010-highlights/' />
+<link rel='next' title='Non-Destructive Process Inspection on OSX: Blog Post Recovery' href='http://innocuous.org/articles/2010/08/29/non-destructive-process-inspection-on-osx-blog-post-recovery/' />
+<meta name="generator" content="WordPress 2.9.2" />
+<link rel='canonical' href='http://innocuous.org/articles/2010/07/26/platonic-browser-session-management/' />
+</head>
+<body>
+<div id="page">
+<div id="wrapper">
+<div id="header">
+<div id="head">
+
+<div class="logotext"><a href="http://innocuous.org/" title="A link to home page">Hyperextended Metaphor</a></div>
+<div class="slogan">Richard Tibbetts on Various Topics</div>
+</div>
+<div id="menubar">
+<div id="mainmenu">
+<ul>
+<li class="page_item"><a href="http://innocuous.org">Blog Home</a></li>
+<li class="page_item page-item-45"><a href="http://innocuous.org/tibbetts/" title="About Richard Tibbetts">About Richard Tibbetts</a></li>
+<li class="page_item"><a href="http://innocuous.org/feed/" title="Hyperextended Metaphor RSS Feed">Subscribe to Feed</a></li>
+<li class="page_last">&nbsp;</li>
+</ul>
+</div>
+</div>
+<div id="search">
+<form action="http://innocuous.org/" method="post" id="search-box">
+<div class="search-wrapper">
+<input type="text" value="Search..." class="textfield" name="s" id="search-text" onblur="if(this.value=='') this.value='Search...';" onfocus="if(this.value=='Search...') this.value='';" />
+</div>
+</form> </div>
+</div>
+<div id="wrap">
+<div id="container">
+<div id="content">
+<div class="post" id="post-75">
+<h2>Platonic Browser Session Management</h2>
+<div class="postmetadata">
+
+<span class="date">
+Posted in July 26, 2010 &not; 1:04 amh. </span>
+
+<span class="author">tibbetts</span>
+
+<span>Comments Off</span> </div>
+<div class="entry">
+<p>Firefox just crashed, and when I restarted it I was informed that it had some trouble reopening my 115 tabs. Understandable, but I went ahead and clicked the button that encouraged it to try harder. The result, after consuming what would have been several thousand dollars of computer time back when they charged for it, is that I&#8217;m back in the mess I made myself, with an unmanageable collection of pages open, covering topics like faucets, washing machines, coffee brewing, JVMs, whatever else came out of Google Reader, and the research I was doing for this post.</p>
+<p>Our civilization has had tabbed interfaces since <a href="http://en.wikipedia.org/wiki/Tab_(GUI)#History" onclick="javascript:pageTracker._trackPageview('/outbound/article/en.wikipedia.org');">1988</a>. Mainstream browsers (well, Mozilla) have supported tabbed browsing since 2001. As tabbing has become more mainstream, as the web has gotten more complex, and as computers have gotten fast enough to handle dozens of open web pages, people have opened more and more tabs. The result is that nearly everyone knows the experience of &#8220;just having to close some tabs&#8221; before you reboot, or so you can get on with more important work. It&#8217;s easy to overwhelm yourself with the amount of content you can have open in tabs, and clearing it out is often an archeological experience spanning the last week or month of your web activities.</p>
+<p>Browser tab management represents the greatest software usability challenge of our time. We are all facing information overload of one form or another, and this is an opportunity to improve the way people find, consume, retain, and manage information. Lately we are seeing a lot of attempts at innovation here, from Chrome&#8217;s tear-away tabs and performance optimization, to Firefox extensions like <a href="https://addons.mozilla.org/en-US/firefox/addon/5244/" onclick="javascript:pageTracker._trackPageview('/outbound/article/addons.mozilla.org');">Ctrl-Tab</a>. Most recently today we saw <a href="http://www.azarask.in/blog/post/tabcandy/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.azarask.in');">Tab Candy</a>, a preview of new functionality in <a href="http://www.mozilla.com/en-US/firefox/beta/features/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.mozilla.com');">Firefox 4</a>.</p>
+<p>I&#8217;ve often said that I&#8217;ll switch to the first browser that doesn&#8217;t make me feel guilty for having 100+ open tabs. Looking at Tab Candy and other innovations, I see that we are moving in the right direction. But there are still many aspect of the problem that aren&#8217;t being sufficiently addressed.</p>
+<ul>
+<li>Application-oriented tab organization &#8211; Many of the sites I use today are really applications, whether it is Google Docs, Facebook, or Amazon. Taking application behavior into account, and helping me to avoid opening the same heavy application (e.g. gmail) multiple times is part of getting tab management correct.</li>
+<li>Automatic tab organization &#8211; Systems like Tab Candy require that users manage tabs. But wouldn&#8217;t it be better if tabs were managed and grouped automatically?</li>
+<li>Managing the tab/bookmark continuum &#8211; Leaving something open in a tab, or opening it in a tab, is often a way of deciding to come back to it later. Bookmarks accomplish the same thing, but most people&#8217;s bookmarks are themselves a usability nightmare. Automatically migrating tabs into bookmarks and bookmarks back into tabs might be the solution to a lot of these tab problems.</li>
+<li>Excursion and history management &#8211; Web browsing isn&#8217;t a linear process, the way browser history would have you think. It is at least a branching tree, which tabs support. But often the process of web browsing is a product itself, as when researching a new subject or deciding on a purchase. Being able to not only manage the process as it is happening, but also to archive it for later resumption or reference, would improve the efficiency of many browser tasks.</li>
+<li>CPU efficiency &#8211; An implementation detail to be sure, but one of the obstacles to running with 100+ tabs is the CPU load of all the little Javascripts. Some way to manage this, pausing or closing pages which are not visible, is likely to be required.</li>
+</ul>
+<p>As you can see, there is still plenty of room for improvement in the browser interface, particularly around large numbers of tabs. What other cutting edge stuff have you seen? What would you like to see implemented?</p>
+ </div>
+<div class="postmetadata">
+
+<span class="category"><a href="http://innocuous.org/articles/category/tech/" title="View all posts in Technology" rel="category tag">Technology</a></span>
+
+<span class="tag"><a href="http://innocuous.org/articles/tag/computer-science/" rel="tag">computer science</a>, <a href="http://innocuous.org/articles/tag/web/" rel="tag">Web</a></span> 
+<p class="small">
+You can follow any responses to this entry through the <a href='http://innocuous.org/articles/2010/07/26/platonic-browser-session-management/feed/'>RSS 2.0</a> feed.
+Both comments and pings are currently closed. </p>
+</div>
+</div>
+
+<div id="comments">
+
+<p class="resalted">Comments are closed.</p>
+</div>
+</div>
+<div id="sidebar">
+<ul>
+<li id="categories-1" class="widget widget_categories"><h2 class="widgettitle">Categories</h2> <ul>
+<li class="cat-item cat-item-3"><a href="http://innocuous.org/articles/category/books/" title="View all posts filed under Books">Books</a> (4)
+</li>
+<li class="cat-item cat-item-5"><a href="http://innocuous.org/articles/category/business/" title="View all posts filed under Business">Business</a> (19)
+</li>
+<li class="cat-item cat-item-10"><a href="http://innocuous.org/articles/category/management/" title="View all posts filed under Management">Management</a> (4)
+</li>
+<li class="cat-item cat-item-1"><a href="http://innocuous.org/articles/category/misc/" title="Everything Else">Miscellaneous</a> (16)
+</li>
+<li class="cat-item cat-item-6"><a href="http://innocuous.org/articles/category/politics/" title="View all posts filed under Politics">Politics</a> (4)
+</li>
+<li class="cat-item cat-item-4"><a href="http://innocuous.org/articles/category/tech/" title="View all posts filed under Technology">Technology</a> (37)
+</li>
+</ul>
+</li><li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2> <ul>
+<li><a href='http://innocuous.org/articles/2015/05/' title='May 2015'>May 2015</a></li>
+<li><a href='http://innocuous.org/articles/2015/04/' title='April 2015'>April 2015</a></li>
+<li><a href='http://innocuous.org/articles/2015/03/' title='March 2015'>March 2015</a></li>
+<li><a href='http://innocuous.org/articles/2012/06/' title='June 2012'>June 2012</a></li>
+<li><a href='http://innocuous.org/articles/2011/02/' title='February 2011'>February 2011</a></li>
+<li><a href='http://innocuous.org/articles/2011/01/' title='January 2011'>January 2011</a></li>
+<li><a href='http://innocuous.org/articles/2010/12/' title='December 2010'>December 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/11/' title='November 2010'>November 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/10/' title='October 2010'>October 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/08/' title='August 2010'>August 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/07/' title='July 2010'>July 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/06/' title='June 2010'>June 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/05/' title='May 2010'>May 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/04/' title='April 2010'>April 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/03/' title='March 2010'>March 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/02/' title='February 2010'>February 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/01/' title='January 2010'>January 2010</a></li>
+<li><a href='http://innocuous.org/articles/2009/12/' title='December 2009'>December 2009</a></li>
+<li><a href='http://innocuous.org/articles/2009/07/' title='July 2009'>July 2009</a></li>
+<li><a href='http://innocuous.org/articles/2009/06/' title='June 2009'>June 2009</a></li>
+<li><a href='http://innocuous.org/articles/2009/05/' title='May 2009'>May 2009</a></li>
+<li><a href='http://innocuous.org/articles/2009/03/' title='March 2009'>March 2009</a></li>
+<li><a href='http://innocuous.org/articles/2009/01/' title='January 2009'>January 2009</a></li>
+<li><a href='http://innocuous.org/articles/2008/12/' title='December 2008'>December 2008</a></li>
+<li><a href='http://innocuous.org/articles/2008/06/' title='June 2008'>June 2008</a></li>
+<li><a href='http://innocuous.org/articles/2008/04/' title='April 2008'>April 2008</a></li>
+<li><a href='http://innocuous.org/articles/2008/01/' title='January 2008'>January 2008</a></li>
+<li><a href='http://innocuous.org/articles/2007/12/' title='December 2007'>December 2007</a></li>
+<li><a href='http://innocuous.org/articles/2007/10/' title='October 2007'>October 2007</a></li>
+<li><a href='http://innocuous.org/articles/2007/09/' title='September 2007'>September 2007</a></li>
+<li><a href='http://innocuous.org/articles/2007/06/' title='June 2007'>June 2007</a></li>
+<li><a href='http://innocuous.org/articles/2007/03/' title='March 2007'>March 2007</a></li>
+<li><a href='http://innocuous.org/articles/2006/12/' title='December 2006'>December 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/11/' title='November 2006'>November 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/09/' title='September 2006'>September 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/08/' title='August 2006'>August 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/07/' title='July 2006'>July 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/04/' title='April 2006'>April 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/01/' title='January 2006'>January 2006</a></li>
+<li><a href='http://innocuous.org/articles/2005/05/' title='May 2005'>May 2005</a></li>
+<li><a href='http://innocuous.org/articles/2005/04/' title='April 2005'>April 2005</a></li>
+</ul>
+</li><li id="meta-2" class="widget widget_meta"><h2 class="widgettitle">Meta</h2> <ul>
+<li><a href="http://innocuous.org/wp-login.php">Log in</a></li>
+<li><a href="http://innocuous.org/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+<li><a href="http://innocuous.org/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+</ul>
+</li> </ul>
+</div>
+</div>
+</div>
+<div id="bottom">
+<div id="footer">
+<p>Powered by <a href="http://wordpress.org/">WordPress</a> &not; 16 processes generated in 0.128 seconds.</p>
+<p>Theme design by <a href="http://www.danielfajardo.com" target="_blank" title="danielfajardo diseño">danielfajardo web</a></p>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-2439300-1");
+	</script>
+<script type="text/javascript">
+		
+		pageTracker._trackPageview();
+	</script>
+
+</body>
+</html>

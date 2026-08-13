@@ -1,8 +1,14 @@
 <footer class="site-footer">
-  <div class="rule"></div>
-  <p>
-    Written by {{ .Site.Params.author }}, {{ with .Site.Params.archiveSpan }}{{ . }}{{ else }}2005–2015{{ end }}.
-    Rebuilt with <a href="https://gohugo.io">Hugo</a>; original URLs preserved.
-  </p>
-  {{ with .OutputFormats.Get "rss" }}<p><a href="{{ .Permalink }}">RSS</a></p>{{ end }}
+  <div class="shell site-footer-inner">
+    <div>
+      <p class="footer-brand">Bulrush Labs</p>
+      <p class="footer-note">{{ .Site.Params.brandLine }} · New England</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+      {{ end }}
+      {{ with .OutputFormats.Get "rss" }}<a href="{{ .Permalink }}">RSS</a>{{ end }}
+    </nav>
+  </div>
 </footer>

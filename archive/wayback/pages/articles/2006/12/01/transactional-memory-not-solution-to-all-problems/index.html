@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+	Transactional Memory Not Solution To All Problems   @ Hyperextended Metaphor</title>
+<link rel="stylesheet" href="http://innocuous.org/wp-content/themes/dfblog/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://innocuous.org/wp-content/themes/dfblog/css/styles/hd-blue.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://innocuous.org/wp-content/themes/dfblog/css/styles/bg-blue.css" type="text/css" media="screen" />
+<!--[if IE 6]>
+	<link rel="stylesheet" href="http://innocuous.org/wp-content/themes/dfblog/css/ie6.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Hyperextended Metaphor RSS Feed" href="http://innocuous.org/feed/" />
+<link rel="pingback" href="http://innocuous.org/xmlrpc.php" />
+<script type='text/javascript' src='http://innocuous.org/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://innocuous.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://innocuous.org/wp-includes/wlwmanifest.xml" />
+<link rel='index' title='Hyperextended Metaphor' href='http://innocuous.org' />
+<link rel='start' title='Hello Wordpress!' href='http://innocuous.org/articles/2009/03/21/hello-world/' />
+<link rel='prev' title='Pricing Enterprise Software' href='http://innocuous.org/articles/2006/11/18/pricing-enterprise-software/' />
+<link rel='next' title='Switching to OSX, productivity and development tools' href='http://innocuous.org/articles/2007/03/25/switching-to-osx-productivity-and-development-tools/' />
+<meta name="generator" content="WordPress 2.9.2" />
+<link rel='canonical' href='http://innocuous.org/articles/2006/12/01/transactional-memory-not-solution-to-all-problems/' />
+</head>
+<body>
+<div id="page">
+<div id="wrapper">
+<div id="header">
+<div id="head">
+
+<div class="logotext"><a href="http://innocuous.org/" title="A link to home page">Hyperextended Metaphor</a></div>
+<div class="slogan">Richard Tibbetts on Various Topics</div>
+</div>
+<div id="menubar">
+<div id="mainmenu">
+<ul>
+<li class="page_item"><a href="http://innocuous.org">Blog Home</a></li>
+<li class="page_item page-item-45"><a href="http://innocuous.org/tibbetts/" title="About Richard Tibbetts">About Richard Tibbetts</a></li>
+<li class="page_item"><a href="http://innocuous.org/feed/" title="Hyperextended Metaphor RSS Feed">Subscribe to Feed</a></li>
+<li class="page_last">&nbsp;</li>
+</ul>
+</div>
+</div>
+<div id="search">
+<form action="http://innocuous.org/" method="post" id="search-box">
+<div class="search-wrapper">
+<input type="text" value="Search..." class="textfield" name="s" id="search-text" onblur="if(this.value=='') this.value='Search...';" onfocus="if(this.value=='Search...') this.value='';" />
+</div>
+</form> </div>
+</div>
+<div id="wrap">
+<div id="container">
+<div id="content">
+<div class="post" id="post-10">
+<h2>Transactional Memory Not Solution To All Problems</h2>
+<div class="postmetadata">
+
+<span class="date">
+Posted in December 1, 2006 &not; 8:10 pmh. </span>
+
+<span class="author">tibbetts</span>
+
+<span>Comments Off</span> </div>
+<div class="entry">
+<p>I was at MIT today and so I ended up going to an invited talk on computer architecture, <span class="textbold"><a href="https://www.csail.mit.edu/events/eventcalendar/calendar.php?show=event&amp;id=1298" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.csail.mit.edu');">Subtle Semantics and Unrestricted Implementation of Transactional Memory</a>. <a href="https://en.wikipedia.org/wiki/Transactional_memory" onclick="javascript:pageTracker._trackPageview('/outbound/article/en.wikipedia.org');">Transactional Memory</a> is a very hot topic in systems and architecture. It is perceived to be a better model for programmers, so language designers like it. And there are a variety of options for pure-software and hardware-assisted implementations. And because it enables optimistic concurrency control, transactional memory can help make programs faster and more scalable on new multi-core architectures. There is every reason to believe that processor vendors will begin including some form of hardware support for transactional memory.</span></p>
+<p>The focus of the talk was on the subtle issues that come from this. It dismissed a few of the more positive myths about transactional memory:</p>
+<ul>
+<li>Programs using locks cannot be trivially converted to use transactions. In fact, a correctly behaving program using locks to manage things like inter-thread communication can easily deadlock or livelock when using transactions.</li>
+<li>Transactions are not perfectly composable or nestable, as is often claimed. This means heirarchical or nested transactions, where there is a program-level transaction wrapping several library-level transactions, can lead to deadlock or livelock.</li>
+<li>Whether a transactional system is weak (non-transactional code executes concurrently with transactional code, with side effects visible between) or strong transactional (a transaction is atomic not just from the perspective of other transactions, but also to other non-transactional code) can have a significant effect on program behavior. Not only can a program designed for strong transactions have problems under weak transactions, but a program that behaves correctly in a weak transactional system may deadlock in a strong transactional system.</li>
+</ul>
+<p>This leads me to two primary conclusions, with which I think the speaker would agree: First, transactional memory can have significant confusing side effects, just like locks, and so it is not a solution to the difficulties of multithreaded programming. Second, if processor vendors implement, and many programmers use, weak transactions then we may never get strong transactions.</p>
+<p>I&#8217;d like to take this one step further. I think language designers and computer architects who are excited about transactional memory are missing the point. They are trying to create a single concurrency control mechanism that can solve everyone&#8217;s problems. In fact, I think there are two separate classes of problem that are best addressed separately: Concurrency control for systems programming, and concurrency control for application programming.</p>
+<p>Systems programmers are close to the hardware, inside or right on top of the operating system. They are the people who are most comfortable with the concurrency control mechanisms of today (<a href="https://en.wikipedia.org/wiki/Pthreads" onclick="javascript:pageTracker._trackPageview('/outbound/article/en.wikipedia.org');">pthreads</a> and <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/package-summary.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/java.sun.com');">java.util.concurrent</a>). Transactional Memory should be targetting these users. The goal is not to give them an easy way to do concurrency, but to make optimistic concurrency control possible and efficient. Continuing to discuss the merits of strong and weak transactions is reasonable, but it should be in the context of what most efficiently represents the capabilities of the hardware.</p>
+<p>Application programmers generally work on top of a platform, and don&#8217;t have to think about concurrency in the same way. if they don&#8217;t work on a platform then they should. For example, application programmers are often writing business applications as web services on top of J2EE. By using platforms, they can work with much higher level management and concurrency control. The most common idiom for concurrency control is the database transaction (or distributed transaction). It is able to handle most concurrency problems in traditional RPC-and-datastore systems.</p>
+<p>To help application programmers, we need to develop additional idioms. Not all programs can utilize the J2EE style of platform. I expect to see a significant advance in scientific computing tools like MATLAB to take advantage of multiprocessor systems (in my ideal world it would be by vectorizing based on static and dynamic analysis, but I digress). Furthermore, there are a large set of event processing (stream processing, complex event processing) which are also not well served by J2EE-type platforms and database-transactions. Which is why I work on <a href="http://www.streambase.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.streambase.com');">StreamBase</a> (and on <a href="http://streamsql.org" onclick="javascript:pageTracker._trackPageview('/outbound/article/streamsql.org');">StreamSQL</a>), which is creating next generation programming models for those kinds of applications, to enable parallelization, managability, and scalability.&lt;/shameless-plug&gt;</p>
+ </div>
+<div class="postmetadata">
+
+<span class="category">Uncategorized</span>
+
+<span class="tag"><a href="http://innocuous.org/articles/tag/database/" rel="tag">Database</a>, <a href="http://innocuous.org/articles/tag/programming-languages/" rel="tag">Programming Languages</a></span> 
+<p class="small">
+You can follow any responses to this entry through the <a href='http://innocuous.org/articles/2006/12/01/transactional-memory-not-solution-to-all-problems/feed/'>RSS 2.0</a> feed.
+Both comments and pings are currently closed. </p>
+</div>
+</div>
+
+<div id="comments">
+
+<p class="resalted">Comments are closed.</p>
+</div>
+</div>
+<div id="sidebar">
+<ul>
+<li id="categories-1" class="widget widget_categories"><h2 class="widgettitle">Categories</h2> <ul>
+<li class="cat-item cat-item-3"><a href="http://innocuous.org/articles/category/books/" title="View all posts filed under Books">Books</a> (4)
+</li>
+<li class="cat-item cat-item-5"><a href="http://innocuous.org/articles/category/business/" title="View all posts filed under Business">Business</a> (19)
+</li>
+<li class="cat-item cat-item-10"><a href="http://innocuous.org/articles/category/management/" title="View all posts filed under Management">Management</a> (4)
+</li>
+<li class="cat-item cat-item-1"><a href="http://innocuous.org/articles/category/misc/" title="Everything Else">Miscellaneous</a> (16)
+</li>
+<li class="cat-item cat-item-6"><a href="http://innocuous.org/articles/category/politics/" title="View all posts filed under Politics">Politics</a> (4)
+</li>
+<li class="cat-item cat-item-4"><a href="http://innocuous.org/articles/category/tech/" title="View all posts filed under Technology">Technology</a> (37)
+</li>
+</ul>
+</li><li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2> <ul>
+<li><a href='http://innocuous.org/articles/2015/05/' title='May 2015'>May 2015</a></li>
+<li><a href='http://innocuous.org/articles/2015/04/' title='April 2015'>April 2015</a></li>
+<li><a href='http://innocuous.org/articles/2015/03/' title='March 2015'>March 2015</a></li>
+<li><a href='http://innocuous.org/articles/2012/06/' title='June 2012'>June 2012</a></li>
+<li><a href='http://innocuous.org/articles/2011/02/' title='February 2011'>February 2011</a></li>
+<li><a href='http://innocuous.org/articles/2011/01/' title='January 2011'>January 2011</a></li>
+<li><a href='http://innocuous.org/articles/2010/12/' title='December 2010'>December 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/11/' title='November 2010'>November 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/10/' title='October 2010'>October 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/08/' title='August 2010'>August 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/07/' title='July 2010'>July 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/06/' title='June 2010'>June 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/05/' title='May 2010'>May 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/04/' title='April 2010'>April 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/03/' title='March 2010'>March 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/02/' title='February 2010'>February 2010</a></li>
+<li><a href='http://innocuous.org/articles/2010/01/' title='January 2010'>January 2010</a></li>
+<li><a href='http://innocuous.org/articles/2009/12/' title='December 2009'>December 2009</a></li>
+<li><a href='http://innocuous.org/articles/2009/07/' title='July 2009'>July 2009</a></li>
+<li><a href='http://innocuous.org/articles/2009/06/' title='June 2009'>June 2009</a></li>
+<li><a href='http://innocuous.org/articles/2009/05/' title='May 2009'>May 2009</a></li>
+<li><a href='http://innocuous.org/articles/2009/03/' title='March 2009'>March 2009</a></li>
+<li><a href='http://innocuous.org/articles/2009/01/' title='January 2009'>January 2009</a></li>
+<li><a href='http://innocuous.org/articles/2008/12/' title='December 2008'>December 2008</a></li>
+<li><a href='http://innocuous.org/articles/2008/06/' title='June 2008'>June 2008</a></li>
+<li><a href='http://innocuous.org/articles/2008/04/' title='April 2008'>April 2008</a></li>
+<li><a href='http://innocuous.org/articles/2008/01/' title='January 2008'>January 2008</a></li>
+<li><a href='http://innocuous.org/articles/2007/12/' title='December 2007'>December 2007</a></li>
+<li><a href='http://innocuous.org/articles/2007/10/' title='October 2007'>October 2007</a></li>
+<li><a href='http://innocuous.org/articles/2007/09/' title='September 2007'>September 2007</a></li>
+<li><a href='http://innocuous.org/articles/2007/06/' title='June 2007'>June 2007</a></li>
+<li><a href='http://innocuous.org/articles/2007/03/' title='March 2007'>March 2007</a></li>
+<li><a href='http://innocuous.org/articles/2006/12/' title='December 2006'>December 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/11/' title='November 2006'>November 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/09/' title='September 2006'>September 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/08/' title='August 2006'>August 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/07/' title='July 2006'>July 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/04/' title='April 2006'>April 2006</a></li>
+<li><a href='http://innocuous.org/articles/2006/01/' title='January 2006'>January 2006</a></li>
+<li><a href='http://innocuous.org/articles/2005/05/' title='May 2005'>May 2005</a></li>
+<li><a href='http://innocuous.org/articles/2005/04/' title='April 2005'>April 2005</a></li>
+</ul>
+</li><li id="meta-2" class="widget widget_meta"><h2 class="widgettitle">Meta</h2> <ul>
+<li><a href="http://innocuous.org/wp-login.php">Log in</a></li>
+<li><a href="http://innocuous.org/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+<li><a href="http://innocuous.org/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+</ul>
+</li> </ul>
+</div>
+</div>
+</div>
+<div id="bottom">
+<div id="footer">
+<p>Powered by <a href="https://wordpress.org/">WordPress</a> &not; 16 processes generated in 0.119 seconds.</p>
+<p>Theme design by <a href="http://www.danielfajardo.com" target="_blank" title="danielfajardo diseño">danielfajardo web</a></p>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-2439300-1");
+	</script>
+<script type="text/javascript">
+		
+		pageTracker._trackPageview();
+	</script>
+
+</body>
+</html>
