@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="wrap">
+  <header class="page-head">
+    <p class="kicker">{{ if eq .Data.Singular "category" }}Category{{ else }}Tag{{ end }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="page-sub">{{ len .Pages }} article{{ if ne (len .Pages) 1 }}s{{ end }}</p>
+  </header>
+
+  <ol class="post-list">
+    {{ range .Pages.ByDate.Reverse }}
+      <li class="post-row">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">
+          <span class="d">{{ .Date.Format "02 Jan" }}</span>
+          <span class="y">{{ .Date.Format "2006" }}</span>
+        </time>
+        <div class="post-row-body">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        </div>
+      </li>
+    {{ end }}
+  </ol>
+</div>
+{{ end }}

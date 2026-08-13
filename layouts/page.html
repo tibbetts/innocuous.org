@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article class="wrap article">
+
+  <header class="article-head">
+    {{ if .Date.IsZero | not }}
+      <p class="kicker"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+    {{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.categories }}
+      <p class="article-cats">
+        {{ range . }}<a href="{{ printf "/articles/category/%s/" (. | urlize) | relURL }}">{{ . }}</a>{{ end }}
+      </p>
+    {{ end }}
+  </header>
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+
+  <footer class="article-foot">
+    <div class="rule"></div>
+    {{ with .Params.tags }}
+      <p class="tags">
+        {{ range . }}<a href="{{ printf "/articles/tag/%s/" (. | urlize) | relURL }}">{{ . }}</a>{{ end }}
+      </p>
+    {{ end }}
+    {{ if eq .Section "articles" }}
+      {{ partial "hn-discuss.html" . }}
+    {{ end }}
+  </footer>
+
+</article>
+{{ end }}

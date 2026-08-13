@@ -1,0 +1,13 @@
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="wordmark" href="{{ "/" | relURL }}">
+      <span class="wordmark-main">Hyperextended</span><span class="wordmark-sub">Metaphor</span>
+    </a>
+    <p class="tagline">{{ .Site.Params.subtitle }}</p>
+    <nav class="nav">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

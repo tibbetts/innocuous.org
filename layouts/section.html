@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="wrap">
+  <header class="page-head">
+    <h1>{{ if eq .Section "articles" }}Archive{{ else }}{{ .Title }}{{ end }}</h1>
+    <p class="page-sub">{{ len .RegularPagesRecursive }} articles</p>
+  </header>
+
+  {{ range .RegularPagesRecursive.ByDate.Reverse.GroupByDate "2006" }}
+    <section class="year-group">
+      <h2 class="year-marker">{{ .Key }}</h2>
+      <ol class="post-list">
+        {{ range .Pages }}
+          <li class="post-row">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+              <span class="d">{{ .Date.Format "02 Jan" }}</span>
+            </time>
+            <div class="post-row-body">
+              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              {{ with .Params.categories }}
+                <p class="cats">{{ delimit . " · " }}</p>
+              {{ end }}
+            </div>
+          </li>
+        {{ end }}
+      </ol>
+    </section>
+  {{ end }}
+</div>
+{{ end }}

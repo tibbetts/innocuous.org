@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="wrap">
+
+  <section class="intro">
+    {{ .Content }}
+  </section>
+
+  {{ $posts := where .Site.RegularPages "Section" "articles" }}
+  <section class="listing">
+    <h2 class="section-label">Recent</h2>
+    <ol class="post-list">
+      {{ range first 15 $posts.ByDate.Reverse }}
+        <li class="post-row">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            <span class="d">{{ .Date.Format "02 Jan" }}</span>
+            <span class="y">{{ .Date.Format "2006" }}</span>
+          </time>
+          <div class="post-row-body">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            {{ with .Params.categories }}
+              <p class="cats">{{ delimit . " · " }}</p>
+            {{ end }}
+          </div>
+        </li>
+      {{ end }}
+    </ol>
+    <p class="more"><a href="{{ "/articles/" | relURL }}">All {{ len $posts }} articles →</a></p>
+  </section>
+
+</div>
+{{ end }}

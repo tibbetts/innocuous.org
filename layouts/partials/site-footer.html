@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  <div class="rule"></div>
+  <p>
+    Written by {{ .Site.Params.author }}, {{ with .Site.Params.archiveSpan }}{{ . }}{{ else }}2005–2015{{ end }}.
+    Rebuilt with <a href="https://gohugo.io">Hugo</a>; original URLs preserved.
+  </p>
+  {{ with .OutputFormats.Get "rss" }}<p><a href="{{ .Permalink }}">RSS</a></p>{{ end }}
+</footer>

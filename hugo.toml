@@ -1,0 +1,49 @@
+baseURL = "https://innocuous.org/"
+locale = "en-us"
+title = "Hyperextended Metaphor"
+enableRobotsTXT = true
+enableEmoji = true
+
+# The archive is the point of the site; keep every post in the main feeds.
+[params]
+  subtitle = "Richard Tibbetts on Various Topics"
+  description = "Occasional articles on technology, business, management, books and politics — an archive spanning 2005 to 2015."
+  author = "Richard Tibbetts"
+  # Default: search Hacker News by URL, so the link works whether or not a
+  # thread exists yet, with no JavaScript.
+  hnSearchBase = "https://hn.algolia.com/?query="
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Preserve the original WordPress URLs exactly: /articles/YYYY/MM/DD/slug/
+[permalinks]
+  [permalinks.page]
+    articles = "/articles/:year/:month/:day/:slug/"
+  [permalinks.term]
+    categories = "/articles/category/:slug/"
+    tags = "/articles/tag/:slug/"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+    style = "algol_nu"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[services.rss]
+  limit = 50
+
+[[menu.main]]
+  name = "Archive"
+  url = "/articles/"
+  weight = 10
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 20
