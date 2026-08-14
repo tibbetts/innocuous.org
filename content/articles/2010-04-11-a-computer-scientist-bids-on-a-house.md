@@ -16,7 +16,7 @@ I was going to favor you all with a post about Java’s System.nanoTime. That po
 
 To quote a friend of mine, when asked how we much we should bid on the house:
 
-> In a first-price auction, there’s no dominant strategy. ![:(](https://innocuous.org/wp-includes/images/smilies/icon_sad.gif) However, by the Law of Revenue Equivalence, the seller will, on average, get the second-highest valuation of all the bidders. So, if you think you value the house more than everyone else, all you have to do is guess what the next-best buyer would be willing to pay for it, and bid slightly more than that to win.
+> In a first-price auction, there’s no dominant strategy. :( However, by the Law of Revenue Equivalence, the seller will, on average, get the second-highest valuation of all the bidders. So, if you think you value the house more than everyone else, all you have to do is guess what the next-best buyer would be willing to pay for it, and bid slightly more than that to win.
 
 Yes, well, that is entirely correct, but unfortunately unhelpful. We are dealing with a non-repeating negotation (so “on average” doesn’t apply). And it’s remarkably unclear that the auction will be run according to any rules at all. Predicting the behavior of the seller and the sellers agent is quite challenging. On Saturday at brunch a different friend recommended [The Strategy of Conflict by Thomas Schelling](https://www.amazon.com/exec/obidos/ASIN/0674840313/innocuousorg-20/ref=nosim/), from the era of game theory research that brought us such gems as “mutually assured destruction.” Unfortunately there wasn’t time to read it.
 

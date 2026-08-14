@@ -11,7 +11,7 @@ source_capture: "pages/articles/2015/04/28/in-sales-questions-are-more-valuable-
 
 I spend a lot of my time helping people sell the software I write. For scalability, this often means teaching them how to sell it themselves. When I’m teaching people, which happens informally and formally, often times they want to know the questions the prospect will ask, and what answers they should give. The FAQ, as it were, so they can have the answers at the ready. And they don’t just want the technically correct answers, they want the answers that will encourage the prospect to buy. “What should I say if they ask what I think about competitor X?”, things like that.
 
-[![Do You Have Something Against Answers?](https://innocuous.org/wp-content/uploads/2015/04/Something-Against-Answers1.jpg "Do You Have Something Against Answers?")](http://kiriakakis.net/comics/mused/a-day-at-the-park)
+[![Do You Have Something Against Answers?](/wp-content/uploads/2015/04/Something-Against-Answers1.jpg "Do You Have Something Against Answers?")](http://kiriakakis.net/comics/mused/a-day-at-the-park)
 
 “A day at the park” by Kostas Kiriakakis
 
@@ -19,7 +19,7 @@ Experienced account executives and solution consultants are more focused on stor
 
 There is something better than either answers or stories. The most important thing a technical sales professional can bring to a conversation with a prospect is not answers or stories, but questions. And I don’t mean analytic questions like “Linux or Windows?” or “How many transactions per second will the solution need to perform?” When engaging a customer, what you really want to find out is what they are worried about, why they are considering the risk of yet another new software product or new software project. You want to demonstrate that you understand their concerns, and the environment in which they are operating, and that by working with you they will be smarter and more successful.
 
-[![Reality Can Change](https://innocuous.org/wp-content/uploads/2015/04/Reality-Can-Change.jpg "Reality Can Change")](http://kiriakakis.net/comics/mused/a-day-at-the-park)
+[![Reality Can Change](/wp-content/uploads/2015/04/Reality-Can-Change.jpg "Reality Can Change")](http://kiriakakis.net/comics/mused/a-day-at-the-park)
 
 “A day at the park” by Kostas Kiriakakis
 
@@ -43,7 +43,7 @@ You also want to demonstrate you understand their market, and make suggestions i
 
 Some of these questions will be particular to the industry or the solution, but many of them are nearly universal.
 
-[![Questions Attract Better Questions](https://innocuous.org/wp-content/uploads/2015/04/Questions-Attract-Better-Questions.jpg "Questions Attract Better Questions")](http://kiriakakis.net/comics/mused/a-day-at-the-park)
+[![Questions Attract Better Questions](/wp-content/uploads/2015/04/Questions-Attract-Better-Questions.jpg "Questions Attract Better Questions")](http://kiriakakis.net/comics/mused/a-day-at-the-park)
 
 “A day at the park” by Kostas Kiriakakis
 

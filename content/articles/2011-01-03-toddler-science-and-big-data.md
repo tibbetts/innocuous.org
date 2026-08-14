@@ -8,7 +8,7 @@ categories:
   - "Technology"
 source_capture: "pages/index/index.html"
 ---
-[!["Stand Back, I'm Going To Try SCIENCE"](https://innocuous.org/wp-content/uploads/2011/01/stand_back_square_0.png "stand_back_square_0")](https://innocuous.org/wp-content/uploads/2011/01/stand_back_square_0.png)I’ve been spending a lot of time following my son Patrick around watching him explore the world. I’ve shared a few of his important discoveries with Twitter and with friends, under the tag “Toddler Science”. Key discoveries include that tissue boxes contain a finite supply of tissue and that cat magnets do not stick to cats. I spent the New Years weekend with friends, and they too had an opportunity to watch Patrick learning.
+[!["Stand Back, I'm Going To Try SCIENCE"](/wp-content/uploads/2011/01/stand_back_square_0.png "stand_back_square_0")](https://innocuous.org/wp-content/uploads/2011/01/stand_back_square_0.png)I’ve been spending a lot of time following my son Patrick around watching him explore the world. I’ve shared a few of his important discoveries with Twitter and with friends, under the tag “Toddler Science”. Key discoveries include that tissue boxes contain a finite supply of tissue and that cat magnets do not stick to cats. I spent the New Years weekend with friends, and they too had an opportunity to watch Patrick learning.
 
 The metaphor that keeps coming to mind, particularly when watching the destructive testing of my belongings, is that a toddler is a video gamer playing with a new engine. They get their bearings by testing out the physics model: how far can I throw a grenade? Do they bounce? If I shoot up the wall and leave the room, does the damage persist or does the state reset?
 

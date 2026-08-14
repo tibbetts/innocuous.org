@@ -65,7 +65,7 @@ The iPad was the biggest new consumer technology of the year
 
 - [Hyperbole and a Half](https://hyperboleandahalf.blogspot.com/)
   - [God of Cake](https://hyperboleandahalf.blogspot.com/2010/10/god-of-cake.html)
-  - [My Boyfriend Doesn’t Have Ebola Probably](https://hyperboleandahalf.blogspot.com/2010/02/boyfriend-doesnt-have-ebola-probably.html)[![](https://innocuous.org/wp-content/uploads/2010/12/painfaces7-12-300x75.png "painfaces7-12")](https://innocuous.org/wp-content/uploads/2010/12/painfaces7-12.png)
+  - [My Boyfriend Doesn’t Have Ebola Probably](https://hyperboleandahalf.blogspot.com/2010/02/boyfriend-doesnt-have-ebola-probably.html)[![](/wp-content/uploads/2010/12/painfaces7-12-300x75.png "painfaces7-12")](https://innocuous.org/wp-content/uploads/2010/12/painfaces7-12.png)
 - [In The Pipeline](http://pipeline.corante.com/)
   - [How Not To Do It](http://pipeline.corante.com/archives/how_not_to_do_it/)
   - [Things I Won’t Work With](http://pipeline.corante.com/archives/things_i_wont_work_with/)

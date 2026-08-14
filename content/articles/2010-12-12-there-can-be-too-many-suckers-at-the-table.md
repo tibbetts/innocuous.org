@@ -21,6 +21,6 @@ Music isn’t the only market with this problem. Many other media segments have 
 
 If you know you are in a market full of suckers, it might still be possible to build a successful business. You can find an angle to exploit people who want to be in the market, either in the style of [The Producers](https://en.wikipedia.org/wiki/The_Producers_(1968_film)) (generally illegal) or in the style of Ticketmaster ([potentially illegal](https://en.wikipedia.org/wiki/Ticketmaster#Prominent_lawsuits)). You can be consistently and significantly better than everyone else, like many Hollywood directors or Apple’s iTunes. Or use the market to prove out your idea and build your brand, but make your money in a more diverse market, like [Moontoast](http://www.moontoast.com/) (whose presentation at [WebInno](http://www.webinnovatorsgroup.com/)inspired this post).
 
-[![Two Seven Off Suit](https://innocuous.org/wp-content/uploads/2010/12/seven-deuce-off-suit-300x225.jpg "Two Seven Off Suit")](https://innocuous.org/wp-content/uploads/2010/12/seven-deuce-off-suit-300x225.jpg)
+[![Two Seven Off Suit](/wp-content/uploads/2010/12/seven-deuce-off-suit-300x225.jpg "Two Seven Off Suit")](https://innocuous.org/wp-content/uploads/2010/12/seven-deuce-off-suit-300x225.jpg)
 
 At the poker table, it’s not very often that a sucker turns his two-seven offsuit into a full house. When it comes to startups, there are a lot more ways for people with capital and skills to spoil the game for everyone. If you look around the table and everyone else looks like a sucker, you might be one too.
