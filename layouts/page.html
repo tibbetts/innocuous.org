@@ -24,6 +24,9 @@
           {{ range . }}<a href="{{ printf "/articles/tag/%s/" (. | urlize) | relURL }}">{{ . }}</a>{{ end }}
         </p>
       {{ end }}
+      {{ with .Params.canonical }}
+        <p class="hn">Originally published at <a href="{{ . }}" rel="noopener">{{ . }}</a></p>
+      {{ end }}
       {{ if eq .Section "articles" }}{{ partial "hn-discuss.html" . }}{{ end }}
       {{ with .Params.repo }}
         <p class="hn"><a href="{{ . }}" rel="noopener">View source on GitHub →</a></p>
