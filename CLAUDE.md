@@ -1,0 +1,70 @@
+# innocuous.org / Bulrush Labs
+
+Hugo static site. Two things live here at once: the recovered 2005–2015
+"Hyperextended Metaphor" WordPress archive, and a Bulrush Labs rebrand built on
+top of it.
+
+## Hard requirement: the old URLs must keep working
+
+The original WordPress permalinks are load-bearing — inbound links and search
+results still point at them. `hugo.toml` maps them:
+
+- Posts → `/articles/:year/:month/:day/:slug/`
+- Categories → `/articles/category/:slug/`, tags → `/articles/tag/:slug/`
+- `/tibbetts/` is an alias to `/about/`
+- Recovered images are served at their original `/wp-content/uploads/...` paths
+
+Article files are **flat** (`content/articles/2015-05-01-slug.md`) with `slug`
+and `date` in front matter; Hugo builds the dated URL. Do not nest them into
+`YYYY/MM/DD/` folders — that creates stray section pages for every year, month
+and day.
+
+Verify after any config or layout change:
+
+```bash
+hugo --gc --minify
+ls public/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/
+```
+
+## Layout
+
+```
+content/articles/   # 85 posts (84 recovered + 1 Substack import)
+content/projects/   # Bulrush Labs projects (Harbor)
+layouts/            # Hugo 0.146+ flat lookup: baseof, home, page, section, term
+assets/css/main.css # the whole design layer
+assets/img/         # generated brand assets (logo, article thumbnails)
+static/wp-content/  # recovered post images at their original paths
+archive/wayback/    # raw captures + indexes; NOT published by Hugo
+tools/migration/    # recovery scripts — see its README for hard-won details
+docs/               # design docs and handoff notes
+```
+
+## Conventions
+
+- **Never `rm -rf` inside the working tree.** Use targeted deletes
+  (`find content/articles -name '*.md' -delete`) or move a directory aside.
+- Front matter keeps `wp_id` and `source_capture` so any post traces back to the
+  capture it came from. Preserve them.
+- Cross-posted pieces set `canonical` in front matter; that emits `rel=canonical`
+  and an "Originally published at" line. Everything else is self-canonical.
+- Posts carry a static "Discuss on Hacker News" link (HN Algolia URL search, no
+  JavaScript).
+
+## Deployment
+
+GitHub Actions → GitHub Pages (`.github/workflows/hugo.yml`), currently at
+<https://tibbetts.github.io/innocuous.org/>. The build takes its baseURL from
+`actions/configure-pages`, so the repo-subpath and a future custom domain both
+work. **No `CNAME` is committed** — the DNS cutover for `innocuous.org` is
+deliberately a separate step, so the old site is undisturbed.
+
+The workflow triggers on `main` and `site-redesign`. The `github-pages`
+environment restricts which branches may deploy; add a branch there too if you
+want it publishing.
+
+## Local preview
+
+```bash
+hugo server --bind 0.0.0.0 --port 1313 --baseURL "http://mini.alewife-bleak.ts.net:1313/"
+```
