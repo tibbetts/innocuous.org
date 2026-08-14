@@ -1,0 +1,16 @@
+# zulipctl project config — SAFE TO COMMIT (no secret here).
+# The API key is resolved from key_env (an env var) or key_file
+# (a path outside the repo), never from this file.
+[api]
+email = innocuous.org-bot@zulip.alewife-bleak.ts.net
+site = https://zulip.alewife-bleak.ts.net
+
+[zulipctl]
+key_env = ZULIP_API_KEY
+key_file = ~/.config/zulip/innocuous.org.key
+default_stream = agents
+default_topic = innocuous.org
+avatar_slug = innocuous.org
+notebook_file = LAB_NOTEBOOK.md
+notebook_order = bottom
+

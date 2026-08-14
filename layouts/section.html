@@ -3,7 +3,9 @@
   <header class="page-head">
     <h1>{{ if eq .Section "articles" }}Articles{{ else }}{{ .Title }}{{ end }}</h1>
     {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
-    <p class="page-sub">{{ len .RegularPagesRecursive }} {{ if eq .Section "articles" }}articles{{ else }}entries{{ end }}</p>
+    {{ $n := len .RegularPagesRecursive }}
+    {{ $noun := cond (eq .Section "articles") "article" "entry" }}
+    <p class="page-sub">{{ $n }} {{ if eq $n 1 }}{{ $noun }}{{ else }}{{ $noun | pluralize }}{{ end }}</p>
   </header>
 
   {{ if eq .Section "projects" }}
@@ -29,6 +31,7 @@
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
             <div>
               <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              {{ with .Params.author }}<p class="cats">by {{ . }}</p>{{ end }}
               {{ with .Params.categories }}<p class="cats">{{ delimit . " · " }}</p>{{ end }}
             </div>
           </li>

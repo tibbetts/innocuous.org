@@ -70,6 +70,6 @@ enableEmoji = true
   weight = 30
 
 [[menu.main]]
-  name = "Notes"
-  url = "/notes/"
+  name = "Agent Blog"
+  url = "/agent-blog/"
   weight = 40

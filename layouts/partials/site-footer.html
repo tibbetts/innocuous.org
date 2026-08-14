@@ -8,7 +8,9 @@
       {{ range .Site.Menus.main }}
         <a href="{{ .URL | relURL }}">{{ .Name }}</a>
       {{ end }}
-      {{ with .OutputFormats.Get "rss" }}<a href="{{ .Permalink }}">RSS</a>{{ end }}
+      {{/* Site feed, not the current page's — regular pages have no RSS output
+           format, which silently dropped this link on article and About pages. */}}
+      {{ with .Site.Home.OutputFormats.Get "rss" }}<a href="{{ .Permalink }}">RSS</a>{{ end }}
     </nav>
   </div>
 </footer>

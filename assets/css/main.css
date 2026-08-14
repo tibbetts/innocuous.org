@@ -258,9 +258,12 @@ img { max-width: 100%; }
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 1.9rem;
+  padding: 1.5rem;
   display: grid;
-  grid-template-columns: minmax(0, .62fr) minmax(0, 1fr);
+  /* Ratio and padding measured off assets/design/reference.png: the reference
+     card pads 23px and gives the info column 248px, which is exactly what its
+     two CTAs need to sit on one row. */
+  grid-template-columns: minmax(0, .72fr) minmax(0, 1fr);
   gap: 1.9rem;
   box-shadow: 0 1px 2px rgba(20, 20, 15, .03), 0 12px 30px -18px rgba(20, 20, 15, .16);
 }
@@ -314,11 +317,23 @@ img { max-width: 100%; }
   font-weight: 500;
   color: var(--body);
 }
+/* The info column is narrow and .btn is white-space:nowrap, so this row must be
+   allowed to wrap — without it the second CTA overflows the grid cell and gets
+   painted over by the mockup in column two. The compact sizing keeps both CTAs
+   on one line at desktop, as in the design reference. */
 .feature-cta {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: .6rem .75rem;
 }
+.feature-cta .btn {
+  font-size: .75rem;
+  padding: .55rem .62rem;
+  gap: .35rem;
+}
+.feature-cta .btn svg { width: 14px; height: 14px; }
+.feature-cta .btn-text { padding-left: .3rem; padding-right: .3rem; }
 
 /* ---------------- Harbor mockup (UI, so drawn in CSS) ---------------- */
 
@@ -742,7 +757,10 @@ img { max-width: 100%; }
   .masthead-inner { flex-wrap: wrap; gap: 1rem; min-height: 0; padding-top: 1.1rem; padding-bottom: 1.1rem; }
   .nav { margin-left: 0; order: 3; width: 100%; gap: 1.4rem; overflow-x: auto; }
   .masthead-actions { margin-left: auto; }
-  .btn-ghost span { display: none; }
+  /* Collapse the masthead's "Get in touch" to its icon. Scoped to the
+     masthead on purpose: .btn-ghost is also the featured card's "Star on
+     GitHub", which needs to keep its label. */
+  .masthead-actions .btn-ghost span { display: none; }
   .creds li { padding: .4rem 1rem; }
   .creds li:first-child { padding-left: 0; }
 }

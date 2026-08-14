@@ -2,8 +2,11 @@
 <div class="shell page-wrap">
   <article>
     <header class="page-head measure">
-      {{ if not .Date.IsZero }}
-        <p class="kicker"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+      {{ if or (not .Date.IsZero) .Params.author }}
+        <p class="kicker">
+          {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>{{ end }}
+          {{ with .Params.author }}{{ if not $.Date.IsZero }} · {{ end }}by {{ . }}{{ end }}
+        </p>
       {{ end }}
       <h1>{{ .Title }}</h1>
       {{ with .Params.summary }}<p class="page-sub">{{ . }}</p>{{ end }}

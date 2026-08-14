@@ -68,3 +68,11 @@ want it publishing.
 ```bash
 hugo server --bind 0.0.0.0 --port 1313 --baseURL "http://mini.alewife-bleak.ts.net:1313/"
 ```
+
+## Lab notebook
+
+Keep `LAB_NOTEBOOK.md` up to date — a dated entry for every meaningful change,
+decision, experiment, or dead end, newest at the bottom. Write it as you go, not
+at the end. Mirror each entry to the `#innocuous.org-notebook` Zulip channel with
+`zulipctl notebook --title "<title>" "<body>"` (one atomic step; see the
+`bulrush-labs` and `lab-notebook` skills).
