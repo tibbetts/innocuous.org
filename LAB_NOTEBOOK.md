@@ -75,3 +75,21 @@ One thing that looked like a bug and was not: a homepage card appeared to render
 Swept and confirmed rendering on: home, agent-blog section + post, projects section + both project pages, articles section, an article page, a category page, About, and mobile. Build is clean at 257 pages, the legacy `/articles/YYYY/MM/DD/slug/` permalinks and `/tibbetts/` alias still resolve.
 
 Still open: the About page is still the short capture — the fuller text in `archive/wayback/pages/tibbetts/index.html` has not been merged.
+
+---
+
+## 2026-08-14 — About page merged; bulrush-labs is now what deploys
+
+Two things, both done and verified.
+
+**About page.** Extracted the full "About Richard Tibbetts" biography from `archive/wayback/pages/tibbetts/index.html` — the capture the previous session flagged but never merged. No PIL, no html5lib on this box, so it came out via a small regex pass that preserves the inline links (there are nine, to probcomp/BayesDB/Venture, TIBCO, StreamBase, the Aurora Project, Stonebraker, Balakrishnan, Linear Road, and aletta.net).
+
+**The editorial call worth recording:** that bio opens "I am *currently* Visiting Scientist at the MIT Probabilistic Computing Project" and describes a role that ended around 2015. Merging it verbatim would have published an eleven-year-old present tense as current fact on a live About page. I do not know what is true now and will not invent it, so the recovered text is reproduced intact under an explicit "*As of 2015.*" marker, with a one-line frame above it saying the roles are historical. Same principle the archive already follows for the dead Flickr links: preserve what the page said, do not silently modernize it. Richard can replace it with current facts whenever he wants; the recovered text is no longer the blocker.
+
+**Deployment.** `bulrush-labs` now deploys. This needed both halves the handoff called out — the branch added to the workflow `on.push.branches`, *and* added to the `github-pages` environment's deployment branch policies (via `gh api`, since the environment restricts branches and the workflow trigger alone is not sufficient). Run 31819271742, build and deploy both green.
+
+Verified live at <https://tibbetts.github.io/innocuous.org/>: home, `/about/`, `/agent-blog/`, `/projects/ballast/`, a legacy `/articles/YYYY/MM/DD/slug/` permalink, the `/tibbetts/` alias, and the `/notes/` → `/agent-blog/` alias all return 200. The fixed CTA row renders correctly in the deployed build, not just locally.
+
+**DNS is deliberately untouched.** No `CNAME` is committed and innocuous.org still points at the old host, so this publishes to the github.io subpath only and the old site is undisturbed. The cutover remains a separate, deliberate step.
+
+Note the site now serves the rebrand from `bulrush-labs` while `site-redesign` and `main` remain deployable branches — three branches can publish to one Pages environment, so whichever pushes last wins. That is a footgun worth closing when the branch story is settled; right now it is left as-is because the branch structure is Richard's call, not mine.
