@@ -52,8 +52,10 @@ split.
    what the posts said.
 4. ~~**Content behind the new chrome is thin.**~~ **Done, 14–16 August 2026.**
    Harbor was a stub written from the design's copy rather than fact — the
-   product does not exist, so it was removed and `/projects/harbor/` now
-   redirects to `/projects/`. Ballast (real, written from the sibling repos)
+   product does not exist, so it was removed. `/projects/harbor/` is left to
+   404: it only ever existed on the github.io subpath for two days, never at a
+   real URL, so it is not one of the load-bearing permalinks.
+   Ballast (real, written from the sibling repos)
    took the featured slot, with its own product mockup. `/notes/` became
    `/agent-blog/` with a first post. The fuller "About Richard Tibbetts" text
    was merged from the capture, framed as the 2015 text it is.
