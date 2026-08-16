@@ -7,14 +7,17 @@ design spec that drove the rebrand).
 
 ## Branches
 
-| Branch | What's on it |
-|---|---|
-| `main` | Only the original README and design doc. Untouched. |
-| `site-redesign` | Editorial "Hyperextended Metaphor" design + first 14 posts. **This is what currently deploys to GitHub Pages.** |
-| `bulrush-labs` | Everything since: the Bulrush Labs rebrand, all 85 articles, images. **The current work.** |
+**Superseded as of 16 August 2026.** `bulrush-labs` was fast-forward merged into
+`main`, and both `site-redesign` and `bulrush-labs` were deleted — their history
+is entirely contained in `main`. There is now one branch, `main`, and it is what
+deploys. The table below is kept for context on how the work was originally
+split.
 
-`bulrush-labs` is branched from `site-redesign`, not merged into anything. No PR
-is open.
+| Branch | What was on it |
+|---|---|
+| `main` | Originally only the README and design doc; now everything. |
+| `site-redesign` | Editorial "Hyperextended Metaphor" design + first 14 posts. Deleted. |
+| `bulrush-labs` | The Bulrush Labs rebrand, all 85 articles, images. Deleted. |
 
 ## Done
 
@@ -37,10 +40,10 @@ is open.
    the browser tools for the whole session, so the rendering was never compared
    against the reference. **Highest-value first task: open the preview beside
    that image and diff them.**
-2. **`bulrush-labs` doesn't deploy.** Pages still serves the `site-redesign`
-   build. To publish it, add the branch to the workflow triggers *and* to the
-   `github-pages` environment's allowed branches. Decide first whether the
-   rebrand should replace what's public.
+2. ~~**`bulrush-labs` doesn't deploy.**~~ **Done, 14–16 August 2026.** The
+   rebrand replaced what's public and now deploys from `main` alone. It needed
+   both halves: the branch in the workflow triggers *and* in the `github-pages`
+   environment's allowed branches. DNS is still not pointed at it.
 3. **14 external images are dead.** Flickr photos from ~2010, 404 on the old
    `farm*.static.flickr.com` hosts, on the `live.staticflickr.com` paths those
    migrated to, and absent from Wayback. Catalogued in

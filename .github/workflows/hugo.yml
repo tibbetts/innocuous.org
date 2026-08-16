@@ -2,7 +2,7 @@ name: Build and deploy Hugo site to GitHub Pages
 
 on:
   push:
-    branches: [main, site-redesign, bulrush-labs]
+    branches: [main]
   workflow_dispatch:
 
 # Allow the GITHUB_TOKEN to deploy to Pages.

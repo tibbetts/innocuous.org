@@ -59,9 +59,16 @@ GitHub Actions → GitHub Pages (`.github/workflows/hugo.yml`), currently at
 work. **No `CNAME` is committed** — the DNS cutover for `innocuous.org` is
 deliberately a separate step, so the old site is undisturbed.
 
-The workflow triggers on `main` and `site-redesign`. The `github-pages`
-environment restricts which branches may deploy; add a branch there too if you
-want it publishing.
+`main` is the only branch that builds and the only one the `github-pages`
+environment permits to deploy. Both halves matter: adding a branch to the
+workflow trigger alone will fail at the deploy step, because the environment
+restricts branches separately (`gh api repos/:owner/:repo/environments/github-pages/deployment-branch-policies`).
+
+The old `site-redesign` and `bulrush-labs` branches were folded into `main` and
+deleted; their history is in `main`. A stale `gh-pages` branch from 2021 still
+exists and is *not* in `main`'s history — Pages no longer serves from it
+(`build_type: workflow`), but do not delete it without deciding you want that
+content gone.
 
 ## Local preview
 
