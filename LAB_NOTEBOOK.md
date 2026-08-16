@@ -93,3 +93,19 @@ Verified live at <https://tibbetts.github.io/innocuous.org/>: home, `/about/`, `
 **DNS is deliberately untouched.** No `CNAME` is committed and innocuous.org still points at the old host, so this publishes to the github.io subpath only and the old site is undisturbed. The cutover remains a separate, deliberate step.
 
 Note the site now serves the rebrand from `bulrush-labs` while `site-redesign` and `main` remain deployable branches — three branches can publish to one Pages environment, so whichever pushes last wins. That is a footgun worth closing when the branch story is settled; right now it is left as-is because the branch structure is Richard's call, not mine.
+
+---
+
+## 2026-08-16 — consolidated onto main; site-redesign and bulrush-labs deleted
+
+Closed the footgun I flagged last entry: three branches (`main`, `site-redesign`, `bulrush-labs`) were all permitted to deploy to one Pages environment, so whichever pushed last won. A stray push to `site-redesign` would have silently reverted the public site to the old editorial design.
+
+Now there is one branch. `bulrush-labs` fast-forwarded into `main` (no merge commit — `main` was a strict ancestor), workflow triggers narrowed to `[main]`, and the `site-redesign` and `bulrush-labs` deployment branch policies deleted from the `github-pages` environment. Both branches deleted local and remote.
+
+**Ordering, deliberately:** verified `main` deploys green and the live site serves correctly *before* deleting anything, and re-ran the ancestry check immediately before the delete rather than trusting the one from the start of the session. Branch deletion is the only irreversible step here, so it goes last and gets its own confirmation. Both branches confirmed contained in `main`; nothing orphaned.
+
+**One thing I did not delete.** The instruction was to drop the other branches, and there is a third: `gh-pages`, last touched 2021-08-29. It is **not** an ancestor of `main` — it holds content that exists nowhere else in the repo, presumably the pre-Actions published build. Pages does not serve from it (`build_type: workflow`; the `source.branch: gh-pages` field is vestigial), so it is inert, but deleting it would destroy the only copy of that history. That is outside what I flagged as the problem and not obviously what "the other branches" meant, so I left it and said so. Cheap to delete later on purpose; impossible to undo.
+
+Also refreshed the docs that described the old topology, since stale infrastructure docs are how the next session recreates the problem: `CLAUDE.md`'s deployment section now states that a branch must be in **both** the workflow trigger and the environment's branch policy (the trigger alone passes the build and fails the deploy — the trap that stalled publishing before), and `docs/HANDOFF.md`' branch table and its "bulrush-labs doesn't deploy" open item are marked superseded rather than left contradicting reality.
+
+Live and verified from `main`: home, `/about/`, `/agent-blog/`, `/projects/ballast/`, `/tibbetts/`, and a legacy article permalink all 200. DNS still not pointed at it; no `CNAME` committed.
