@@ -109,3 +109,23 @@ Now there is one branch. `bulrush-labs` fast-forwarded into `main` (no merge com
 Also refreshed the docs that described the old topology, since stale infrastructure docs are how the next session recreates the problem: `CLAUDE.md`'s deployment section now states that a branch must be in **both** the workflow trigger and the environment's branch policy (the trigger alone passes the build and fails the deploy — the trap that stalled publishing before), and `docs/HANDOFF.md`' branch table and its "bulrush-labs doesn't deploy" open item are marked superseded rather than left contradicting reality.
 
 Live and verified from `main`: home, `/about/`, `/agent-blog/`, `/projects/ballast/`, `/tibbetts/`, and a legacy article permalink all 200. DNS still not pointed at it; no `CNAME` committed.
+
+---
+
+## 2026-08-16 — Harbor removed; Ballast featured with its own mockup
+
+Richard: remove Harbor, it does not exist. The removal itself was one `git rm`; the interesting part was what it exposed.
+
+**The featured slot had a latent coupling.** `home.html` picks the featured project as `index (where . "Params.featured" true) 0 | default (index . 0)` — so deleting Harbor promoted Ballast automatically, correctly. But the product shot beside it was a **hardcoded** `{{ partial "harbor-mockup.html" }}`. Text was data-driven; the image was not. Deleting Harbor would therefore have rendered Ballast's copy — a Postgres migration reviewer — next to a task-manager UI with an Inbox, a Today list, and notes about vector clocks. Not a crash, not a broken build, just a confidently wrong picture. Worth noting as a shape: **half a component parameterised and half hardcoded is invisible until the data changes.**
+
+Fixed by making the shot per-project via a `mockup` front matter key, and — deliberately — rendering *nothing* when a project does not declare one. Failing to an empty column beats failing to somebody else's product.
+
+**Built a Ballast mockup** in HTML/CSS to match how the Harbor one was done (UI chrome, so drawn rather than screenshotted): the `block` verdict pill, the offending `DROP COLUMN`, the hazard line, and the safe `RENAME COLUMN` rewrite. Content is a real review of the kind in `../ballast/docs/findings/`, not invented capability — Ballast genuinely blocks destructive DDL and supplies the rewrite, so the picture is honest.
+
+Two things I did not skip:
+- **`/projects/harbor/` was publicly live**, so it now redirects to `/projects/` instead of 404ing. Short-lived URL on a github.io subpath, but a dead link is a dead link and this repo's whole thesis is that URLs are load-bearing.
+- **Deleted ~100 lines of CSS** for the removed markup (`.mock-side`, `.mock-nav`, `.mock-tasks`, `.mock-notes`, the unused `.dot-*` colours, and the ≤560px rules that targeted elements no longer in the DOM). Verified by diffing classes-used-in-markup against classes-defined-in-CSS: nothing the new partial needs lost its definition, and the page renders pixel-identical after the cull.
+
+**One verification gap, stated plainly.** I could not re-confirm the new mockup at a real mobile viewport — `resize_window` grew the window to 1441 and then refused to shrink again, three attempts. The zoom simulation is invalid for this (it does not move media queries, so the desktop two-column layout stays and overflows 390px by construction — that `pageOverflowsX: true` is the simulation, not the site). What I could establish deterministically: no media query targets any class in the new component; at ≤1080px `.feature` collapses to one column so the mockup gets *more* width than the desktop case I did verify; its only wide content is `.mock-sql`, an `overflow-x: auto` container confirmed to scroll internally rather than expand; and the mock fits its parent. Low risk, but it is inference, not a screenshot. Flagging rather than claiming.
+
+Deployed from `main`, run 31957035476 green. Live: no "harbor" string anywhere on the homepage, the Ballast mockup renders, `/projects/harbor/` redirects.
