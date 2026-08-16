@@ -1,36 +1,35 @@
 baseURL = "https://innocuous.org/"
 locale = "en-us"
-title = "Bulrush Labs"
+title = "Bulrush Labs — Richard Tibbetts"
 enableRobotsTXT = true
 enableEmoji = true
 
 [params]
   brandLine = "by Richard Tibbetts"
+  # Footer location. The "Based in" credential below shows the same place;
+  # keep them in step.
+  location = "Boston"
   owner = "Richard Tibbetts"
   eyebrow = "Software · Writing · Ideas"
   tagline1 = "Builder of useful software."
   tagline2 = "Writer of technical things."
   description = "Bulrush Labs is my home for shipping practical tools, exploring systems and developer experience, and sharing what I'm learning along the way."
-  email = "richard@bulrushlabs.com"
+  email = "tibbetts@bulrushlabs.com"
   # Static HN search link per the redesign design doc — works with no JavaScript.
   hnSearchBase = "https://hn.algolia.com/?query="
 
   [[params.credentials]]
     icon = "code"
     label = "Software"
-    value = "Full-stack"
+    value = "Agents"
   [[params.credentials]]
     icon = "pencil"
     label = "Writing"
     value = "Technical"
   [[params.credentials]]
-    icon = "leaf"
-    label = "Focus"
-    value = "Practical"
-  [[params.credentials]]
     icon = "pin"
     label = "Based in"
-    value = "New England"
+    value = "Boston"
 
 [taxonomies]
   category = "categories"
