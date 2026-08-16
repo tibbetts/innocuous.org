@@ -1,7 +1,8 @@
 ---
 title: "Ballast"
 date: 2026-08-05
-featured: false
+featured: true
+mockup: "ballast"
 summary: "A conservative reviewer for Postgres migrations, built for teams whose SQL is increasingly written by AI."
 repo: "https://github.com/tibbetts/ballast"
 stack:

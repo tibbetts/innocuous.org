@@ -30,7 +30,7 @@ ls public/articles/2015/05/01/startups-intellectual-property-boston-inn-of-court
 
 ```
 content/articles/   # 85 posts (84 recovered + 1 Substack import)
-content/projects/   # Bulrush Labs projects (Harbor)
+content/projects/   # Bulrush Labs projects (Ballast)
 layouts/            # Hugo 0.146+ flat lookup: baseof, home, page, section, term
 assets/css/main.css # the whole design layer
 assets/img/         # generated brand assets (logo, article thumbnails)

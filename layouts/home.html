@@ -63,7 +63,12 @@
           </div>
         </div>
 
-        <div class="feature-shot">{{ partial "harbor-mockup.html" . }}</div>
+        {{/* Per-project product shot. Falls back to no shot rather than
+             showing another project's UI, which is how Harbor's mockup ended
+             up next to a different project's copy. */}}
+        {{ with $feat.Params.mockup }}
+          <div class="feature-shot">{{ partial (printf "%s-mockup.html" .) $feat }}</div>
+        {{ end }}
       </div>
     {{ end }}
 

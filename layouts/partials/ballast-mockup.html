@@ -1,0 +1,49 @@
+{{- /* The product shot is UI chrome, so it is built in HTML/CSS rather than
+       generated as an image. Depicts a real Ballast review: a destructive
+       migration blocked, with the safe rewrite supplied. */ -}}
+<div class="mock" aria-hidden="true">
+
+  <div class="mock-bar">
+    <span class="mock-title">
+      {{ partial "icon.html" (dict "name" "terminal" "size" 14) }} migration review
+    </span>
+    <span class="verdict verdict-block">block</span>
+  </div>
+
+  <div class="mock-review">
+    <p class="mock-file">
+      {{ partial "icon.html" (dict "name" "code" "size" 12) }}
+      0042_drop_events_payload.sql
+    </p>
+
+    <pre class="mock-sql"><code><span class="sql-del">- ALTER TABLE events</span>
+<span class="sql-del">-   DROP COLUMN payload;</span></code></pre>
+
+    <p class="mock-flag">
+      Irreversible on a table declared at 12M rows. The column is read by
+      three call sites still in <span class="mock-inline">main</span>.
+    </p>
+
+    <p class="mock-label">Safe rewrite</p>
+
+    <pre class="mock-sql"><code><span class="sql-add">+ ALTER TABLE events</span>
+<span class="sql-add">+   RENAME COLUMN payload</span>
+<span class="sql-add">+   TO payload_deprecated;</span></code></pre>
+
+    <ul class="mock-checks">
+      <li><span class="box on"></span> Reversible in one statement</li>
+      <li><span class="box on"></span> No table rewrite, no lock queue</li>
+      <li><span class="box"></span> Drop after the deprecation window</li>
+    </ul>
+
+    <div class="mock-rules">
+      <span class="mock-rule">destructive-ddl</span>
+      <span class="mock-rule">anti-downgrade</span>
+      <span class="mock-rule">lock-window</span>
+    </div>
+  </div>
+
+  <div class="mock-foot">
+    <span class="dot dot-green"></span> decision written to review.yml — grep it in CI
+  </div>
+</div>

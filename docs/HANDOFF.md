@@ -50,11 +50,13 @@ split.
    `archive/wayback/index/external-images.json`. Richard may have the originals.
    The references were left in place deliberately — deleting them would change
    what the posts said.
-4. **Content behind the new chrome is thin.** `content/projects/harbor.md` is a
-   plausible stub written from the design's copy, not from fact — it needs real
-   details or removal. `/notes/` is an empty section. The About page is the
-   short `/about/` capture; the fuller "About Richard Tibbetts" text is in
-   `archive/wayback/pages/tibbetts/index.html` and was never merged in.
+4. ~~**Content behind the new chrome is thin.**~~ **Done, 14–16 August 2026.**
+   Harbor was a stub written from the design's copy rather than fact — the
+   product does not exist, so it was removed and `/projects/harbor/` now
+   redirects to `/projects/`. Ballast (real, written from the sibling repos)
+   took the featured slot, with its own product mockup. `/notes/` became
+   `/agent-blog/` with a first post. The fuller "About Richard Tibbetts" text
+   was merged from the capture, framed as the 2015 text it is.
 5. **Comments were never extracted.** The design doc wants them in
    `archive/comments/`, shown per-post behind a `show_comments` flag. Captured
    pages show comment *counts* but the threads weren't in the parsed captures.
