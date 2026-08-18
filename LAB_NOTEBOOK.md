@@ -129,3 +129,113 @@ Two things I did not skip:
 **One verification gap, stated plainly.** I could not re-confirm the new mockup at a real mobile viewport — `resize_window` grew the window to 1441 and then refused to shrink again, three attempts. The zoom simulation is invalid for this (it does not move media queries, so the desktop two-column layout stays and overflows 390px by construction — that `pageOverflowsX: true` is the simulation, not the site). What I could establish deterministically: no media query targets any class in the new component; at ≤1080px `.feature` collapses to one column so the mockup gets *more* width than the desktop case I did verify; its only wide content is `.mock-sql`, an `overflow-x: auto` container confirmed to scroll internally rather than expand; and the mock fits its parent. Low risk, but it is inference, not a screenshot. Flagging rather than claiming.
 
 Deployed from `main`, run 31957035476 green. Live: no "harbor" string anywhere on the homepage, the Ballast mockup renders, `/projects/harbor/` redirects.
+
+---
+
+## 2026-08-18 — DNS inventory ahead of the bulrushlabs.com cutover
+
+Surveyed who actually runs DNS for the domains in play, ahead of pointing them at
+the GitHub Pages build. Read-only — no records touched.
+
+**Registrar is Gandi for everything Richard owns.** But the DNS operator differs,
+which means two dashboards, not one:
+
+- `innocuous.org` — delegated to **Cloudflare** (`earl`/`tess.ns.cloudflare.com`).
+  Gandi holds only the delegation. Apex A records are Cloudflare *proxy* IPs
+  (172.67/104.21 — orange cloud). Registered 2000-05-16, expires 2029.
+  Mail: Fastmail (`in1/in2-smtp.messagingengine.com`).
+- `bulrushlabs.com` — **Gandi's own DNS** (`a/b/c.dns.gandi.net`), serving Gandi's
+  parked-domain page. Registered 2015-05-26, expires 2027-05-26.
+  Mail: Google Workspace, plus SPF and a `google-site-verification` TXT.
+
+**Typo/TLD defenses that exist** (all Gandi, all Gandi DNS, all parked):
+
+- `bulrushlabs.org` — created 2015-05-26T14:16:42Z, **four seconds after**
+  `bulrushlabs.com` (14:16:38Z). Same checkout basket; that gap is the strongest
+  ownership evidence available, since registrant fields are redacted.
+- `bullrushlabs.com` (double-l) — created 2015-09-27, four months later, so a
+  deliberate later purchase rather than part of the original basket.
+
+**Not owned:** `bullrushlabs.org`, `bulrushlabs.net`, `.io`, `.ai` are all
+unregistered. `bulrush.org` (GoDaddy, 2005) and `bulrush.com` (GoDaddy, 1997) belong
+to other people and are not gettable.
+
+**Time-sensitive finding: `bullrushlabs.com` expires 2026-09-27** — about six weeks
+out, and its Updated Date is 2025-08-27, i.e. it renews annually while the other two
+were touched this month. Worth confirming auto-renew is on before it lapses;
+a typo domain that expires is worse than one never bought, because it becomes
+squattable against a brand that by then has inbound links.
+
+**Two facts that shape the cutover:**
+
+1. `innocuous.org` currently returns **522** — the Cloudflare edge is up but the
+   WordPress origin behind it is dead. This also closes out HANDOFF item 6 (getting
+   a WXR export off the origin server): there is no origin left to export from.
+   Wayback is permanently the only source for the archive.
+2. GitHub Pages allows **one custom domain per repo**, set by a committed `CNAME`
+   file. So only one of these domains can be the Pages domain; every other domain
+   has to be a redirect. That constraint is what forces the architecture rather
+   than it being a style choice.
+
+Richard is leaning toward `bulrushlabs.com` as canonical, with `innocuous.org`
+redirecting to it path-for-path to preserve the 2005–2015 permalinks. Recorded here
+because that inverts the repo's current assumption — CLAUDE.md's "the old URLs must
+keep working" has so far meant *serve* them, and would come to mean *301 them to the
+same path on a different host*. Not yet decided; no changes made.
+
+---
+
+## 2026-08-18 — Pruned dead innocuous.org subdomains; DNS cutover runbook written
+
+First actual mutation in the Gandi → Cloudflare migration, plus the discovery that
+reshaped the redirect design.
+
+**The zone was not what we assumed.** Planning the innocuous.org → bulrushlabs.com
+redirect, I read the live Cloudflare zone rather than trusting the plan, and found
+`innocuous.org` is not a dead website — it is a **mail domain with a dead website
+attached**:
+
+- apex MX → Fastmail — live
+- `tna.innocuous.org` MX → Fastmail, MX only, no A record — Richard confirms this is
+  **structural and important**
+- apex A `65.19.178.79` (proxied) — dead, and the source of the long-standing 522
+- `www` → `uist.aletta.net` — dead
+- `mull` → `45.33.75.56`, `play` → `66.228.35.54` (both Linode) — dead, no listener
+- `new` → `uist.aletta.net` — dead
+
+**This changes the redirect rule design.** The obvious implementation — match
+`*.innocuous.org` and 301 everything — would have swallowed `tna`, and the failure
+mode is bad: mail records are unaffected by an HTTP redirect rule, so it would have
+*looked* fine while any future A/CNAME expectations under that name broke silently.
+The rule must match apex and `www` by **exact hostname**. Recorded in the runbook
+with a post-cutover `dig MX` check on both names, because this is exactly the kind
+of constraint that gets lost between sessions.
+
+**Pruned** `mull` and `play` per Richard. Both records captured to
+`pruned-records.json` in the session scratchpad first. Verified gone via the API
+(0 records) and both authoritative nameservers. Left `new` alone — it was not part
+of the ask and nobody has reviewed whether it means anything.
+
+A note on verification: immediately after deleting, `dig play.innocuous.org` still
+returned the old A record, and even `dig @earl.ns.cloudflare.com` did on first ask.
+That was resolver cache with ~287s left, not a failed delete — the API listing had
+already dropped to 7 records. Worth remembering that "authoritative" queries can
+still come back stale for a TTL; check the provider's API for truth, not `dig`.
+
+**Wrote `docs/DNS-CUTOVER.md`** — captured pre-change state of all four zones, four
+phases with verification commands between each, and the two hazards worth repeating:
+(1) do not enable the innocuous.org redirect until bulrushlabs.com actually serves,
+because 301ing twenty years of inbound links at a Gandi parking page is worse than
+the current 522 — search engines follow 301s and reindex, but treat 522 as
+transient; (2) `bullrushlabs.com` expires 2026-09-27 and its whois Updated Date is
+today, which may mean a 60-day registrant-change lock outlasting the expiry.
+
+**Blocked** on the Cloudflare API token: it has DNS and Transform Rules now, but no
+Account-level permission at all (`/accounts` returns zero visible accounts), so zone
+creation fails. The UI label I gave Richard was wrong — Cloudflare has no "Create"
+level, only Read/Edit, so the row needed is **Account → Zone → Edit**. Phases 1–3
+are ready to run the moment that lands.
+
+Also confirmed DNSSEC is off on all four domains, so the nameserver change is safe;
+had it been on, changing NS without first retiring the DS record would have broken
+resolution for every validating resolver.
