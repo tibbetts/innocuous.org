@@ -60,7 +60,7 @@ change once the zone is stable. Keeping the `google-site-verification` TXT also
 preserves the ability to prove ownership when releasing the domain from the
 Google Workspace tenant, which is the step people get stuck on.
 
-## Phase 1 — zones into Cloudflare (no user-visible change)
+## Phase 1 — zones into Cloudflare — **DONE 18 Aug 2026**
 
 1. Create Cloudflare zones for `bulrushlabs.com`, `bulrushlabs.org`,
    `bullrushlabs.com` on the account above.
@@ -79,7 +79,7 @@ for d in bulrushlabs.com bulrushlabs.org bullrushlabs.com; do
 done
 ```
 
-## Phase 2 — bulrushlabs.com serves the site
+## Phase 2 — bulrushlabs.com serves the site — **DONE 18 Aug 2026**
 
 6. In the `bulrushlabs.com` zone, replace the parking A record with GitHub Pages:
    `A @ 185.199.108.153`, `.109.153`, `.110.153`, `.111.153` — **DNS-only (grey
@@ -97,7 +97,7 @@ curl -sI https://bulrushlabs.com | head -1
 curl -sI https://bulrushlabs.com/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/ | head -1
 ```
 
-## Phase 3 — redirects (ONLY after Phase 2 verifies)
+## Phase 3 — redirects — **DONE 18 Aug 2026**
 
 **Do not enable this before bulrushlabs.com actually serves the site.** Enabling
 it early 301s twenty years of inbound links to a parking page, and search engines
@@ -126,7 +126,7 @@ dig +short MX innocuous.org        # must still be Fastmail
 dig +short MX tna.innocuous.org    # must still be Fastmail
 ```
 
-## Phase 4 — registrar transfers
+## Phase 4 — registrar transfers — **OPEN**
 
 10. After Gandi's 72-hour hold releases the auth codes, transfer to Cloudflare
     Registrar. Each transfer **adds a year** to the existing expiry, so nothing
@@ -143,3 +143,41 @@ dig +short MX tna.innocuous.org    # must still be Fastmail
   exist and the Workspace tenant has released the domain.
 - Consider octoDNS to keep these zones as code in this repo, so a future provider
   move is a config change and records cannot be silently lost.
+
+
+## Verified end state, 18 August 2026
+
+All three redirect zones use one rule each in the `http_request_dynamic_redirect`
+phase, 301, `preserve_query_string`, target
+`concat("https://bulrushlabs.com", http.request.uri.path)`.
+
+| Test | Result |
+|---|---|
+| `http://innocuous.org/articles/2015/05/01/…/` | 301 → same path on bulrushlabs.com → 200 |
+| `http://www.innocuous.org/…` | 301, path preserved |
+| `http://innocuous.org/search/?q=honey+badger&page=2` | 301, query preserved |
+| `bulrushlabs.org`, `bullrushlabs.com` + `www` | 301, path preserved |
+| `innocuous.org` MX | Fastmail, unchanged |
+| `tna.innocuous.org` MX | Fastmail, unchanged; no A record, never matched |
+| `bulrushlabs.com` apex / permalink / `wp-content` image | 200 / 200 / 200 image/png |
+
+**API note:** `PUT /zones/{id}/rulesets/phases/{phase}/entrypoint` rejects `kind`
+and `phase` in the body — it infers both from the URL. Sending them returns
+`invalid JSON: unknown field "kind"`, which reads like a permissions problem but
+is not.
+
+**Token note:** the redirect rules need **Zone → Dynamic Redirect → Edit**
+(labelled "Single Redirect" in some dashboard versions). Not Transform Rules.
+`GET /rulesets` succeeds without it and lists managed rulesets, so it looks like
+access — probe the specific phase entrypoint instead.
+
+## Still open
+
+- **Registrar transfers** (phase 4). `bullrushlabs.com` first, expiry 2026-09-27.
+- **Fastmail migration** for `bulrushlabs.com`; Google MX/SPF/verification TXT are
+  still in place and deliberately untouched.
+- `innocuous.org` apex A still points at the dead `65.19.178.79` and `www` at the
+  dead `uist.aletta.net`. Harmless — the redirect rule fires at the edge before any
+  origin fetch — but they could be swapped for `192.0.2.1` to make the intent
+  obvious. Same for `new.innocuous.org`, which is dead and unreviewed.
+- Gandi account balance, if any, does not transfer. Spend or refund before leaving.

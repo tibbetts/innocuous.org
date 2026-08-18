@@ -239,3 +239,56 @@ are ready to run the moment that lands.
 Also confirmed DNSSEC is off on all four domains, so the nameserver change is safe;
 had it been on, changing NS without first retiring the DS record would have broken
 resolution for every validating resolver.
+
+---
+
+## 2026-08-18 — bulrushlabs.com is live on GitHub Pages; redirects blocked on one token scope
+
+The cutover's substantive half landed. `bulrushlabs.com` now serves the site over
+HTTPS with a valid certificate, and the archive URLs resolve on it.
+
+**Phase 1 — zones into Cloudflare.** Richard created the three zones and used
+Cloudflare's record import, which pulled in Gandi's entire default template. Removed
+from all three: `blog`, `imap`, `pop`, `smtp`, `webmail`, and `www → webredir` — all
+CNAMEs into Gandi-hosted services that stop resolving the moment the domain's DNS
+leaves Gandi, so importing them was worse than useless. Also dropped the
+`217.70.184.38` parking A records. Full pre-cleanup state of all five zones is in
+`zones-backup-before-cleanup.json` in the session scratchpad.
+
+Kept `bulrushlabs.com`'s Google MX ×5, SPF, and `google-site-verification` TXT
+exactly as they were, despite mail being destined for Fastmail. One variable at a
+time: if something breaks tomorrow, it should not be possible for the answer to be
+"the mail records changed."
+
+**Phase 2 — the site.** Committed `static/CNAME`, set the Pages custom domain via
+`gh api`, watched the build deploy, and GitHub issued a cert covering both
+`bulrushlabs.com` and `www.bulrushlabs.com`. Verified with `--resolve` overrides
+straight at `185.199.108.153`, bypassing DNS: apex 200 with the right `<title>`,
+`www` 301s to apex, a 2015 archive permalink 200s, and a recovered
+`/wp-content/uploads/...` PNG serves 200 at 17KB. HTTPS enforcement now on.
+
+The `--resolve` trick mattered. My local resolver had `bulrushlabs.com` cached at the
+old Gandi parking IP with a 7717-second TTL, so a naive `curl` returned **200 from
+the parking page** — a false pass that looks identical to success. Testing against
+the origin IP with an explicit Host is the only honest check during a cutover.
+Same lesson as yesterday's `dig` staleness, in a nastier costume: the failure mode
+here isn't an error, it's a green result from the wrong server.
+
+**Two things still open.**
+
+`bulrushlabs.org` is still `status=pending` — the registry still shows
+`a/b/c.dns.gandi.net`, so its nameserver change either didn't take or hasn't
+propagated. The other two flipped fine.
+
+Phase 3 redirects are blocked on a token scope, and my guess was wrong again. The
+required permission is **Zone → Dynamic Redirect → Edit** (some UI versions label it
+"Single Redirect"), not Transform Rules. Worth noting the diagnostic: `GET /rulesets`
+succeeded and listed the managed rulesets, which *looked* like access, but reading
+the `http_request_dynamic_redirect` entrypoint specifically returned "request is not
+authorized." A broad list endpoint returning 200 is not evidence of access to a
+particular phase — probe the exact resource.
+
+So `innocuous.org` still serves its 522 for now. That is unchanged rather than
+regressed, and it stays that way deliberately until the redirect can be installed
+correctly — the gate was "bulrushlabs.com actually serves," which is now satisfied,
+so the moment the scope lands the rules go in.
