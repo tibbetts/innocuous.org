@@ -220,9 +220,44 @@ def check_domain_expiry():
             fail("expiry/%s" % domain, "registration expires in %d days (%s)" % (days, iso))
 
 
+def self_test():
+    """Live negative control, per reading-leveler's point that a negative test
+    needs a fixture which can actually express the failure.
+
+    The unit-level negative tests monkeypatch http() and prove the comparison
+    logic works. They do not prove the *live* path works, and they drift the
+    moment the real request or parse changes shape.
+
+    So: issue a real request to http://innocuous.org/, which really does 301 to
+    https://bulrushlabs.com/ — correct behaviour, and therefore a permanent,
+    by-design example of a redirect target that does NOT equal the deep path.
+    Feed that through the same comparison the detector uses. It MUST be
+    rejected. If it is ever accepted, the detector has rotted and every pass
+    above this line is worthless.
+
+    This is deliberately a thing that is *supposed* to produce the signature,
+    not a synthetic fixture and not a historical broken build. Those drift out
+    of reproducing the condition; a by-design behaviour does not."""
+    code, loc = http("http://innocuous.org/")
+    if code != "301":
+        fail("self-test", "control did not 301 (got %s) — cannot verify the "
+                          "detector; treat all redirect results as unproven" % code)
+        return
+    want = "https://%s%s" % (CANONICAL, DEEP_PATH)
+    if loc == want:
+        fail("self-test", "control unexpectedly matched the deep path")
+        return
+    # The comparison must reject this. If a future refactor makes it lenient
+    # (substring match, prefix match, normalised trailing slash), this fires.
+    if not (loc != want):
+        fail("self-test", "DETECTOR ROTTED: comparison accepted a mismatched "
+                          "target (%s vs %s). Every redirect PASS is worthless." % (loc, want))
+
+
 def main():
     verbose = "-v" in sys.argv or "--verbose" in sys.argv
-    checks = [("site serves", check_site),
+    checks = [("detector self-test", self_test),
+              ("site serves", check_site),
               ("redirects preserve paths", check_redirects),
               ("mail MX", check_mail),
               ("SPF single-record", check_spf),

@@ -52,6 +52,31 @@ success. Checks that can be fooled by cache are worse than no checks.
 
 **HTTP checks pin the origin IP** with `curl --resolve` for the same reason.
 
+## The self-test
+
+The first check is a **live negative control**, borrowed from `reading-leveler`
+after their post-deploy checker passed on a build that had the bug it existed
+to catch. Their detector asserted "status is not 404"; the historical broken
+deployment sat behind Vercel auth and answered `401`, which satisfied it. Two
+failures compounding: a detector too loose to mean anything, and a fixture that
+could no longer express the failure.
+
+Their generalisation is the useful part: **a negative test needs a fixture that
+can actually express the failure**, and the most durable source of one is
+something that is *supposed* to fail that way, permanently, by design. A
+historical broken build drifts — it gets wrapped in auth, redeployed, deleted.
+A by-design behaviour does not.
+
+Here that fixture is `http://innocuous.org/`. It really does 301 to
+`https://bulrushlabs.com/` — correct behaviour, and therefore a permanent live
+example of a redirect target that does *not* equal the deep path. It runs
+through the same comparison the real detector uses and must be rejected. If it
+is ever accepted, the comparison has gone lenient (substring, prefix,
+trailing-slash normalisation) and **every redirect PASS above it is worthless**.
+
+The self-test is itself negative-tested: it fires both when the control stops
+redirecting and when the control unexpectedly matches.
+
 ## Known non-failure
 
 DKIM currently reports a note, not a failure: the CNAMEs resolve to Fastmail
