@@ -176,8 +176,12 @@ access — probe the specific phase entrypoint instead.
 - **Registrar transfers** (phase 4). `bullrushlabs.com` first, expiry 2026-09-27.
 - **Fastmail migration** for `bulrushlabs.com`; Google MX/SPF/verification TXT are
   still in place and deliberately untouched.
-- `innocuous.org` apex A still points at the dead `65.19.178.79` and `www` at the
-  dead `uist.aletta.net`. Harmless — the redirect rule fires at the edge before any
-  origin fetch — but they could be swapped for `192.0.2.1` to make the intent
-  obvious. Same for `new.innocuous.org`, which is dead and unreviewed.
+- ~~`innocuous.org` apex A / `www` pointing at dead hosts.~~ **Done 18 Aug 2026** —
+  both are now `192.0.2.1`, proxied, with the record comment "placeholder; redirect
+  rule handles all traffic at the edge". The spare zones' placeholders carry the same
+  comment. Redirect and both MX sets re-verified after the swap.
+- `new.innocuous.org` still CNAMEs to the dead `uist.aletta.net`. Not reviewed by
+  anyone; left in place pending a decision.
+- The two spare zones still carry Gandi MX + SPF (`spool.mail.gandi.net`). Almost
+  certainly decorative, but not verified as unused, so left alone.
 - Gandi account balance, if any, does not transfer. Spend or refund before leaving.
