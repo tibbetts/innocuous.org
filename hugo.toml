@@ -9,9 +9,6 @@ enableEmoji = true
 
 [params]
   brandLine = "by Richard Tibbetts"
-  # Footer location. The "Based in" credential below shows the same place;
-  # keep them in step.
-  location = "Boston"
   owner = "Richard Tibbetts"
   eyebrow = "Software · Writing · Ideas"
   tagline1 = "Builder of useful software."

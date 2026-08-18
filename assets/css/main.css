@@ -12,7 +12,7 @@
   --body:      #4e4e48;
   --muted:     #87877e;
 
-  --green:     #1f5b3c;   /* solid buttons, avatar */
+  --green:     #1f5b3c;   /* solid buttons */
   --green-mid: #2f7550;   /* icons, links, eyebrow */
   --green-pale:#e7f1ea;   /* badge fill */
   --green-ink: #2a6b45;   /* badge text */
@@ -123,17 +123,6 @@ img { max-width: 100%; }
   align-items: center;
   gap: 1rem;
 }
-.avatar {
-  width: 46px; height: 46px;
-  border-radius: 50%;
-  background: var(--green);
-  color: #fff;
-  display: grid; place-items: center;
-  font-size: .88rem;
-  font-weight: 700;
-  letter-spacing: .04em;
-}
-
 /* ---------------- buttons ---------------- */
 
 .btn {
@@ -596,6 +585,10 @@ img { max-width: 100%; }
   letter-spacing: -.03em;
   line-height: 1.08;
 }
+/* The section description sits directly under the h1, whose margin is zeroed,
+   so without this it reads as a run-on with the heading. Only Projects and
+   Agent Blog have _index.md body text; Articles has no _index.md at all. */
+.page-head .prose { margin-top: 1.15rem; }
 .page-sub {
   margin: .7rem 0 0;
   color: var(--muted);
