@@ -1,4 +1,7 @@
-baseURL = "https://innocuous.org/"
+# Production overrides this from actions/configure-pages, so CI is authoritative.
+# Kept in step with the live domain anyway, so local builds emit correct
+# canonical URLs instead of pointing at the redirect source.
+baseURL = "https://bulrushlabs.com/"
 locale = "en-us"
 title = "Bulrush Labs — Richard Tibbetts"
 enableRobotsTXT = true

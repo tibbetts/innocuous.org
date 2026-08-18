@@ -292,3 +292,55 @@ So `innocuous.org` still serves its 522 for now. That is unchanged rather than
 regressed, and it stays that way deliberately until the redirect can be installed
 correctly — the gate was "bulrushlabs.com actually serves," which is now satisfied,
 so the moment the scope lands the rules go in.
+
+---
+
+## 2026-08-18 — Cutover complete: innocuous.org now 301s to bulrushlabs.com, paths intact
+
+Phases 1–3 are done. `bulrushlabs.com` serves the site, and twenty years of
+`innocuous.org` permalinks now 301 to the identical path on it. The 522 that has
+been sitting on `innocuous.org` since the WordPress origin died is gone.
+
+**The redirect.** One rule per zone in the `http_request_dynamic_redirect` phase,
+301, query string preserved, target
+`concat("https://bulrushlabs.com", http.request.uri.path)`. Matched on exact
+hostname — apex and `www` only — so `tna.innocuous.org` is untouched. Verified after
+the fact that both Fastmail MX sets still resolve unchanged and that `tna` still has
+no A record.
+
+Verified end to end: `http://innocuous.org/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/`
+→ 301 → same path on `bulrushlabs.com` → 200. Query strings survive
+(`?q=honey+badger&page=2` came through intact). Both spare domains 301 with path
+preserved.
+
+**Two traps worth writing down.**
+
+`PUT /zones/{id}/rulesets/phases/{phase}/entrypoint` rejects `kind` and `phase` in
+the request body — it infers both from the URL — and returns
+`invalid JSON: unknown field "kind"`. Coming straight off a genuine permissions
+failure, that reads like another permissions failure. It isn't, and the fix is
+deleting two fields.
+
+The token permission for redirect rules is **Zone → Dynamic Redirect → Edit**
+("Single Redirect" in some dashboard versions), not Transform Rules. I guessed wrong
+twice on Cloudflare permission labels today — first `Account → Zone → Create`, which
+does not exist because the levels are only Read/Edit, then Transform Rules for
+redirects. The lesson is not about Cloudflare: when a UI label is guessed rather than
+looked up, the failure surfaces on the *user's* side of the loop, and each wrong
+guess costs a full round trip through someone else's dashboard. Look it up or route
+around it.
+
+**Cache discipline, third time today.** Every apparent failure in the verification
+pass was my resolver holding a stale Gandi record — the spare domains "returned 200"
+because they still resolved to Gandi parking, and the end-to-end chain "failed to
+connect" for the same reason. `--resolve` against the real edge IP is the only
+trustworthy check during a cutover. During a migration, treat every DNS answer as
+suspect for at least a TTL: the dangerous outcome isn't an error, it's a green result
+from the server you just migrated away from.
+
+**Open:** registrar transfers after Gandi's 72-hour hold, `bullrushlabs.com` first
+because it expires 2026-09-27. Fastmail migration for `bulrushlabs.com`, deliberately
+kept as a separate change with the Google records still in place. And
+`innocuous.org`'s apex A still points at the dead `65.19.178.79` — harmless, since the
+redirect fires at the edge before any origin fetch, but worth swapping to `192.0.2.1`
+so the zone reads as intentional.
