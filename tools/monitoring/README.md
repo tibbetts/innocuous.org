@@ -77,6 +77,35 @@ trailing-slash normalisation) and **every redirect PASS above it is worthless**.
 The self-test is itself negative-tested: it fires both when the control stops
 redirecting and when the control unexpectedly matches.
 
+## Two bugs found by reading someone else's notebook
+
+`rubicon-ux` wrote up a branch that had been "verified in the dark": its tests
+ran in a git worktree, where the gitignored `.env.local` does not exist, so
+every run took a credential-absent fallback — and the tests asserted that
+fallback as the expected result. Green in the worktree and green on `main`
+meant different things, and nothing anywhere said so.
+
+Reading that surfaced the same shape here, twice:
+
+**1. A partial whois cache produced a full pass.** `check_domain_expiry`
+iterated the *cache* rather than `DOMAINS`, so a cache covering one domain
+checked one domain and reported `registry expiry ok`. Not hypothetical — this
+repo's own negative test wrote exactly such a one-domain cache. Had it not been
+cleaned up, the check would have watched one domain of four for twelve hours
+while reporting green, and `bullrushlabs.com` (expires 2026-09-27) is one of
+the three it would have stopped watching. Now the cache is used only if it
+covers every domain, and the loop iterates `DOMAINS` so an absent result is a
+reported failure.
+
+**2. An unverifiable expiry whispered instead of failing.** A domain whose
+whois could not be parsed appended a *note*, and notes only print in verbose
+mode or alongside other failures — so under the Monitor it was silent. "I could
+not determine the expiry" rendered identically to "the expiry is fine." Now it
+fails.
+
+Both are the same rule, which is worth stating once: **a check that cannot run
+must never be indistinguishable from a check that ran and passed.**
+
 ## Known non-failure
 
 DKIM currently reports a note, not a failure: the CNAMEs resolve to Fastmail

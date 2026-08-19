@@ -201,7 +201,19 @@ def check_domain_expiry():
         try:
             blob = json.load(open(WHOIS_CACHE))
             if time.time() - blob.get("at", 0) < WHOIS_MAX_AGE:
-                cache = blob.get("domains", {})
+                cached = blob.get("domains", {})
+                # The cache is only usable if it covers EVERY domain we watch.
+                # A partial cache previously meant partial checking with a full
+                # green result: the loop iterated the cache rather than DOMAINS,
+                # so an uncached domain was never checked and never mentioned.
+                # A file in ~/.cache silently changed what a pass meant.
+                if all(d in cached for d in DOMAINS):
+                    cache = cached
+                else:
+                    missing = [d for d in DOMAINS if d not in cached]
+                    notes.append("expiry: cache covered %d/%d domains (missing %s) "
+                                 "- refetching" % (len(cached), len(DOMAINS),
+                                                   ", ".join(missing)))
         except Exception:
             pass
 
@@ -210,9 +222,23 @@ def check_domain_expiry():
         os.makedirs(os.path.dirname(WHOIS_CACHE), exist_ok=True)
         json.dump({"at": time.time(), "domains": cache}, open(WHOIS_CACHE, "w"))
 
-    for domain, iso in cache.items():
+    # Iterate the authoritative list, never the cache. If a domain is absent
+    # here, that is a failure to check -- which must never render as a pass.
+    for domain in DOMAINS:
+        if domain not in cache:
+            fail("expiry/%s" % domain, "NOT CHECKED - absent from results; "
+                                       "treat registry expiry as unverified")
+            continue
+        iso = cache[domain]
         if not iso:
-            notes.append("expiry/%s: could not parse whois" % domain)
+            # Deliberately a failure, not a note. Notes are only printed in
+            # verbose mode or alongside other failures, so under the Monitor
+            # this would be silent -- and "could not determine the expiry"
+            # would render identically to "the expiry is fine". An unverified
+            # expiry on a domain that lapses in six weeks is the single thing
+            # this check exists for.
+            fail("expiry/%s" % domain, "could not determine expiry from whois "
+                                       "- registry expiry is UNVERIFIED")
             continue
         days = (datetime.strptime(iso, "%Y-%m-%d").replace(tzinfo=timezone.utc)
                 - datetime.now(timezone.utc)).days
