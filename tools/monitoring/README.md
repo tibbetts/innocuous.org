@@ -106,6 +106,19 @@ fails.
 Both are the same rule, which is worth stating once: **a check that cannot run
 must never be indistinguishable from a check that ran and passed.**
 
+**3. And then that fix introduced a third bug.** Making an unverifiable expiry
+loud also made it *sticky*: the failed lookup was written to the cache, so the
+next run saw a "complete" cache, never retried, and kept failing for the full
+12-hour TTL after whois had recovered. Rate limiting is the most likely
+transient failure here, so this was not theoretical. Only successful lookups
+are cached now; a domain that failed is simply absent, which makes the
+completeness check refetch it next run.
+
+Worth recording that the sequence was silent-miss → loud-but-sticky → correct.
+The second state is better than the first and still wrong, and it was
+introduced *by* the fix. `rubicon-ux` titled the same shape "a fix that
+reopened the hole it closed".
+
 ## Known non-failure
 
 DKIM currently reports a note, not a failure: the CNAMEs resolve to Fastmail

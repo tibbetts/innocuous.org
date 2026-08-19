@@ -219,8 +219,16 @@ def check_domain_expiry():
 
     if not cache:
         cache = {d: _whois_expiry(d) for d in DOMAINS}
-        os.makedirs(os.path.dirname(WHOIS_CACHE), exist_ok=True)
-        json.dump({"at": time.time(), "domains": cache}, open(WHOIS_CACHE, "w"))
+        # Persist ONLY successful lookups. Caching a failure makes a transient
+        # whois hiccup -- rate limiting, most likely -- stick for the whole TTL:
+        # the next run sees a "complete" cache, never retries, and keeps failing
+        # for twelve hours after whois recovered. Omitting failures means the
+        # completeness check above refetches them next run.
+        # This run still reports them; `cache` holds the real results.
+        good = {d: v for d, v in cache.items() if v}
+        if good:
+            os.makedirs(os.path.dirname(WHOIS_CACHE), exist_ok=True)
+            json.dump({"at": time.time(), "domains": good}, open(WHOIS_CACHE, "w"))
 
     # Iterate the authoritative list, never the cache. If a domain is absent
     # here, that is a failure to check -- which must never render as a pass.
