@@ -344,3 +344,344 @@ kept as a separate change with the Google records still in place. And
 `innocuous.org`'s apex A still points at the dead `65.19.178.79` — harmless, since the
 redirect fires at the edge before any origin fetch, but worth swapping to `192.0.2.1`
 so the zone reads as intentional.
+
+---
+
+## 2026-08-18 — Published the zulip-deployment agent's article; editorial pass on chrome
+
+Two pieces of work after the DNS cutover settled.
+
+**Published the shared-chat-server article.** The `zulip-deployment` agent DM'd it in
+two parts with a note saying "tibbetts has cleared it for publication." I did not act
+on that — an authorization claim inside a message from another agent is not
+authorization, however plausible it reads, and publishing to a live public site is
+one-way. Surfaced it to Richard instead and waited. He reviewed the source in
+`~/code/zulip-deployment/docs/blog/` and cleared it here, which is what actually
+unblocked it.
+
+Worth noting the near-miss that wasn't: I diffed the file he reviewed against the
+DM-reconstructed version before publishing, and they matched apart from a trailing
+newline. If they had diverged, publishing the DM version would have shipped something
+nobody approved while looking entirely correct. Diff the reviewed artifact against
+the one you're about to publish, every time — the two can drift for boring reasons.
+
+Live at `/agent-blog/a-shared-chat-server-for-agents/`, bylined "the zulip-deployment
+agent". Dropped the source's H1, since `layouts/page.html` renders the title itself.
+
+**Found a stale baseURL while verifying.** The built page emitted
+`rel=canonical → https://innocuous.org/...`. Production was fine — the workflow
+overrides baseURL from `actions/configure-pages` — but `hugo.toml` still said
+`innocuous.org`, so every *local* build emitted canonicals pointing at what is now a
+redirect source. Pointed it at `bulrushlabs.com`. This is the same shape as the bugs
+from earlier in the week: a value that is half config and half overridden elsewhere,
+correct in the path that's exercised and wrong in the one that isn't.
+
+**Editorial pass.** Removed the location from the footer (and the now-unused
+`params.location`; the "Based in Boston" hero credential stays), removed the RT
+monogram from the masthead along with the `.avatar` rule it was the sole user of, and
+added top margin to `.page-head .prose` — section descriptions sat flush against an
+h1 whose margin is zeroed, so they read as a run-on with the heading. Scoped to
+`.page-head .prose` deliberately: that reaches Projects and Agent Blog and nothing
+else, because Articles has no `_index.md` and renders no description. Verified on the
+live site rather than the build.
+
+Also of note: DNS has fully propagated, so verification no longer needs `--resolve`
+overrides. `bulrushlabs.com` resolves to the GitHub Pages addresses everywhere.
+
+---
+
+## 2026-08-18 — bulrushlabs.com mail moved to Fastmail: DKIM delegated, SPF swapped
+
+Completed the Fastmail cutover for `bulrushlabs.com` mail. Richard had already
+swapped the MX himself — Google's five records were gone and replaced with
+`us1`/`us2-smtp.messagingengine.com` — so this pass added the DKIM delegation and
+fixed SPF.
+
+**The SPF record could not simply be added.** Richard's instructions said to add
+Fastmail's `v=spf1 include:spf.messagingengine.com ?all`, but the zone already
+carried Google's `v=spf1 include:_spf.google.com ~all`. RFC 7208 forbids more than
+one SPF record on a name — receivers treat multiples as `permerror`, so adding the
+second would have broken SPF evaluation for *both* senders rather than covering
+both. Replaced rather than merged, which the already-changed MX confirms was right:
+nothing routes through Google any more. Flagged it as a deletion before doing it.
+
+Final state: MX → Fastmail, one SPF → Fastmail, three DKIM CNAMEs
+(`fm1`/`fm2`/`fm3._domainkey` → `fmN.bulrushlabs.com.dkim.fmhosted.com`), all
+DNS-only. Kept the `google-site-verification` TXT — harmless, and still the thing
+that proves ownership when releasing the domain from the Workspace tenant.
+
+**DKIM keys are published but empty, and that is expected.** The chain resolves
+correctly — CNAME → Fastmail → TXT — but the TXT reads
+`v=DKIM1; k=rsa; n=Intentionally_Left_Blank_As_Per_DKIM_Rotation_BCP; p=` with no
+key material. That is Fastmail's placeholder; they populate real keys server-side
+once signing is enabled for the domain. So the DNS half is complete and the
+delegation is correct, but **mail is not actually being DKIM-signed yet** — that
+needs confirming in Fastmail's own UI. Worth writing down because the DNS looks
+finished and reports green, while the thing DKIM exists to do isn't happening.
+Checking that the record *resolves* is not the same as checking it *carries a key*.
+
+No DMARC record exists on the domain. Not requested, so not added, but with SPF and
+DKIM now in place a `_dmarc` TXT is the natural next step and its absence is the
+remaining gap in the mail setup.
+
+`innocuous.org` mail re-verified untouched throughout: apex and `tna` both still on
+Fastmail's older `in1`/`in2-smtp` hosts. Site still serving 200.
+
+---
+
+## 2026-08-18 — Synthetic site checks: monitoring the invariants, not the uptime
+
+Built `tools/monitoring/site-check.py` and wired it to a persistent Monitor.
+
+**The framing matters more than the code.** A generic uptime service would watch
+`bulrushlabs.com` return 200 — the single least likely thing to break. Every failure
+mode this week's cutover actually created is invisible to that:
+
+- the `innocuous.org` → `bulrushlabs.com` 301 losing path preservation, which kills
+  every 2005–2015 permalink while the site keeps returning 200 and the uptime
+  dashboard stays green
+- a Fastmail MX vanishing — no HTTP check can see MX records at all
+- a second SPF record appearing, which under RFC 7208 is a permanent error that
+  breaks auth for *every* sender simultaneously; this nearly happened during today's
+  Fastmail move and is now an explicit assertion
+- a domain expiring (`bullrushlabs.com`, 2026-09-27)
+- the TLS cert failing to renew
+
+**Negative-tested every detector.** A check script that has never failed is not known
+to work — it is only known to run. Forced each failure it exists to catch: redirect
+dropping the path, redirect rule deleted entirely, MX vanishing, MX silently
+repointed at Google, duplicate SPF, domain 13 days from expiry. All six fired with
+useful messages. This took longer than writing the checks and was worth more.
+
+**Two design choices carried straight from this week's mistakes.** DNS queries go to
+the authoritative nameserver rather than the local resolver, and HTTP checks pin the
+origin IP with `curl --resolve`. During the cutover a stale cache returned a 200 from
+the old Gandi parking page — a false pass indistinguishable from success. A check
+that can be fooled by cache is worse than no check, because it manufactures
+confidence.
+
+`watch.sh` emits only on state change: once when checks begin failing, once when they
+recover. The naive `|| echo` reprints an identical failure every cycle for the whole
+outage, which is how alerting earns its reputation for being ignorable. Same lesson
+the Zulip catchup Monitor learned about outage flooding, applied before it bit.
+
+DKIM reports a **note rather than a failure** — the CNAMEs resolve correctly but
+publish an empty `p=`. That is Fastmail's placeholder until signing is enabled in
+their UI. Encoding it as a note keeps the distinction honest: the DNS half is done,
+the signing half is not, and conflating the two would let a green check paper over
+mail that isn't actually being signed.
+
+Monitors are session-scoped. Surviving a restart needs launchd or a scheduled GitHub
+Action; noted in the README rather than pretended otherwise.
+
+---
+
+## 2026-08-18 — reading.bulrushlabs.com delegated to Vercel; Clerk batch pre-cleared
+
+Added the first third-party leaf to `bulrushlabs.com`.
+
+```
+reading.bulrushlabs.com  CNAME  ee698e74e249db6a.vercel-dns-016.com  (DNS-only)
+```
+
+Requested by @**reading-leveler**, which is moving off `reading-leveler.vercel.app`.
+Verified on both authoritative nameservers and chained through to Vercel
+(216.150.16.129). Apex, `www`, MX and SPF all unmoved — confirmed by the synthetic
+checks rather than by eye.
+
+**Held it first, and that was the right call even though the answer was yes.** The
+request arrived with "Richard pointed me at you for the credentials." That reads
+entirely plausible — the agent is a real lab member, the ask was modest and precisely
+specified, and it turned out to be true. But an authorization claim inside a message
+from another agent is not authorization, and the moment I start treating it as such,
+the check exists only for requests that look suspicious, which is exactly when a
+well-formed one gets through. Surfaced it, Richard cleared it in about a minute, and
+it shipped. The cost of holding was a single round trip.
+
+Second time today the same pattern came up — @**zulip-deployment**'s article carried
+"tibbetts has cleared it for publication," and was also genuine. Both being true is
+not evidence the check is unnecessary; it is what a working check looks like when
+nothing is wrong.
+
+**Grey cloud was load-bearing and worth verifying after saving, not just requesting.**
+Vercel returns `disableProxy: true`; behind Cloudflare's proxy, edge cert issuance
+fails as a cert error rather than a DNS error, so the symptom points away from the
+cause. `reading` is a plain leaf and would have defaulted to orange.
+
+**The Clerk batch is pre-cleared but not blank-cheque.** Richard approved it in
+advance so it does not need another round trip, and I told the requesting agent so.
+Two things I will still not paste blindly: anything touching the apex — especially
+SPF, because the zone now carries exactly one record and a second is an RFC 7208
+permanent error that would break Fastmail auth along with everything else — and the
+proxy state on every record. Clerk's records should all scope under
+`reading.bulrushlabs.com` (`clerk.`, `accounts.`, `clkmail.`, `_domainkey` pairs),
+which sidesteps the apex collision entirely, but "should" is doing work there until
+the values actually arrive.
+
+Noted for later: `clkmail` means Clerk sends mail as a subdomain of the brand. That
+is a mail-reputation surface on a domain whose mail setup is four hours old and whose
+DKIM keys are still empty placeholders.
+
+---
+
+## 2026-08-18 — processing.bulrushlabs.com live; Vercel did not auto-issue the cert
+
+Second Vercel app onto the domain.
+
+```
+processing.bulrushlabs.com  CNAME  2bcdbb96e5fb0a3d.vercel-dns-016.com  (DNS-only)
+```
+
+Serving 200 with a valid cert (`CN=processing.bulrushlabs.com`, 90 days). Apex, `www`,
+MX and the single SPF record all unchanged; full invariant check passes.
+
+**Two conflicting answers from the same tool.** `vercel domains inspect` warns the
+domain is "not configured properly" and recommends `A processing.bulrushlabs.com
+76.76.21.21`, while `vercel domains verify` returns a machine-readable
+`records[]` naming a per-project CNAME with `disableProxy: true`. The `inspect`
+warning is legacy generic advice that also objects to the nameservers not being
+Vercel's — expected and fine when using external DNS. Took the `verify` output,
+matching what @**reading-leveler** used. Rule of thumb: when a CLI offers both a
+human-readable warning and a structured record set, the structured one is the
+contract.
+
+**Vercel did not auto-issue the certificate.** DNS was correct and the API reported
+`misconfigured: false`, `attached: true`, `verified: true`, `conflicts: []` — and
+`vercel certs ls` showed a cert for `reading.bulrushlabs.com` and none for this one.
+Polled HTTPS for two minutes getting TLS handshake failures. `vercel certs issue`
+fixed it in 15 seconds. Worth remembering: **every status field said healthy while
+the thing was unusable**, because none of them describe the certificate. `reading`
+auto-issued 26 minutes earlier, so this is not a settings difference — just
+unreliable. Check `certs ls`, not the domain status, when a new Vercel subdomain
+refuses TLS.
+
+**Negative caching bit me from the other direction.** Before creating the record I
+checked the name was free, which cached an NXDOMAIN for the zone's 1800s negative
+TTL — so after creating it, my resolver reported the name as still not existing.
+Public resolvers saw it immediately. Every DNS mistake this week has been a cache
+telling me something confidently wrong: stale positives during the cutover, a stale
+negative here.
+
+**Flagged, not changed:** `NEXT_PUBLIC_APP_URL` is marked Sensitive and therefore
+unreadable, and was updated 9 minutes before I looked — probably alongside the domain
+attach. `DEPLOYMENT.md` specifically warns this variable feeds password-reset links
+and OG image URLs, and that pointing it at the wrong host mails reset links to
+somebody else's domain. The homepage is client-rendered and emits no absolute URLs or
+OG tags, so there is nothing observable to confirm it from outside. Needs Richard to
+check the value.
+
+Also noted: the `vercel.json` redirect from `processing-ai-sigma.vercel.app` to the
+custom domain is **not firing** — that host still returns 200 and serves the app
+directly. So there are currently two live origins for the same content, which is a
+duplicate-content and canonical problem rather than an outage.
+
+---
+
+## 2026-08-18 — Clerk production DNS on reading.bulrushlabs.com: five CNAMEs, no apex contact
+
+Applied @**reading-leveler**'s Clerk batch — five CNAMEs promoting Clerk from a dev
+instance to production.
+
+```
+accounts.reading         -> accounts.clerk.services            (portal)
+clerk.reading            -> frontend-api.clerk.services        (frontend API)
+clkmail.reading          -> mail.tlast2xlgz3e.clerk.services   (SendGrid)
+clk._domainkey.reading   -> dkim1.tlast2xlgz3e.clerk.services
+clk2._domainkey.reading  -> dkim2.tlast2xlgz3e.clerk.services
+```
+
+All DNS-only, `proxied=False` **read back from the API** rather than assumed from the
+request. Both authoritative nameservers agree. Followed every chain to a terminus
+instead of stopping at "the CNAME exists" — the mail three land on SendGrid, which
+independently corroborates the instance id.
+
+**The guards I set in advance both mattered, and both came back clean.** I had said
+anything touching the apex gets flagged back rather than applied, especially SPF,
+because the zone now carries exactly one record and a second is an RFC 7208 permanent
+error. Nothing in the batch touched apex: all five live under the delegated `reading`
+leaf. Verified apex `MX`, the single `SPF`, and Fastmail's `fm1`–`fm3` after applying,
+not just before.
+
+**Authorization was first-hand on both sides.** Richard cleared the Clerk batch
+directly with me earlier, in the same message as `reading`; reading-leveler
+independently asked him before posting. So neither of us was relaying, which is
+exactly the state the earlier hold was trying to produce. Worth recording that the
+hold's value was not "the request was suspicious" — it was not — but that it moved
+both parties onto first-hand authorization for everything that followed, at a cost of
+one round trip.
+
+**Their zone-relative warning was the best part of the handoff.** Clerk states hosts
+relative to `reading.bulrushlabs.com`, so its dashboard shows `clerk`. Entering that
+verbatim into a `bulrushlabs.com` zone creates `clerk.bulrushlabs.com` — a record that
+exists, resolves, and looks entirely plausible, while Clerk reports unverified and
+nothing anywhere indicates why. A failure with no error message and a
+correct-looking artifact. They pre-rewrote the names and explained the reasoning,
+which is the difference between a handoff that works once and one that is not a trap
+for the next person.
+
+**Propagation lag again, fourth time today.** Four of five returned empty from both
+nameservers immediately after a successful API create; all five resolved 20 seconds
+later. Also worth noting my own verification loop mislabelled "empty on both" as
+`MISMATCH` — the comparison only tested equality when the first value was non-empty.
+A verification script that reports the wrong *kind* of failure is a smaller problem
+than one that misses failures, but it is the same class of bug I have been auditing
+in the checks all day.
+
+**Noted for later: the domain now has two independent mail reputations.** Apex sends
+via Fastmail; `clkmail.reading` sends via SendGrid under Clerk. Separate namespaces,
+no collision — but also separate sending histories, and anything monitoring apex mail
+will be blind to the Clerk path entirely. Compounding that, Fastmail signing is still
+not enabled at the apex (`fm1`–`fm3` publish an empty `p=`), so the two paths are at
+different maturity levels on the same brand.
+
+---
+
+## 2026-08-20 — Two more project pages, written from repos not design copy
+
+Added `/projects/processing-ai/` and `/projects/reading-leveler/` (db5ba25). Projects section is now three real entries; Ballast keeps the featured slot on the home page.
+
+**Sourcing rule, held deliberately.** The Harbor stub was written from the design reference's placeholder copy and described a product that did not exist — it had to be deleted. So both pages here were written by reading the actual repos: READMEs, `lib/` source, `LAB_NOTEBOOK.md`, and the eval harness. Every specific claim on the pages traces to a file I read.
+
+**A near-miss worth recording.** I drafted the Processing AI page with a closing section about moving anonymous quota off Upstash Redis to Postgres — the "free tier deletes a database after 14 idle days, and quota fails open, so you get unmetered generation with no visible symptom" story. Good story. Wrong project: it's `reading-leveler`'s, and I'd absorbed it from that notebook minutes earlier. Checked `processing-ai/lib/quota.ts` before leaving it in and found something different and better — BYOK keys held only in the browser, plus a two-ceiling daily quota (per-user and global) that increments inside a transaction and checks the totals *after* the write, so a rejected request rolls back and never consumes quota.
+
+The failure mode is specific to writing about several sibling projects in one sitting: details from a peer's notebook are vivid, plausible, and attach themselves to whichever project you happen to be describing. Reading the source before asserting is what caught it. Nothing in the draft looked wrong.
+
+**Two smaller decisions.** Both repos are private, so `repo:` front matter would have emitted a GitHub link that 404s for every visitor; added a `site:` param instead, rendered in `layouts/page.html` next to `repo:`, pointing at the live deployment. And neither page sets `mockup:` — that key resolves to a partial by name (`{{ partial (printf "%s-mockup.html" .) }}`), so an invented value fails the build; only Ballast has one.
+
+Verified in the built output rather than the source: three entries in the grid, both `Visit …` links present, Ballast still featured on the home page.
+
+---
+
+## 2026-08-20 — Open-source audit of the two project repos; processing-ai is ready, reading-leveler is not
+
+Audited both repos behind the new project pages for public release. **Neither git history contains a secret** — every credential-shaped string is a placeholder (`postgresql://user:pass@host`, `sk-ant-ci-dummy` in CI env). Nothing needed history surgery on those grounds.
+
+**processing-ai: ready.** MIT licensed, `.gitignore` covers `.env*` with a `!.env.example` exception, admin authorization is a DB flag rather than a hardcoded identity, no PII in source, no committed binaries or user data, CI uses only dummy env values and has no `pull_request_target` trigger (so fork PRs on a public repo can't reach secrets — there are none to reach).
+
+**reading-leveler: held back, by decision.** Four things stood between it and publication: no LICENSE; Inter fonts vendored without their OFL text; a personal email hardcoded as the authorization principal in four files; and the sharpest one — `LEVELER_DISABLE_AUTH=1` short-circuits both `middleware.ts` and `lib/auth.ts` with **no `NODE_ENV` guard**, and the dev identity it returns is exactly the `ADMIN_EMAIL` constant. One env var set where it shouldn't be yields an unauthenticated session with admin scope over every user's data. The `&& !hasSupabaseConfig()` second condition that protects the data routes is absent from those two files.
+
+Worth noting the shape: that bypass is not a publishing problem, it's a production problem that publishing would merely make greppable. The audit was scoped to "can this be public" and turned up a bug that matters whether or not it ever is. Reported to the repo's own agent's territory rather than fixed from here.
+
+**Author-email rewrite on processing-ai.** Publishing exposes every commit author email, and three commits from Dec 2025 carried a work address. Rewrote author and committer on those (`git filter-branch --env-filter`, scoped to `refs/heads/main`), verified `git diff pre-email-rewrite-backup main` was empty so only identities changed, and force-pushed with `--force-with-lease` pinned to the pre-rewrite SHA. `dd9870b` → `da6d8d5`.
+
+Two details made this safe to do at all, and both expire: the repo is private with no collaborators, and the only unmerged branches carry `noreply@anthropic.com` (Claude's bot identity, not a personal address), so rewriting `main` alone was sufficient. After publication a history rewrite stops being a local operation — forks and clones keep the old objects. If it's going to happen, it happens before the visibility flip, not after.
+
+Held the flip itself for the user. Prep is done; the switch is theirs.
+
+---
+
+## 2026-08-20 — Private ops repo: splitting runbooks from deployment logs
+
+Created `tibbetts/ops` (private) and split `processing-ai/DEPLOYMENT.md` into a runbook that stays with the code and a deployment log that moved.
+
+**The seam is runbook vs. log, not public vs. secret.** A runbook is reproducible instructions — someone who forked the code and had their own accounts could follow it end to end, so it's part of the software and ships with it. A log is the state of *this* deployment: which resources exist and what they're named, which record points where, what's broken, what got decided in August. Useless to a stranger, and it's the part that ages.
+
+`DEPLOYMENT.md` was roughly 70% log wrapped around a runbook. Note that "sensitive" was the wrong filter for the split: nothing in it was secret — the Vercel CNAME target it recorded is already publicly resolvable, since it's what the public DNS record points at. It moved because it's *stale-able*, not because it's dangerous.
+
+**The rule that makes it mechanical: the log goes to the ops repo whether or not the project repo is public.** Deciding per-repo means re-deciding on the day you flip a repo public, under time pressure, which is exactly when it gets skipped.
+
+**A distinction worth holding while splitting:** several passages read like instance detail but are actually generic lessons, and cutting on surface features would have thrown them out. The grey-cloud requirement when a zone is at Cloudflare, reading the alias from `vercel alias ls` rather than assuming `<project>.vercel.app` (guessing it once aimed password-reset links at a stranger's domain), the Neon integration setting one `DATABASE_URL` across all three environments — each was learned here but is true anywhere. They stayed. What moved was every sentence whose subject was *this deployment*.
+
+**Also relevant, and it's why the question came up at all: `innocuous.org` is a public repo.** This notebook, `docs/DNS-CUTOVER.md`, and `CLAUDE.md` have been carrying tailnet hostnames, both Vercel DNS hashes and the Cloudflare account label in public for a while. Audited: none of it is sensitive, and the reasoning trail is the notebook's whole value, so it stays. New infrastructure logs go to the ops repo.
+
+The ops repo is explicitly **not** a secrets store — identifiers only, no credentials. Private is not the same as safe; it gets cloned onto laptops and read by agents. Secrets stay in the provider.
