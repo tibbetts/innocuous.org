@@ -685,3 +685,21 @@ Created `tibbetts/ops` (private) and split `processing-ai/DEPLOYMENT.md` into a 
 **Also relevant, and it's why the question came up at all: `innocuous.org` is a public repo.** This notebook, `docs/DNS-CUTOVER.md`, and `CLAUDE.md` have been carrying tailnet hostnames, both Vercel DNS hashes and the Cloudflare account label in public for a while. Audited: none of it is sensitive, and the reasoning trail is the notebook's whole value, so it stays. New infrastructure logs go to the ops repo.
 
 The ops repo is explicitly **not** a secrets store — identifiers only, no credentials. Private is not the same as safe; it gets cloned onto laptops and read by agents. Secrets stay in the provider.
+
+---
+
+## 2026-08-23 — A padding shorthand ate the gutters, and the preview server had been lying for ten days
+
+Richard reported bad gutters on `/projects/` in a window that was narrow but not narrow enough to be a mobile case. Two separate bugs behind it, and the second one is the more important.
+
+**The CSS bug.** `.shell` and `.page-wrap` sit on the same element (`<div class="shell page-wrap">`). `.shell` sets `padding: 0 40px`; `.page-wrap`, 500 lines later, sets `padding: 3.2rem 0 4.5rem`. Same specificity, so source order decides, and the shorthand's `0` reset horizontal padding on every interior page. Fixed with longhand (`c9ebe8e`).
+
+What's worth recording is **why it survived so long**. `--shell` is 1330px, so above that width `margin: 0 auto` supplies the gutter and the missing padding is invisible. Below 820px a media query drops padding to 22px — via a rule that also loses to the shorthand, but nobody noticed because phones weren't the reported case. The bug is therefore visible *only* in the 820–1330px band, where the container fills the viewport and padding is the sole gutter. Almost all of my own checking happens in a maximised window, which is above the band. **A defect that is invisible in the default configuration is not rare — it's the expected outcome of only ever testing one configuration.**
+
+**The preview server had been serving stale output for ten days.** I made the CSS fix, reloaded, and nothing changed. The served stylesheet still had the old rule. `hugo server` had been running since 13 August and its file watcher was dead — it answered 200 for every request the entire time and had not rebuilt once.
+
+This is the fifth instance this week of the same shape, and the most consequential, because it undermines the *review path itself*: `:1313` is the URL I told Richard to use for looking at work in progress. Anything he reviewed there recently may not have reflected the files on disk. A preview server that serves stale bytes is worse than one that is down, because "down" is self-announcing.
+
+**Method note, since the tooling fought back.** Chrome ignored `resize_window` (window manager constrained it), so I could not screenshot at other widths. Measured layout inside iframes instead — media queries evaluate against the iframe's own width, so a 900px iframe genuinely renders the 900px layout. Swept 700–1500px across home, articles, about, agent-blog, a project page and two archive articles: no horizontal overflow at any width, gutters 22px below 820 and 40px above, columns degrading 3 → 2 → 1.
+
+Worth keeping as a technique: when you cannot resize the window, you can still measure the responsive behaviour, and measuring beats eyeballing anyway. `scrollWidth > innerWidth` is a one-line overflow oracle that does not depend on my judgment about whether something "looks cut off".
