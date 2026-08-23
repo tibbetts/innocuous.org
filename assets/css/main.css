@@ -575,7 +575,11 @@ img { max-width: 100%; }
 
 /* ---------------- interior pages ---------------- */
 
-.page-wrap { padding: 3.2rem 0 4.5rem; }
+/* Longhand on purpose: .page-wrap shares its element with .shell, so a padding
+   shorthand here wins on source order and silently zeroes .shell's 40px
+   gutters — invisible above 1330px (--shell) where margin:auto supplies the
+   gutter anyway, and flush to the viewport edge below it. */
+.page-wrap { padding-top: 3.2rem; padding-bottom: 4.5rem; }
 .measure { max-width: 44rem; }
 .page-head { margin-bottom: 2.2rem; }
 .page-head h1 {
