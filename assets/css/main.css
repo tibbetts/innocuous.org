@@ -797,3 +797,11 @@ img { max-width: 100%; }
   gap: .5rem;
   margin: .9rem 0 0;
 }
+
+/* GitHub star / fork buttons sit inline with the other project links. */
+.gh-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  min-height: 28px;
+}

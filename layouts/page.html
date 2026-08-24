@@ -28,6 +28,19 @@
             {{ partial "icon.html" (dict "name" "github" "size" 16) }}
             <span>View source</span>
           </a>
+          {{/* Classic GitHub star button. The <a> inside is what shows if the
+               script does not load, so the link works regardless. */}}
+          {{ with urls.Parse . }}
+            {{ $slug := strings.TrimPrefix "/" .Path }}
+            <span class="gh-stars">
+              <a class="github-button" href="{{ .String }}"
+                 data-icon="octicon-star" data-show-count="true" data-size="large"
+                 aria-label="Star {{ $slug }} on GitHub">Star</a>
+              <a class="github-button" href="{{ .String }}/fork"
+                 data-icon="octicon-repo-forked" data-show-count="true" data-size="large"
+                 aria-label="Fork {{ $slug }} on GitHub">Fork</a>
+            </span>
+          {{ end }}
         {{ end }}
         {{ with .Params.site }}
           <a class="btn btn-ghost" href="{{ . }}" rel="noopener">
@@ -53,4 +66,7 @@
     </footer>
   </article>
 </div>
+{{ if .Params.repo }}
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+{{ end }}
 {{ end }}
