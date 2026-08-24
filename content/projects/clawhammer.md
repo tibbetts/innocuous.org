@@ -27,6 +27,8 @@ on the panel above, monitoring on the other one. Displays are addressed by
 Screen Sharing session collapsing everything onto one virtual display, or an
 app relaunching after a crash and scattering its windows.
 
+{{< screens >}}
+
 ## When no arrangement helps
 
 Some days the clutter isn't a layout problem, and it took measuring to believe
