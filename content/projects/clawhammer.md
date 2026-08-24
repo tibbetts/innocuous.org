@@ -17,9 +17,11 @@ other, and land on whichever display they were last opened on; by the middle of
 a working day it's all thoroughly cluttered, and tidying it by hand is dull
 enough that I don't.
 
-So I wanted Claude to be able to help. Clawhammer is the result — a Hammerspoon
-config you talk to, which gives each screen a role and arranges your windows
-into it.
+So I wanted Claude to be able to help. Clawhammer is the result — a
+Hammerspoon config you talk to, which gives each screen a role and arranges
+your windows into it. You can tell it to set up hotkeys, but I usually just
+tell it what I want and ask it to watch for deviations or to clean it up.
+Maybe in the future I will connect it to one of those stream controllers.
 
 You say *lay out my screens* and it does: browsers left, terminal centred, chat
 on the panel above, monitoring on the other one. Displays are addressed by
@@ -40,18 +42,18 @@ windows, which are the least important ones.
 
 So the honest answer wasn't a cleverer algorithm. It was: close some windows.
 
-That turned out to need evidence rather than nerve, which is where the other
-half of the tool came from. Clawhammer samples which window has focus every few
-seconds and keeps a timeline. Cross-referencing that against what's currently
-open produces a close list ranked by how long since you last actually touched
-each window — in one real session, nine windows had never been focused at all
-while tracking ran, alongside a Contacts window untouched for 38 days and a
-`localhost` error page for 36. Closing everything older than a week took the
-same screen from 3.21× to 2.11×; older than three days, to 1.49×. Below about
-1.0× the packer reaches genuine zero overlap, and the whole problem dissolves.
+That turned out to need data, which is where the other half of the tool came
+from. Clawhammer samples which window has focus every few seconds and keeps a
+timeline. Cross-referencing that against what's currently open produces a
+close list ranked by how long since you last actually touched each window — in
+one real session, nine windows had never been focused at all while tracking
+ran, alongside a Contacts window untouched for 38 days and a `localhost` error
+page for 36. Closing everything older than a week took the same screen from
+3.21× to 2.11×; older than three days, to 1.49×. Below about 1.0× the packer
+reaches genuine zero overlap, and the whole problem dissolves.
 
 Which means the tool's most useful answer is sometimes "stop arranging, start
-closing" — not what I set out to build, but the one the numbers supported.
+closing" — or figuring out new logical groupings.
 
 ## Sizes belong to you
 
