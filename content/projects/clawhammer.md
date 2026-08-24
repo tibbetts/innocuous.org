@@ -1,7 +1,7 @@
 ---
 title: "Clawhammer"
 date: 2026-08-23
-summary: "Agentic window layout for macOS: describe how you want your screens arranged and Claude does it — or tells you honestly that no arrangement will help."
+summary: "Agentic window layout for macOS: tell Claude how you want your screens arranged and it sorts them out — per-screen roles, packed layouts, and a way to find what you should just close."
 repo: "https://github.com/tibbetts/clawhammer"
 stack:
   - Lua
@@ -10,10 +10,16 @@ stack:
   - Claude Code
 ---
 
-I had thirty-nine windows open across three monitors, and about six of them
-were findable. Clawhammer is what came out of trying to fix that with Claude —
-a Hammerspoon config you talk to, that gives each screen a role and packs your
-windows into it.
+I have a lot of screen real estate, and more of it since I added a very large
+widescreen monitor. It turns out that having somewhere to put everything is not
+the same as things being in the right place. Windows drift, pile up behind each
+other, and land on whichever display they were last opened on; by the middle of
+a working day it's all thoroughly cluttered, and tidying it by hand is dull
+enough that I don't.
+
+So I wanted Claude to be able to help. Clawhammer is the result — a Hammerspoon
+config you talk to, which gives each screen a role and arranges your windows
+into it.
 
 You say *lay out my screens* and it does: browsers left, terminal centred, chat
 on the panel above, monitoring on the other one. Displays are addressed by
@@ -21,11 +27,11 @@ on the panel above, monitoring on the other one. Displays are addressed by
 Screen Sharing session collapsing everything onto one virtual display, or an
 app relaunching after a crash and scattering its windows.
 
-## The finding that changed the tool
+## When no arrangement helps
 
-The first version tried to arrange its way out of the problem, and the numbers
-said that was impossible. Thirty-nine windows on a 7680×2130 ultrawide came to
-**52.5M px² of window area on a 16.4M px² screen — 3.21×**. At that density no
+Some days the clutter isn't a layout problem, and it took measuring to believe
+it. Thirty-nine windows on a 7680×2130 ultrawide came to **52.5M px² of window
+area on a 16.4M px² screen — 3.21×**. At that density no
 arrangement can show everything while sizes are preserved. The best possible
 zero-overlap packing fit **14 of 39**, and only by favouring the *smallest*
 windows, which are the least important ones.
@@ -42,8 +48,8 @@ while tracking ran, alongside a Contacts window untouched for 38 days and a
 same screen from 3.21× to 2.11×; older than three days, to 1.49×. Below about
 1.0× the packer reaches genuine zero overlap, and the whole problem dissolves.
 
-A layout tool whose most useful output is sometimes "this is not a layout
-problem" is a strange thing to build, but it's the true one.
+Which means the tool's most useful answer is sometimes "stop arranging, start
+closing" — not what I set out to build, but the one the numbers supported.
 
 ## Sizes belong to you
 
