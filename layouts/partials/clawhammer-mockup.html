@@ -1,0 +1,58 @@
+{{- /* Product shot for Clawhammer. The "UI" here is the desk itself, so this is
+       a diagram of three displays and what lands on each, rather than app
+       chrome. Inline SVG so it scales, needs no image pipeline, and can be
+       reused inside a page via the `screens` shortcode. */ -}}
+<div class="mock" aria-hidden="true">
+  <div class="mock-bar">
+    <span class="mock-title">
+      {{ partial "icon.html" (dict "name" "terminal" "size" 14) }} arrange
+    </span>
+    <span class="verdict verdict-ok">0 overlap</span>
+  </div>
+
+  <div class="mock-screens">
+    <svg viewBox="0 0 420 250" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>Three displays, each with a role: dashboard and comms above, work below</title>
+
+      <!-- upper left: dashboard -->
+      <g class="scr scr-dash">
+        <rect x="8"   y="10" width="196" height="96" rx="6"/>
+        <rect x="18"  y="26" width="80"  height="34" rx="3" class="win"/>
+        <rect x="104" y="26" width="90"  height="34" rx="3" class="win"/>
+        <rect x="18"  y="66" width="120" height="30" rx="3" class="win"/>
+        <rect x="144" y="66" width="50"  height="30" rx="3" class="win"/>
+      </g>
+      <text x="106" y="120" class="lbl">dashboard</text>
+
+      <!-- upper right: comms -->
+      <g class="scr scr-comms">
+        <rect x="216" y="10" width="196" height="96" rx="6"/>
+        <rect x="226" y="26" width="86"  height="34" rx="3" class="win"/>
+        <rect x="318" y="26" width="84"  height="34" rx="3" class="win"/>
+        <rect x="226" y="66" width="60"  height="30" rx="3" class="win"/>
+        <rect x="292" y="66" width="110" height="30" rx="3" class="win"/>
+      </g>
+      <text x="314" y="120" class="lbl">comms</text>
+
+      <!-- lower: the wide work screen. The centre block really is a third of
+           the screen's width (135 of 404), because the label says so. -->
+      <g class="scr scr-work">
+        <rect x="8" y="140" width="404" height="86" rx="6"/>
+        <rect x="18"  y="152" width="58"  height="30" rx="3" class="win"/>
+        <rect x="80"  y="152" width="58"  height="30" rx="3" class="win"/>
+        <rect x="18"  y="186" width="58"  height="28" rx="3" class="win"/>
+        <rect x="80"  y="186" width="58"  height="28" rx="3" class="win"/>
+        <rect x="143" y="152" width="135" height="62" rx="3" class="win win-focus"/>
+        <rect x="286" y="152" width="58"  height="30" rx="3" class="win"/>
+        <rect x="344" y="152" width="58"  height="30" rx="3" class="win"/>
+        <rect x="286" y="186" width="58"  height="28" rx="3" class="win"/>
+        <rect x="344" y="186" width="58"  height="28" rx="3" class="win"/>
+      </g>
+      <text x="210" y="240" class="lbl">work — terminal centred, a third of the width</text>
+    </svg>
+  </div>
+
+  <div class="mock-foot">
+    Roles bind to display UUID, so the layout survives a replug.
+  </div>
+</div>

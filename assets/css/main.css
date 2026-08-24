@@ -395,6 +395,10 @@ img { max-width: 100%; }
   background: #f7e6e1;
   color: #a04b31;
 }
+.verdict-ok {
+  background: var(--green-pale);
+  color: var(--green-ink);
+}
 .mock-review {
   padding: .75rem .85rem;
   flex: 1;
@@ -752,4 +756,36 @@ img { max-width: 100%; }
   .thumb { width: 84px; height: 84px; }
   .post-row { grid-template-columns: minmax(0, 1fr); gap: .3rem; }
 
+}
+
+/* Clawhammer product shot: a diagram of the desk, not app chrome. */
+.mock-screens {
+  padding: .7rem .8rem .2rem;
+  flex: 1;
+}
+.mock-screens svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.mock-screens .scr > rect:first-child {
+  fill: var(--page);
+  stroke: var(--line);
+  stroke-width: 1.5;
+}
+.mock-screens .win {
+  fill: #d9d9d0;
+}
+.mock-screens .scr-dash .win { fill: #dfe7e0; }
+.mock-screens .scr-comms .win { fill: #e6e2d6; }
+.mock-screens .win-focus {
+  fill: var(--green-pale);
+  stroke: var(--green-mid);
+  stroke-width: 1.5;
+}
+.mock-screens .lbl {
+  fill: var(--muted);
+  font-family: var(--sans);
+  font-size: 9px;
+  text-anchor: middle;
 }
