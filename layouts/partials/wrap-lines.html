@@ -1,0 +1,45 @@
+{{/* Greedy word wrap, returning a slice of lines.
+
+     images.Text draws newlines but does not wrap, so wrapping has to happen in
+     the template. Factored out because the card wraps two different strings at
+     two different sizes, and two copies of this would drift.
+
+     dict:
+       text   — the string to wrap
+       budget — max characters per line (tuned per font size)
+       max    — max lines; the last one gets an ellipsis if text remains
+
+     Character budgets are an approximation of a proportional font's width. They
+     are deliberately conservative: overflow on a preview card is unrecoverable
+     (it is baked into a PNG a scraper has already cached), whereas a slightly
+     short line just looks normal. */}}
+
+{{ $text := .text }}
+{{ $budget := .budget }}
+{{ $max := .max }}
+{{ $lines := slice }}
+
+{{ if and $text (gt $max 0) }}
+  {{ $cur := "" }}
+  {{ range (split $text " ") }}
+    {{ $word := . }}
+    {{ $try := cond (eq $cur "") $word (printf "%s %s" $cur $word) }}
+    {{ if le (len $try) $budget }}
+      {{ $cur = $try }}
+    {{ else }}
+      {{ if ne $cur "" }}{{ $lines = $lines | append $cur }}{{ end }}
+      {{ $cur = $word }}
+    {{ end }}
+  {{ end }}
+  {{ if ne $cur "" }}{{ $lines = $lines | append $cur }}{{ end }}
+
+  {{ if gt (len $lines) $max }}
+    {{ $kept := first $max $lines }}
+    {{ $last := index $kept (sub $max 1) }}
+    {{/* trim a trailing comma or similar before the ellipsis reads oddly */}}
+    {{ $last = printf "%s…" (trim $last " ,;:-") }}
+    {{ $lines = cond (eq $max 1) (slice $last) (append $last (first (sub $max 1) $kept)) }}
+  {{ end }}
+{{ end }}
+
+{{ return $lines }}
