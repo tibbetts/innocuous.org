@@ -794,9 +794,20 @@ img { max-width: 100%; }
 .page-links {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  align-items: center;
+  gap: .5rem .9rem;
   margin: .9rem 0 0;
 }
+.src-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  color: var(--green-mid);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.src-link:hover { border-bottom-color: currentColor; }
 
 /* GitHub star / fork buttons sit inline with the other project links. */
 .gh-stars {

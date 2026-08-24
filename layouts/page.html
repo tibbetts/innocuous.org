@@ -24,14 +24,15 @@
     {{ if or .Params.repo .Params.site }}
       <p class="page-links measure">
         {{ with .Params.repo }}
-          <a class="btn btn-ghost" href="{{ . }}" rel="noopener">
-            {{ partial "icon.html" (dict "name" "github" "size" 16) }}
-            <span>View source</span>
-          </a>
-          {{/* Classic GitHub star button. The <a> inside is what shows if the
-               script does not load, so the link works regardless. */}}
+          {{/* A plain link, and one that says where it goes: "View source" is
+               meaningless read on its own, which is how screen readers and
+               link lists present it. */}}
           {{ with urls.Parse . }}
             {{ $slug := strings.TrimPrefix "/" .Path }}
+            <a class="src-link" href="{{ .String }}" rel="noopener">
+              {{ partial "icon.html" (dict "name" "github" "size" 15) }}
+              <span>{{ $slug }} on GitHub</span>
+            </a>
             <span class="gh-stars">
               <a class="github-button" href="{{ .String }}"
                  data-icon="octicon-star" data-show-count="true" data-size="large"
