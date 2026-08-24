@@ -50,6 +50,15 @@ docs/               # design docs and handoff notes
   and an "Originally published at" line. Everything else is self-canonical.
 - Posts carry a static "Discuss on Hacker News" link (HN Algolia URL search, no
   JavaScript).
+- **Link previews are generated, not authored.** `layouts/partials/head-meta.html`
+  emits per-page OpenGraph/Twitter tags and draws a 1200×630 card at build time
+  (`images.Text` over `assets/img/og-base.png`, using the vendored fonts in
+  `assets/fonts/`). Both need Hugo **extended** — CI pins it, so don't unpin it.
+  Preview text follows `description` → `summary` → auto-summary → site blurb, so
+  a new page gets a real preview by setting `summary` and nothing else. Override
+  the image with `image:` in front matter (asset path or absolute URL).
+  Regenerate the base canvas with `tools/og/make-base-card.py` if brand colours
+  change.
 
 ## Deployment
 

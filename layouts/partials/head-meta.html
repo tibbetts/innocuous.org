@@ -1,0 +1,114 @@
+{{/* OpenGraph + Twitter card metadata.
+
+     Every page used to emit the site-wide description and no image at all, so
+     every shared link previewed identically. This builds a per-page preview:
+     text from the page's own front matter, and a card image generated at build
+     time by drawing the title onto assets/img/og-base.png.
+
+     A page can opt out of the generated card with `image:` in front matter —
+     either a path under assets/ or an absolute URL. */}}
+
+{{/* ---- description: one chain, reused by the plain meta tag in head.html ---- */}}
+{{ $desc := "" }}
+{{ with .Description }}{{ $desc = . }}
+{{ else }}{{ with .Params.summary }}{{ $desc = . }}
+{{ else }}{{ with .Summary }}{{ $desc = . }}
+{{ else }}{{ $desc = .Site.Params.description }}{{ end }}{{ end }}{{ end }}
+{{ $desc = $desc | plainify | htmlUnescape | chomp }}
+{{ $desc = cond (gt (len $desc) 200) (printf "%s…" (substr $desc 0 199 | chomp)) $desc }}
+
+{{ $title := cond .IsHome .Site.Title .Title }}
+
+{{/* Section eyebrow, so a card says what kind of thing it is. */}}
+{{ $kind := "" }}
+{{ if not .IsHome }}
+  {{ if eq .Section "projects" }}{{ $kind = "Project" }}
+  {{ else if eq .Section "articles" }}{{ $kind = "Article" }}
+  {{ else if eq .Section "agent-blog" }}{{ $kind = "Agent Blog" }}
+  {{ else }}{{ $kind = .Site.Title }}{{ end }}
+{{ else }}{{ $kind = "Bulrush Labs" }}{{ end }}
+
+{{/* ---- the card ---- */}}
+{{ $ogImage := "" }}
+{{ $ogW := 0 }}
+{{ $ogH := 0 }}
+{{ $ogAlt := printf "%s — %s" $title .Site.Title }}
+
+{{/* Dimensions are only emitted when they are actually known: a hardcoded
+     1200x630 would be a lie for an overridden image, and a wrong width is
+     worse than an absent one — scrapers lay the card out from it. */}}
+{{ with .Params.image }}
+  {{ if hasPrefix . "http" }}
+    {{ $ogImage = . }}
+  {{ else }}
+    {{ with resources.Get . }}
+      {{ $ogImage = .Permalink }}
+      {{ $ogW = .Width }}
+      {{ $ogH = .Height }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if not $ogImage }}
+  {{ $base := resources.Get "img/og-base.png" }}
+  {{ $bold := resources.Get "fonts/PlusJakartaSans-Bold.ttf" }}
+  {{ $semi := resources.Get "fonts/PlusJakartaSans-SemiBold.ttf" }}
+  {{ if and $base $bold $semi }}
+    {{/* images.Text does not wrap, so wrap here: greedy fill to a character
+         budget tuned to the 1040px text column at 60px, capped at three lines
+         so a long title cannot run off the card. */}}
+    {{ $budget := 24 }}
+    {{ $lines := slice }}
+    {{ $cur := "" }}
+    {{ range (split $title " ") }}
+      {{ $try := cond (eq $cur "") . (printf "%s %s" $cur .) }}
+      {{ if le (len $try) $budget }}
+        {{ $cur = $try }}
+      {{ else }}
+        {{ $lines = $lines | append $cur }}
+        {{ $cur = . }}
+      {{ end }}
+    {{ end }}
+    {{ if ne $cur "" }}{{ $lines = $lines | append $cur }}{{ end }}
+    {{ if gt (len $lines) 3 }}
+      {{ $lines = first 3 $lines }}
+      {{ $lines = append (printf "%s…" (index $lines 2)) (first 2 $lines) }}
+    {{ end }}
+    {{ $headline := delimit $lines "\n" }}
+
+    {{ $img := $base | images.Filter
+        (images.Text $kind (dict "font" $semi "color" "#2f7550" "size" 28 "x" 100 "y" 96))
+        (images.Text $headline (dict "font" $bold "color" "#161614" "size" 60 "linespacing" 18 "x" 100 "y" 160))
+        (images.Text "bulrushlabs.com" (dict "font" $semi "color" "#2a6b45" "size" 30 "x" 100 "y" 512))
+    }}
+    {{ $ogImage = $img.Permalink }}
+    {{ $ogW = $img.Width }}
+    {{ $ogH = $img.Height }}
+  {{ end }}
+{{ end }}
+
+{{/* The plain description lives here too, so it cannot drift from the one the
+     preview cards use — they were already out of step, which is how every page
+     ended up advertising the site blurb. */}}
+<meta name="description" content="{{ $desc }}">
+
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:type" content="{{ if and (not .IsHome) (not .Date.IsZero) }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with $ogImage }}
+<meta property="og:image" content="{{ . }}">
+{{ if and $ogW $ogH }}<meta property="og:image:width" content="{{ $ogW }}">
+<meta property="og:image:height" content="{{ $ogH }}">{{ end }}
+<meta property="og:image:alt" content="{{ $ogAlt }}">
+{{ end }}
+{{ if and (not .IsHome) (not .Date.IsZero) }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+{{ with .Params.author }}<meta property="article:author" content="{{ . }}">{{ end }}
+{{ end }}
+
+<meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+{{ with $ogImage }}<meta name="twitter:image" content="{{ . }}">{{ end }}
