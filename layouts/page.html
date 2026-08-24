@@ -19,6 +19,25 @@
       <ul class="chips measure">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
     {{ end }}
 
+    {{/* Source and site links belong near the top: on a long project page a
+         reader who wants the code should not have to reach the footer first. */}}
+    {{ if or .Params.repo .Params.site }}
+      <p class="page-links measure">
+        {{ with .Params.repo }}
+          <a class="btn btn-ghost" href="{{ . }}" rel="noopener">
+            {{ partial "icon.html" (dict "name" "github" "size" 16) }}
+            <span>View source</span>
+          </a>
+        {{ end }}
+        {{ with .Params.site }}
+          <a class="btn btn-ghost" href="{{ . }}" rel="noopener">
+            {{ partial "icon.html" (dict "name" "arrow-right" "size" 16) }}
+            <span>Visit site</span>
+          </a>
+        {{ end }}
+      </p>
+    {{ end }}
+
     <div class="prose">{{ .Content }}</div>
 
     <footer class="article-foot">
@@ -31,12 +50,6 @@
         <p class="hn">Originally published at <a href="{{ . }}" rel="noopener">{{ . }}</a></p>
       {{ end }}
       {{ if eq .Section "articles" }}{{ partial "hn-discuss.html" . }}{{ end }}
-      {{ with .Params.site }}
-        <p class="hn"><a href="{{ . }}" rel="noopener">Visit {{ . | replaceRE "^https?://" "" | strings.TrimSuffix "/" }} →</a></p>
-      {{ end }}
-      {{ with .Params.repo }}
-        <p class="hn"><a href="{{ . }}" rel="noopener">View source on GitHub →</a></p>
-      {{ end }}
     </footer>
   </article>
 </div>

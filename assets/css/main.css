@@ -789,3 +789,11 @@ img { max-width: 100%; }
   font-size: 9px;
   text-anchor: middle;
 }
+
+/* Project source / site links, sat under the stack chips near the top. */
+.page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: .9rem 0 0;
+}
