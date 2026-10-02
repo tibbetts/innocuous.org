@@ -62,11 +62,25 @@ docs/               # design docs and handoff notes
 
 ## Deployment
 
-GitHub Actions → GitHub Pages (`.github/workflows/hugo.yml`), currently at
-<https://tibbetts.github.io/innocuous.org/>. The build takes its baseURL from
-`actions/configure-pages`, so the repo-subpath and a future custom domain both
-work. **No `CNAME` is committed** — the DNS cutover for `innocuous.org` is
-deliberately a separate step, so the old site is undisturbed.
+GitHub Actions → GitHub Pages (`.github/workflows/hugo.yml`), served at
+<https://bulrushlabs.com/>. The custom domain is set in three places that must
+agree: the repo's Pages settings (`gh api repos/:owner/:repo/pages` → `cname`),
+`static/CNAME`, and `baseURL` in `hugo.toml`. The workflow passes `--baseURL`
+from `actions/configure-pages`, which follows the Pages setting, so the deployed
+URLs come from there; `hugo.toml`'s value is what local builds use. **Do not
+delete `static/CNAME`** — it is how the domain survives a deploy.
+
+`innocuous.org` 301s to bulrushlabs.com **with the path preserved**. That is
+what keeps the WordPress permalinks above working, and it lives in
+**Cloudflare**, not in this repo — a change there can break every inbound link
+without touching a file here. (The old `tibbetts.github.io/innocuous.org/`
+address also redirects, but that one is GitHub's doing, from the Pages domain
+setting.) Check the Cloudflare redirect after any DNS or Cloudflare change:
+
+```bash
+curl -sI https://innocuous.org/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/ | grep -i location
+# → https://bulrushlabs.com/articles/2015/05/01/startups-intellectual-property-boston-inn-of-courts/
+```
 
 `main` is the only branch that builds and the only one the `github-pages`
 environment permits to deploy. Both halves matter: adding a branch to the
