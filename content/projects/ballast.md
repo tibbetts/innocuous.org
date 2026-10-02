@@ -93,7 +93,9 @@ pre-registered predictions, and negative results kept rather than quietly
 dropped. That programme is where the skill is developed and evaluated; this
 repository carries the releases.
 
-A paper on the work was submitted to **CIDR 2027**.
+A paper on the work, *Ballast: An LLM Database Steward for Vibe-Coded
+Applications*, is under review at **CIDR 2027**. Read the
+[preprint (PDF, October 2026)](/papers/ballast-preprint-2026-10.pdf).
 
 ## Installing
 
